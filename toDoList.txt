@@ -1,0 +1,15 @@
+// 09 II 2017
+
+Efektowny JavaScript David Herman
+Zaawansowane techniki języka JavaScript John Resig
+Getting Things Programmed Droga do efektywności
+JavaScript Mocne Strony Douglas Corckford
+D3.js w akcji Elijah Meeks
+Aplikacje 3D Przewodnik po HTML5, WebGL i CSS3 Tony Parisi
+Single Page Web Applications Michael Mikowski
+Adrian Frutiger Człowiek i jego znaki
+Ketih Houston Ciemne typki
+
+// 14 II 2017
+
+Podczas usuwania książek jak usunę wszystkie z 3 strony, to nie odświeża do strony 2, tylko jest pusta tablica na stronie 3

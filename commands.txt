@@ -1,0 +1,9 @@
+composer create-project --prefer-dist laravel/laravel projekt "5.3.*"
+php artisan serve = uruchamia serwer Laravela
+php artisan make:controller PhotosController --resource = tworzy controller
+php artisan make:model Photo -m = tworzy model a flaga -m tworzy dodatkowo migracje
+php artisan migrate = uruchomienie migracji
+php artisan make:seed PhotosSeeder = tworzy seedera
+php artisan db:seed = uruchomienie seederow
+php artisan make:request PhotosRequest = tworzy obiekt Requestu
+composer require barryvdh/laravel-debugbar

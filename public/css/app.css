@@ -1,0 +1,301 @@
+#contact-panel:before {
+  content: '';
+  background-color: #000000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+  display: block;
+}
+
+#contactImage {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+  display: block;
+  background-position: top center;
+  background-image: url("/img/page/contact-page-low.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.contact-wrapper {
+  width: 1000px;
+  min-height: 70vh;
+  background-color: rgba(10, 10, 10, 0.7);
+  margin: 30px auto 20px auto;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px black;
+}
+
+.contact-title {
+  font-family: "Sansita", sans-serif;
+  text-align: center;
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+
+.contact-input-container {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-input-container > .contact-input {
+  max-width: 33%;
+}
+
+.contact-label-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-label {
+  font-family: "Sansita", sans-serif;
+  font-font-weight: 700;
+  font-size: 2rem;
+  color: #dcddde;
+  margin: 10px 20px;
+}
+
+.contact-input {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Roboto Slab", serif;
+  margin: 20px 0px 0px 0px;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ui.form.contact-input > textarea#description {
+  margin: 5px 20px 20px 20px;
+  width: 96%;
+  resize: none;
+}
+
+.ui.input input, .ui.form textarea {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-family: "Sansita", sans-serif;
+  font-size: 1.6rem;
+}
+
+.ui.input input.contact-input-error, .ui.form textarea.contact-input-error {
+  border: 1px #f4424e solid;
+  background-color: rgba(244, 66, 78, 0.1);
+  color: #dcddde;
+}
+
+.contact-list-error {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.6rem;
+  background-color: rgba(244, 66, 78, 0.1);
+  color: #f4424e;
+  margin: 0 20px;
+}
+
+.contact-list-error > li {
+  list-style: none;
+  padding: 5px 0;
+  margin: 10px 20px;
+  line-height: 1.4rem;
+}
+
+#form-control > i.icon {
+  tranistion: all 0.3s linear;
+}
+
+.icon-error {
+  color: #dcddde;
+}
+
+.contact-button {
+  font-family: "Sansita", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 30%;
+  margin-top: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding: 10px;
+  text-align: center;
+  background-color: #66A756;
+  color: #dcddde;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.contact-button:hover {
+  background-color: #47753c;
+}
+
+#login-panel:before {
+  content: '';
+  background-color: #000000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+  display: block;
+}
+
+#loginImage {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -100;
+  display: block;
+  background-position: top center;
+  background-image: url("/img/page/login-page-low.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.login-wrapper {
+  width: 540px;
+  min-height: 540px;
+  background-color: rgba(5, 5, 5, 0.7);
+  margin: 70px auto 20px auto;
+  padding: 40px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px black;
+}
+
+.login-title {
+  font-family: "Sansita", sans-serif;
+  text-align: center;
+  font-size: 4.2rem;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.login-input {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Roboto Slab", serif;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 4px;
+}
+
+.ui.input input {
+  font-family: "Sansita", sans-serif;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  font-size: 1.6rem;
+}
+
+.ui.input input.login-input-error {
+  border: 1px #f4424e solid;
+  background-color: rgba(244, 66, 78, 0.1);
+  color: #dcddde;
+}
+
+#login-control > i.icon {
+  tranistion: all 0.3s linear;
+}
+
+.login-list-error {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.4rem;
+  background-color: rgba(244, 66, 78, 0.1);
+  color: #f4424e;
+  margin: 20px;
+}
+
+.login-list-error > li {
+  list-style: none;
+  padding: 5px 0;
+  margin: 10px 20px;
+  line-height: 1.4rem;
+}
+
+.login-button {
+  font-family: "Sansita", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0px;
+  background-color: #66A756;
+  color: #dcddde;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.login-button:hover {
+  background-color: #47753c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #2c3338;
+  color: #dcddde;
+  font-smoothing: antialiased;
+  font-size: 1.6rem;
+}
+
+.page-container {
+  padding-top: 40px;
+}
+
+.nav-text {
+  font-family: "Roboto Slab", serif;
+  color: #dcddde;
+  font-size: 1.6rem;
+}
+
+.ui.menu {
+  font-size: 1.6rem;
+}
+
+header {
+  background-image: url("/img/page/welcome-page.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-family: "Sansita", sans-serif;
+  font-weight: bold;
+  font-size: 72px;
+  margin-left: 15%;
+  color: #f4dc42;
+}
+
+.page-section {
+  height: 100px;
+}
+
+/*# sourceMappingURL=app.css.map */

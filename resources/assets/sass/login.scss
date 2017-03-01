@@ -1,0 +1,113 @@
+@import "variables";
+@import "mixins";
+
+#login-panel:before {
+    content: '';
+    background-color: $black;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    z-index: -100;
+    display: block;
+}
+
+#loginImage {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    z-index: -100;
+    display: block;
+    background: {
+      position: top center;
+      image: url('/img/page/login-page-low.jpg');
+      size: 100% auto;
+      repeat: no-repeat;
+    }
+}
+
+.login-wrapper {
+  width: 540px;
+  min-height: 540px;
+  background-color: rgba(5, 5, 5, 0.7);
+  margin: 70px auto 20px auto;  
+  padding: 40px;
+  border-radius: 4px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.login-title {
+    font-family: $sansita;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 600;    
+    padding-bottom: 30px;   
+}
+
+.login-input {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: $roboto;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 4px;
+}
+
+.ui.input input {
+    font-family: $sansita;
+    transition: $animation;
+    font-size: 1.6rem;
+}
+
+.ui.input input.login-input-error {
+    border: 1px $red solid;
+    background-color: rgba(244, 66, 78, .1);
+    color: $fontColor;
+}
+
+#login-control > i.icon {
+    tranistion: $animation;
+}
+
+.login-list-error {
+    font: {
+        family: $roboto;
+        size: 1.4rem;
+    }
+    background-color: rgba(244, 66, 78, .1);
+    color: $red;
+    margin: 20px;
+    
+    & > li {
+        list-style: none;
+        padding: 5px 0;
+        margin: 10px 20px;
+        line-height: 1.4rem;
+    }    
+}
+
+ .login-button {
+     font: {
+         family: $sansita;
+         size: 2rem;
+         weight: 600;
+     }
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: $buttonColor;
+    color: $fontColor;
+    border: none; 
+    border-radius: 4px;
+    transition: $animation;
+     
+     &:hover {
+         background-color: darken($buttonColor, 15%);
+     }
+  }
+
