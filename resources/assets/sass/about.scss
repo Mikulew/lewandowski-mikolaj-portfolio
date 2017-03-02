@@ -1,0 +1,165 @@
+@import "variables";
+@import "mixins";
+
+#aboutImage {
+    width: 20%;
+    position: absolute;
+}
+
+.about-h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $sansita; 
+    font-weight: bold;
+    font-size: 7.6rem;
+    color: $yellow;
+}
+
+.about-h2 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: $sansita;
+    font-size: 4.2rem;
+    color: $fontColor;
+}
+
+// =GALLERY
+
+.photo-gallery {
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    .photo {
+    margin: 10px 20px;
+    min-width: 150px;
+    min-height: 170px;
+    background: $paper;
+    padding: 10px;
+    opacity: .7;
+    border-radius: 5px;
+    border: 1px solid $black;
+    tranform: rotate(5deg);
+    transition: $animation;
+}
+
+    .photo > img {
+        width: auto;
+        height: 100px;
+        flex-basis: 100%;
+    }
+
+    .photo figcaption {
+        font: {
+            family: $sansita;
+            size: 2rem;
+        }
+        margi-top: 10px;
+        color: $black;
+    }
+
+    .photo:nth-child(even) {
+        transform: rotate(-2deg) scale(0.9);
+    }
+
+    .photo:hover {
+        opacity: 1;
+        transition: $animation;
+        transform: scale(1.1);
+    }
+}
+
+
+// =LETTER
+
+.letter {
+    background: $paper;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    margin: 5% auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    position: relative;
+    width: 80%;
+}
+
+.letter:before, .letter:after {
+    content: '';
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.letter:before {
+    background: darken($paper, 10%);
+    box-shadow: 0 0 8px rgba(0,0,0,.2);
+    left: -5;
+    top: 4px;
+    transform: rotate(-5.5deg);
+}
+
+.letter:after {
+    background: darken($paper, 20%);
+    box-shadow: 0 0 3px rgba(0,0,0,.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(2.5deg);
+}
+
+.letter > p {
+    font: {
+        family: $courgette;
+        size: 1.7rem;
+    }
+    color: $black;
+}
+
+.photo-portfolio {
+    position: absolute;
+    bottom: -50px;
+    right: 0px;
+    width: 200px;
+    tranform: rotate(25deg);
+    
+    .photo {
+    margin: 10px 20px;
+    min-width: 150px;
+    min-height: 170px;
+    background: darken($paper, 10%);
+    padding: 10px;
+    transition: $animation;
+    }
+    
+    .photo:after {
+        box-shadow: 0 0 4px rgba(0,0,0,.5);
+    }
+
+    .photo > img {
+        width: auto;
+        height: 130px;
+        float: right;
+    }
+
+    .photo figcaption {
+        font: {
+            family: $sansita;
+            size: 2rem;
+        }
+        margi-top: 10px;
+        color: $black;
+    }
+
+    .photo:hover {
+        opacity: 1;
+        transition: $animation;
+        transform: scale(1.5);
+    }
+}
+
+
