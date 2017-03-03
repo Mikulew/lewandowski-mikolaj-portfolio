@@ -8,9 +8,15 @@
         <img id="loginImage" src="/img/page/login-page-low.jpg">
         <p class="login-title">Logowanie</p>
         {!! Form::open(['route' => 'login', 'id' => 'login-form']) !!}
+            <div class="login-label-container">
+               {!! Form::label('email', 'Login:', ['class' => 'login-label']) !!}
+            </div>
             <div class="ui left icon input login-input">
                 {!! Form::email('email', null, ['placeholder' => 'admin@example', 'data-error' => 'Podaj poprawny adres e-mail']) !!}
                 <i class="user icon"></i>
+            </div>
+            <div class="login-label-container">
+                {!! Form::label('password', 'Hasło:', ['class' => 'login-label']) !!}
             </div>
             <div class="ui left icon input login-input">
                 {!! Form::password('password', ['placeholder' => '******', 'data-error' => 'Zbyt krótkie hasło']) !!}

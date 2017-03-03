@@ -23,12 +23,6 @@
     bottom: 0;
     z-index: -100;
     display: block;
-    background: {
-      position: top center;
-      image: url('/img/page/login-page-low.jpg');
-      size: 100% auto;
-      repeat: no-repeat;
-    }
 }
 
 .login-wrapper {
@@ -47,6 +41,24 @@
     font-size: 4.2rem;
     font-weight: 600;    
     padding-bottom: 30px;   
+    color: $blue;
+}
+
+.login-label-container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-label {
+    font: {
+        family: $sansita;
+        font-weight: 700;
+        size: 2rem;
+    }
+    color: $yellow;
+    width: 100%;
 }
 
 .login-input {
@@ -100,14 +112,14 @@
     width: 100%;
     padding: 10px;
     margin: 20px 0px;
-    background-color: $buttonColor;
-    color: $fontColor;
+    background-color: darken($blue, 15%);
+    color: $yellow;
     border: none; 
     border-radius: 4px;
     transition: $animation;
      
      &:hover {
-         background-color: darken($buttonColor, 15%);
+         background-color: darken($blue, 30%);
      }
   }
 

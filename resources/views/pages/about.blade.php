@@ -7,127 +7,160 @@
 @endsection
 
 @section('body')
-<div class="ui two column grid">
-   <div class="column">
-        <div class="photo-gallery">
-            <figure class="photo">
-                <img src="/img/technology/html5.svg" alt="HTML5">
-                <figcaption>
-                    HTML5
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/css3.svg" alt="CSS3">
-                <figcaption>
-                    CSS3
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/javascript.svg" alt="JavaScript">
-                <figcaption>
-                    JavaScript
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/RWD.svg" alt="RWD">
-                <figcaption>
-                    RWD
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/canvas.svg" alt="Canvas">
-                <figcaption>
-                    Canvas
-                </figcaption>
-            </figure>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/jquery.svg" alt="jQuery">
-                <figcaption>
-                    jQuery
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/ecmascript6.svg" alt="EcmaScript 6">
-                <figcaption>
-                    EcmaScript 6
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/bootstrap.svg" alt="Bootstrap">
-                <figcaption>
-                    Bootstrap
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/sass.svg" alt="SASS">
-                <figcaption>
-                    SASS
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/gulp.svg" alt="gulp.js">
-                <figcaption>
-                    gulp.js
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/react.svg" alt="react.js">
-                <figcaption>
-                    React.js
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/PS.svg" alt="Photoshop">
-                <figcaption>
-                    Photoshop
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/AI.svg" alt="Illustrator">
-                <figcaption>
-                    Illustrator
-                </figcaption>
-           </figure>
-            <figure class="photo">
-                <img src="/img/technology/PHP.svg" alt="PHP">
-                <figcaption>
-                    PHP
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/laravel.svg" alt="Laravel">
-                <figcaption>
-                    Laravel
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/MySQL.svg" alt="MySQL">
-                <figcaption>
-                    MySQL
-                </figcaption>
-            </figure>
-            <figure class="photo">
-                <img src="/img/technology/GIT.svg" alt="GIT">
-                <figcaption>
-                    GIT
-                </figcaption>
-            </figure>
-        </div>
+<div class="about-container">
+    <div class="about-gallery">
+        <h2 class="about-heading">Co potrafię</h2>
+        <figure class="photo">
+            <img src="/img/technology/html5.svg" alt="HTML5 logo">
+            <figcaption>
+                HTML5
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/css3.svg" alt="CSS3 logo">
+            <figcaption>
+                CSS3
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/javascript.svg" alt="JavaScript logo">
+            <figcaption>
+                JavaScript
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/RWD.svg" alt="RWD logo">
+            <figcaption>
+                RWD
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/canvas.svg" alt="Canvas logo">
+            <figcaption>
+                Canvas
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/jquery.svg" alt="jQuery logo">
+            <figcaption>
+                jQuery
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/ecmascript6.svg" alt="EcmaScript 6 logo">
+            <figcaption>
+                EcmaScript 6
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/sass.svg" alt="SASS logo">
+            <figcaption>
+                SASS
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/bootstrap.svg" alt="Bootstrap logo">
+            <figcaption>
+                Bootstrap
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/semanticui.svg" alt="Semantic UI logo">
+            <figcaption>
+                Semantic UI
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/gulp.svg" alt="gulp.js logo">
+            <figcaption>
+                gulp.js
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/react.svg" alt="react.js logo">
+            <figcaption>
+                React.js
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/PS.svg" alt="Photoshop logo">
+            <figcaption>
+                Photoshop
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/AI.svg" alt="Illustrator logo">
+            <figcaption>
+                Illustrator
+            </figcaption>
+       </figure>
+       <figure class="photo">
+            <img src="/img/technology/ID.svg" alt="InDesign logo">
+            <figcaption>
+                InDesign
+            </figcaption>
+       </figure>
+        <figure class="photo">
+            <img src="/img/technology/PHP.svg" alt="PHP logo">
+            <figcaption>
+                PHP
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/laravel.svg" alt="Laravel logo">
+            <figcaption>
+                Laravel
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/MySQL.svg" alt="MySQL logo">
+            <figcaption>
+                MySQL
+            </figcaption>
+        </figure>
+        <figure class="photo">
+            <img src="/img/technology/GIT.svg" alt="GIT logo">
+            <figcaption>
+                GIT
+            </figcaption>
+        </figure>
     </div>
-    <div class="column">
+    <div class="about-letter">
         <div class="letter">
             <p>Drogi użytkowniku,</p>
-            <p>Od ponad roku zajmuję się front-endem. Żeby dowiedzieć się wiedzieć jak wyglądają dynamiczne strony internetowe po stronie serwera poszedłem na kurs full-stack "Od zera do WebDeva", żeby głębiej zrozumieć stuktury stron internetowych.</p>
-            <p>Pisanie stron internetowych to jednocześnie moja pasja i praca. Praca, bo trzeba utrzymywać deadliny, dokańczać projekty do końca oraz, żeby było profesjonalnie zrobione, żeby klient był zadowolony. Pasja, bo na słomianym zapale dawno bym to rzucił, bo programowanie jest wymagającym przedsięwzięciem.</p>
-            <p>Zakładając tutaj własne portfolio: nie chciałem tylko pokazać swoje umiejętności i przedstawić moją ofertę jako twórca stron WWW, a zarówno promować dobrze wykonane i wpadające w oko strony, polecać polskich front-developerów, rekomendować materiały do nauki, które można wynieść sporą wiedzę oraz propagować spotkania branżowe.</p>
-            <p>Dlatego postanowiłem napisać bloga (w dosłownym znaczeniu, czyli zaprogramować własny system CMS, w skrócie panel administracyjny, żeby potem pisać własne teksty) i umieszczać wpisy początkującego front-end developera.</p>
-            <p>Jeśli interesuje zatrudnięcie mnie, żeby wspólnie zaprogramować stronę, to zapraszam do współpracy.</p>
+
+            <p>Od ponad roku zajmuje się front-endem. Droga do zdobycia wiedzy i&nbsp;umiejętności, które już posiadam, nie była prosta.
+            Z gąszczu informacji musiałem wybrać to, co jest dla front-end developera najistotniejsze.
+            Moje poszukiwania zaowocowały ukończeniem kursu full-stack &bdquo;Od zera do WebDeva&rdquo;.
+            Wszytko to, by zgłębić tajniki serwerów dynamicznych stron i&nbsp;by jeszcze lepiej zrozumieć strukturę tych stron.</p>
+
+            <p>Programowanie początkowo traktowałem jako lepszą perspektywę rozwoju mojej kariery, z&nbsp;czasem jednak przerodziło się w moją pasję.
+            Pasję, która chcę się dzielić z&nbsp;innymi.
+            Pasję, która wymaga nieustannej nauki.
+            Jednak gdyby nie pasja już dawno bym rzucił to wymagające przedsięwzięcie.
+            Wymagające, bo z&nbsp;myślą o&nbsp;zadowoleniu moich klientów podczas wykonania moich projektów łączę dotrzymanie ustalonych terminów i&nbsp;perfekcję wykończenia każdej strony.</p>
+
+            <p>Dlatego postanowiłem założyć portfolio, które będzie przedstawiać więcej niż tylko moją ofertę i&nbsp;umiejętności.
+            Chcąc się wyróżnić, zaprogramowałem własnego bloga (z&nbsp;własnym system CMS) i&nbsp;będę umieszczać na nim wpisy, które zaprezentują całą moją drogę od początkującego front-end developera do pasjonata.</p>
+
+            <p>Na moim blogu przeczytasz o:</p>
+            <ul>
+                <li>&mdash; dobrze wyglądających stronach, które zachwycają oczy,</li>
+                <li>&mdash; polskich front-developerach, na których polecam się wzorować?</li>
+                <li>&mdash; recenzjach materiałów, z&nbsp;których korzystałem (tych, mających ogromną wiedzę i&nbsp;tych, których lepiej unikać)</li>
+                <li>&mdash; błędach, jakie popełniłem i&nbsp;jak na nich się uczyłem</li>
+                <li>&mdash; dlaczego propaguję spotkania branżowe.</li>
+            </ul>
+
+            <p>Jeśli chcesz, bym przyczynił się do rozwoju Twojej kariery, zleć mi zaprogramowanie Twojej strony.</p>
+
             <p>Z poważaniem,</p>
-            <p>Lewandowski Mikołaj</p>
+
+            <p>Front-end developer<br>
+                Mikołaj Lewandowski</p>
             <div class="photo-portfolio">
                  <figure class="photo">
-                    <img src="/img/page/mikulew-hawk.jpg" alt="Mikołaj Lewandowski photo">
+                    <img id="AboutImage" src="/img/page/mikulew-hawk-low.jpg" alt="Mikołaj Lewandowski photo">
                     <figcaption>
                         Autor strony
                     </figcaption>
@@ -141,6 +174,14 @@
 
 
 @section('scripts')
+<script>       
+    (function(){
+        var imgAbout = new Image();
+        imgAbout.src = '/img/page/mikulew-hawk.jpg';
 
-
+        imgAbout.onload = function() {
+            $('#AboutImage').attr({src: imgAbout.src});
+        };
+    })();
+</script>
 @endsection

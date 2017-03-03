@@ -23,25 +23,49 @@ body {
     padding-top: 40px;
 }
 
+// =NAVIGATION
+
 .nav-text {
-    font-family: $roboto;
-    color: $fontColor;
+    font-family: $sansita;
+    letter-spacing: 1px;
+    color: $yellow;
     font-size: 1.6rem;
 }
 
 .ui.menu {
     font-size: 1.6rem;
-} 
-
-//HEADER
-
-header {
-    background-image: url('/img/page/welcome-page.jpeg');
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
+    fill: $yellow;
 }
 
-.page-section {
-    height: 100px;
+.ui.inverted.menu {
+    background: $background;
+}
+
+.ui.inverted.menu .active.item {
+    background: lighten($background, 10%);
+}
+
+.nav-bar {
+    font: {
+        family: $sansita;
+        size: 1.6rem;
+        weight: 400;
+    }
+    background: $paper;
+    border: 0 solid transparent;
+    letter-spacing: 1px;
+    position: fixed;
+    z-index: 101;
+    margin: 0;
+    width: 100%;
+    min-height: 3em;
+    fill: $yellow;
+}
+
+.nav-bar:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }

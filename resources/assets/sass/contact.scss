@@ -23,12 +23,6 @@
     bottom: 0;
     z-index: -100;
     display: block;
-    background: {
-      position: top center;
-      image: url('/img/page/contact-page-low.jpg');
-      size: 100% auto;
-      repeat: no-repeat;
-    }
 }
 
 .contact-wrapper {
@@ -45,7 +39,8 @@
     font-family: $sansita;
     text-align: center;
     font-size: 4.2rem;
-    font-weight: 600;     
+    font-weight: 600; 
+    color: $blue;
 }
 
 .contact-input-container {
@@ -69,7 +64,7 @@
         font-weight: 700;
         size: 2rem;
     }
-    color: $fontColor;
+    color: $yellow;
     margin: 10px 20px;
 }
 
@@ -138,14 +133,14 @@
     margin-right: 35%;
     padding: 10px;
     text-align: center;
-    background-color: $buttonColor;
-    color: $fontColor;
+    background-color: darken($blue, 15%);
+    color: $yellow;
     border: none; 
     border-radius: 4px;
     transition: $animation;
      
      &:hover {
-         background-color: darken($buttonColor, 15%);
+         background-color: darken($blue, 30%);
      }
   }
 

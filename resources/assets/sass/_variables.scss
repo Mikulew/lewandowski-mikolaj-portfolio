@@ -25,6 +25,9 @@ $text-color: #636b6f;
 $sansita: 'Sansita', sans-serif;
 $roboto: 'Roboto Slab', serif;
 $courgette: 'Courgette', cursive;
+$playfair: 'Playfair Display', serif;
+$amatic: 'Amatic SC', cursive;
+$droid: 'Droid Serif', serif;
 
 
 // Navbar
@@ -42,14 +45,15 @@ $input-color-placeholder: lighten($text-color, 30%);
 $panel-default-heading-bg: #fff;
 
 // Colors
-$yellow: #f4dc42;
+$yellow: #e4cd8a;
 $black: #000000;
 $white: #ffffff;
 $red: #f4424e;
 $background: #2c3338;
 $paper: #e4ddce;
+$green: #7e773f;
+$blue: #8eadB1;
 $fontColor: #dcddde;
-$buttonColor: #66A756;
 
 // Animation
 $animation: all .3s linear;

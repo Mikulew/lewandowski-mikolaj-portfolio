@@ -1,0 +1,296 @@
+@import "variables";
+@import "mixins";
+
+//HEADER
+header {
+    position: relative;
+}
+
+#headerImage {
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    display: block;
+    background: {
+      position: top center;
+      size: 100% auto;
+      repeat: no-repeat;
+    } 
+}
+
+.welcome-bold {
+    font-weight: 700;
+}
+
+.welcome-blue {
+    color: $blue;
+} 
+
+header {
+    .chevron.circle.down.icon {
+        position: absolute;
+        font-size: 5rem;
+        color: $blue;
+        cursor: pointer;
+        top: 80%;
+        left: 50%;
+        transition: $animation;
+        transform: translateX(-50%);
+    }
+
+    .chevron.circle.down.icon:hover {
+        color: $yellow;
+        font-size: 6rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .welcome-header-heading {
+        font: {
+            family: $amatic;
+            size: 10rem;
+        }
+        position: absolute;
+        color: $yellow;
+        top: 200px;
+        left: 10%;
+    }
+
+    .welcome-header-paragraph {
+        font: {
+            family: $amatic;
+            size: 4.2rem;
+        }
+        color: $yellow;
+        position: absolute;
+        line-height: 4.6rem;
+        margin-top: 20px;
+    }
+
+    p.welcome-header-paragraph:nth-child(3) {
+        top: 350px;
+        left: 10%;
+    }
+
+    p.welcome-header-paragraph:nth-child(4) {
+        top: 550px;
+        left: 10%;
+    }
+}
+
+// =NEWSPAPER
+
+.welcome-newspaper {
+    font: {
+        family: 'Droid Serif', serif;
+        size: 1.4rem;
+    }
+    padding-top: 60px;
+    height: 1000px;
+    text-align: center;
+    background-color: $paper;
+    color: $black;
+    position: relative;
+    
+    .chevron.circle.down.icon {
+        position: absolute;
+        font-size: 5rem;
+        color: $black;
+        cursor: pointer;
+        top: 90%;
+        left: 50%;
+        transition: $animation;
+        transform: translateX(-50%);
+    }
+
+    .chevron.circle.down.icon:hover {
+        color: darken($paper, 30%);
+        font-size: 6rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .welcome-header-heading {
+        font: {
+            family: $amatic;
+            size: 5rem;
+            }
+        color: $yellow;
+        text-align: center;
+    }
+    
+    p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .newspaper-huge-heading {
+        font-family: $playfair;
+        font-weight: 700;
+        font-size: 80px;
+        text-transform: uppercase;
+        display: inline-block;
+        line-height: 72px;
+        margin-bottom: 20px;
+    }
+    
+    .newspaper-subhead {
+        text-transform: uppercase;
+        border-bottom: 2px solid #2f2f2f;
+        border-top: 2px solid #2f2f2f;
+        padding: 12px 0 12px 0;
+    }
+    
+    .collumns {
+        font-size: 0;
+        line-height: 0;
+        word-spacing: -.31em;
+        display: inline-block;
+        margin: 30px 2% 0 2%;
+    }
+    
+    .collumn {
+        font-size: 1.6rem;
+        line-height: 20px;
+        width: 17.5%;
+        display: inline-block;
+        padding: 0 1% 0 1%;
+        vertical-align: top;
+        margin-bottom: 3rem;
+        transition: $animation;
+    }
+    
+    .collumn + .collumn { 
+          border-left: 1px solid #2f2f2f;
+    }
+    
+    .collumn > img {
+        width: 60%;
+    }
+    
+    .head {
+        position: relative;
+        text-align: center;
+    }
+    
+    .collumn .headline {
+        text-align: center;
+        line-height: normal;
+        font-family: $playfair;
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .collumn .headline.column1, .collumn .headline.column4 {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 3.6rem;
+        padding: 10px 0 10px 0;
+    }
+    
+    .collumn .headline.subcolumn1 {
+        font-weight: bold;
+        font-size: 1.2rem;
+        padding: 10px 0 10px 0;
+    }
+    
+    .collumn .headline.subcolumn5 {
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 10px 0 10px 0;
+    }
+    
+    .collumn .headline.subcolumn1:before, .collumn .headline.subcolumn5:before {
+        border-top: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 7px;
+        display: block;
+        margin: 0 auto;
+    }
+    .collumn .headline.subcolumn1:after, .collumn .headline.subcolumn5:after {
+        border-bottom: 1px solid #2f2f2f;
+        content: ''; 
+        width: 100px;
+        height: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+    .collumn .headline.column2 {
+        font-weight: 400;
+        font-size: 4.2rem;
+        text-transform: uppercase;
+        font-style: italic;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    
+    .collumn .headline.subcolumn2, .collumn .headline.subcolumn4 {
+        font-weight: 400;
+        font-size: 1.8rem;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }
+    .collumn .headline.subcolumn2:before, .collumn .headline.subcolumn4:before {
+        border-top: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 7px;
+        display: block;
+        margin: 0 auto;
+    }
+    .collumn .headline.subcolumn2:after, .collumn .headline.subcolumn4:after {
+        border-bottom: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+   
+    .collumn .headline.column3, .collumn .headline.column5 {
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: uppercase;
+        padding: 10px 0 10px 0;
+    }
+    .collumn .headline.subcolumn3 {
+        font-weight: 400;
+        font-style: italic;
+        font-size: 24px;
+        box-sizing: border-box;
+        padding: 10px 0 10px 0;
+    }    
+    .collumn .headline.subcolumn3:before {
+        border-top: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 7px;
+        display: block;
+        margin: 0 auto;
+    }
+    .collumn .headline.subcolumn3:after {
+        border-bottom: 1px solid #2f2f2f;
+        content: '';
+        width: 100px;
+        height: 13px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+// =CHARTS
+
+.welcome-charts {
+        padding-top: 60px;
+        height: 1000px;
+        background-color: $background;
+        color: $fontColor;
+    .charts-huge-heading {
+        font: {
+            family: $droid;
+            size: 3.6rem;
+        }
+    }
+}
