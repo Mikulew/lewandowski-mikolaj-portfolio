@@ -1,20 +1,33 @@
 @import "variables";
 @import "mixins";
 
+#blogImage {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    z-index: -100;
+    display: block;
+}
+
 .blog-heading {
     font: {
         family: $playfair;
-        size: 3.6rem;
+        size: 3.8rem;
     }
     text-align: center;
-    padding-top: 30px;
+    padding-top: 50px;
     margin-bottom: 50px;
 }
+// =BLOG
 
 .blog-title {
     font: {
         family: $playfair;
-        size: 2.4rem;
+        size: 2.6rem;
         weight: 700;
     }
     line-height: 6rem;
@@ -29,7 +42,7 @@
 .blog-segment {
     font: {
         family: $roboto;
-        size: 1.6rem;
+        size: 1.8rem;
     }
     line-height: 2.2rem;
     color: $background;
@@ -46,10 +59,14 @@
     border: 1px solid #D4D4D5;
 }
 
+.blog-paragraph {
+    margin-bottom: 50px;
+}
+
 .blog-button {
     font: {
         family: $sansita;
-        size: 2rem;
+        size: 2rem; 
         weight: 600;
      }
     width: 30%;
@@ -65,6 +82,47 @@
      
      &:hover {
          background-color: darken($blue, 30%);
+         color: $yellow;
          
      }
+}
+
+// =PAGINATION
+
+.blog-pagination {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.blog-number {
+    font: {
+        family: $playfair;
+        size: 2.4rem;
+        weight: 600;
+    }
+    line-height: 2.4rem;
+    margin: 0 5px;
+    color: $yellow;
+    background: $background;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.blog-number:hover {
+    color: $paper;
+    background: darken($blue, 20%);
+    padding: 15px;
+    border-radius: 4px;
+    transition: $animation;
+}
+
+.blog-number.active {
+    color: $yellow;
+    background: darken($blue, 20%);
+}
+
+.blog-number.active:hover {
+    color: $yellow;
+    background: darken($blue, 20%);
 }

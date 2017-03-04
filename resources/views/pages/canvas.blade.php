@@ -3,8 +3,8 @@
 @section('title', '| JavaScript')
 
 @section('body')
-
-    <h1 class="ui header">Gry i animacje</h1>
+    <img id="canvasImage" src="/img/page/canvas-page-low.jpg" alt="Game photo">
+    <h1 class="canvas-heading">Gry i animacje</h1>
     <p>W wolnej chwili lubię bawić się JavaSriptem robiąc przeróżne animacje, nieskomplikowane gry czy małe aplikacje</p>
     <div class="ui items">
     @foreach($canvases as $canvas)
@@ -35,4 +35,17 @@
     @endforeach
     </div>
 
+@endsection
+
+
+@section('scripts')
+<script>        
+(function(){
+    var imgCanvas = new Image();
+    imgCanvas.src = '/img/page/canvas-page.jpg';
+
+    imgCanvas.onload = function() {
+        $('#canvasImage').attr({src: imgCanvas.src});
+    };})();
+</script>
 @endsection

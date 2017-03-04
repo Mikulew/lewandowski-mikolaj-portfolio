@@ -8,6 +8,7 @@
 
 @section('body')
 <div class="about-container">
+    <img id="aboutImage" src="/img/page/about-page-low.jpg" alt="pavement photo">
     <div class="about-gallery">
         <h2 class="about-heading">Co potrafię</h2>
         <figure class="photo">
@@ -156,11 +157,10 @@
 
             <p>Z poważaniem,</p>
 
-            <p>Front-end developer<br>
-                Mikołaj Lewandowski</p>
+            <p>Mikołaj Lewandowski<br>Front-end developer</p>
             <div class="photo-portfolio">
                  <figure class="photo">
-                    <img id="AboutImage" src="/img/page/mikulew-hawk-low.jpg" alt="Mikołaj Lewandowski photo">
+                    <img id="autorImage" src="/img/page/mikulew-hawk-low.jpg" alt="Mikołaj Lewandowski photo">
                     <figcaption>
                         Autor strony
                     </figcaption>
@@ -176,11 +176,18 @@
 @section('scripts')
 <script>       
     (function(){
-        var imgAbout = new Image();
-        imgAbout.src = '/img/page/mikulew-hawk.jpg';
+        var imgAutor = new Image();
+        imgAutor.src = '/img/page/mikulew-hawk.jpg';
 
+        imgAutor.onload = function() {
+            $('#autorImage').attr({src: imgAutor.src});
+        };
+        
+        var imgAbout = new Image();
+        imgAbout.src = '/img/page/about-page.jpg';
+        
         imgAbout.onload = function() {
-            $('#AboutImage').attr({src: imgAbout.src});
+            $('#aboutImage').attr({src: imgAbout.src});
         };
     })();
 </script>

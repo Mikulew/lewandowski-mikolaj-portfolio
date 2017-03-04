@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixins";
+
+#bookImage {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+    z-index: -100;
+    display: block;
+}
+
+.book-heading {
+    font: {
+        family: $playfair;
+        size: 3.8rem;
+    }
+    color: $yellow;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 50px;
+}
+
+.book-wrapper {
+    max-width: 1000px;
+    min-height: 70vh;
+    background-color: rgba(10, 10, 10, 0.7);
+    margin: 5% auto 0 auto;  
+    padding: 20px;
+    border-radius: 4px; 
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}

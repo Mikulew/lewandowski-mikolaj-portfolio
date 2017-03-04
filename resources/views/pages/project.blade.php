@@ -3,8 +3,8 @@
 @section('title', '| Projects')
 
 @section('body')
-
-    <h1 class="ui header">Moje projekty</h1>
+    <img id="projectImage" src="/img/page/project-page-low.jpg" alt="pavement photo">
+    <h1 class="project-heading">Moje projekty</h1>
         <h4 class="ui horizontal divider header">
             <i class="tags icon"></i>
             Lista projektów
@@ -41,4 +41,17 @@
 
     @endforeach
 
+@endsection
+
+
+@section('scripts')
+<script>        
+(function(){
+    var imgProject = new Image();
+    imgProject.src = '/img/page/project-page.jpg';
+
+    imgProject.onload = function() {
+        $('#projectImage').attr({src: imgProject.src});
+    };})();
+</script>
 @endsection
