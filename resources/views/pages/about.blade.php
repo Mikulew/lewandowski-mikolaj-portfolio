@@ -7,8 +7,8 @@
 @endsection
 
 @section('body')
+<img id="aboutImage" src="/img/page/about-page-low.jpg" alt="pavement photo">
 <div class="about-container">
-    <img id="aboutImage" src="/img/page/about-page-low.jpg" alt="pavement photo">
     <div class="about-gallery">
         <h2 class="about-heading">Co potrafię</h2>
         <figure class="photo">

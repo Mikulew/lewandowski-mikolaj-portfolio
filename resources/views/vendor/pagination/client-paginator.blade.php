@@ -16,7 +16,7 @@
     @foreach ($elements as $element)
         <!-- "Three Dots" Separator -->
             @if (is_string($element))
-                <a class="blog-number-disabled">{{ $element }}</a>
+                <a class="blog-number active">{{ $element }}</a>
             @endif
         <!-- Array Of Links -->
             @if (is_array($element))
