@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\URL;
 
 class AdminBooksController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
