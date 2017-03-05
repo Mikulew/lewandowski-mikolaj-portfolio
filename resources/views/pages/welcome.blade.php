@@ -26,6 +26,7 @@
                 <span class="headline column1">Prowadzenie działalności gospodarczej</span>
                 <p><span class="headline subcolumn1">Strona WWW ma znaczenie dla wizerunku firmy</span></p>
                 <p>Strony internetowe wykorzystywane w&nbsp;celu prowadzenia działalności gospodarczej mają duże znaczenie dla wizerunku firmy, co może mieć wpływ na wynik ekonomiczny działalności rynkowej, a&nbsp;ewentualne błędy na stronie internetowej mogą negatywnie oddziaływać na potencjalnych klientów</p>
+                <p>Profesjonalna prezentacja oferty firmy nieograniczonej liczbie klientów i&nbsp;kontrahentów. To właśnie sposób prezentacji oferty wyróżnia profesjonalne firmy.</p> 
             </div>
         </div>
         <div class="collumn">
@@ -36,7 +37,7 @@
         <div class="collumn">
                 <div class="head"><span class="headline column3">Strona musi być funkcjonalna</span><p><span class="headline subcolumn3">Fukcjonalność dla użytkownika</span></p></div>
                 <p>Każdy projekt strony analizowany jest pod kątem  jego funkcjonalności dla użytkownika. Dobra strona internetowa to taka na której Twój klient poczuje się jak we własnym domu.</p>
-                <p>Profesjonalna prezentacja oferty firmy nieograniczonej liczbie klientów i&nbsp; kontrahentów. To właśnie sposób prezentacji oferty wyróżnia profesjonalne firmy. Sposób przedstawienia oferty grafika, zrozumiały język oraz przejrzysta i&nbsp;intuicyjna nawigacja odróżni Twoją firmę od innych oraz wzbudzi zaufanie klientów.</p>
+                <p>Sposób przedstawienia oferty grafika, zrozumiały język oraz przejrzysta i&nbsp;intuicyjna nawigacja odróżni Twoją firmę od innych oraz wzbudzi zaufanie klientów.</p>
         </div>
         <div class="collumn">
                 <div class="head"><span class="headline column4">Oszczędność pieniędzy </span><p><span class="headline subcolumn4">Płacisz raz a strona działa latami</span></p></div>
@@ -44,9 +45,9 @@
                 <img src="/img/page/money.svg" alt="save money logo">
         </div>
         <div class="collumn">
-                <div class="head"><span class="headline column5">Pozytywny wizerunek</span><p><span class="headline subcolumn5">Tworzenie pozytywnego wizerunku firmy</span></p></div>
+                <div class="head"><span class="headline column5">Pozytywny wizerunek</span><p><span class="headline subcolumn5">Prosty sposób komunikacji z&nbsp;klientem</span></p></div>
                 <p>Profesjonalna strona internetowa świadczy o&nbsp; firmie. Dobra atmosfera wokół marki, starannie przygotowana oferta przyciąga klientów i&nbsp; wzmacnia pozycje firmy na rynku.</p>
-                <p>Prosty sposób komunikacji z&nbsp;klientem. Dzięki stronie internetowej nie tracisz czasu na spotkania czy telefony do klientów. Strona www daje możliwość umieszczenia istotnych dla klientów informacji w&nbsp;przejrzysty i&nbsp;zrozumiały sposób. </p>
+                <p>Dzięki stronie internetowej nie tracisz czasu na spotkania czy telefony do klientów. Strona www daje możliwość umieszczenia istotnych dla klientów informacji w&nbsp;przejrzysty i&nbsp;zrozumiały sposób. </p>
         </div>
         <i id="newspaperButton" class="chevron circle down icon animated fadeInUp"></i>
     </div>
