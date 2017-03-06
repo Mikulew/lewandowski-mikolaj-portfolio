@@ -23,53 +23,223 @@ img, embed, object, video {
     max-width: 100%;
 }
 
-.page-container {
-    padding-top: 40px;
-}
-
 // =NAVIGATION
 
-.nav-text {
-    font-family: $sansita;
-    letter-spacing: 1px;
-    color: $yellow;
-    font-size: 1.6rem;
-}
-
-.ui.menu {
-    font-size: 1.6rem;
-    fill: $yellow;
-}
-
-.ui.inverted.menu {
-    background: $background;
-}
-
-.ui.inverted.menu .active.item {
-    background: lighten($background, 10%);
-}
-
-.nav-bar {
-    font: {
-        family: $sansita;
-        size: 1.6rem;
-        weight: 400;
+@media only screen and (max-width: 767px) {
+    .navbar.open {
+        left: 0;
     }
-    background: $paper;
-    border: 0 solid transparent;
-    letter-spacing: 1px;
-    position: fixed;
-    z-index: 101;
-    margin: 0;
-    width: 100%;
-    min-height: 3em;
-    fill: $yellow;
+    .navbar {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: -800px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background: $background;
+        border: 0 solid transparent;
+        letter-spacing: 1px;
+        z-index: 101;
+        padding-top: 50px;
+        height: calc(100vh);
+        width: 100%;
+        transition: $animation;
+
+        & > .navlabel {
+            display: flex;
+            background: $background;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 12.5%;
+            line-height: 12.5%;
+            text-align: center;
+            min-height: 50px;
+            border-bottom: 1px solid $yellow;
+        }
+
+        & > .navlabel:first-child {
+            border-top: 1px solid $yellow;
+        }
+
+        .navlabel:hover {
+            background: lighten($background, 10%);
+        }
+
+
+        .navtext {
+            font: {
+                family: $sansita;
+                size: 2rem;
+            }
+            letter-spacing: 1px;
+            color: $yellow;
+            user-select: none;
+            transition: $animation;
+        }
+
+        .navicon {
+            display: none;
+        }
+    }
+
+    .hamburger {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 5rem;
+        height: 5rem;
+        padding: 1rem;
+        background: $background;
+        cursor: pointer;
+        margin: 0 auto;
+        z-index: 102;
+
+        & > .hamburger-panel {
+            background-color: $yellow;
+            width: 3rem;
+            height: .6rem;
+            margin-bottom: 0.6rem;
+            transition: $animation;
+        }
+
+        &.open {
+            .hamburger-1 {
+                transform: translateY(1.2rem) rotate(45deg);
+            }
+
+            .hamburger-2 {
+                opacity: 0;
+            }
+
+            .hamburger-3 {
+                transform: translateY(-1.2rem) rotate(-45deg);
+            }
+        }
+    }
 }
 
-.nav-bar:after {
-    content: '';
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background: $background;
+        border: 0 solid transparent;
+        letter-spacing: 1px;
+        z-index: 101;
+        margin: 0;
+        min-height: 50px;
+        width: 100%;
+        border-bottom: 1px solid $yellow;
+        transition: $animation;
+    }
+
+    .navlabel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        margin: auto;
+        transition: $animation;
+        height: 50px;
+    }
+
+    .navlabel:first-child {
+        margin-left: 8%;
+    }
+
+    .navlabel:last-child {
+        margin-right: 8%;
+    }
+
+    .navlabel:hover {
+        background: lighten($background, 10%);
+    }
+
+    .navtext {
+        font: {
+            family: $sansita;
+            size: 1.6rem;
+        }
+        letter-spacing: 1px;
+        color: $yellow;
+        user-select: none;
+        transition: $animation;
+        line-height: 100%;
+    }
+
+    .navicon {
+        fill: $blue;
+    }
+}
+
+@media only screen  and (min-width: 1280px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        background: $background;
+        border: 0 solid transparent;
+        letter-spacing: 1px;
+        z-index: 101;
+        margin: 0;
+        min-height: 50px;
+        width: 100%;
+        border-bottom: 1px solid $yellow;
+        transition: $animation;
+    }
+
+    .navlabel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        margin: auto;
+        transition: $animation;
+        height: 50px;
+    }
+
+    .navlabel:first-child {
+        margin-left: 8%;
+    }
+
+    .navlabel:last-child {
+        margin-right: 8%;
+    }
+
+    .navlabel:hover {
+        background: lighten($background, 10%);
+    }
+
+    .navtext {
+        font: {
+            family: $sansita;
+            size: 1.6rem;
+        }
+        letter-spacing: 1px;
+        color: $yellow;
+        user-select: none;
+        transition: $animation;
+        line-height: 100%;
+    }
+
+    .navicon {
+        fill: $blue;
+    }
 }
