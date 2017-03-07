@@ -353,12 +353,10 @@
                 @endif
         </div>   
       <div class="pusher">
-        <div class="ui fluid container">
-            <main class="page-container">
-                @yield('body')
+        <main class="page-container">
+            @yield('body')
 <!--                @include('partials._footer')-->
-            </main> 
-        </div>
+        </main> 
       </div>         
     @include('partials._javascript')
     @yield('scripts')

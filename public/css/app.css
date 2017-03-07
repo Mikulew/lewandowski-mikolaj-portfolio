@@ -344,265 +344,828 @@
   margin-bottom: 50px;
 }
 
-#contact-panel:before {
-  content: '';
-  background-color: #000000;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -100;
-  display: block;
+@media only screen and (max-width: 767px) {
+  #contact-panel:before {
+    content: '';
+    background-color: #2c3338;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  #contact-panel:after {
+    content: '';
+    background-color: #2c3338;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    z-index: 100;
+    display: block;
+  }
+  #contact-panel {
+    margin: 5rem 0;
+  }
+  #contactImage {
+    padding: 5rem 0 5rem 0;
+    position: fixed;
+    width: auto;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  .contact-wrapper {
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: rgba(10, 10, 10, 0.7);
+    margin: 7rem auto 7rem auto;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px black;
+  }
+  .contact-title {
+    margin-top: 30px;
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: #8eadB1;
+  }
+  .contact-input-container {
+    display: block;
+  }
+  .contact-input-container > .contact-input {
+    max-width: 100%;
+  }
+  .contact-label-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+  }
+  .contact-label {
+    font-family: "Sansita", sans-serif;
+    font-font-weight: 700;
+    font-size: 2.4rem;
+    color: #e4cd8a;
+    margin: 10px 20px;
+  }
+  .contact-input {
+    width: 100%;
+    font-size: 2.4rem;
+    font-family: "Roboto Slab", serif;
+    margin: 20px 0px 0px 0px;
+    border-radius: 4px;
+    position: relative;
+  }
+  .ui.form.contact-input > textarea#description {
+    width: 100%;
+    resize: none;
+  }
+  .ui.input input, .ui.form textarea {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-family: "Sansita", sans-serif;
+    font-size: 1.8rem;
+  }
+  .ui.input input.contact-input-error, .ui.form textarea.contact-input-error {
+    border: 1px #f4424e solid;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #dcddde;
+  }
+  .contact-list-error {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #f4424e;
+    margin: 20px;
+  }
+  .contact-list-error > li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 20px;
+    line-height: 2.4rem;
+  }
+  #form-control > i.icon {
+    tranistion: all 0.3s linear;
+  }
+  .icon-error {
+    color: #dcddde;
+  }
+  .contact-button {
+    font-family: "Sansita", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    width: 100%;
+    margin: 20px 0;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #638a8f;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .contact-button:hover {
+    background-color: #445f62;
+  }
 }
 
-#contactImage {
-  position: fixed;
-  width: 100%;
-  height: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -100;
-  display: block;
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+  #contactImage {
+    width: 100vw;
+    height: auto;
+  }
+  #contact-panel:after {
+    content: '';
+    display: none;
+  }
+  .contact-wrapper {
+    margin: 8rem auto 1rem auto;
+  }
 }
 
-.contact-wrapper {
-  max-width: 1000px;
-  min-height: 70vh;
-  background-color: rgba(10, 10, 10, 0.7);
-  margin: 5% auto 0 auto;
-  padding: 20px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px black;
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #contact-panel:before {
+    content: '';
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  #contact-panel {
+    width: 100%;
+    height: 100%;
+  }
+  #contactImage {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  .contact-wrapper {
+    width: 80vw;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.7);
+    margin: 12rem auto 6rem auto;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px black;
+  }
+  .contact-title {
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #8eadB1;
+  }
+  .contact-input-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-input-container > .contact-input {
+    width: 100%;
+  }
+  .contact-label-container {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .contact-label {
+    font-family: "Sansita", sans-serif;
+    font-font-weight: 700;
+    font-size: 2rem;
+    color: #e4cd8a;
+    margin: 10px 20px;
+  }
+  .contact-input {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: "Roboto Slab", serif;
+    margin: 20px 0px 0px 0px;
+    border: none;
+    border-radius: 4px;
+  }
+  .ui.form.contact-input > textarea#description {
+    width: 100%;
+    resize: none;
+  }
+  .ui.input input, .ui.form textarea {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-family: "Sansita", sans-serif;
+    font-size: 1.6rem;
+  }
+  .ui.input input.contact-input-error, .ui.form textarea.contact-input-error {
+    border: 1px #f4424e solid;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #dcddde;
+  }
+  .contact-list-error {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.6rem;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #f4424e;
+    margin: 0 20px;
+  }
+  .contact-list-error > li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 20px;
+    line-height: 1.4rem;
+  }
+  #form-control > i.icon {
+    tranistion: all 0.3s linear;
+  }
+  .icon-error {
+    color: #dcddde;
+  }
+  .contact-button {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 10px;
+    text-align: center;
+    background-color: #638a8f;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .contact-button:hover {
+    background-color: #445f62;
+  }
 }
 
-.contact-title {
-  font-family: "Sansita", sans-serif;
-  text-align: center;
-  font-size: 4.2rem;
-  font-weight: 600;
-  color: #8eadB1;
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+  #contactImage {
+    width: auto;
+    height: 100vh;
+  }
+  .contact-wrapper {
+    margin: 12rem auto 32rem auto;
+  }
 }
 
-.contact-input-container {
-  display: -webkit-box;
-  display: flex;
-  justify-content: space-around;
+@media only screen and (min-width: 1280px) {
+  #contact-panel:before {
+    content: '';
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  #contactImage {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 5rem;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  .contact-wrapper {
+    max-width: 1000px;
+    min-height: 70vh;
+    background-color: rgba(10, 10, 10, 0.7);
+    margin: 5% auto 0 auto;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px black;
+  }
+  .contact-title {
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: #8eadB1;
+  }
+  .contact-input-container {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact-input-container > .contact-input {
+    max-width: 80%;
+    margin-right: 20px;
+  }
+  .contact-label-container {
+    marign: 20px 20px 0 20px;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact-label {
+    font-family: "Sansita", sans-serif;
+    font-font-weight: 700;
+    font-size: 2rem;
+    color: #e4cd8a;
+    margin: 10px 20px;
+  }
+  #textarea-label {
+    margin-top: 30px;
+  }
+  .contact-input {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: "Roboto Slab", serif;
+    margin: 20px 0px 0px 0px;
+    border: none;
+    border-radius: 4px;
+  }
+  .ui.form.contact-input > textarea#description {
+    margin: 5px 20px 20px 20px;
+    width: 96%;
+    resize: none;
+  }
+  .ui.input input, .ui.form textarea {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-family: "Sansita", sans-serif;
+    font-size: 1.6rem;
+  }
+  .ui.input input.contact-input-error, .ui.form textarea.contact-input-error {
+    border: 1px #f4424e solid;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #dcddde;
+  }
+  .contact-list-error {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.6rem;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #f4424e;
+    margin: 0 20px;
+  }
+  .contact-list-error > li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 20px;
+    line-height: 1.4rem;
+  }
+  #form-control > i.icon {
+    tranistion: all 0.3s linear;
+  }
+  .icon-error {
+    color: #dcddde;
+  }
+  .contact-button {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding: 10px;
+    text-align: center;
+    background-color: #638a8f;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .contact-button:hover {
+    background-color: #445f62;
+  }
 }
 
-.contact-input-container > .contact-input {
-  max-width: 33%;
+@media only screen and (max-width: 767px) {
+  #login-panel:before {
+    content: '';
+    background-color: #2c3338;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  #login-panel:after {
+    content: '';
+    background-color: #2c3338;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    z-index: 100;
+    display: block;
+  }
+  #loginImage {
+    position: fixed;
+    width: auto;
+    padding: 5rem 0 5rem 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  .login-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(5, 5, 5, 0.7);
+    margin: 7rem auto 7rem auto;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px black;
+  }
+  .login-title {
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: #8eadB1;
+  }
+  .login-label-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+  }
+  .login-label {
+    font-family: "Sansita", sans-serif;
+    font-font-weight: 700;
+    font-size: 2.4rem;
+    color: #e4cd8a;
+    margin: 10px 20px;
+  }
+  .login-input {
+    width: 100%;
+    font-size: 2.4rem;
+    font-family: "Roboto Slab", serif;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 4px;
+  }
+  #login-control > .ui.input input {
+    font-family: "Sansita", sans-serif;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-size: 2.4rem;
+  }
+  .ui.input input.login-input-error {
+    border: 1px #f4424e solid;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #dcddde;
+  }
+  #login-control > i.icon {
+    tranistion: all 0.3s linear;
+  }
+  .login-list-error {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #f4424e;
+    margin: 20px;
+  }
+  .login-list-error > li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 20px;
+    line-height: 2.4rem;
+  }
+  .login-button {
+    font-family: "Sansita", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 1.5rem;
+    margin: 20px 0px;
+    background-color: #638a8f;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .login-button:hover {
+    background-color: #445f62;
+  }
 }
 
-.contact-label-container {
-  margin-top: 20px;
-  display: -webkit-box;
-  display: flex;
-  justify-content: space-around;
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+  #loginImage {
+    width: 100vw;
+    height: auto;
+  }
+  #login-panel:after {
+    content: '';
+    display: none;
+  }
+  .login-wrapper {
+    margin: 8rem auto 1rem auto;
+  }
 }
 
-.contact-label {
-  font-family: "Sansita", sans-serif;
-  font-font-weight: 700;
-  font-size: 2rem;
-  color: #e4cd8a;
-  margin: 10px 20px;
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  #login-panel:before {
+    content: '';
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  #login-panel {
+    width: 100%;
+    height: 100%;
+  }
+  #loginImage {
+    position: fixed;
+    width: auto;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  .login-wrapper {
+    width: 540px;
+    min-height: 540px;
+    background-color: rgba(10, 10, 10, 0.7);
+    margin: 12rem auto 6rem auto;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px black;
+  }
+  .login-title {
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: #8eadB1;
+  }
+  .login-input-container {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+  }
+  .login-input-container > .login-input {
+    width: 100%;
+  }
+  .login-label-container {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .login-label {
+    font-family: "Sansita", sans-serif;
+    font-font-weight: 700;
+    font-size: 2rem;
+    color: #e4cd8a;
+    margin: 10px 20px;
+  }
+  .login-input {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: "Roboto Slab", serif;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 4px;
+  }
+  .ui.input input {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-family: "Sansita", sans-serif;
+    font-size: 1.6rem;
+  }
+  .ui.input input.login-input-error {
+    border: 1px #f4424e solid;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #dcddde;
+  }
+  .login-list-error {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.6rem;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #f4424e;
+    margin: 0 20px;
+  }
+  .login-list-error > li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 20px;
+    line-height: 1.4rem;
+  }
+  #form-control > i.icon {
+    tranistion: all 0.3s linear;
+  }
+  .icon-error {
+    color: #dcddde;
+  }
+  .login-button {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: #638a8f;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .login-button:hover {
+    background-color: #445f62;
+  }
 }
 
-.contact-input {
-  width: 100%;
-  font-size: 1.6rem;
-  font-family: "Roboto Slab", serif;
-  margin: 20px 0px 0px 0px;
-  border: none;
-  border-radius: 4px;
-  position: relative;
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+  #contactImage {
+    width: 100%;
+    height: auto;
+  }
+  .contact-wrapper {
+    margin: 12rem auto 32rem auto;
+  }
 }
 
-.ui.form.contact-input > textarea#description {
-  margin: 5px 20px 20px 20px;
-  width: 96%;
-  resize: none;
-}
-
-.ui.input input, .ui.form textarea {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  font-family: "Sansita", sans-serif;
-  font-size: 1.6rem;
-}
-
-.ui.input input.contact-input-error, .ui.form textarea.contact-input-error {
-  border: 1px #f4424e solid;
-  background-color: rgba(244, 66, 78, 0.1);
-  color: #dcddde;
-}
-
-.contact-list-error {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.6rem;
-  background-color: rgba(244, 66, 78, 0.1);
-  color: #f4424e;
-  margin: 0 20px;
-}
-
-.contact-list-error > li {
-  list-style: none;
-  padding: 5px 0;
-  margin: 10px 20px;
-  line-height: 1.4rem;
-}
-
-#form-control > i.icon {
-  tranistion: all 0.3s linear;
-}
-
-.icon-error {
-  color: #dcddde;
-}
-
-.contact-button {
-  font-family: "Sansita", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  width: 30%;
-  margin-top: 10px;
-  margin-left: 35%;
-  margin-right: 35%;
-  padding: 10px;
-  text-align: center;
-  background-color: #638a8f;
-  color: #e4cd8a;
-  border: none;
-  border-radius: 4px;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.contact-button:hover {
-  background-color: #445f62;
-}
-
-#login-panel:before {
-  content: '';
-  background-color: #000000;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -100;
-  display: block;
-}
-
-#loginImage {
-  position: fixed;
-  width: 100%;
-  height: auto;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -100;
-  display: block;
-}
-
-.login-wrapper {
-  width: 540px;
-  min-height: 540px;
-  background-color: rgba(5, 5, 5, 0.7);
-  margin: 70px auto 20px auto;
-  padding: 40px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px black;
-}
-
-.login-title {
-  font-family: "Sansita", sans-serif;
-  text-align: center;
-  font-size: 4.2rem;
-  font-weight: 600;
-  padding-bottom: 30px;
-  color: #8eadB1;
-}
-
-.login-label-container {
-  width: 100%;
-  margin-top: 20px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-}
-
-.login-label {
-  font-family: "Sansita", sans-serif;
-  font-font-weight: 700;
-  font-size: 2rem;
-  color: #e4cd8a;
-  width: 100%;
-}
-
-.login-input {
-  width: 100%;
-  font-size: 1.6rem;
-  font-family: "Roboto Slab", serif;
-  margin: 20px 0px;
-  border: none;
-  border-radius: 4px;
-}
-
-.ui.input input {
-  font-family: "Sansita", sans-serif;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  font-size: 1.6rem;
-}
-
-.ui.input input.login-input-error {
-  border: 1px #f4424e solid;
-  background-color: rgba(244, 66, 78, 0.1);
-  color: #dcddde;
-}
-
-#login-control > i.icon {
-  tranistion: all 0.3s linear;
-}
-
-.login-list-error {
-  font-family: "Roboto Slab", serif;
-  font-size: 1.4rem;
-  background-color: rgba(244, 66, 78, 0.1);
-  color: #f4424e;
-  margin: 20px;
-}
-
-.login-list-error > li {
-  list-style: none;
-  padding: 5px 0;
-  margin: 10px 20px;
-  line-height: 1.4rem;
-}
-
-.login-button {
-  font-family: "Sansita", sans-serif;
-  font-size: 2rem;
-  font-weight: 600;
-  width: 100%;
-  padding: 10px;
-  margin: 20px 0px;
-  background-color: #638a8f;
-  color: #e4cd8a;
-  border: none;
-  border-radius: 4px;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-
-.login-button:hover {
-  background-color: #445f62;
+@media only screen and (min-width: 1280px) {
+  #login-panel:before {
+    content: '';
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  #loginImage {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    display: block;
+  }
+  .login-wrapper {
+    width: 540px;
+    min-height: 540px;
+    background-color: rgba(5, 5, 5, 0.7);
+    margin: 70px auto 20px auto;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px black;
+  }
+  .login-title {
+    font-family: "Sansita", sans-serif;
+    text-align: center;
+    font-size: 4.2rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color: #8eadB1;
+  }
+  .login-label-container {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .login-label {
+    font-family: "Sansita", sans-serif;
+    font-font-weight: 700;
+    font-size: 2rem;
+    color: #e4cd8a;
+    margin: 10px 20px;
+  }
+  .login-input {
+    width: 100%;
+    font-size: 1.6rem;
+    font-family: "Roboto Slab", serif;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 4px;
+  }
+  #login-control > .ui.input input {
+    font-family: "Sansita", sans-serif;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    font-size: 1.6rem;
+  }
+  .ui.input input.login-input-error {
+    border: 1px #f4424e solid;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #dcddde;
+  }
+  #login-control > i.icon {
+    tranistion: all 0.3s linear;
+  }
+  .login-list-error {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.4rem;
+    background-color: rgba(244, 66, 78, 0.1);
+    color: #f4424e;
+    margin: 20px;
+  }
+  .login-list-error > li {
+    list-style: none;
+    padding: 5px 0;
+    margin: 10px 20px;
+    line-height: 1.4rem;
+  }
+  .login-button {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    background-color: #638a8f;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .login-button:hover {
+    background-color: #445f62;
+  }
 }
 
 #projectImage {
@@ -650,11 +1213,12 @@ img, embed, object, video {
 @media only screen and (max-width: 767px) {
   .navbar.open {
     left: 0;
+    z-index: 200;
   }
   .navbar {
     display: -webkit-box;
     display: flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -800px;
     -webkit-box-pack: center;
@@ -667,7 +1231,7 @@ img, embed, object, video {
     letter-spacing: 1px;
     z-index: 101;
     padding-top: 50px;
-    height: calc(100vh);
+    height: 100vh;
     width: 100%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -684,8 +1248,9 @@ img, embed, object, video {
     height: 12.5%;
     line-height: 12.5%;
     text-align: center;
-    min-height: 50px;
+    min-height: 20px;
     border-bottom: 1px solid #e4cd8a;
+    z-index: 200;
   }
   .navbar > .navlabel:first-child {
     border-top: 1px solid #e4cd8a;
@@ -704,6 +1269,7 @@ img, embed, object, video {
     user-select: none;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    z-index: 200;
   }
   .navbar .navicon {
     display: none;
@@ -718,7 +1284,7 @@ img, embed, object, video {
     background: #2c3338;
     cursor: pointer;
     margin: 0 auto;
-    z-index: 102;
+    z-index: 2300;
   }
   .hamburger > .hamburger-panel {
     background-color: #e4cd8a;
@@ -738,6 +1304,16 @@ img, embed, object, video {
   .hamburger.open .hamburger-3 {
     -webkit-transform: translateY(-1.2rem) rotate(-45deg);
     transform: translateY(-1.2rem) rotate(-45deg);
+  }
+  .hamburger::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5rem;
+    background-color: #2c3338;
+    z-index: -100;
   }
 }
 
@@ -761,7 +1337,7 @@ img, embed, object, video {
     z-index: 101;
     margin: 0;
     min-height: 50px;
-    width: 100%;
+    width: 100vw;
     border-bottom: 1px solid #e4cd8a;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -777,7 +1353,7 @@ img, embed, object, video {
     margin: auto;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
-    height: 50px;
+    min-height: 50px;
   }
   .navlabel:first-child {
     margin-left: 8%;

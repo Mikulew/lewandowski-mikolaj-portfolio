@@ -1,125 +1,437 @@
 @import "variables";
 @import "mixins";
 
-#login-panel:before {
-    content: '';
-    background-color: $black;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    z-index: -100;
-    display: block;
-}
-
-#loginImage {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    z-index: -100;
-    display: block;
-}
-
-.login-wrapper {
-  width: 540px;
-  min-height: 540px;
-  background-color: rgba(5, 5, 5, 0.7);
-  margin: 70px auto 20px auto;  
-  padding: 40px;
-  border-radius: 4px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-}
-
-.login-title {
-    font-family: $sansita;
-    text-align: center;
-    font-size: 4.2rem;
-    font-weight: 600;    
-    padding-bottom: 30px;   
-    color: $blue;
-}
-
-.login-label-container {
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.login-label {
-    font: {
-        family: $sansita;
-        font-weight: 700;
-        size: 2rem;
+@media only screen and (max-width: 767px) {
+    #login-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
     }
-    color: $yellow;
-    width: 100%;
-}
-
-.login-input {
-    width: 100%;
-    font-size: 1.6rem;
-    font-family: $roboto;
-    margin: 20px 0px;
-    border: none;
-    border-radius: 4px;
-}
-
-.ui.input input {
-    font-family: $sansita;
-    transition: $animation;
-    font-size: 1.6rem;
-}
-
-.ui.input input.login-input-error {
-    border: 1px $red solid;
-    background-color: rgba(244, 66, 78, .1);
-    color: $fontColor;
-}
-
-#login-control > i.icon {
-    tranistion: $animation;
-}
-
-.login-list-error {
-    font: {
-        family: $roboto;
-        size: 1.4rem;
-    }
-    background-color: rgba(244, 66, 78, .1);
-    color: $red;
-    margin: 20px;
     
-    & > li {
-        list-style: none;
-        padding: 5px 0;
+    #login-panel:after {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
+    }
+
+    #loginImage {
+        position: fixed;
+        width: auto;
+        padding: 5rem 0 5rem 0;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .login-wrapper {
+      width: 100%;
+      min-height: 100vh;
+      background-color: rgba(5, 5, 5, 0.7);
+      margin: 7rem auto 7rem auto;  
+      padding: 20px;
+      border-radius: 4px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+
+    .login-title {
+        font-family: $sansita;
+        text-align: center;
+        font-size: 4.2rem;
+        font-weight: 600;    
+        padding-bottom: 30px;   
+        color: $blue;
+    }
+
+    .login-label-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .login-label {
+        font: {
+            family: $sansita;
+            font-weight: 700;
+            size: 2.4rem;
+        }
+        color: $yellow;
         margin: 10px 20px;
-        line-height: 1.4rem;
-    }    
+    }
+
+    .login-input {
+        width: 100%;
+        font-size: 2.4rem;
+        font-family: $roboto;
+        margin: 20px 0px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #login-control > .ui.input input {
+        font-family: $sansita;
+        transition: $animation;
+        font-size: 2.4rem;
+    }
+
+    .ui.input input.login-input-error {
+        border: 1px $red solid;
+        background-color: rgba(244, 66, 78, .1);
+        color: $fontColor;
+    }
+
+    #login-control > i.icon {
+        tranistion: $animation;
+    }
+
+    .login-list-error {
+        font: {
+            family: $roboto;
+            size: 2rem;
+        }
+        background-color: rgba(244, 66, 78, .1);
+        color: $red;
+        margin: 20px;
+
+        & > li {
+            list-style: none;
+            padding: 5px 0;
+            margin: 10px 20px;
+            line-height: 2.4rem;
+        }    
+    }
+
+     .login-button {
+         font: {
+             family: $sansita;
+             size: 2.6rem;
+             weight: 600;
+         }
+        width: 100%;
+        padding: 1.5rem;
+        margin: 20px 0px;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             background-color: darken($blue, 30%);
+         }
+      }
 }
 
- .login-button {
-     font: {
-         family: $sansita;
-         size: 2rem;
-         weight: 600;
-     }
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0px;
-    background-color: darken($blue, 15%);
-    color: $yellow;
-    border: none; 
-    border-radius: 4px;
-    transition: $animation;
-     
-     &:hover {
-         background-color: darken($blue, 30%);
-     }
-  }
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+    #loginImage { 
+        width: 100vw;
+        height: auto;
+    }
+    
+    #login-panel:after {
+        content: '';
+        display: none;
+    }
+    .login-wrapper {
+        margin: 8rem auto 1rem auto;
+    }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #login-panel:before {
+        content: '';
+        background-color: $black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #login-panel {
+        width: 100%;
+        height: 100%;
+    }
+
+    #loginImage { 
+        position: fixed;
+        width: auto;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .login-wrapper {
+        width: 540px;
+        min-height: 540px;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 12rem auto 6rem auto;  
+        padding: 40px;
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+    }
+
+    .login-title {
+        font-family: $sansita;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 600; 
+        color: $blue;
+    }
+
+    .login-input-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .login-input-container > .login-input {
+        width: 100%;
+    }
+
+    .login-label-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .login-label {
+        font: {
+            family: $sansita;
+            font-weight: 700;
+            size: 2rem;
+        }
+        color: $yellow;
+        margin: 10px 20px;
+    }
+
+    .login-input {
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: $roboto;
+        margin: 20px 0px;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .ui.input input {
+        transition: $animation;
+        font-family: $sansita;
+        font-size: 1.6rem;
+    }
+
+    .ui.input input.login-input-error {
+        border: 1px $red solid;
+        background-color: rgba(244, 66, 78, .1);
+        color: $fontColor;
+    }
+
+    .login-list-error {
+        font: {
+            family: $roboto;
+            size: 1.6rem;
+        }
+        background-color: rgba(244, 66, 78, .1);
+        color: $red;
+        margin: 0 20px;
+
+        & > li {
+            list-style: none;
+            padding: 5px 0;
+            margin: 10px 20px;
+            line-height: 1.4rem;
+        }
+    }
+
+    #form-control > i.icon {
+        tranistion: $animation;
+    }
+
+    .icon-error {
+        color: $fontColor;
+    }
+
+     .login-button {
+        font: {
+             family: $sansita;
+             size: 2rem;
+             weight: 600;
+         }
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0px;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             background-color: darken($blue, 30%);
+         }
+      }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+    #contactImage { 
+        width: 100%;
+        height: auto;
+    }
+    
+    .contact-wrapper {
+        margin: 12rem auto 32rem auto;  
+    }
+}
+
+@media only screen  and (min-width: 1280px) { 
+
+    #login-panel:before {
+        content: '';
+        background-color: $black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    #loginImage {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .login-wrapper {
+      width: 540px;
+      min-height: 540px;
+      background-color: rgba(5, 5, 5, 0.7);
+      margin: 70px auto 20px auto;  
+      padding: 40px;
+      border-radius: 4px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    }
+
+    .login-title {
+        font-family: $sansita;
+        text-align: center;
+        font-size: 4.2rem;
+        font-weight: 600;    
+        padding-bottom: 30px;   
+        color: $blue;
+    }
+
+    .login-label-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .login-label {
+        font: {
+            family: $sansita;
+            font-weight: 700;
+            size: 2rem;
+        }
+        color: $yellow;
+        margin: 10px 20px;
+    }
+
+    .login-input {
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: $roboto;
+        margin: 20px 0px;
+        border: none;
+        border-radius: 4px;
+    }
+
+    #login-control > .ui.input input {
+        font-family: $sansita;
+        transition: $animation;
+        font-size: 1.6rem;
+    }
+
+    .ui.input input.login-input-error {
+        border: 1px $red solid;
+        background-color: rgba(244, 66, 78, .1);
+        color: $fontColor;
+    }
+
+    #login-control > i.icon {
+        tranistion: $animation;
+    }
+
+    .login-list-error {
+        font: {
+            family: $roboto;
+            size: 1.4rem;
+        }
+        background-color: rgba(244, 66, 78, .1);
+        color: $red;
+        margin: 20px;
+
+        & > li {
+            list-style: none;
+            padding: 5px 0;
+            margin: 10px 20px;
+            line-height: 1.4rem;
+        }    
+    }
+
+     .login-button {
+         font: {
+             family: $sansita;
+             size: 2rem;
+             weight: 600;
+         }
+        width: 100%;
+        padding: 10px;
+        margin: 20px 0px;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             background-color: darken($blue, 30%);
+         }
+      }
+}

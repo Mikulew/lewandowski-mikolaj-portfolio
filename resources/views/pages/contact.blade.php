@@ -3,6 +3,7 @@
 @section('title', '| Contact')
 
 @section('body')
+
 <div id="contact-panel">
               @if (count($errors) > 0)
                 <div class="ui error message">
@@ -16,32 +17,34 @@
                       </ul>
                 </div>
             @endif
+   <img id="contactImage" src="/img/page/contact-page-low.jpg">
    <div class="contact-wrapper">
-      <img id="contactImage" src="/img/page/contact-page-low.jpg">
        <p class="contact-title">Formularz kontaktowy</p>
         {!! Form::open(['route' => 'pages.contact.store', 'id' => 'contact-form']) !!}
-             <div class="contact-label-container">
-                {!! Form::label('name', 'Imię i nazwisko:', ['class' => 'contact-label']) !!}
-                {!! Form::label('email', 'Email:', ['class' => 'contact-label']) !!}
-                {!! Form::label('phone', 'Numer telefonu:', ['class' => 'contact-label']) !!}
-             </div>
               <div class="contact-input-container">
-                    <div class="ui left icon input contact-input">
-                        {!! Form::text('name', null, ['placeholder' => 'Jan Kowalski', 'style' => 'margin: 0 20px;', 'data-error' => 'Podaj imię i nazwisko. Minimum: 3 znaki, maximum: 255.']) !!}
-                        <i class="user icon" style="margin-left: 20px;"></i>
+                  <div class="contact-label-container">
+                       {!! Form::label('name', 'Imię i nazwisko:', ['class' => 'contact-label']) !!}
                    </div>
-
-                   <div class="ui left icon input contact-input">
-                        {!! Form::email('email', null, ['placeholder' => 'kowalski@gmail.com', 'style' => 'margin: 0 20px;', 'data-error' => 'Podaj poprawny adres e-mail. Musi posiadać znak @']) !!}
-                        <i class="at icon" style="margin-left: 20px;"></i>
-                    </div>
-
                     <div class="ui left icon input contact-input">
-                        {!! Form::tel('phone', null, ['placeholder' => '888 444 777', 'style' => 'margin: 0 20px;', 'data-error' => 'Podaj poprawny numer telefonu. Same cyfry, minumum: 9.']) !!}
-                        <i class="call icon" style="margin-left: 20px;"></i>
+                        {!! Form::text('name', null, ['placeholder' => 'Jan Kowalski', 'data-error' => 'Podaj imię i nazwisko. Minimum: 3 znaki, maximum: 255.']) !!}
+                        <i class="user icon"></i>
+                   </div>
+                   <div class="contact-label-container">
+                        {!! Form::label('email', 'Email:', ['class' => 'contact-label']) !!}
+                    </div>
+                   <div class="ui left icon input contact-input">
+                        {!! Form::email('email', null, ['placeholder' => 'kowalski@gmail.com', 'data-error' => 'Podaj poprawny adres e-mail. Musi posiadać znak @']) !!}
+                        <i class="at icon"></i>
+                    </div>
+                    <div class="contact-label-container">
+                        {!! Form::label('phone', 'Numer telefonu:', ['class' => 'contact-label']) !!}
+                    </div>
+                    <div class="ui left icon input contact-input">
+                        {!! Form::tel('phone', null, ['placeholder' => '888 444 777', 'data-error' => 'Podaj poprawny numer telefonu. Same cyfry, minumum: 9.']) !!}
+                        <i class="call icon"></i>
                     </div>
                 </div>
-                <div class="contact-label-container">
+                <div class="contact-label-container" id="textarea-label">
                     {!! Form::label('description', 'Wiadomość:', ['class' => 'contact-label']) !!}
                 </div>
                 <div class="ui form contact-input">
