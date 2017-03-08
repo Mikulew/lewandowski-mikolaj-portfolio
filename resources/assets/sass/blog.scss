@@ -1,128 +1,484 @@
 @import "variables";
 @import "mixins";
 
-#blogImage {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    z-index: -100;
-    display: block;
-}
-
-.blog-heading {
-    font: {
-        family: $playfair;
-        size: 3.8rem;
+@media only screen and (max-width: 767px) {
+    
+    .blog-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
     }
-    text-align: center;
-    padding-top: 50px;
-    margin-bottom: 50px;
-}
-// =BLOG
-
-.blog-title {
-    font: {
-        family: $playfair;
-        size: 2.6rem;
-        weight: 700;
+    
+    .blog-panel:after {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
     }
-    line-height: 6rem;
-    height: 6rem;
-    color: $background;
-    margin: 60px 0 0 0;
-    padding: 0 0 0 3rem;
-    background: $yellow;
-    border-radius: 2rem 2rem 0 0;
-}
-
-.blog-segment {
-    font: {
-        family: $roboto;
-        size: 1.8rem;
+    
+    .blog-panel {
+        margin: 5rem 0;
     }
-    line-height: 2.2rem;
-    color: $background;
-    top: 0;
-    bottom: 0;
-    background: $paper;
-    border-radius: 0 0 2rem 2rem;
-    position: relative;
-    margin: 0 -1px;
-    padding: 3rem 3rem 5rem 3rem;
-    width: calc(100% + 2px);
-    max-width: calc(100% + 2px);
-    box-shadow: none;
-    border: 1px solid #D4D4D5;
-}
-
-.blog-paragraph {
-    margin-bottom: 50px;
-}
-
-.blog-button {
-    font: {
-        family: $sansita;
-        size: 2rem; 
-        weight: 600;
-     }
-    width: 30%;
-    margin-top: 50px;
-    margin-right: 70%;
-    padding: 10px 30px;
-    text-align: center;
-    background-color: darken($blue, 15%);
-    color: $yellow;
-    border: none; 
-    border-radius: 4px;
-    transition: $animation;
-     
-     &:hover {
-         background-color: darken($blue, 30%);
-         color: $yellow;
-         
-     }
-}
-
-// =PAGINATION
-
-.blog-pagination {
-    display: flex;
-    justify-content: center;
-    margin: 30px auto;
-}
-
-.blog-number {
-    font: {
-        family: $playfair;
-        size: 2.4rem;
-        weight: 600;
+    
+    #blogImage {
+        background-color: $background;
+        padding: 5rem 0 5rem 0;
+        position: fixed;
+        width: auto;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
     }
-    line-height: 2.4rem;
-    margin: 0 5px;
-    color: $yellow;
-    background: $background;
-    padding: 15px;
-    border-radius: 4px;
+    
+    .blog-wrapper {
+        width: 100%;
+        height: 100%;
+        margin: 7rem auto 7rem auto;  
+        padding: 20px;
+        border-radius: 4px; 
+    }
+
+    .blog-heading {
+        font: {
+            family: $playfair;
+            size: 3.6rem;
+        }
+        text-align: center;
+        margin: 10rem auto 0 auto;
+        color: $blue;
+    }
+    // =BLOG
+
+    .blog-title {
+        font: {
+            family: $playfair;
+            size: 2.6rem;
+            weight: 700;
+        }
+        line-height: 3rem;
+        min-height: 4rem;
+        color: $background;
+        margin: 60px 0 0 0;
+        padding: 1rem 3rem;
+        background: $yellow;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    .blog-segment {
+        font: {
+            family: $roboto;
+            size: 2.4rem;
+        }
+        line-height: 2.6rem;
+        color: $background;
+        top: 0;
+        bottom: 0;
+        background: $paper;
+        border-radius: 0 0 2rem 2rem;
+        position: relative;
+        margin: 0 -1px;
+        padding: 3rem 3rem 5rem 3rem;
+        width: calc(100% + 2px);
+        max-width: calc(100% + 2px);
+        box-shadow: none;
+        border: 1px solid #D4D4D5;
+    }
+
+    .blog-paragraph {
+        margin-bottom: 3rem;
+    }
+
+    .blog-button {
+        font: {
+            family: $sansita;
+            size: 3rem; 
+            weight: 600;
+         }
+        display: inline-block;
+        cursor: pointer;
+        width: 100%;
+        padding: 1.5rem;
+        text-align: center;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             background-color: darken($blue, 30%);
+             color: $yellow;
+
+         }
+    }
+    
+    // pagination
+    .blog-pagination-wrapper {
+        margin: 0 auto 10rem auto;
+    }
+    
+    .blog-pagination {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .blog-number {
+        font: {
+            family: $playfair;
+            size: 3rem;
+            weight: 600;
+        }
+        line-height: 3rem;
+        margin: 1.5rem;
+        color: $yellow;
+        background: $background;
+        padding: 2rem;
+        border-radius: 4px;
+    }
+
+    .blog-number:hover {
+        color: $paper;
+        background: darken($blue, 20%);
+        padding: 2rem;
+        border-radius: 4px;
+        transition: $animation;
+    }
+
+    .blog-number.active {
+        color: $yellow;
+        background: darken($blue, 20%);
+    }
+
+    .blog-number.active:hover {
+        color: $yellow;
+        background: darken($blue, 20%);
+    }
 }
 
-.blog-number:hover {
-    color: $paper;
-    background: darken($blue, 20%);
-    padding: 15px;
-    border-radius: 4px;
-    transition: $animation;
+@media only screen and (orientation: landscape) and (max-width: 767px) {
+    #blogImage { 
+        width: 100vw;
+        height: auto;
+        background-color: $background;
+    }
+    
+    .blog-panel:after {
+        content: '';
+        display: none;
+    }
+    .blog-wrapper {
+        margin: 8rem auto 1rem auto;
+    }    
+    .blog-pagination-wrapper {
+        margin: 3rem auto;
+    }
 }
 
-.blog-number.active {
-    color: $yellow;
-    background: darken($blue, 20%);
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .blog-panel {
+        margin: 5rem 0;
+    }
+    
+    #blogImage {
+        position: fixed;
+        width: auto;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    .blog-wrapper {
+        width: 90%;
+        height: 90%;
+        margin: 7rem auto 7rem auto;  
+        padding: 20px;
+        border-radius: 4px; 
+    }
+
+    .blog-heading {
+        font: {
+            family: $playfair;
+            size: 4rem;
+        }
+        text-align: center;
+        margin: 14rem auto 0 auto;
+        color: $blue;
+    }
+    // =BLOG
+
+    .blog-title {
+        font: {
+            family: $playfair;
+            size: 2.6rem;
+            weight: 700;
+        }
+        line-height: 3rem;
+        min-height: 4rem;
+        color: $background;
+        margin: 60px 0 0 0;
+        padding: 1rem 3rem;
+        background: $yellow;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    .blog-segment {
+        font: {
+            family: $roboto;
+            size: 2.4rem;
+        }
+        line-height: 2.6rem;
+        color: $background;
+        top: 0;
+        bottom: 0;
+        background: $paper;
+        border-radius: 0 0 2rem 2rem;
+        position: relative;
+        margin: 0 -1px;
+        padding: 3rem 3rem 5rem 3rem;
+        width: calc(100% + 2px);
+        max-width: calc(100% + 2px);
+        box-shadow: none;
+        border: 1px solid #D4D4D5;
+    }
+
+    .blog-paragraph {
+        margin-bottom: 3rem;
+    }
+
+    .blog-button {
+        font: {
+            family: $sansita;
+            size: 3rem; 
+            weight: 600;
+         }
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+        padding: 1.5rem;
+        text-align: center;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             background-color: darken($blue, 30%);
+             color: $yellow;
+
+         }
+    }
+    
+    // pagination
+    .blog-pagination-wrapper {
+        margin: 0 auto 10rem auto;
+    }
+    
+    .blog-pagination {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .blog-number {
+        font: {
+            family: $playfair;
+            size: 3rem;
+            weight: 600;
+        }
+        line-height: 3rem;
+        margin: 1.5rem;
+        color: $yellow;
+        background: $background;
+        padding: 2rem;
+        border-radius: 4px;
+    }
+
+    .blog-number:hover {
+        color: $paper;
+        background: darken($blue, 20%);
+        padding: 2rem;
+        border-radius: 4px;
+        transition: $animation;
+    }
+
+    .blog-number.active {
+        color: $yellow;
+        background: darken($blue, 20%);
+    }
+
+    .blog-number.active:hover {
+        color: $yellow;
+        background: darken($blue, 20%);
+    }
 }
 
-.blog-number.active:hover {
-    color: $yellow;
-    background: darken($blue, 20%);
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+    #blogImage {
+        background-color: $background;
+        padding: 0;
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen  and (min-width: 1280px) {
+    #blogImage {
+        background-color: $background;
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+   
+    .blog-wrapper {
+        width: 70%;
+        height: 100%;
+        margin: auto;  
+        padding: 20px;
+        border-radius: 4px; 
+    }
+
+    .blog-heading {
+        font: {
+            family: $playfair;
+            size: 4rem;
+        }
+        text-align: center;
+        padding-top: 10rem;
+        margin-bottom: 4rem;
+        color: $blue;
+    }
+    // =BLOG
+
+    .blog-title {
+        font: {
+            family: $playfair;
+            size: 2.6rem;
+            weight: 700;
+        }
+        line-height: 6rem;
+        height: 6rem;
+        color: $background;
+        margin: 60px 0 0 0;
+        padding: 0 0 0 3rem;
+        background: $yellow;
+        border-radius: 2rem 2rem 0 0;
+    }
+
+    .blog-segment {
+        font: {
+            family: $roboto;
+            size: 1.8rem;
+        }
+        line-height: 2.2rem;
+        color: $background;
+        top: 0;
+        bottom: 0;
+        background: $paper;
+        border-radius: 0 0 2rem 2rem;
+        position: relative;
+        margin: 0 -1px;
+        padding: 3rem 3rem 5rem 3rem;
+        width: calc(100% + 2px);
+        max-width: calc(100% + 2px);
+        box-shadow: none;
+        border: 1px solid #D4D4D5;
+    }
+
+    .blog-paragraph {
+        margin-bottom: 50px;
+    }
+
+    .blog-button {
+        font: {
+            family: $sansita;
+            size: 2rem; 
+            weight: 600;
+         }
+        width: 30%;
+        margin-top: 50px;
+        margin-right: 70%;
+        padding: 10px 30px;
+        text-align: center;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             background-color: darken($blue, 30%);
+             color: $yellow;
+
+         }
+    }
+
+    // =PAGINATION
+
+    .blog-pagination {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
+    }
+
+    .blog-number {
+        font: {
+            family: $playfair;
+            size: 2.4rem;
+            weight: 600;
+        }
+        line-height: 2.4rem;
+        margin: 0 5px;
+        color: $yellow;
+        background: $background;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .blog-number:hover {
+        color: $paper;
+        background: darken($blue, 20%);
+        padding: 15px;
+        border-radius: 4px;
+        transition: $animation;
+    }
+
+    .blog-number.active {
+        color: $yellow;
+        background: darken($blue, 20%);
+    }
+
+    .blog-number.active:hover {
+        color: $yellow;
+        background: darken($blue, 20%);
+    }
 }

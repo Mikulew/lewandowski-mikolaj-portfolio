@@ -8,9 +8,8 @@
 
 @section('body')
 <img id="aboutImage" src="/img/page/about-page-low.jpg" alt="pavement photo">
-<div class="about-container">
+<div class="about-panel">
     <div class="about-gallery">
-        <h2 class="about-heading">Co potrafię</h2>
         <figure class="photo">
             <img src="/img/technology/html5.svg" alt="HTML5 logo">
             <figcaption>
@@ -126,12 +125,13 @@
             </figcaption>
         </figure>
     </div>
+    <h2 class="about-heading">Co potrafię</h2>
     <div class="about-letter">
         <div class="letter">
             <p>Drogi użytkowniku,</p>
 
             <p>Od ponad roku zajmuje się front-endem. Droga do zdobycia wiedzy i&nbsp;umiejętności, które już posiadam, nie była prosta.
-            Z gąszczu informacji musiałem wybrać to, co jest dla front-end developera najistotniejsze.
+            Z&nbsp;gąszczu informacji musiałem wybrać to, co jest dla front-end developera najistotniejsze.
             Moje poszukiwania zaowocowały ukończeniem kursu full-stack &bdquo;Od zera do WebDeva&rdquo;.
             Wszytko to, by zgłębić tajniki serwerów dynamicznych stron i&nbsp;by jeszcze lepiej zrozumieć strukturę tych stron.</p>
 
@@ -162,7 +162,7 @@
                  <figure class="photo">
                     <img id="autorImage" src="/img/page/mikulew-hawk-low.jpg" alt="Mikołaj Lewandowski photo">
                     <figcaption>
-                        Autor strony
+                        Autor&nbsp;strony
                     </figcaption>
                 </figure>
             </div>

@@ -13,10 +13,10 @@ html {
 }
 
 body {
-    background-color: $background;
     color: $fontColor;
     font-smoothing: antialiased;
     font-size: 1.6rem;
+    background: $background;
 }
 
 img, embed, object, video {
