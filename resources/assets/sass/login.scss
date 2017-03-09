@@ -16,21 +16,14 @@
     
     #login-panel:after {
         content: '';
-        background-color: $background;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 5rem;
-        width: 100%;
-        z-index: 100;
-        display: block;
+        display: none;
     }
 
     #loginImage {
         position: fixed;
-        width: auto;
+        width: 100vw;
+        height: auto;
         padding: 5rem 0 5rem 0;
-        height: 100%;
         left: 0;
         right: 0;
         top: 0; 
@@ -43,7 +36,7 @@
       width: 100%;
       min-height: 100vh;
       background-color: rgba(5, 5, 5, 0.7);
-      margin: 7rem auto 7rem auto;  
+      margin: 8rem auto 1rem auto;
       padding: 20px;
       border-radius: 4px; 
       box-shadow: 0 0 10px rgba(0, 0, 0, 1);
@@ -140,18 +133,25 @@
       }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 767px) {
+@media only screen and (orientation: portrait) and (max-width: 767px) {
     #loginImage { 
-        width: 100vw;
-        height: auto;
+        width: auto;     
+        height: 100%;
     }
     
     #login-panel:after {
         content: '';
-        display: none;
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
     }
     .login-wrapper {
-        margin: 8rem auto 1rem auto;
+        margin: 7rem auto 7rem auto;  
     }
 }
 

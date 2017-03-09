@@ -16,14 +16,7 @@
     
     #contact-panel:after {
         content: '';
-        background-color: $background;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 5rem;
-        width: 100%;
-        z-index: 100;
-        display: block;
+        display: none;
     }
     
     #contact-panel {
@@ -33,8 +26,8 @@
     #contactImage { 
         padding: 5rem 0 5rem 0;
         position: fixed;
-        width: auto;
-        height: 100%;
+        width: 100vw;
+        height: auto;
         left: 0;
         right: 0;
         top: 0; 
@@ -47,7 +40,7 @@
         min-width: 100%;
         min-height: 100vh;
         background-color: rgba(10, 10, 10, 0.7);
-        margin: 7rem auto 7rem auto;  
+        margin: 8rem auto 1rem auto; 
         padding: 20px;
         border-radius: 4px; 
         box-shadow: 0 0 10px rgba(0,0,0,1);
@@ -161,18 +154,25 @@
       }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 767px) {
+@media only screen and (orientation: portrait) and (max-width: 767px) {
     #contactImage { 
-        width: 100vw;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
     
     #contact-panel:after {
         content: '';
-        display: none;
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
     }
     .contact-wrapper {
-        margin: 8rem auto 1rem auto;
+        margin: 7rem auto 7rem auto; 
     }
 }
 

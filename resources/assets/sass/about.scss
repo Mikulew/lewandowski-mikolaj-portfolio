@@ -12,14 +12,7 @@
     
     .about-panel:after {
         content: '';
-        background-color: $background;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 5rem;
-        width: 100%;
-        z-index: 100;
-        display: block;
+        display: none;
     }
     
     .about-panel {
@@ -28,8 +21,8 @@
 
     #aboutImage { 
         position: fixed;
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
         left: 0;
         right: 0;
         top: 0; 
@@ -41,11 +34,18 @@
 
     .about-heading {
         font: {
-            family: $amatic;
+            family: $sansita;
             size: 4.2rem;
         }
         color: $yellow;
         text-align: center;
+        width: 90%;
+        margin: 2rem auto;
+        background-color: rgba(10, 10, 10, 0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,1);   
+        border-radius: 2rem;
+        padding: 1rem;
+        color: $blue;
     }
 
     // =GALLERY
@@ -124,7 +124,7 @@
         margin: 2rem auto;
         width: 100%;
         height: 100%;
-        padding: 1.5rem;
+        padding: 3rem;   
         position: relative;
         width: 80%;
     }
@@ -142,7 +142,7 @@
         box-shadow: 0 0 8px rgba(0,0,0,.2);
         left: -1;
         top: 4px;
-        transform: rotate(-2deg);
+        transform: rotate(-4deg);
     }
 
     .letter:after {
@@ -150,7 +150,7 @@
         box-shadow: 0 0 3px rgba(0,0,0,.2);
         right: -5px;
         top: 1px;
-        transform: rotate(1deg);
+        transform: rotate(2deg);
     }
 
     .letter > p, .letter > ul > li {
@@ -213,43 +213,34 @@
     }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 767px) {
+@media only screen and (orientation: portrait) and (max-width: 767px) {
     #aboutImage { 
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
     }
     
     .about-panel:after {
         content: '';
-        display: none;
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
     }
     
     .letter {
-        padding: 3rem;    
-    }
-    
-    .letter:before, .letter:after {
-        content: '';
-        height: 98%;
-        position: absolute;
-        width: 85%;
-        z-index: -1;
+        padding: 1.5rem;
     }
 
     .letter:before {
-        background: darken($paper, 10%);
-        box-shadow: 0 0 8px rgba(0,0,0,.2);
-        left: -1;
-        top: 4px;
-        transform: rotate(-4deg);
+        transform: rotate(-2deg);
     }
 
     .letter:after {
-        background: darken($paper, 20%);
-        box-shadow: 0 0 3px rgba(0,0,0,.2);
-        right: -5px;
-        top: 1px;
-        transform: rotate(2deg);
+        transform: rotate(1deg);
     }
 }
 
@@ -279,11 +270,17 @@
 
     .about-heading {
         font: {
-            family: $amatic;
+            family: $sansita;
             size: 4.2rem;
         }
-        color: $yellow;
+        width: 95%;
+        margin: 1rem auto;
         text-align: center;
+        background-color: rgba(10, 10, 10, 0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,1);   
+        border-radius: 2rem;
+        padding: 1rem;
+        color: $blue;
     }
 
     // =GALLERY
@@ -481,15 +478,21 @@
 
     .about-heading {
         font: {
-            family: $amatic;
+            family: $sansita;
             size: 4rem;
         }
-        color: $yellow;
+        width: 35%;
         text-align: center;
         position: absolute;
-        top: 8%;
+        background-color: rgba(10, 10, 10, 0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,1);   
+        border-radius: 2rem;
+        padding: 1rem;
+        top: 10rem;
         left: 25%;
-        transform: translateX(-25%);
+        transform: translateX(-50%);
+        color: $blue;
+        z-index: -2;
     }
 
     // =GALLERY
@@ -497,7 +500,7 @@
     .about-gallery {
         width: 50%;
         max-height: 100%;
-        margin-top: 16rem;
+        margin-top: 18rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -564,7 +567,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         margin: 12rem auto 0 auto;
         width: 90%;
-        min-height: 300px;
+        min-height: 30rem;
         padding: 4rem;
         position: relative;
     }

@@ -305,7 +305,7 @@
                     <a href="{{route('logout')}}" class="navlabel">
                         <div class="navicon">
                             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="17.27px" height="19.414px" viewBox="0 0 17.27 19.414" enable-background="new 0 0 17.27 19.414" xml:space="preserve">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.847,11.6c-0.077,0-0.14,0-0.204,0c-1.175,0-3.568,0-4.743-0.001
                                 c-0.473,0-0.72-0.242-0.721-0.707c-0.001-0.786-0.001-1.572,0-2.357C6.18,8.06,6.425,7.822,6.91,7.822c1.169,0,3.556,0,4.727,0
@@ -330,7 +330,7 @@
                         <div class="navicon">
                             <?xml version="1.0" encoding="utf-8"?>
                             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="17.27px" height="19.414px" viewBox="0 0 17.27 19.414" enable-background="new 0 0 17.27 19.414" xml:space="preserve">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.668,11.6c-0.077,0-0.14,0-0.204,0c-1.175,0-3.568,0-4.743-0.001
                                 c-0.473,0-0.72-0.242-0.721-0.707C0,10.106,0,9.321,0,8.535C0.001,8.06,0.247,7.822,0.731,7.822c1.169,0,3.556,0,4.727,0
@@ -352,12 +352,10 @@
                     </a>
                 @endif
         </div>   
-      <div class="pusher">
         <main class="page-container">
             @yield('body')
 <!--                @include('partials._footer')-->
         </main> 
-      </div>         
     @include('partials._javascript')
     @yield('scripts')
   </body>
