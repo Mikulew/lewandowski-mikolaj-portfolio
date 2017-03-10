@@ -14,15 +14,13 @@
             <div class="navbar">
                 <a href="/" class="{{ Request::is('/') ? 'active' : '' }} navlabel">
                     <div class="navicon">
-                        <?xml version="1.0" ?><svg baseProfile="tiny" height="24px" id="Layer_1" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,3c0,0-6.186,5.34-9.643,8.232C2.154,11.416,2,11.684,2,12c0,0.553,0.447,1,1,1h2v7c0,0.553,0.447,1,1,1h3  c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.447,1-1v-7h2c0.553,0,1-0.447,1-1c0-0.316-0.154-0.584-0.383-0.768  C18.184,8.34,12,3,12,3z"/></svg>
+                        <svg baseProfile="tiny" height="24px" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,3c0,0-6.186,5.34-9.643,8.232C2.154,11.416,2,11.684,2,12c0,0.553,0.447,1,1,1h2v7c0,0.553,0.447,1,1,1h3  c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.447,1-1v-7h2c0.553,0,1-0.447,1-1c0-0.316-0.154-0.584-0.383-0.768  C18.184,8.34,12,3,12,3z"/></svg>
                     </div>
                         &nbsp;&nbsp;<span class="navtext">Strona główna</span>
                 </a>
                 <a href="/about" class="{{ Request::is('about') ? 'active' : '' }} navlabel">
                     <div class="navicon">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="16.403px" height="19.625px" viewBox="3.848 4.375 16.403 19.625" enable-background="new 3.848 4.375 16.403 19.625"
                              xml:space="preserve">
                         <g>
@@ -41,9 +39,7 @@
                 </a>
                 <a href="{{route('pages.contact')}}" class="{{ Request::is('contact') ? 'active' : '' }} navlabel">
                     <div class="navicon">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="20px" height="15.967px" viewBox="0 0 20 15.967" enable-background="new 0 0 20 15.967" xml:space="preserve">
                         <g>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M0,14.837c0-3.192,0-6.386,0-9.578c2.371,1.327,4.742,2.658,7.115,3.982
@@ -73,9 +69,7 @@
                 </a>
                 <a href="{{route('pages.project.index')}}" class="{{ Request::is('project') ? 'active' : '' }} navlabel">
                     <div class="navicon">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="20.896px" height="15.967px" viewBox="0 0 20.896 15.967" enable-background="new 0 0 20.896 15.967" xml:space="preserve">
                         <g>
                             <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M-0.202,18.635c0-7.1,0-14.199,0-21.303c7.097,0,14.195,0,21.3,0
@@ -108,9 +102,7 @@
                 </a>
                 <a href="{{route('pages.canvas.index')}}" class="{{ Request::is('canvas') ? 'active' : '' }} navlabel">
                     <div class="navicon">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="24.288px" height="16.021px" viewBox="0 0 24.288 16.021" enable-background="new 0 0 24.288 16.021" xml:space="preserve">
                         <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M-2.939,23.623c0-9.996,0-19.992,0-29.992c9.991,0,19.984,0,29.986,0
                             c0,9.994,0,19.993,0,29.992C17.057,23.623,7.06,23.623-2.939,23.623z M44.779-8.989"/>
@@ -158,9 +150,7 @@
                 </a>
                 <a href="{{route('pages.book.index')}}" class="{{ Request::is('book') ? 'active' : '' }} navlabel">
                     <div class="navicon">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="20.714px" height="19.367px" viewBox="0 0 20.714 19.367" enable-background="new 0 0 20.714 19.367" xml:space="preserve">
                         <g>
                             <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M0.063,12.601c0-4.429,0-8.859,0-13.288c6.915,0,13.828,0,20.742,0
@@ -202,9 +192,7 @@
                 </a>
                 <a href="{{route('pages.post.index')}}" class="{{ Request::is('blog') ? 'active' : '' }} navlabel">
                     <div class="navicon">
-                        <?xml version="1.0" encoding="utf-8"?>
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="17.27px" height="19.414px" viewBox="0 0 17.27 19.414" enable-background="new 0 0 17.27 19.414" xml:space="preserve">
                         <g>
                             <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M11.602,0c1.889,0,3.778,0,5.668,0c0,6.058,0,12.117,0,18.174
@@ -247,9 +235,7 @@
                 @if (Auth::user())
                     <a href="{{route('admin')}}" class="navlabel">
                         <div class="navicon">
-                            <?xml version="1.0" encoding="utf-8"?>
-                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="17.27px" height="17.304px" viewBox="0 0 17.27 17.304" enable-background="new 0 0 17.27 17.304" xml:space="preserve">
                             <g>
                                 <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M2.18,17.304c-0.727,0-1.453,0-2.18,0C0,11.536,0,5.768,0,0
@@ -304,7 +290,6 @@
                     </a>
                     <a href="{{route('logout')}}" class="navlabel">
                         <div class="navicon">
-                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="17.27px" height="19.414px" viewBox="0 0 17.27 19.414" enable-background="new 0 0 17.27 19.414" xml:space="preserve">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M11.847,11.6c-0.077,0-0.14,0-0.204,0c-1.175,0-3.568,0-4.743-0.001
@@ -328,8 +313,6 @@
                 @else
                     <a href="{{route('pages.login.index')}}" class="{{ Request::is('log') ? 'active' : '' }} navlabel">
                         <div class="navicon">
-                            <?xml version="1.0" encoding="utf-8"?>
-                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="17.27px" height="19.414px" viewBox="0 0 17.27 19.414" enable-background="new 0 0 17.27 19.414" xml:space="preserve">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5.668,11.6c-0.077,0-0.14,0-0.204,0c-1.175,0-3.568,0-4.743-0.001

@@ -36,8 +36,6 @@
                     <p><span class="headline subcolumn1">Stro&shy;na WWW ma zna&shy;cze&shy;nie dla wize&shy;runku fir&shy;my</span></p>
                     <p>To, w&nbsp;jaki spo&shy;sób przed&shy;sta&shy;wisz wi&shy;zu&shy;al&shy;nie swoją ofer&shy;tę, wy&shy;róż&shy;ni Cię spo&shy;śród prze&shy;cięt&shy;nych firm, na&shy;da&shy;jąc cha&shy;rak&shy;ter pro&shy;fe&shy;sjo&shy;na&shy;li&shy;zmu Two&shy;jej.
                     Gra&shy;fi&shy;ka, którą uży&shy;jesz, zro&shy;zu&shy;mia&shy;łe tre&shy;ści, które za&shy;chę&shy;ca&shy;ją do kupna, in&shy;tu&shy;icyjna na&shy;wi&shy;ga&shy;cja nie tylko wzbu&shy;dzi za&shy;ufa&shy;nie klien&shy;tów, ale rów&shy;nież spra&shy;wi, że klient ze&shy;chce wró&shy;cić.</p>
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                     <svg class="newspaper-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
                     <path d="M37.688,255.5c-1.938,0.344-3.844,0.5-5.719,0.5C16.781,256,3.313,245.125,0.5,229.688
@@ -60,8 +58,6 @@
             </div>
             <div class="collumn">
                     <div class="head"><span class="headline column3">Czas</span>
-                         <?xml version="1.0" encoding="utf-8"?>
-                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                         <svg class="newspaper-svg" id="time-svg" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              width="444.622px" height="445.191px" viewBox="0 0 444.622 445.191" enable-background="new 0 0 444.622 445.191"
                              xml:space="preserve">
@@ -115,8 +111,6 @@
                     <div class="head"><span class="headline column4">Małe koszty</span><p><span class="headline subcolumn4">Płacisz raz a strona działa latami</span></p></div>
                     <p>Jed&shy;no&shy;ra&shy;zo&shy;wa opła&shy;ta w&nbsp;za&shy;mian za wy&shy;ko&shy;na&shy;nie stro&shy;ny i&nbsp;jej funk&shy;cjo&shy;no&shy;wa&shy;nie przez dłu&shy;gie lata.
                     To drob&shy;na in&shy;we&shy;sty&shy;cja fi&shy;nan&shy;so&shy;wa. Nie tyl&shy;ko szyb&shy;ko Ci się zwró&shy;ci, ale przy&shy;nie&shy;sie rów&shy;nież ogrom&shy;ne i&nbsp;dłu&shy;go&shy;trwa&shy;le ko&shy;rzy&shy;ści fi&shy;nan&shy;so&shy;we Tobie i&nbsp;Twojej firmie.</p>
-                    <?xml version="1.0" encoding="utf-8"?>
-                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                     <svg class="newspaper-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
                     <g>
