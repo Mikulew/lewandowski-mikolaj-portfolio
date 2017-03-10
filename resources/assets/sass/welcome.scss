@@ -49,19 +49,19 @@
         }
         .chevron.circle.down.icon {
                 position: absolute;
-                font-size: 3rem;
+                font-size: 4rem;
                 color: $blue;
                 cursor: pointer;
                 bottom: 15vh;
-                left: 48%;
+                left: 47%;
                 transition: $animation;
                 transform: translateX(-50%);
             }
 
             .chevron.circle.down.icon:hover {
                 color: $yellow;
-                font-size: 3rem;
-                left: 48%;
+                font-size: 4rem;
+                left: 47%;
                 transform: translateX(-50%);
             }
 
@@ -198,7 +198,8 @@
         }
         
         .collumn:last-of-type {
-            padding-bottom: 10rem;
+            padding-bottom: 12rem;
+            border-bottom: none;
         }
 
         .newspaper-svg {
@@ -254,7 +255,7 @@
             display: block;
             margin: 0 auto;
         }
-        .collumn .headline.subcolumn1:after, .collumn .headline.subcolumn5:after {
+        .collumn .headline.subcolumn1:after {
             border-bottom: 1px solid $grey;
             content: ''; 
             width: 90%;
@@ -262,6 +263,15 @@
             display: block;
             margin: 0 auto;
         }
+        .collumn .headline.subcolumn5:after {
+            content: ''; 
+            width: 90%;
+            height: 1rem;
+            display: block;
+            margin: 0 auto;
+            border: none;
+        }
+   
         .collumn .headline.column2 {
             font-weight: 400;
             font-size: 4rem;

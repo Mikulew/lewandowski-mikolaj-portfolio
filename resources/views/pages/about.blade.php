@@ -11,19 +11,19 @@
 <div class="about-panel">
     <div class="about-gallery">
         <figure class="photo">
-            <img src="/img/technology/html5.svg" alt="HTML5 logo">
+            <img src="/img/technology/HTML5.svg" alt="HTML5 logo">
             <figcaption>
                 HTML5
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/css3.svg" alt="CSS3 logo">
+            <img src="/img/technology/CSS3.svg" alt="CSS3 logo">
             <figcaption>
                 CSS3
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/javascript.svg" alt="JavaScript logo">
+            <img src="/img/technology/JavaScript.svg" alt="JavaScript logo">
             <figcaption>
                 JavaScript
             </figcaption>
@@ -41,31 +41,31 @@
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/jquery.svg" alt="jQuery logo">
+            <img src="/img/technology/jQuery.svg" alt="jQuery logo">
             <figcaption>
                 jQuery
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/ecmascript6.svg" alt="EcmaScript 6 logo">
+            <img src="/img/technology/EcmaScript6.svg" alt="EcmaScript 6 logo">
             <figcaption>
                 EcmaScript 6
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/sass.svg" alt="SASS logo">
+            <img src="/img/technology/SASS.svg" alt="SASS logo">
             <figcaption>
                 SASS
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/bootstrap.svg" alt="Bootstrap logo">
+            <img src="/img/technology/Bootstrap.svg" alt="Bootstrap logo">
             <figcaption>
                 Bootstrap
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/semanticui.svg" alt="Semantic UI logo">
+            <img src="/img/technology/SemanticUI.svg" alt="Semantic UI logo">
             <figcaption>
                 Semantic UI
             </figcaption>
@@ -101,7 +101,7 @@
             </figcaption>
        </figure>
         <figure class="photo">
-            <img src="/img/technology/PHP.svg" alt="PHP logo">
+            <img src="/img/technology/php.svg" alt="PHP logo">
             <figcaption>
                 PHP
             </figcaption>
@@ -119,7 +119,7 @@
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/GIT.svg" alt="GIT logo">
+            <img src="/img/technology/git.svg" alt="GIT logo">
             <figcaption>
                 GIT
             </figcaption>

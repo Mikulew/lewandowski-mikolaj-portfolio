@@ -2183,11 +2183,11 @@ img, embed, object, video {
   }
   header .chevron.circle.down.icon {
     position: absolute;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #8eadB1;
     cursor: pointer;
     bottom: 15vh;
-    left: 48%;
+    left: 47%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     -webkit-transform: translateX(-50%);
@@ -2195,8 +2195,8 @@ img, embed, object, video {
   }
   header .chevron.circle.down.icon:hover {
     color: #e4cd8a;
-    font-size: 3rem;
-    left: 48%;
+    font-size: 4rem;
+    left: 47%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -2317,7 +2317,8 @@ img, embed, object, video {
     border-bottom: 1px solid #4e4945;
   }
   .welcome-newspaper .collumn:last-of-type {
-    padding-bottom: 10rem;
+    padding-bottom: 12rem;
+    border-bottom: none;
   }
   .welcome-newspaper .newspaper-svg {
     fill: #4e4945;
@@ -2365,13 +2366,21 @@ img, embed, object, video {
     display: block;
     margin: 0 auto;
   }
-  .welcome-newspaper .collumn .headline.subcolumn1:after, .welcome-newspaper .collumn .headline.subcolumn5:after {
+  .welcome-newspaper .collumn .headline.subcolumn1:after {
     border-bottom: 1px solid #4e4945;
     content: '';
     width: 90%;
     height: 1rem;
     display: block;
     margin: 0 auto;
+  }
+  .welcome-newspaper .collumn .headline.subcolumn5:after {
+    content: '';
+    width: 90%;
+    height: 1rem;
+    display: block;
+    margin: 0 auto;
+    border: none;
   }
   .welcome-newspaper .collumn .headline.column2 {
     font-weight: 400;
