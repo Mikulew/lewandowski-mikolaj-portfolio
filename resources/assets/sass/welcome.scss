@@ -10,6 +10,26 @@
 } 
 
 @media only screen and (max-width: 767px) {
+    #welcome-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #welcome-panel:after {
+        content: '';
+        display: none;
+    }
+    
+    #welcome-panel {
+        margin: 5rem 0;
+    } 
     //HEADER
     header {
         width: 100%;
@@ -82,45 +102,253 @@
     }
     // NEWSPAPER
     .welcome-newspaper {
+        font: {
+            family: $times;
+            size: 1.4rem;
+        }
+        padding-top: 5rem;
+        min-height: 100vh;
+        text-align: center;
+        background-color: $paper;
+        color: $grey;
+        position: relative;
+
         .chevron.circle.down.icon {
-            top: 600px;
+            position: absolute;
+            font-size: 4rem;
+            color: $grey;
+            cursor: pointer;
+            bottom: 0;
+            left: 48%;
+            transition: $animation;
+            transform: translateX(-50%);
         }
-        .collumn{
-            width: 100%;
-            margin: 2px;
+
+        .chevron.circle.down.icon:hover {
+            color: $background;
+            font-size: 4rem;
+            left: 48%;
+            transform: translateX(-50%);
         }
-        .collumn + .collumn {
+
+        p {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            text-align: left;
+            hyphens: auto;
+            text-align: justify;
+        }
+
+        .newspaper-huge-heading {
+            font: {
+                family: $playfair;
+                size: 7rem;
+                weight: 700;        
+            }
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 7.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .newspaper-subhead {
+            text-transform: uppercase;
+            border-bottom: 2px solid $grey;
+            border-top: 2px solid $grey;
+            padding: 7%;
+            font-size: 1.6rem;
+        }
+
+        .newspaper-main {
+            font: {
+                family: $playfair;
+                size: 2rem;
+                weight: 700;
+            }
+            padding: 2rem 1rem 1rem 1rem;
+            display: inline-block;
+            width: 90%;
+            border-bottom: 2px solid $grey;
+            border-left: 2px solid $grey;
+            border-right: 2px solid $grey;
+            text-align: justify;
+        }
+
+        .collumns {
+            font-size: 0;
+            line-height: 0;
+            word-spacing: -.31em;
+            display: inline-block;
+            margin: 0 2% 0 2%;
+        }
+
+        .collumn {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            display: inline-block;
+            vertical-align: top;
+            transition: $animation;
+            width: 90%;
+            margin: 2px 0;
+        }
+
+        .collumn + .collumn { 
             border-left: none;
             border-bottom: 1px solid $grey;
         }
+        
         .collumn:last-of-type {
-            width: 100%;
-            margin: 2px;
-            padding-bottom: 6rem;
+            padding-bottom: 10rem;
         }
-        .newspaper-huge-heading {
-            max-width: 32rem;
-            font-size: 6rem;
-            line-height: 5.4rem;
-            overflow: hidden;
+
+        .newspaper-svg {
+            fill: $grey;
+            width: 40%;
+            height: auto;
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+        
+        #time-svg {
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+
+        .head {
+            position: relative;
+            text-align: center;
+        }
+
+        .collumn .headline {
+            text-align: center;
+            line-height: normal;
+            font-family: $playfair;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .collumn .headline.column1, .collumn .headline.column4 {
+            font-weight: 400;
+            font-style: italic;
+            font-size: 4rem;
+            padding: 2rem 0;
+        }
+
+        .collumn .headline.subcolumn1 {
+            font-weight: bold;
+            font-size: 3rem;
+            padding: 2rem 0;
+        }
+
+        .collumn .headline.subcolumn5 {
+            font-weight: bold;
+            font-size: 3rem;
+            padding: 2rem 0;
+        }
+
+        .collumn .headline.subcolumn1:before, .collumn .headline.subcolumn5:before {
+            border-top: 1px solid $grey;
+            content: '';
+            width: 90%;
+            height: .7rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.subcolumn1:after, .collumn .headline.subcolumn5:after {
+            border-bottom: 1px solid $grey;
+            content: ''; 
+            width: 90%;
+            height: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.column2 {
+            font-weight: 400;
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-style: italic;
+            padding: 2rem 0;
+            border-top: 1px solid $grey;
+        }
+
+        .collumn .headline.subcolumn2, .collumn .headline.subcolumn4 {
+            font-weight: 400;
+            font-size: 3rem;
+            padding: 2rem 0;
+        }
+        .collumn .headline.subcolumn2:before, .collumn .headline.subcolumn4:before {
+            border-top: 1px solid $grey;
+            content: '';
+            width: 90%;
+            height: .7rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.subcolumn2:after, .collumn .headline.subcolumn4:after {
+            border-bottom: 1px solid $grey;
+            content: '';
+            width: 90%;
+            height: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .collumn .headline.column3, .collumn .headline.column5 {
+            font-weight: 700;
+            font-size: 5rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+        }
+        .collumn .headline.subcolumn3 {
+            font-weight: 400;
+            font-style: italic;
+            font-size: 3rem;
+            padding: 2rem 0;
+        }    
+        .collumn .headline.subcolumn3:before {
+            border-top: 1px solid $grey;
+            content: '';
+            width: 90%;
+            height: .7rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.subcolumn3:after {
+            border-bottom: 1px solid $grey;
+            content: '';
+            width: 90%;
+            height: 1.3rem;
+            display: block;
+            margin: 0 auto;
         }
     }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
+
+    #welcome-panel:after {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
+    }
     #headerImage {
         position: relative;
         width: auto;
         height: 50vh;
-    }
-    
+    }   
     header {
         width: 100%;
         height: 100vh;
         position: relative;
         
         & > .chevron.circle.down.icon {
-            top: 80%;
+            top: 75%;
             font-size: 6rem;
             left: 40%;
         }
@@ -139,6 +367,17 @@
                 min-height: 200px;
                 line-height: 2.6rem;
             }
+        }
+    }
+    .welcome-newspaper {
+        .chevron.circle.down.icon {
+            bottom: 0;
+            font-size: 6rem;
+            left: 50%;
+        }
+        .chevron.circle.down.icon:hover {
+            font-size: 6rem;
+            left: 50%;
         }
     }
 }
@@ -213,20 +452,251 @@
                 padding: 1.5rem;
             }
     }
+        // NEWSPAPER
     .welcome-newspaper {
-        margin-top: 3rem;
-    }
+        font: {
+            family: $times;
+            size: 1.6rem;
+        }
+        margin-top: 10rem;
+        padding-top: 10rem;
+        min-height: 100vh;
+        text-align: center;
+        background-color: $paper;
+        color: $grey;
+        position: relative;
 
-    .collumn {
-        width: 31%;
-    }
-    .collumn:last-of-type {
-        width: 100%;
-        margin: 2px;
-        padding-bottom: 6rem;
-    }
-    .chevron.circle.down.icon {
-        top: 97%;
+        .chevron.circle.down.icon {
+            position: absolute;
+            font-size: 5rem;
+            color: $grey;
+            cursor: pointer;
+            bottom: 0;
+            left: 48%;
+            transition: $animation;
+            transform: translateX(-50%);
+        }
+
+        .chevron.circle.down.icon:hover {
+            color: $background;
+            font-size: 5rem;
+            left: 48%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            text-align: left;
+            hyphens: auto;
+            text-align: justify;
+        }
+
+        .newspaper-huge-heading {
+            font: {
+                family: $playfair;
+                size: 7rem;
+                weight: 700;        
+            }
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 7.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .newspaper-subhead {
+            text-transform: uppercase;
+            border-bottom: 2px solid $grey;
+            border-top: 2px solid $grey;
+            padding: 3rem 12.5%; 
+            font-size: 1.6rem;
+        }
+
+        .newspaper-main {
+            font: {
+                family: $playfair;
+                size: 2rem;
+                weight: 700;
+            }
+            padding: 2rem 1rem 1rem 1rem;
+            display: inline-block;
+            width: 75%;
+            border-bottom: 2px solid $grey;
+            border-left: 2px solid $grey;
+            border-right: 2px solid $grey;
+            text-align: justify;
+        }
+
+        .collumns {
+            width: 90%;
+            font-size: 0;
+            line-height: 0;
+            word-spacing: -.31em;
+            display: inline-block;
+        }
+
+        .collumn {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            display: inline-block;
+            vertical-align: top;
+            transition: $animation;
+            width: 35%;
+            margin: 0 2rem;
+        }
+
+        .collumn + .collumn { 
+            border-left: none;
+            border-bottom: 1px solid $grey;
+        }
+        
+        .collumn:last-of-type {
+            width: 75%;
+            margin: 2px;
+            padding-bottom: 10rem;
+            border-bottom: none;
+        }
+
+        .newspaper-svg {
+            fill: $grey;
+            width: 40%;
+            height: auto;
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+        
+        #time-svg {
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+
+        .head {
+            position: relative;
+            text-align: center;
+        }
+
+        .collumn .headline {
+            text-align: center;
+            line-height: normal;
+            font-family: $playfair;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .collumn .headline.column1, .collumn .headline.column4 {
+            font-weight: 400;
+            font-style: italic;
+            font-size: 3rem;
+            padding: 3rem 0;
+        }
+
+        .collumn .headline.subcolumn1 {
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 2rem 0;
+        }
+
+        .collumn .headline.subcolumn5 {
+            font-weight: bold;
+            font-size: 2rem;
+            padding: 2rem 0;
+        }
+
+        .collumn .headline.subcolumn1:before {
+            border-top: 1px solid $grey;
+            content: '';
+            width: 100%;
+            height: .7rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.subcolumn1:after {
+            border-bottom: 1px solid $grey;
+            content: ''; 
+            width: 100%;
+            height: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.column2 {
+            font-weight: 400;
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-style: italic;
+            padding: 2rem 0;
+        }
+
+        .collumn .headline.subcolumn2, .collumn .headline.subcolumn4 {
+            font-weight: 400;
+            font-size: 2rem;
+            padding: 2rem 0;
+        }
+        .collumn .headline.subcolumn2:before, .collumn .headline.subcolumn4:before {
+            border-top: 1px solid $grey;
+            content: '';
+            width: 100%;
+            height: .7rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.subcolumn2:after, .collumn .headline.subcolumn4:after {
+            border-bottom: 1px solid $grey;
+            content: '';
+            width: 100%;
+            height: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .collumn .headline.column3 {
+            border-top: 1px solid $grey;
+        }
+
+        .collumn .headline.column3, .collumn .headline.column5 {
+            font-weight: 700;
+            font-size: 3rem;
+            text-transform: uppercase;
+            padding: 2rem 0;
+        }
+        .collumn .headline.subcolumn3 {
+            font-weight: 400;
+            font-style: italic;
+            font-size: 2rem;
+            padding: 2rem 0;
+        }    
+        .collumn .headline.subcolumn3:before {
+            border-top: 1px solid $grey;
+            content: '';
+            width: 100%;
+            height: .7rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.subcolumn3:after {
+            border-bottom: 1px solid $grey;
+            content: '';
+            width: 100%;
+            height: 1.3rem;
+            display: block;
+            margin: 0 auto;
+        }
+        .collumn .headline.subcolumn5:before {
+            border-top: 1px solid $grey;
+            content: '';
+            width: 100%;
+            height: .7rem;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .collumn .headline.subcolumn5:after {
+            border-bottom: 1px solid $grey;
+            content: ''; 
+            width: 100%;
+            height: 1rem;
+            display: block;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -301,16 +771,102 @@
                 padding: 1.5rem;
             }
     }
+            // NEWSPAPER
+    .welcome-newspaper {
+        font: {
+            family: $times;
+            size: 1.6rem;
+        }
+        margin-top: 10rem;
+        padding-top: 10rem;
+        min-height: 100vh;
+        text-align: center;
+        background-color: $paper;
+        color: $grey;
+        position: relative;
+
+        .chevron.circle.down.icon {
+            position: absolute;
+            font-size: 5rem;
+            color: $grey;
+            cursor: pointer;
+            bottom: 0;
+            left: 50%;
+            transition: $animation;
+            transform: translateX(-50%);
+        }
+
+        .chevron.circle.down.icon:hover {
+            color: $background;
+            font-size: 5rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 2rem;
+            text-align: left;
+            hyphens: auto;
+            text-align: justify;
+        }
+
+        .newspaper-subhead {
+            padding: 3rem 5%; 
+        }
+
+        .newspaper-main {
+            width: 90%;
+        }
+
+        .collumns {
+            width: 90%;
+            font-size: 0;
+            line-height: 0;
+            word-spacing: -.31em;
+            display: inline-block;
+        }
+
+        .collumn {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            display: inline-block;
+            vertical-align: top;
+            transition: $animation;
+            width: 43%;
+            margin: 0 3%;
+        }
+
+        .collumn + .collumn { 
+            border-left: none;
+            border-bottom: 1px solid $grey;
+        }
+        
+        .collumn:last-of-type {
+            width: 90%;
+            margin: 2px;
+            padding-bottom: 10rem;
+            border-bottom: none;
+        }
+
+        .newspaper-svg {
+            fill: $grey;
+            width: 40%;
+            height: auto;
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+        
+        #time-svg {
+            margin: 1rem 0;
+            padding: 1rem 0;
+        }
+    }
 }
 
 @media only screen  and (min-width: 1280px) {
 
     //HEADER
-    header {
-        position: relative;
-        min-height: 100vh;
-    }
-
     #headerImage {
         width: 100%;
         height: auto;
@@ -324,6 +880,8 @@
     }
 
     header {
+        position: relative;
+        min-height: 100vh;
         & > .chevron.circle.down.icon {
             position: absolute;
             font-size: 6rem;
@@ -332,14 +890,12 @@
             top: 80%;
             left: 50%;
             transition: $animation;
-            transform: translateX(-50%);
         }
 
         & > .chevron.circle.down.icon:hover {
             color: $yellow;
             font-size: 6rem;
             left: 50%;
-            transform: translateX(-50%);
         }
 
         & > .welcome-header-heading {
@@ -355,12 +911,12 @@
             position: absolute;
             color: $yellow;
             min-width: 30%;
-            top: 18%;
+            top: 19%;
             left: 10%;
         }
         & > .welcome-header-container {
                 position: absolute;
-                top: 40%;
+                top: 42%;
                 left: 10%;
                 width: 100%;
                 display: flex;
@@ -389,10 +945,10 @@
 
     .welcome-newspaper {
         font: {
-            family: 'Droid Serif', serif;
-            size: 1.4rem;
+            family: $times;
+            size: 1.6rem;
         }
-        padding-top: 60px;
+        padding-top: 5rem;
         min-height: 100vh;
         text-align: center;
         background-color: $paper;
@@ -404,23 +960,23 @@
             font-size: 6rem;
             color: $grey;
             cursor: pointer;
-            top: 80%;
+            bottom: 5%;
             left: 50%;
             transition: $animation;
-            transform: translateX(-50%);
         }
 
         .chevron.circle.down.icon:hover {
             color: $background;
             font-size: 6rem;
             left: 50%;
-            transform: translateX(-50%);
         }
 
         p {
             margin-top: 0;
             margin-bottom: 2rem;
             text-align: left;
+            hyphens: auto;
+            text-align: justify;
         }
 
         .newspaper-huge-heading {
@@ -450,10 +1006,11 @@
             }
             padding: 2rem 1rem 1rem 1rem;
             display: inline-block;
-            width: 50%;
+            width: 66%;
             border-bottom: 2px solid $grey;
             border-left: 2px solid $grey;
             border-right: 2px solid $grey;
+            text-align: justify;
         }
 
         .collumns {
@@ -479,10 +1036,17 @@
               border-left: 1px solid $grey;
         }
 
-        .collumn > svg {
+        .newspaper-svg {
             fill: $grey;
             width: 50%;
             height: auto;
+        }
+        
+        #time-svg {
+            margin: 1rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid $grey;
+            border-bottom: 1px solid $grey;
         }
 
         .head {
@@ -501,7 +1065,7 @@
         .collumn .headline.column1, .collumn .headline.column4 {
             font-weight: 400;
             font-style: italic;
-            font-size: 3.6rem;
+            font-size: 3rem;
             padding: 1rem 0;
         }
 
@@ -520,7 +1084,7 @@
         .collumn .headline.subcolumn1:before, .collumn .headline.subcolumn5:before {
             border-top: 1px solid $grey;
             content: '';
-            width: 10rem;
+            width: 20rem;
             height: .7rem;
             display: block;
             margin: 0 auto;
@@ -528,7 +1092,7 @@
         .collumn .headline.subcolumn1:after, .collumn .headline.subcolumn5:after {
             border-bottom: 1px solid $grey;
             content: ''; 
-            width: 10rem;
+            width: 20rem;
             height: 1rem;
             display: block;
             margin: 0 auto;
@@ -538,20 +1102,18 @@
             font-size: 3rem;
             text-transform: uppercase;
             font-style: italic;
-            box-sizing: border-box;
             padding: 1rem 0;
         }
 
         .collumn .headline.subcolumn2, .collumn .headline.subcolumn4 {
             font-weight: 400;
             font-size: 1.8rem;
-            box-sizing: border-box;
             padding: 1rem 0;
         }
         .collumn .headline.subcolumn2:before, .collumn .headline.subcolumn4:before {
             border-top: 1px solid $grey;
             content: '';
-            width: 10rem;
+            width: 15rem;
             height: .7rem;
             display: block;
             margin: 0 auto;
@@ -559,7 +1121,7 @@
         .collumn .headline.subcolumn2:after, .collumn .headline.subcolumn4:after {
             border-bottom: 1px solid $grey;
             content: '';
-            width: 10rem;
+            width: 15rem;
             height: 1rem;
             display: block;
             margin: 0 auto;
@@ -575,7 +1137,6 @@
             font-weight: 400;
             font-style: italic;
             font-size: 2.4rem;
-            box-sizing: border-box;
             padding: 1rem 0 1rem 0;
         }    
         .collumn .headline.subcolumn3:before {
@@ -605,7 +1166,7 @@
             color: $fontColor;
         .charts-huge-heading {
             font: {
-                family: $droid;
+                family: $times;
                 size: 3.6rem;
             }
         }
