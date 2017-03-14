@@ -13,23 +13,64 @@
     display: block;
 }
 
-.book-heading {
-    font: {
-        family: $playfair;
-        size: 3.8rem;
-    }
-    color: $yellow;
-    text-align: center;
-    padding-top: 40px;
-    margin-bottom: 50px;
-}
-
 .book-wrapper {
-    max-width: 1000px;
-    min-height: 70vh;
+    width: 80%;
+    height: auto;
     background-color: rgba(10, 10, 10, 0.7);
-    margin: 5% auto 0 auto;  
-    padding: 20px;
+    margin: 8rem auto 1rem auto;  
+    padding: 2.5rem;
     border-radius: 4px; 
     box-shadow: 0 0 10px rgba(0,0,0,1);
+    
+    & > .book-heading {
+    font: {
+        family: $sansita;
+        size: 4.2rem;
+    }
+    color: $blue;
+    text-align: center;
+    padding-top: 2rem;
+    margin-bottom: 5rem;
+        }
 }
+
+.book-all-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.book-one-wrapper {
+    margin-top: 4rem;
+    min-width: 33%;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-image {
+    width: 25%;
+    height: auto;
+    transform: $animation;
+}
+    
+.book-image:hover {
+    width: 50%;
+}
+
+.book-header {
+    font: {
+        family: $playfair;
+        size: 2rem;
+    }
+    width: 75%;
+    color: $yellow;
+    align-self: baseline;
+    text-align: center;
+    line-height: 2.6rem;
+    margin: auto;
+}
+

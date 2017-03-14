@@ -22,11 +22,6 @@
         display: block;
     }
     
-    #welcome-panel:after {
-        content: '';
-        display: none;
-    }
-    
     #welcome-panel {
         margin: 5rem 0;
     } 
@@ -335,18 +330,6 @@
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
-
-    #welcome-panel:after {
-        content: '';
-        background-color: $background;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        height: 5rem;
-        width: 100%;
-        z-index: 100;
-        display: block;
-    }
     #headerImage {
         position: relative;
         width: auto;
