@@ -52,6 +52,11 @@ Route::get('/book', [
     'as' => 'pages.book.index'
 ]);
 
+Route::get('/book/{id}', [
+    'uses' => 'BooksController@show',
+    'as' => 'pages.book.show'
+]);
+
 Route::get('/blog', [
     'uses' => 'PostsController@index',
     'as' => 'pages.post.index'

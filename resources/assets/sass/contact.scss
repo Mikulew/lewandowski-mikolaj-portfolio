@@ -139,7 +139,7 @@
              weight: 600;
          }
         width: 100%;
-        margin: 20px 0;
+        margin: 2rem 0;
         padding: 1.5rem;
         text-align: center;
         background-color: darken($blue, 15%);
@@ -149,6 +149,7 @@
         transition: $animation;
 
          &:hover {
+             color: $yellow;
              background-color: darken($blue, 30%);
          }
       }

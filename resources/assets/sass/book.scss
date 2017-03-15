@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixins";
 
+.book-color {
+    color: $blue;
+}
+
 @media only screen and (max-width: 767px) {
   #bookImage {
         position: fixed;
@@ -88,7 +92,7 @@
         z-index: 1;
     }
 
-    a.book-title {
+    a.book-title, p.book-title {
         font: {
             family: $playfair;
             size: 2.4rem;
@@ -104,6 +108,56 @@
 
     a.book-title:hover {
         color: $blue;
+    }
+    
+    .book-show-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 7rem 0;
+    }
+    
+    .book-description {
+        width: 100%;
+        padding-top: 4rem;
+        font: {
+             family: $roboto;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $paper;
+    }
+    
+    .book-details {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .book-details > .book-title {
+        width: 100%;
+    }
+    
+    .book-button {
+        display: block;
+        font: {
+             family: $sansita;
+             size: 2.6rem;
+             weight: 600;
+         }
+        width: 100%;
+        margin: 2rem 0;
+        padding: 1.5rem;
+        background-color: darken($blue, 15%);
+        text-align: center;
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             color: $yellow;
+             background-color: darken($blue, 30%);
+         }
     }
 }
 
@@ -231,7 +285,7 @@
         z-index: 1;
     }
 
-    a.book-title {
+    a.book-title, p.book-title {
         font: {
             family: $playfair;
             size: 2.4rem;
@@ -247,6 +301,63 @@
 
     a.book-title:hover {
         color: $blue;
+    }
+    
+    .book-show-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 7rem 0;
+    }
+    
+    .book-show-img {
+        width: 75%;
+        align-self: center;
+    }
+    
+    .book-description {
+        width: 100%;
+        padding-top: 4rem;
+        font: {
+             family: $roboto;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $paper;
+    }
+    
+    .book-details {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .book-details > .book-title {
+        width: 100%;
+    }
+    
+    .book-button {
+        display: block;
+        font: {
+             family: $sansita;
+             size: 2.6rem;
+             weight: 600;
+         }
+                cursor: pointer;
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+        padding: 1.5rem;
+        background-color: darken($blue, 15%);
+        text-align: center;
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             color: $yellow;
+             background-color: darken($blue, 30%);
+         }
     }
 }
 
@@ -284,7 +395,7 @@
 
     .book-wrapper {
         width: 80%;
-        height: auto;
+        height: 100%;
         background-color: rgba(10, 10, 10, 0.7);
         margin: 8rem auto 1rem auto;  
         padding: 2.5rem;
@@ -348,20 +459,65 @@
         z-index: 1;
     }
 
-    a.book-title {
+    a.book-title, p.book-title {
         font: {
             family: $playfair;
             size: 2rem;
         }
+        margin-top: 2rem;
         width: 75%;
         color: $yellow;
         text-align: center;
         line-height: 2.4rem;
-        margin: auto;
         transition: $animation;
     }
 
     a.book-title:hover {
         color: $blue;
+    }
+    
+    .book-show-wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin: 7rem 0;
+    }
+    .book-description {
+        width: 50%;
+        font: {
+             family: $roboto;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $paper;
+    }
+    
+    .book-details {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    .book-details > .book-title {
+        width: 100%;
+    }
+    
+    .book-button {
+        font: {
+             family: $sansita;
+             size: 2rem;
+             weight: 600;
+         }
+        width: 30%;
+        padding: 1rem;
+        margin: 4rem 2rem;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             color: $yellow;
+             background-color: darken($blue, 30%);
+         }
     }
 }

@@ -3,7 +3,7 @@
 @section('title', '| Library')
 
 @section('css')
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="/css/animate.css" rel="stylesheet" type="text/css">
 @endsection
 
 @section('body')
@@ -15,9 +15,9 @@
         @foreach($books as $book)
             <div class="book-one-wrapper animated fadeInLeft">
                 <div class="book-image">
-                    <img class="animated fadeInLeft" src="img/book/{{$book->thumbnail}}">
+                    <img class="animated fadeInLeft" src="/img/book/{{$book->thumbnail}}">
                 </div>       
-                <a href="#" class="book-title animated fadeInLeft">{{$book->title}}</a>      
+                <a href="{{route('pages.book.show', $book->id)}}" class="book-title animated fadeInLeft">{{$book->title}}</a>      
             </div>
         @endforeach
         </div>

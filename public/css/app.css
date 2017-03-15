@@ -997,6 +997,10 @@
   }
 }
 
+.book-color {
+  color: #8eadB1;
+}
+
 @media only screen and (max-width: 767px) {
   #bookImage {
     position: fixed;
@@ -1082,7 +1086,7 @@
     background: #e4cd8a;
     z-index: 1;
   }
-  a.book-title {
+  a.book-title, p.book-title {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
     padding-top: 3.5rem;
@@ -1096,6 +1100,52 @@
   }
   a.book-title:hover {
     color: #8eadB1;
+  }
+  .book-show-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 7rem 0;
+  }
+  .book-description {
+    width: 100%;
+    padding-top: 4rem;
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e4ddce;
+  }
+  .book-details {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .book-details > .book-title {
+    width: 100%;
+  }
+  .book-button {
+    display: block;
+    font-family: "Sansita", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #638a8f;
+    text-align: center;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .book-button:hover {
+    color: #e4cd8a;
+    background-color: #445f62;
   }
 }
 
@@ -1221,7 +1271,7 @@
     background: #e4cd8a;
     z-index: 1;
   }
-  a.book-title {
+  a.book-title, p.book-title {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
     padding-top: 5rem;
@@ -1235,6 +1285,59 @@
   }
   a.book-title:hover {
     color: #8eadB1;
+  }
+  .book-show-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 7rem 0;
+  }
+  .book-show-img {
+    width: 75%;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+  .book-description {
+    width: 100%;
+    padding-top: 4rem;
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e4ddce;
+  }
+  .book-details {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .book-details > .book-title {
+    width: 100%;
+  }
+  .book-button {
+    display: block;
+    font-family: "Sansita", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    padding: 1.5rem;
+    background-color: #638a8f;
+    text-align: center;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .book-button:hover {
+    color: #e4cd8a;
+    background-color: #445f62;
   }
 }
 
@@ -1271,7 +1374,7 @@
   }
   .book-wrapper {
     width: 80%;
-    height: auto;
+    height: 100%;
     background-color: rgba(10, 10, 10, 0.7);
     margin: 8rem auto 1rem auto;
     padding: 2.5rem;
@@ -1336,19 +1439,59 @@
     background: #e4cd8a;
     z-index: 1;
   }
-  a.book-title {
+  a.book-title, p.book-title {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
+    margin-top: 2rem;
     width: 75%;
     color: #e4cd8a;
     text-align: center;
     line-height: 2.4rem;
-    margin: auto;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
   a.book-title:hover {
     color: #8eadB1;
+  }
+  .book-show-wrapper {
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-around;
+    margin: 7rem 0;
+  }
+  .book-description {
+    width: 50%;
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #e4ddce;
+  }
+  .book-details {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .book-details > .book-title {
+    width: 100%;
+  }
+  .book-button {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 30%;
+    padding: 1rem;
+    margin: 4rem 2rem;
+    background-color: #638a8f;
+    color: #e4cd8a;
+    border: none;
+    border-radius: 4px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .book-button:hover {
+    color: #e4cd8a;
+    background-color: #445f62;
   }
 }
 
@@ -1491,7 +1634,7 @@
     font-size: 2.6rem;
     font-weight: 600;
     width: 100%;
-    margin: 20px 0;
+    margin: 2rem 0;
     padding: 1.5rem;
     text-align: center;
     background-color: #638a8f;
@@ -1502,6 +1645,7 @@
     transition: all 0.3s linear;
   }
   .contact-button:hover {
+    color: #e4cd8a;
     background-color: #445f62;
   }
 }
