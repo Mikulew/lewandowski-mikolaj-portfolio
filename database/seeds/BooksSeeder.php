@@ -135,7 +135,7 @@ class BooksSeeder extends Seeder
         $book->description = "Książka przeznaczona jest dla programistów PHP chcących szybko nauczyć się programowania w języku JavaScript. W trakcie lektury poznasz różnice i podobieństwa między tymi dwoma językami. W kolejnych rozdziałach rozgryziesz składnię JavaScriptu i błyskawicznie zaczniesz używać funkcji wbudowanych w ten język. Ponadto opanujesz programowanie obiektowe z jego wykorzystaniem. Na sam koniec nauczysz się testować kod napisany w JavaScripcie. To najlepszy podręcznik do nauki tego języka dla osób znających podstawy PHP.";
         $book->pages = 168;
         $book->link = "http://helion.pl/ksiazki/javascript-dla-programistow-php-stoyan-stefanov,javphp.htm";
-        $book->thumbnail = "stoyan-stefanov-javascript-dla-programistów-php.jpg";
+        $book->thumbnail = "stoyan-stefanov-javascript-dla-programistow-php.jpg";
         $book->save();
         
         $book = new Book();

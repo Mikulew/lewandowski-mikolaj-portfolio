@@ -1,76 +1,367 @@
 @import "variables";
 @import "mixins";
 
-#bookImage {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    z-index: -100;
-    display: block;
-}
-
-.book-wrapper {
-    width: 80%;
-    height: auto;
-    background-color: rgba(10, 10, 10, 0.7);
-    margin: 8rem auto 1rem auto;  
-    padding: 2.5rem;
-    border-radius: 4px; 
-    box-shadow: 0 0 10px rgba(0,0,0,1);
-    
-    & > .book-heading {
-    font: {
-        family: $sansita;
-        size: 4.2rem;
+@media only screen and (max-width: 767px) {
+  #bookImage {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
     }
-    color: $blue;
-    text-align: center;
-    padding-top: 2rem;
-    margin-bottom: 5rem;
+    
+    #book-panel:after {
+        content: '';
+        display: none;
+    }
+    
+    #book-panel {
+        margin: 5rem 0;
+    }
+
+    .book-wrapper {
+        width: 90%;
+        height: auto;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 8rem auto 1rem auto;  
+        padding: 2.5rem;
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+
+        & > .book-heading {
+        font: {
+            family: $sansita;
+            size: 4.2rem;
         }
-}
-
-.book-all-wrapper {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.book-one-wrapper {
-    margin-top: 4rem;
-    min-width: 33%;
-    max-width: 33%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.book-image {
-    width: 25%;
-    height: auto;
-    transform: $animation;
-}
-    
-.book-image:hover {
-    width: 50%;
-}
-
-.book-header {
-    font: {
-        family: $playfair;
-        size: 2rem;
+        color: $blue;
+        text-align: center;
+        padding-top: 1rem;
+        margin-bottom: 5rem;
+            }
     }
-    width: 75%;
-    color: $yellow;
-    align-self: baseline;
-    text-align: center;
-    line-height: 2.6rem;
-    margin: auto;
+
+    .book-all-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .book-one-wrapper {
+        margin: 4rem 0 2rem 0;
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-image {
+        margin: 1rem 1.5rem;
+        background: $background;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        transition: $animation;
+    }
+
+    .book-image > img {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: 33%;
+        flex-basis: 100%;
+        z-index: 1;
+    }
+
+    .book-image:hover {
+        transition: $animation;
+        transform: scale(1.6);
+        border: 3px solid $background;
+        background: $yellow;
+        z-index: 1;
+    }
+
+    a.book-title {
+        font: {
+            family: $playfair;
+            size: 2.4rem;
+        }
+        padding-top: 3.5rem;
+        width: 95%;
+        color: $yellow;
+        text-align: center;
+        line-height: 2.8rem;
+        margin: auto;
+        transition: $animation;
+    }
+
+    a.book-title:hover {
+        color: $blue;
+    }
 }
 
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+    #bookImage {
+        width: auto;
+        height: calc(100% - 10rem);
+        margin: 5rem auto 5rem auto;
+    }
+    #book-panel:after {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
+    }
+    .book-wrapper {
+        width: 95%;
+        margin: 7rem auto 3rem auto; 
+    }
+    .book-image > img {
+        height: 40%;
+    }
+    .book-image:hover {
+        transform: scale(1.4);
+    }
+    a.book-title {
+        font: {
+            family: $playfair;
+            size: 3rem;
+        }
+        padding-top: 4rem;
+        width: 95%;
+        line-height: 3.4rem;
+        margin: auto;
+        transition: $animation;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #bookImage {
+        position: fixed;
+        margin-top: 10rem;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #book-panel {
+        margin: 12rem 0;
+    }
+
+    .book-wrapper {
+        width: 70%;
+        height: auto;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 8rem auto 1rem auto;  
+        padding: 2.5rem;
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+
+        & > .book-heading {
+        font: {
+            family: $sansita;
+            size: 4.2rem;
+        }
+        color: $blue;
+        text-align: center;
+        padding-top: 1rem;
+        margin-bottom: 5rem;
+            }
+    }
+
+    .book-all-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .book-one-wrapper {
+        margin: 4rem 0 2rem 0;
+        min-width: 50%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-image {
+        margin: 1rem 1.5rem;
+        background: $background;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        transition: $animation;
+    }
+
+    .book-image > img {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: 30%;
+        flex-basis: 100%;
+        z-index: 1;
+    }
+
+    .book-image:hover {
+        transition: $animation;
+        transform: scale(1.5);
+        border: 3px solid $background;
+        background: $yellow;
+        z-index: 1;
+    }
+
+    a.book-title {
+        font: {
+            family: $playfair;
+            size: 2.4rem;
+        }
+        padding-top: 5rem;
+        width: 95%;
+        color: $yellow;
+        text-align: center;
+        line-height: 2.8rem;
+        margin: auto;
+        transition: $animation;
+    }
+
+    a.book-title:hover {
+        color: $blue;
+    }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+    #bookImage {
+        width: auto;
+        height: 100%;
+    }
+    .book-wrapper {
+        width: 85%;
+    }
+   .book-image > img {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: 20%;
+        flex-basis: 100%;
+        z-index: 1;
+    }
+}
+
+@media only screen  and (min-width: 1280px) {
+    #bookImage {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .book-wrapper {
+        width: 80%;
+        height: auto;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 8rem auto 1rem auto;  
+        padding: 2.5rem;
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+
+        & > .book-heading {
+        font: {
+            family: $sansita;
+            size: 4.2rem;
+        }
+        color: $blue;
+        text-align: center;
+        padding-top: 2rem;
+        margin-bottom: 5rem;
+            }
+    }
+
+    .book-all-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .book-one-wrapper {
+        margin: 4rem 0 2rem 0;
+        min-width: 33%;
+        max-width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-image {
+        margin: 10px 15px;
+        background: $background;
+        padding: 15px;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        transition: $animation;
+    }
+
+    .book-image > img {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: auto;
+        height: 25%;
+        max-height: 200px;
+        flex-basis: 100%;
+        z-index: 1;
+    }
+
+    .book-image:hover {
+        transition: $animation;
+        transform: scale(1.5);
+        border: 3px solid $background;
+        background: $yellow;
+        z-index: 1;
+    }
+
+    a.book-title {
+        font: {
+            family: $playfair;
+            size: 2rem;
+        }
+        width: 75%;
+        color: $yellow;
+        text-align: center;
+        line-height: 2.4rem;
+        margin: auto;
+        transition: $animation;
+    }
+
+    a.book-title:hover {
+        color: $blue;
+    }
+}

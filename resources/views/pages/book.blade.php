@@ -7,19 +7,17 @@
 @endsection
 
 @section('body')
-<div class="book-container">
+<div id="book-panel">
 <img id="bookImage" src="/img/page/book-page-low.jpg" alt="Books photo">
    <div class="book-wrapper">
         <h1 class="book-heading">Moja biblioteczka</h1>
         <div class="book-all-wrapper">
         @foreach($books as $book)
-            <div class="book-one-wrapper">
+            <div class="book-one-wrapper animated fadeInLeft">
                 <div class="book-image">
-                    <a href="#">
-                        <img class="animated fadeInLeft" src="img/book/{{$book->thumbnail}}">
-                    </a>
+                    <img class="animated fadeInLeft" src="img/book/{{$book->thumbnail}}">
                 </div>       
-                <p class="book-header animated fadeInLeft">{{$book->title}}</p>      
+                <a href="#" class="book-title animated fadeInLeft">{{$book->title}}</a>      
             </div>
         @endforeach
         </div>

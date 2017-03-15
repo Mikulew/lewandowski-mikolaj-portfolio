@@ -216,7 +216,7 @@
 @media only screen and (orientation: portrait) and (max-width: 767px) {
     #aboutImage { 
         width: auto;
-        height: 100%;
+        height: calc(100% - 5rem);
     }
     
     .about-panel:after {

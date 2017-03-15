@@ -191,13 +191,13 @@
     
     #contact-panel {
         width: 100%;
-        height: 100%;
     }
 
     #contactImage { 
         position: fixed;
         width: 100%;
         height: auto;
+        margin-top: 10rem;
         left: 0;
         right: 0;
         top: 0; 
@@ -330,13 +330,13 @@
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-    #contactImage { 
-        width: auto;
+    #contactImage {
+        margin-top: 10rem;
         height: 100vh;
     }
     
     .contact-wrapper {
-        margin: 12rem auto 32rem auto;  
+        margin: 12rem auto 12rem auto;  
     }
 }
 
