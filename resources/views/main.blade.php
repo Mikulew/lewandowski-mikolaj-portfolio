@@ -337,7 +337,6 @@
         </div>   
         <main class="page-container">
             @yield('body')
-<!--                @include('partials._footer')-->
         </main> 
     @include('partials._javascript')
     @yield('scripts')
