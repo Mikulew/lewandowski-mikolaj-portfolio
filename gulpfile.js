@@ -14,6 +14,7 @@ const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
+//const hash = require('gulp-hash-src');
 //const browserSync = require('laravel-elixir-browsersync-official');
 
 let config = {
@@ -32,10 +33,10 @@ let config = {
     notnode: '!node_modules/**'
 };
 //
-//gulp.task('default', function() {
-//    console.log("Add a gulp's parameter!");
-//});
-//
+gulp.task('default', function() {
+    console.log("Add a gulp's parameter!");
+});
+
 gulp.task('css', function() {
     return gulp.src(config.scssin)
         .pipe(sourceMaps.init())
@@ -43,9 +44,10 @@ gulp.task('css', function() {
         .pipe(autoprefixer({
             browsers: ['last 3 versions']
         }))
+        //.pipe(hash({build_dir: config.scssin, src_path: config.cssout}))
         .pipe(sourceMaps.write())
         .pipe(cleanCSS())
-        .pipe(gulp.dest(config.cssout))
+        .pipe(gulp.dest(config.cssout));
 });
 
 gulp.task('js', function() {

@@ -23,6 +23,10 @@ img, embed, object, video {
     max-width: 100%;
 }
 
+li {
+    list-style-position: inside;
+}
+
 // =NAVIGATION
 
 @media only screen and (max-width: 767px) {

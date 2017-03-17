@@ -16,4 +16,3 @@
                $navbar.toggleClass('open');
            }
     </script>
-    <script src="/js/parsley.min.js"></script>

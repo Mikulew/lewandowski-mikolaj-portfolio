@@ -1,25 +1,337 @@
 @import "variables";
 @import "mixins";
 
-#projectImage {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    z-index: -100;
-    display: block;
+@media only screen and (max-width: 767px) {
+    #project-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #project-panel:after {
+        content: '';
+        display: none;
+    }
+    
+    #project-panel {
+        margin: 5rem 0;
+    }
+    #projectImage { 
+        padding: 5rem 0 5rem 0;
+        position: fixed;
+        width: 100vw;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .project-wrapper {
+        width: 90%;
+        min-height: 100vh;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 8rem auto 1rem auto; 
+        padding: 2rem;
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        & > .project-heading {
+            font: {
+                family: $sansita;
+                size: 4.2rem;
+            }
+            color: $blue;
+            text-align: center;
+            padding-top: 1rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    #projectImage {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    .project-title {
+        font: {
+            family: $playfair;
+            size: 2.8rem;
+        }
+        padding-top: 1rem;
+        width: 100%;
+        color: $yellow;
+        text-align: center;
+        line-height: 2.8rem;
+        margin: auto;
+        transition: $animation;
+    }
 }
 
-.project-heading {
-    font: {
-        family: $playfair;
-        size: 3.8rem;
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+    #projectImage { 
+        width: auto;
+        height: 100%;
     }
-    color: $yellow;
-    text-align: center;
-    padding-top: 50px;
-    margin-bottom: 50px;
+    
+    #project-panel:after {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
+    }
+    .project-wrapper {
+        margin: 7rem auto 7rem auto; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #project-panel:before {
+        content: '';
+        background-color: $black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #project-panel {
+        width: 100%;
+    }
+
+    #projectImage { 
+        position: fixed;
+        width: 100%;
+        height: auto;
+        margin-top: 10rem;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .project-wrapper {
+        width: 80vw;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 12rem auto 6rem auto;  
+        padding: 20px;
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        & > .project-heading {
+            font: {
+                family: $sansita;
+                size: 4.2rem;
+            }
+            color: $blue;
+            text-align: center;
+            padding-top: 1rem;
+            margin-bottom: 5rem;
+        }
+    }
+    
+    .project-title {
+        font: {
+            family: $playfair;
+            size: 2.6rem;
+        }
+        width: 100%;
+        color: $yellow;
+        text-align: center;
+        line-height: 2.8rem;
+        margin: auto;
+        transition: $animation;
+    }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px){
+    #projectImage {
+        margin-top: 10rem;
+        height: 100vh;
+    }
+    
+    .project-wrapper {
+        margin: 12rem auto 12rem auto;  
+    }
+}
+
+@media only screen  and (min-width: 1280px) {
+    #project-panel:before {
+        content: '';
+        background-color: $black;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    #projectImage { 
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 5rem; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 80vw;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 8rem auto 1rem auto;  
+
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        
+        & > .project-heading {
+            font: {
+                family: $sansita;
+                size: 4.2rem;
+            }
+            color: $blue;
+            text-align: center;
+            padding-top: 2rem;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .project-title {
+        font: {
+            family: $playfair;
+            size: 2.6rem;
+        }
+        width: 100%;
+        color: $yellow;
+        text-align: center;
+        line-height: 2.4rem;
+        transition: $animation;
+    }
+    
+    .project-cointainer-example {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-content: stretch;
+        width: 90%;
+        margin-top: 2rem;
+        
+        .project-paragraph {
+            min-width: 50%;
+            width: 100%;
+            font: {
+                 family: $roboto;
+                 size: 1.8rem;
+             }
+            line-height: 2.4rem;
+            color: $paper;
+            margin: 0 3rem 0 0;
+        }
+        
+        .project-container-image {
+            min-width: 50%;
+            width: 100%;
+            margin: 0 3rem 0 0;
+            & > .project-image {
+                position: relative;
+                float: right;
+                width: 60%;
+                transition: $animation;
+                border: 3px $yellow solid;
+                border-radius: 4px;
+                margin-right: 8rem;
+            }
+            & > .project-image:hover {
+                width: 80%;
+                border: 2px $blue solid;
+            }
+            & > .project-image:before {
+                content: '';
+                clear: both;
+            }
+        }
+    }
+    
+    .project-wrapper-technology {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem 0;
+        justify-content: space-around;
+    }
+    
+    .project-container-technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > .project-image-technology {
+            width: auto;
+            height: 8rem;
+            margin: 1 rem;
+            }
+        & > .project-name-technology {
+            font: {
+                family: $sansita;
+                size: 2.4rem;
+            }
+            color: $yellow;
+            margin: 1rem;
+            }   
+    }
+     .project-button {
+         display: inline-block;
+        font: {
+             family: $sansita;
+             size: 2rem;
+             weight: 600;
+         }
+        width: 20%;
+        margin: 5rem 40% 3rem;
+        padding: 1rem;
+        text-align: center;
+        background-color: darken($blue, 15%);
+        color: $yellow;
+        border: none; 
+        border-radius: 4px;
+        transition: $animation;
+
+         &:hover {
+             background-color: darken($blue, 30%);
+             color: $yellow;
+         }
+      }
 }
