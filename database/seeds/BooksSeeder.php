@@ -45,7 +45,7 @@ class BooksSeeder extends Seeder
         $book->description = "Kolejne wydanie tej cenionej książki zostało gruntownie przeredagowane i uzupełnione o nowe informacje tak, aby prezentowało obecnie wykorzystywane narzędzia i panujące trendy w projektowaniu stron internetowych. W trakcie lektury poznasz składnię języka HTML, wykorzystywane znaczniki oraz nowości zawarte w HTML5. Ponadto zaznajomisz się z kaskadowymi arkuszami stylów (CSS) oraz przekonasz się, jaki potencjał kryje język JavaScript. Nauczysz się także przygotowywać odpowiednią grafikę na potrzeby strony WWW. Książka ta jest doskonałym przewodnikiem wprowadzającym w świat projektowania!";
         $book->pages = 600;
         $book->link = "http://helion.pl/ksiazki/projektowanie-stron-internetowych-przewodnik-dla-poczatkujacych-webmasterow-po-html5-css3-i-grafic-jennifer-niederst-robbins,prsti2.htm";
-        $book->thumbnail = "jennifer-niederst-robbins-projektowanie-stron-internetowych.jpg";
+        $book->thumbnail = "jennifer-niederst-robbins-projektowanie-stron-internetowych.png";
         $book->save();
         
         $book = new Book();

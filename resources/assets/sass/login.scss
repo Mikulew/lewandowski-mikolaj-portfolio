@@ -23,7 +23,7 @@
         position: fixed;
         width: 100vw;
         height: auto;
-        padding: 5rem 0 5rem 0;
+        margin: 5rem 0;
         left: 0;
         right: 0;
         top: 0; 
@@ -158,7 +158,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #login-panel:before {
         content: '';
-        background-color: $black;
+        background-color: $background;
         position: fixed;
         left: 0;
         right: 0;
@@ -177,6 +177,7 @@
         position: fixed;
         width: auto;
         height: 100vh;
+        margin-top: 10rem;
         left: 0;
         right: 0;
         top: 0; 
@@ -312,14 +313,25 @@
 }
 
 @media only screen  and (min-width: 1280px) { 
-
+    #login-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
     #loginImage {
         position: fixed;
         width: 100%;
         height: auto;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 5rem; 
         bottom: 0;
         z-index: -100;
         display: block;

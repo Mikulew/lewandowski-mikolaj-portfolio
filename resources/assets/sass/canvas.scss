@@ -1,25 +1,545 @@
 @import "variables";
 @import "mixins";
 
-#canvasImage {
-    position: fixed;
-    width: 100%;
-    height: auto;
-    left: 0;
-    right: 0;
-    top: 0; 
-    bottom: 0;
-    z-index: -100;
-    display: block;
+@media only screen and (max-width: 767px) {
+    #canvas-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #canvas-panel:after {
+        content: '';
+        display: none;
+    }
+    
+    #canvas-panel {
+        margin: 5rem 0;
+    }
+    
+    #canvasImage {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 5rem; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+     .canvas-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 8rem auto 1rem auto;  
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        
+        & > .canvas-heading {
+            font: {
+                family: $sansita;
+                size: 4.2rem;
+            }
+            color: $blue;
+            text-align: center;
+            padding-top: 2rem;
+        }
+        & > .canvas-subheading {
+            font: {
+                family: $roboto;
+                size: 2rem;
+                }
+            width: 90%;
+            color: $yellow;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .canvas-all-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .canvas-one-wrapper {
+        margin: 4rem 2rem 4rem 2rem;
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .canvas-image {
+        width: 50%;
+        margin: 1rem 1.5rem;
+        background: $background;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        transition: $animation;
+    }
+    
+    .canvas-title {
+        font: {
+            family: $playfair;
+            size: 4rem;
+        }
+        padding: 2rem 0;
+        width: 90%;
+        color: $yellow;
+        text-align: center;
+        line-height: 4.6rem;
+        margin: auto;
+        transition: $animation;
+    }
+    
+    .canvas-description {
+        width: 90%;
+        padding-top: 3rem;
+        font: {
+             family: $roboto;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $paper;
+        text-align: center;
+    }
+    
+    .canvas-link {
+        font: {
+             family: $sansita;
+             size: 2rem;
+             weight: 600;
+         }
+        width: 80%;
+        color: $yellow;
+        line-height: 2rem;
+        padding: 1.5rem 3rem;
+        margin: auto;
+        border-radius: 4px;
+        margin: 2rem 0;
+        background-color: darken($blue, 15%);
+        transition: $animation;
+        text-align: center;
+        
+        &:hover {
+            color: $yellow;
+            background-color: darken($blue, 30%);
+        }
+    }
+    
+    .canvas-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 4rem 2rem;
+    }
+    
+    .canvas-wrapper-technology {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem auto;
+        justify-content: space-around;
+    }
+    
+    .canvas-container-technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > .canvas-image-technology {
+            width: auto;
+            height: 8rem;
+            margin: 1rem;
+            }
+        & > .canvas-name-technology {
+            font: {
+                family: $sansita;
+                size: 2.4rem;
+            }
+            color: $yellow;
+            }   
+    }
 }
 
-.canvas-heading {
-    font: {
-        family: $playfair;
-        size: 3.8rem;
+@media only screen and (orientation: portrait) and (max-width: 767px) {
+    
+    #canvas-panel:after {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 5rem;
+        width: 100%;
+        z-index: 100;
+        display: block;
     }
-    color: $yellow;
-    text-align: center;
-    padding-top: 50px;
-    margin-bottom: 50px;
+    
+    #canvasImage {
+        width: auto;
+        height: calc(100% - 10rem);
+    }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    #canvas-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    #canvasImage {
+        position: fixed;
+        width: auto;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 10rem; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+     .canvas-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 75%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 12rem auto 1rem auto;  
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        
+        & > .canvas-heading {
+            font: {
+                family: $sansita;
+                size: 4.2rem;
+            }
+            color: $blue;
+            text-align: center;
+            padding-top: 2rem;
+        }
+        & > .canvas-subheading {
+            font: {
+                family: $roboto;
+                size: 2rem;
+                }
+            width: 90%;
+            color: $yellow;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+      .canvas-all-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .canvas-one-wrapper {
+        margin: 4rem 2rem 4rem 2rem;
+        max-width: 100%;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .canvas-image {
+        width: 50%;
+        margin: 1rem 1.5rem;
+        background: $background;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        transition: $animation;
+    }
+    
+    .canvas-title {
+        font: {
+            family: $playfair;
+            size: 4rem;
+        }
+        padding: 2rem 0;
+        width: 90%;
+        color: $yellow;
+        text-align: center;
+        line-height: 4.6rem;
+        margin: auto;
+        transition: $animation;
+    }
+    
+    .canvas-description {
+        width: 100%;
+        padding-top: 3rem;
+        font: {
+             family: $roboto;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $paper;
+        text-align: center;
+    }
+    
+    .canvas-link {
+        font: {
+             family: $sansita;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $yellow;
+        line-height: 2rem;
+        padding: 1.5rem 5rem;
+        margin: auto;
+        border-radius: 4px;
+        margin: 4rem 2rem;
+        background-color: darken($blue, 15%);
+        transition: $animation;
+        text-align: center;
+        
+        &:hover {
+            color: $yellow;
+            background-color: darken($blue, 30%);
+        }
+    }
+    
+    .canvas-buttons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .canvas-wrapper-technology {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem auto;
+        justify-content: space-around;
+    }
+    
+    .canvas-container-technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > .canvas-image-technology {
+            width: auto;
+            height: 8rem;
+            margin: 1rem;
+            }
+        & > .canvas-name-technology {
+            font: {
+                family: $sansita;
+                size: 2.4rem;
+            }
+            color: $yellow;
+            }   
+    }
+}
+
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+    
+}
+
+@media only screen  and (min-width: 1280px) {
+    #canvas-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #canvasImage {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 5rem; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+
+    .canvas-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 0.7);
+        margin: 8rem auto 1rem auto;  
+        border-radius: 4px; 
+        box-shadow: 0 0 10px rgba(0,0,0,1);
+        
+        & > .canvas-heading {
+            font: {
+                family: $sansita;
+                size: 4.2rem;
+            }
+            color: $blue;
+            text-align: center;
+            padding-top: 2rem;
+        }
+        & > .canvas-subheading {
+            font: {
+                family: $roboto;
+                size: 2rem;
+            }
+            color: $yellow;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+    }
+    
+    .canvas-all-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .canvas-one-wrapper {
+        margin: 4rem 2rem 2rem 2rem;
+        max-width: 45%;
+        min-width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .canvas-image {
+        width: 50%;
+        margin: 1rem 1.5rem;
+        background: $background;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        transition: $animation;
+    }
+    
+    .canvas-title {
+        font: {
+            family: $playfair;
+            size: 3.2rem;
+        }
+        padding: 2rem 0;
+        width: 100%;
+        color: $yellow;
+        text-align: center;
+        line-height: 3.6rem;
+        margin: auto;
+        transition: $animation;
+    }
+    
+    .canvas-description {
+        width: 100%;
+        padding-top: 3rem;
+        font: {
+             family: $roboto;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $paper;
+        text-align: center;
+    }
+    
+    .canvas-link {
+        font: {
+             family: $sansita;
+             size: 2rem;
+             weight: 600;
+         }
+        color: $yellow;
+        line-height: 2rem;
+        padding: 1rem 3rem;
+        margin: auto;
+        border-radius: 4px;
+        margin: 4rem 2rem;
+        background-color: darken($blue, 15%);
+        transition: $animation;
+        text-align: center;
+        
+        &:hover {
+            color: $yellow;
+            background-color: darken($blue, 30%);
+        }
+    }
+    
+    .canvas-buttons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .canvas-wrapper-technology {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 3rem auto;
+        justify-content: space-around;
+    }
+    
+    .canvas-container-technology {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & > .canvas-image-technology {
+            width: auto;
+            height: 8rem;
+            margin: 1rem;
+            }
+        & > .canvas-name-technology {
+            font: {
+                family: $sansita;
+                size: 2.4rem;
+            }
+            color: $yellow;
+            }   
+    }
+}    

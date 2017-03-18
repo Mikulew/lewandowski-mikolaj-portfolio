@@ -14,7 +14,7 @@ class PostsSeeder extends Seeder
     {
         $faker = Faker\Factory::create();
 
-        for($i = 0; $i < 24; $i++) {
+        for($i = 0; $i < 3; $i++) {
             $post = new Post();
             $post->title = $faker->company;
             $post->content = $faker->text(5500);

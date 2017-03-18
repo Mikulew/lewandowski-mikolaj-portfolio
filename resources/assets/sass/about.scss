@@ -4,19 +4,31 @@
 // =GRID
 
 @media only screen and (max-width: 767px) {
-    .about-panel {
+    #about-panel {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
     }
     
-    .about-panel:after {
+    #about-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #about-panel:after {
         content: '';
         display: none;
     }
     
-    .about-panel {
-        margin: 5rem 0;
+    #about-panel {
+        margin: 4rem 0;
     }
 
     #aboutImage { 
@@ -25,7 +37,7 @@
         height: auto;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 5rem; 
         bottom: 0;
         z-index: -100;
         display: block;
@@ -109,7 +121,6 @@
         }
         
     }
-
 
     // =LETTER
 
@@ -216,10 +227,10 @@
 @media only screen and (orientation: portrait) and (max-width: 767px) {
     #aboutImage { 
         width: auto;
-        height: calc(100% - 5rem);
+        height: calc(100% - 10rem);
     }
     
-    .about-panel:after {
+    #about-panel:after {
         content: '';
         background-color: $background;
         position: fixed;
@@ -245,20 +256,30 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .about-panel {
+    #about-panel {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
+        margin: 12rem 0;
     }
     
-    .about-panel {
-        margin: 12rem 0;
+    #about-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
     }
 
     #aboutImage { 
         position: fixed;
         width: auto;
         height: 100%;
+        margin-top: 10rem;
         left: 0;
         right: 0;
         top: 0; 
@@ -444,20 +465,31 @@
     }
 }
 
-//@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-////    #contactImage { 
-////        width: auto;
-////        height: 100vh;
-////    }
-////    
-////    .contact-wrapper {
-////        margin: 12rem auto 32rem auto;  
-////    }
-//}
+@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+    #aboutImage { 
+        width: auto;
+        height: 100vh;
+    }
+    
+    .about-wrapper {
+        margin: 12rem auto 32rem auto;  
+    }
+}
 
 @media only screen  and (min-width: 1280px) {
-
-    .about-panel {
+    #about-panel:before {
+        content: '';
+        background-color: $background;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
+    }
+    
+    #about-panel {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -469,12 +501,11 @@
         height: auto;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 5rem; 
         bottom: 0;
         z-index: -100;
         display: block;
     }
-
 
     .about-heading {
         font: {

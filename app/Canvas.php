@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Canvas extends Model
 {
     protected $fillable = [
-        'category_id', 'title', 'description', 'script', 'link', 'thumbnail'
+        'category_id', 'title', 'description', 'link', 'io', 'thumbnail'
     ];
     
     public function technology() {

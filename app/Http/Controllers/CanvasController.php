@@ -14,7 +14,7 @@ class CanvasController extends Controller
      */
     public function index()
     {
-        $canvases = Canvas::orderBy('id', 'ASC')->paginate(10);
+        $canvases = Canvas::orderBy('id', 'ASC')->paginate(4);
         return view('pages.canvas', compact('canvases'));
     }
 

@@ -24,13 +24,12 @@
     }
 
     #contactImage { 
-        padding: 5rem 0 5rem 0;
         position: fixed;
         width: 100vw;
         height: auto;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 5rem; 
         bottom: 0;
         z-index: -100;
         display: block;
@@ -158,7 +157,7 @@
 @media only screen and (orientation: portrait) and (max-width: 767px) {
     #contactImage { 
         width: auto;
-        height: 100%;
+        height: calc(100% - 10rem);
     }
     
     #contact-panel:after {
@@ -172,6 +171,7 @@
         z-index: 100;
         display: block;
     }
+    
     .contact-wrapper {
         margin: 7rem auto 7rem auto; 
     }
@@ -180,7 +180,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #contact-panel:before {
         content: '';
-        background-color: $black;
+        background-color: $background;
         position: fixed;
         left: 0;
         right: 0;
@@ -345,7 +345,7 @@
 
     #contact-panel:before {
         content: '';
-        background-color: $black;
+        background-color: $background;
         position: fixed;
         left: 0;
         right: 0;

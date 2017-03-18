@@ -28,7 +28,7 @@
         width: 100vw;
         height: auto;
         background-color: $background;
-        padding: 5rem 0 5rem 0;
+        margin: 5rem 0;
         position: fixed;
         left: 0;
         right: 0;
@@ -170,7 +170,7 @@
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
-    #blogImage { 
+    #blogImage {
         width: auto;
         height: 100%;
     }
@@ -204,6 +204,7 @@
         position: fixed;
         width: auto;
         height: 100%;
+        margin-top: 10rem;
         left: 0;
         right: 0;
         top: 0; 
@@ -362,7 +363,7 @@
         height: auto;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 5rem; 
         bottom: 0;
         z-index: -100;
         display: block;

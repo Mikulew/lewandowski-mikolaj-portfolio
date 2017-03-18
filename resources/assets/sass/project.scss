@@ -19,23 +19,24 @@
         display: none;
     }
     
-    #project-panel {
-        margin: 5rem 0;
-    }
     #projectImage { 
-        padding: 5rem 0 5rem 0;
         position: fixed;
-        width: 100vw;
+        width: 100%;
         height: auto;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 5rem; 
         bottom: 0;
         z-index: -100;
         display: block;
     }
 
     .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
         width: 90%;
         min-height: 100vh;
         background-color: rgba(10, 10, 10, 0.7);
@@ -51,6 +52,15 @@
             color: $blue;
             text-align: center;
             padding-top: 1rem;
+        }
+        & > .project-subheading {
+            font: {
+                family: $roboto;
+                size: 2rem;
+            }
+            width: 90%;
+            color: $yellow;
+            text-align: center;
             margin-bottom: 5rem;
         }
     }
@@ -166,7 +176,7 @@
 @media only screen and (orientation: portrait) and (max-width: 767px) {
     #projectImage { 
         width: auto;
-        height: 100%;
+        height: calc(100% - 5rem);
     }
     
     #project-panel:after {
@@ -180,8 +190,14 @@
         z-index: 100;
         display: block;
     }
+    
     .project-wrapper {
         margin: 7rem auto 7rem auto; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
     }
        .project-cointainer-example {
         display: flex;
@@ -249,7 +265,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     #project-panel:before {
         content: '';
-        background-color: $black;
+        background-color: $background;
         position: fixed;
         left: 0;
         right: 0;
@@ -292,7 +308,15 @@
             color: $blue;
             text-align: center;
             padding-top: 1rem;
-            margin-bottom: 3rem;
+        }
+        & > .project-subheading {
+            font: {
+                family: $roboto;
+                size: 2rem;
+            }
+            color: $yellow;
+            text-align: center;
+            margin-bottom: 6rem;
         }
     }
     
@@ -445,7 +469,7 @@
 @media only screen  and (min-width: 1280px) {
     #project-panel:before {
         content: '';
-        background-color: $black;
+        background-color: $background;
         position: fixed;
         left: 0;
         right: 0;
@@ -459,6 +483,7 @@
         position: fixed;
         width: 100%;
         height: auto;
+        margin-top: 5rem;
         left: 0;
         right: 0;
         top: 5rem; 
@@ -489,7 +514,15 @@
             color: $blue;
             text-align: center;
             padding-top: 2rem;
-            margin-bottom: 3rem;
+        }
+        & > .project-subheading {
+            font: {
+                family: $roboto;
+                size: 2rem;
+            }
+            color: $yellow;
+            text-align: center;
+            margin-bottom: 4rem;
         }
     }
     
@@ -528,7 +561,7 @@
         .project-container-image {
             min-width: 50%;
             width: 100%;
-            margin: 0 3rem 0 0;
+            margin: 0 4rem 0 0;
             & > .project-image {
                 position: relative;
                 float: right;
@@ -540,7 +573,7 @@
             }
             & > .project-image:hover {
                 width: 80%;
-                border: 2px $blue solid;
+                border: 2px $yellow solid;
             }
             & > .project-image:before {
                 content: '';

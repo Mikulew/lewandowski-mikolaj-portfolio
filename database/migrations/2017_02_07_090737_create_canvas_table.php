@@ -18,8 +18,8 @@ class CreateCanvasTable extends Migration
             $table->integer('category_id')->unsigned();
             $table->string('title', 100);
             $table->string('description', 1000);
-            $table->string('script', 100);
             $table->string('link', 100);
+            $table->string('io', 100);
             $table->string('thumbnail', 100);
             $table->timestamps();
         });

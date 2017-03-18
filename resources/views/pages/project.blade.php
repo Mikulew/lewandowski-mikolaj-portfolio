@@ -11,6 +11,7 @@
     <img id="projectImage" src="/img/page/project-page-low.jpg" alt="pavement photo">
     <div class="project-wrapper">
         <h1 class="project-heading">Moje projekty</h1>
+        <h2 class="project-subheading">Czytam książki branżowe, żeby bardziej wgłębić się w rozumowaniu programowania</h2>
         @foreach($projects as $project)
             <h3 class="project-title animated fadeInDown">{{ $project->title }}</h3>
             <div class="project-cointainer-example">
