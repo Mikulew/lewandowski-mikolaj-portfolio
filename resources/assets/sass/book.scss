@@ -219,6 +219,32 @@
         margin: auto;
         transition: $animation;
     }
+        .book-image {
+        margin: 1rem 1.5rem;
+        background: $background;
+        padding: 1rem;
+        border-radius: 5px;
+        border: 2px solid $yellow;
+        transition: $animation;
+    }
+
+    .book-image > img {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        height: auto;
+        flex-basis: 100%;
+        z-index: 1;
+    }
+
+    .book-image:hover {
+        transition: $animation;
+        transform: scale(1.2);
+        border: 3px solid $background;
+        background: $yellow;
+        z-index: 1;
+    }
 
 }
 
@@ -569,6 +595,7 @@
              size: 2rem;
              weight: 600;
          }
+        text-align: center;
         width: 30%;
         padding: 1rem;
         margin: 4rem 2rem;

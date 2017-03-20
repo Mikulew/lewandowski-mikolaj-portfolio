@@ -176,11 +176,99 @@
             <i id="newspaperButton" class="chevron circle down icon"></i>
         </div>
     </section>
-<!--
     <section id="sectionCharts" class="welcome-charts">
         <h2 class="charts-huge-heading">TESTOWANIE</h2>
-    </section>  
--->
+        <p>Niezależnie od tego, jak wiele podstron twojego serwisu będzie przeglądał, zostanie w statystykach ukazany jako jedna wizyta. Z kolei odsłona oznacza pojedyncze wyświetlenie jednej
+podstrony. Tak więc jeden użytkownik może z powodzeniem wygenerować kilka, kilkadziesiąt,
+a nawet kilkaset odsłon.</p>
+        <i id="chartsButton" class="chevron circle down icon"></i>
+    </section>
+    <section id="sectionHistory" class="welcome-history">
+        <h2 class="history-huge-heading">Historia Internetu w Polsce</h2>
+        <div class="history-wrapper">
+            <div class="history-row">
+                <div class="history-column">
+                    <h3 class="history-year">1990</h3>
+                    <h4 class="history-date">20 listopada</h4>
+                    <p>około południa (pomiędzy 10:57 a 13:25) został wysłany pierwszy email do Polski</p>
+                </div>
+                <div class="history-column">
+                    <h3 class="history-year">1991</h3>
+                    <h4 class="history-date">kwiecień</h4>
+                    <p>powstaje Naukowa i Akademicka Sieć Komputerowa (NASK)</p>
+                    <h4>17 sierpnia</h4>
+                    <p>Rafał Pietrak, pracownik Wydziału Fizyki UW, wysłał pierwszego e-maila po protokole TCP/IP z budynku Wydziału Fizyki UW z ul. Hożej 74 przez Centrum Informatyczne UW (pokój nr 3 CIUW) do Kopenhagi. Ta data uznawana jest za początek Internetu w Polsce</p>
+                </div>
+            </div>
+            <div class="history-row">
+                <div class="history-column">
+                    <h4 class="history-year">1992</h4>
+                    <p>pierwszy komercyjny dostawca Internetu – ATM S.A.</p>
+                </div>
+                <div class="history-column">
+                    <h3 class="history-year">1993</h3>
+                    <h4 class="history-date">sierpień</h4>
+                    <p>pierwszy polski serwer WWW, www.fuw.edu.pl</p>
+                </div>
+            </div>
+            <div class="history-row">
+                <div class="history-column">
+                    <h4 class="history-year">1994</h4>
+                    <h3 class="history-date">czerwiec</h3>
+                    <p>powstaje Maloka BBS, pierwszy BBS oferujący komercyjny dostęp do Internetu</p>
+                </div>
+                <div class="history-column">
+                    <h4 class="history-year">1995</h4>
+                    <h3 class="history-date">18 maja</h3>
+                    <p> Powstaje Polska Społeczność Internetu, organizacja, której celem jest propagowanie rozwoju polskiego Internetu; działała do 1997 roku</p>
+                 </div>
+            </div>
+            <div class="history-row">
+                <div class="history-column">
+                    <h4 class="history-year">1996</h4>
+                    <h3 class="history-date">grudzień</h3>
+                    <p>pierwsze darmowe konta poczty elektronicznej, oferowane przez Polbox</p>
+                </div>
+                 <div class="history-column">
+                    <h4 class="history-year">1999</h4>
+                    <h3 class="year-date">29 listopada</h3>
+                    <p>rozpoczyna się pilotażowa sprzedaż SDI (Szybki Dostęp do Internetu, Stały Dostęp do Internetu) oferowana przez TP S.A. zapewniająca stałe łącze z internetem bez blokowania linii telefonicznej. Usługa oferująca dostęp z prędkością 115 kbit/s oferowała również stały adres IP</p>
+                 </div>
+            </div>
+            <div class="history-row">
+               <div class="history-column">
+                    <h4 class="history-year">2001</h4>
+                    <h4 class="history-date">15 stycznia</h4>
+                    <p>TPSA uruchamia usługę Neostrada, umożliwiającą stały dostęp do Internetu poprzez linię telefoniczną</p>
+                </div>
+                <div class="history-column">
+                    <h4 class="history-year">2008</h4>
+                    <p>14 milionów internautów w Polsce</p>
+                </div>
+            </div>
+            <div class="history-row">
+                <div class="history-column">
+                    <h4 class="history-year">2011</h4>
+                    <p>16 milionów internautów w Polsce</p>
+                </div>
+                <div class="history-column">
+                    <h4 class="history-year">2013</h4>
+                    <p>18 milionów internautów w Polsce</p>
+                </div>
+            </div>
+            <div class="history-row">
+                <div class="history-column">
+                    <h4 class="history-year">2014</h4>
+                    <p>23 miliony internautów w Polsce</p>
+                </div>
+                <div class="history-column">
+                    <h4 class="history-year">2015</h4>
+                    <p>25,7 mln internautów w Polsce</p>
+                </div>
+            </div>
+        </div>
+        <i id="historyButton" class="chevron circle up icon"></i>
+    </section>    
 </div>
 @endsection
 
@@ -201,6 +289,12 @@
         });
         $('#newspaperButton').click(function(){
             $.scrollTo($('#sectionCharts'), 1000);
+        });
+        $('#chartsButton').click(function(){
+            $.scrollTo($('#sectionHistory'), 1000);
+        });
+        $('#historyButton').click(function(){
+            $.scrollTo($('#welcome-panel'), 1000);
         });
     })();
 </script>

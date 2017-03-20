@@ -92,16 +92,16 @@ class BooksSeeder extends Seeder
         $book->link = "http://helion.pl/ksiazki/zrozumiec-javascript-wprowadzenie-do-programowania-marijn-haverbeke,zrojsc.htm";
         $book->thumbnail = "marjin-haverbeke-zrozumiec-javascript.jpg";
         $book->save();
-        
-        $book = new Book();
-        $book->author = "Julian Shapiro";
-        $book->title = "Tworzenie animacji z użyciem języka JavaScript";
-        $book->description = "Jeżeli chcesz się nauczyć tworzyć animacje, czerpiąc z możliwości JavaScript, trafiłeś na właściwy podręcznik. W trakcie lektury kolejnych rozdziałów zdobędziesz bezcenną wiedzę na temat biblioteki Velocity.js oraz zasad projektowania ruchu. Potem przejdziesz do praktycznych aspektów pracy z animacjami — dowiesz się, jak rozdzielić style i logikę, jak zorganizować różne sekwencje animacji oraz jak dodawać efekty. Następnie nauczysz się animować teksty, korzystać z grafiki wektorowej w formacie SVG oraz zadbasz o wydajność animacji. Ta książka stanowi doskonałą lekturę, po której zaskoczysz użytkowników Twoich stron WWW atrakcyjnymi animacjami.";
-        $book->pages = 160;
-        $book->link = "http://helion.pl/ksiazki/tworzenie-animacji-z-uzyciem-jezyka-javascript-julian-shapiro,twanjs.htm";
-        $book->thumbnail = "julian-shapiro-tworzenie-animacji.jpg";
-        $book->save();
-        
+//        
+//        $book = new Book();
+//        $book->author = "Julian Shapiro";
+//        $book->title = "Tworzenie animacji z użyciem języka JavaScript";
+//        $book->description = "Jeżeli chcesz się nauczyć tworzyć animacje, czerpiąc z możliwości JavaScript, trafiłeś na właściwy podręcznik. W trakcie lektury kolejnych rozdziałów zdobędziesz bezcenną wiedzę na temat biblioteki Velocity.js oraz zasad projektowania ruchu. Potem przejdziesz do praktycznych aspektów pracy z animacjami — dowiesz się, jak rozdzielić style i logikę, jak zorganizować różne sekwencje animacji oraz jak dodawać efekty. Następnie nauczysz się animować teksty, korzystać z grafiki wektorowej w formacie SVG oraz zadbasz o wydajność animacji. Ta książka stanowi doskonałą lekturę, po której zaskoczysz użytkowników Twoich stron WWW atrakcyjnymi animacjami.";
+//        $book->pages = 160;
+//        $book->link = "http://helion.pl/ksiazki/tworzenie-animacji-z-uzyciem-jezyka-javascript-julian-shapiro,twanjs.htm";
+//        $book->thumbnail = "julian-shapiro-tworzenie-animacji.jpg";
+//        $book->save();
+//        
         $book = new Book();
         $book->author = "Matt Zandstra";
         $book->title = "PHP. Obiekty, wzorce, narzędzia. Wydanie IV";
@@ -165,14 +165,14 @@ class BooksSeeder extends Seeder
         $book->thumbnail = "thodoris-greaidis-biblioteka-jquery.jpg";
         $book->save();
         
-        $book = new Book();
-        $book->author = "Beata Błaszczyk";
-        $book->title = "English 4 IT. Praktyczny kurs języka angielskiego dla specjalistów IT i nie tylko";
-        $book->description = "Obecnie język angielski jest nieodłącznym elementem świata IT. Większość producentów oprogramowania oraz twórców metodyk i standardów w branży IT udostępnia materiały wyłącznie w tym języku. Ponadto wiele projektów informatycznych jest realizowanych we współpracy z ekspertami pochodzącymi z różnych krajów. Komunikacja odbywa się wówczas przeważnie także w języku angielskim. Jeśli więc jesteś specjalistą z branży IT, funkcjonującym na co dzień w środowisku anglojęzycznym, możesz z kolei nie czuć się w pełni swobodnie wypowiadając się w tym języku w każdym obszarze tak szerokiej dziedziny wiedzy.";
-        $book->pages = 288;
-        $book->link = "http://helion.pl/ksiazki/english-4-it-praktyczny-kurs-jezyka-angielskiego-dla-specjalistow-it-i-nie-tylko-beata-blaszczyk,anginf.htm";
-        $book->thumbnail = "beata-blaszczyk-english-4-it.jpg";
-        $book->save();
+//        $book = new Book();
+//        $book->author = "Beata Błaszczyk";
+//        $book->title = "English 4 IT. Praktyczny kurs języka angielskiego dla specjalistów IT i nie tylko";
+//        $book->description = "Obecnie język angielski jest nieodłącznym elementem świata IT. Większość producentów oprogramowania oraz twórców metodyk i standardów w branży IT udostępnia materiały wyłącznie w tym języku. Ponadto wiele projektów informatycznych jest realizowanych we współpracy z ekspertami pochodzącymi z różnych krajów. Komunikacja odbywa się wówczas przeważnie także w języku angielskim. Jeśli więc jesteś specjalistą z branży IT, funkcjonującym na co dzień w środowisku anglojęzycznym, możesz z kolei nie czuć się w pełni swobodnie wypowiadając się w tym języku w każdym obszarze tak szerokiej dziedziny wiedzy.";
+//        $book->pages = 288;
+//        $book->link = "http://helion.pl/ksiazki/english-4-it-praktyczny-kurs-jezyka-angielskiego-dla-specjalistow-it-i-nie-tylko-beata-blaszczyk,anginf.htm";
+//        $book->thumbnail = "beata-blaszczyk-english-4-it.jpg";
+//        $book->save();
         
         $book = new Book();
         $book->author = "Dawid Mazur";
@@ -192,14 +192,14 @@ class BooksSeeder extends Seeder
         $book->thumbnail = "michal-kortas-bootstrap-praktyczne-projekty.jpg";
         $book->save();
         
-        $book = new Book();
-        $book->author = "Tomasz \"Comandeer\" Jakut";
-        $book->title = "JavaScript. Programowanie zaawansowane";
-        $book->description = "Zostań specjalistą! Z ta książką poznasz JavaScript od podszewki i zmierzysz się z ciekawymi wyzwaniami. Na podstawie praktycznych przykładów dowiesz się, jak zorganizować swoje środowisko pracy, podzielić projekt na odpowiednie moduły, napisać testy tworzonego kodu zgodnie z metodyką TDD, zbudować silnik selektorów, zadbać o szybkość działania swojego rozwiązania, właściwie obsłużyć zdarzenia DOM, opracować wydajne animacje, napisać dokumentację projektu i udostępnić go światu. Sporo? Pewnie, że tak – a w dodatku bez zadęcia, naturalnym językiem i przede wszystkim na temat!";
-        $book->pages = 256;
-        $book->link = "http://helion.pl/ksiazki/javascript-programowanie-zaawansowane-tomasz-comandeer-jakut,jascpz.htm";
-        $book->thumbnail = "tomasz-jakut-javascript-programowanie-zaawansowane.jpg";
-        $book->save();
+//        $book = new Book();
+//        $book->author = "Tomasz \"Comandeer\" Jakut";
+//        $book->title = "JavaScript. Programowanie zaawansowane";
+//        $book->description = "Zostań specjalistą! Z ta książką poznasz JavaScript od podszewki i zmierzysz się z ciekawymi wyzwaniami. Na podstawie praktycznych przykładów dowiesz się, jak zorganizować swoje środowisko pracy, podzielić projekt na odpowiednie moduły, napisać testy tworzonego kodu zgodnie z metodyką TDD, zbudować silnik selektorów, zadbać o szybkość działania swojego rozwiązania, właściwie obsłużyć zdarzenia DOM, opracować wydajne animacje, napisać dokumentację projektu i udostępnić go światu. Sporo? Pewnie, że tak – a w dodatku bez zadęcia, naturalnym językiem i przede wszystkim na temat!";
+//        $book->pages = 256;
+//        $book->link = "http://helion.pl/ksiazki/javascript-programowanie-zaawansowane-tomasz-comandeer-jakut,jascpz.htm";
+//        $book->thumbnail = "tomasz-jakut-javascript-programowanie-zaawansowane.jpg";
+//        $book->save();
         
         $book = new Book();
         $book->author = "Jason Rodriguez";
@@ -263,15 +263,15 @@ class BooksSeeder extends Seeder
         $book->link = "http://helion.pl/ksiazki/efektywny-javascript-68-sposobow-wykorzystania-potegi-jezyka-david-herman,efprjs.htm";
         $book->thumbnail = "david-herman-efektywny-javascript.jpg";
         $book->save();
-        
-        $book = new Book();
-        $book->author = "John Resig, Russ Ferguson, John Paxton";
-        $book->title = "Zaawansowane techniki języka JavaScript. Wydanie II";
-        $book->description = "Niniejsza książka stanowi kompendium wiedzy o nowoczesnym języku JavaScript. Zawiera zwięzłe, praktyczne informacje, których każdy doskonały programista będzie potrzebował do pisania aplikacji internetowych. Autorzy skoncentrowali się na zasadniczych tematach i przedstawili wszystkie istotne kwestie dotyczące zaawansowanych technik programowania w tym języku. Opisali również praktyczne sposoby wykorzystania tych technik, wskazując przy tym sposoby uniknięcia potencjalnych problemów.";
-        $book->pages = 200;
-        $book->link = "http://helion.pl/ksiazki/zaawansowane-techniki-jezyka-javascript-wydanie-ii-john-resig-russ-ferguson-john-paxton,ztejs2.htm";
-        $book->thumbnail = "john-resig-zaawansowane-techniki-jezyka-javascript.jpg";
-        $book->save();
+//        
+//        $book = new Book();
+//        $book->author = "John Resig, Russ Ferguson, John Paxton";
+//        $book->title = "Zaawansowane techniki języka JavaScript. Wydanie II";
+//        $book->description = "Niniejsza książka stanowi kompendium wiedzy o nowoczesnym języku JavaScript. Zawiera zwięzłe, praktyczne informacje, których każdy doskonały programista będzie potrzebował do pisania aplikacji internetowych. Autorzy skoncentrowali się na zasadniczych tematach i przedstawili wszystkie istotne kwestie dotyczące zaawansowanych technik programowania w tym języku. Opisali również praktyczne sposoby wykorzystania tych technik, wskazując przy tym sposoby uniknięcia potencjalnych problemów.";
+//        $book->pages = 200;
+//        $book->link = "http://helion.pl/ksiazki/zaawansowane-techniki-jezyka-javascript-wydanie-ii-john-resig-russ-ferguson-john-paxton,ztejs2.htm";
+//        $book->thumbnail = "john-resig-zaawansowane-techniki-jezyka-javascript.jpg";
+//        $book->save();
         
         $book = new Book();
         $book->author = "Michał Bartyzel";
@@ -291,32 +291,32 @@ class BooksSeeder extends Seeder
         $book->thumbnail = "douglas-crockford-javascript-mocne-strony.jpg";
         $book->save();
         
-        $book = new Book();
-        $book->author = "Elijah Meeks";
-        $book->title = "D3.js w akcji";
-        $book->description = "Niniejsza książka pozwoli Ci na płynne rozpoczęcie pracy z tą biblioteką, dającą fantastyczne możliwości. Nauczysz się, jak tworzyć interaktywną grafikę i aplikacje sterowane danymi. Zaczniesz od zestawu praktycznych przykładów, dostosowanych do różnego rodzaju wykresów, sieci i map. Wykorzystasz przy tym gotowe układy z biblioteki D3. Zapoznasz się z praktycznymi technikami projektowania zawartości stron, tworzenia animacji i prezentowania zmieniających się danych. Zobaczysz między innymi, jak tworzyć interaktywną grafikę i wykorzystywać dane przesyłane strumieniowo.";
-        $book->pages = 400;
-        $book->link = "http://helion.pl/ksiazki/d3-js-w-akcji-elijah-meeks,d3jsak.htm";
-        $book->thumbnail = "elijah-meeks-d3js-w-akcji.jpg";
-        $book->save();
+//        $book = new Book();
+//        $book->author = "Elijah Meeks";
+//        $book->title = "D3.js w akcji";
+//        $book->description = "Niniejsza książka pozwoli Ci na płynne rozpoczęcie pracy z tą biblioteką, dającą fantastyczne możliwości. Nauczysz się, jak tworzyć interaktywną grafikę i aplikacje sterowane danymi. Zaczniesz od zestawu praktycznych przykładów, dostosowanych do różnego rodzaju wykresów, sieci i map. Wykorzystasz przy tym gotowe układy z biblioteki D3. Zapoznasz się z praktycznymi technikami projektowania zawartości stron, tworzenia animacji i prezentowania zmieniających się danych. Zobaczysz między innymi, jak tworzyć interaktywną grafikę i wykorzystywać dane przesyłane strumieniowo.";
+//        $book->pages = 400;
+//        $book->link = "http://helion.pl/ksiazki/d3-js-w-akcji-elijah-meeks,d3jsak.htm";
+//        $book->thumbnail = "elijah-meeks-d3js-w-akcji.jpg";
+//        $book->save();
+//        
+//        $book = new Book();
+//        $book->author = "Tony Parisi";
+//        $book->title = "Aplikacje 3D. Przewodnik po HTML5, WebGL i CSS3";
+//        $book->description = "Ta wyjątkowa książka została w całoci powięcona włanie zagadnieniom związanym z grafiką 3D w przeglądarce internetowej. Sięgnij po nią i przekonaj się, jak wykorzystać API WebGL do renderowania trójwymiarowej grafiki w czasie rzeczywistym. W kolejnych rozdziałach poznasz bibliotekę języka JavaScript Three.js, która w znaczący sposób ułatwia życie programisty. Informacje zawarte w dalszych rozdziałach pozwolą Ci skorzystać z zaawansowanych efektów w CSS3 i tworzyć animacje trójwymiarowe. Zaznajomisz się też z detalami tworzenia aplikacji dla urządzeń mobilnych. Twoją uwagę z pewnocią przykuje przegląd narzędzi do tworzenia trójwymiarowych modeli i animacji zarówno tych klasycznych, jak i tych online. Książka ta jest doskonałą lekturą dla wszystkich deweloperów chcących wzbogacić swój warsztat o elementy grafiki 3D.";
+//        $book->pages = 344;
+//        $book->link = "http://helion.pl/ksiazki/aplikacje-3d-przewodnik-po-html5-webgl-i-css3-tony-parisi,apli3d.htm";
+//        $book->thumbnail = "tony-parisi-aplikacje-3d.jpg";
+//        $book->save();
         
-        $book = new Book();
-        $book->author = "Tony Parisi";
-        $book->title = "Aplikacje 3D. Przewodnik po HTML5, WebGL i CSS3";
-        $book->description = "Ta wyjątkowa książka została w całoci powięcona włanie zagadnieniom związanym z grafiką 3D w przeglądarce internetowej. Sięgnij po nią i przekonaj się, jak wykorzystać API WebGL do renderowania trójwymiarowej grafiki w czasie rzeczywistym. W kolejnych rozdziałach poznasz bibliotekę języka JavaScript Three.js, która w znaczący sposób ułatwia życie programisty. Informacje zawarte w dalszych rozdziałach pozwolą Ci skorzystać z zaawansowanych efektów w CSS3 i tworzyć animacje trójwymiarowe. Zaznajomisz się też z detalami tworzenia aplikacji dla urządzeń mobilnych. Twoją uwagę z pewnocią przykuje przegląd narzędzi do tworzenia trójwymiarowych modeli i animacji zarówno tych klasycznych, jak i tych online. Książka ta jest doskonałą lekturą dla wszystkich deweloperów chcących wzbogacić swój warsztat o elementy grafiki 3D.";
-        $book->pages = 344;
-        $book->link = "http://helion.pl/ksiazki/aplikacje-3d-przewodnik-po-html5-webgl-i-css3-tony-parisi,apli3d.htm";
-        $book->thumbnail = "tony-parisi-aplikacje-3d.jpg";
-        $book->save();
-        
-        $book = new Book();
-        $book->author = "Michael Mikowski, Josh Powell";
-        $book->title = "Single Page Web Applications. Programowanie aplikacji internetowych z JavaScript";
-        $book->description = "Jeżeli masz pomysł na taką aplikację, a nie wiesz, od czego zacząć, sięgnij po tę książkę. Dzięki niej zbudujesz swoją pierwszą jednostronicową aplikację internetową oraz poznasz możliwości współczesnego języka JavaScript. W kolejnych rozdziałach będziesz budować aplikację, jednocześnie zdobywając wiedzę na temat wzorca MVC, modelu danych, modułów oraz interfejsu. Kiedy już opanujesz tworzenie klienta, przyjdzie czas na implementację serwera. Jest on odpowiedzialny za przetwarzanie danych otrzymywanych z przeglądarki. W trakcie lektury poznasz możliwości Node.js oraz skonfigurujesz bazę danych. Na sam koniec przygotujesz Twoją aplikację do pracy w środowisku produkcyjnym.";
-        $book->pages = 456;
-        $book->link = "http://helion.pl/ksiazki/single-page-web-applications-programowanie-aplikacji-internetowych-z-javascript-michael-mikowski-josh-powell,sipawe.htm";
-        $book->thumbnail = "michael-mikowski-single-page-web-applications.jpg";
-        $book->save();
+//        $book = new Book();
+//        $book->author = "Michael Mikowski, Josh Powell";
+//        $book->title = "Single Page Web Applications. Programowanie aplikacji internetowych z JavaScript";
+//        $book->description = "Jeżeli masz pomysł na taką aplikację, a nie wiesz, od czego zacząć, sięgnij po tę książkę. Dzięki niej zbudujesz swoją pierwszą jednostronicową aplikację internetową oraz poznasz możliwości współczesnego języka JavaScript. W kolejnych rozdziałach będziesz budować aplikację, jednocześnie zdobywając wiedzę na temat wzorca MVC, modelu danych, modułów oraz interfejsu. Kiedy już opanujesz tworzenie klienta, przyjdzie czas na implementację serwera. Jest on odpowiedzialny za przetwarzanie danych otrzymywanych z przeglądarki. W trakcie lektury poznasz możliwości Node.js oraz skonfigurujesz bazę danych. Na sam koniec przygotujesz Twoją aplikację do pracy w środowisku produkcyjnym.";
+//        $book->pages = 456;
+//        $book->link = "http://helion.pl/ksiazki/single-page-web-applications-programowanie-aplikacji-internetowych-z-javascript-michael-mikowski-josh-powell,sipawe.htm";
+//        $book->thumbnail = "michael-mikowski-single-page-web-applications.jpg";
+//        $book->save();
         
         $book = new Book();
         $book->author = "Adrian Frutiger";

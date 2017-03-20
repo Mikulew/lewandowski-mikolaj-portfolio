@@ -1153,14 +1153,83 @@
     // =CHARTS
 
     .welcome-charts {
-            padding-top: 60px;
-            height: 1000px;
-            background-color: $background;
-            color: $fontColor;
-        .charts-huge-heading {
+        padding-top: 60px;
+        height: 1000px;
+        background-color: $background;
+        position: relative;
+        color: $fontColor;
+            & > .chevron.circle.down.icon {
+                position: absolute;
+                font-size: 6rem;
+                color: $yellow;
+                cursor: pointer;
+                bottom: 5vh;
+                left: 50%;
+                transition: $animation;
+                &:hover {
+                    color: $paper;
+                    font-size: 6rem;
+                    left: 50%;
+                }
+            }
+
+        & > .charts-huge-heading {
             font: {
                 family: $times;
                 size: 3.6rem;
+            }
+        }
+    }
+    // =HISTORY SECTION
+    .welcome-history {
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        min-height: 1000px;
+        background-color: $yellow;
+        position: relative;
+        color: $background;
+            & > .chevron.circle.up.icon {
+                position: absolute;
+                font-size: 6rem;
+                color: $background;
+                cursor: pointer;
+                bottom: 5vh;
+                left: 50%;
+                transition: $animation;
+                &:hover {
+                    color: $blue;
+                    font-size: 6rem;
+                    left: 50%;
+                }
+            }
+
+        & > .history-huge-heading {
+            text-align: center;
+            font: {
+                family: $amatic;
+                size: 5rem;
+            }
+        }
+        & > .history-wrapper {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            & > .history-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: nowrap;
+                width: 100%;
+                & > .history-column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50%;
+                }
             }
         }
     }

@@ -27,19 +27,5 @@ class ProjectsSeeder extends Seeder
         $project->technology()->attach(18);
         $project->technology()->attach(21);
         $project->technology()->attach(22);
-        
-        $project = new Project();    
-        $project->title = "Blog Gitary";
-        $project->description = "Strona wizytówka z prostym panelem adnimistracyjnym do dodawania wpisów na blogu oraz sprawdzania wiadomości od użytkowników, którzy chcą się nauczyć grania na gitarze";
-        $project-> link = "www.wp.pl";
-        $project->thumbnail = "gitara-publiczna.jpg";
-        $project->save();
-        $project->technology()->attach(1);
-        $project->technology()->attach(2);
-        $project->technology()->attach(7);
-        $project->technology()->attach(15);
-        $project->technology()->attach(37);
-        $project->technology()->attach(38);
-        $project->technology()->attach(40);
     }
 }

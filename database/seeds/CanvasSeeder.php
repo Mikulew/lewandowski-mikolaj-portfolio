@@ -16,12 +16,13 @@ class CanvasSeeder extends Seeder
         $canvas->category_id = 0;
         $canvas->title = "Paint";
         $canvas->description = "Narysuj mi obrazek i zapisz sobie na komputerze!";
-        $canvas->link = "";
-        $canvas->io = "";
+        $canvas->link = "https://github.com/Mikulew/paint";
+        $canvas->io = "https://mikulew.github.io/paint/";
         $canvas->thumbnail = "paint.png";
         $canvas->save();
         $canvas->technology()->attach(1);
         $canvas->technology()->attach(2);
+        $canvas->technology()->attach(6);
         $canvas->technology()->attach(7);
         $canvas->technology()->attach(8);
         
@@ -79,7 +80,7 @@ class CanvasSeeder extends Seeder
         $canvas->title = "CSS Variables 2";
         $canvas->description = "Zmiana tła za pomocą kursora.";
         $canvas->link = "https://github.com/Mikulew/CSS-Variables-2";
-        $canvas->io = "https://mikulew.github.io/CSS-Variables2/";
+        $canvas->io = "https://mikulew.github.io/CSS-Variables-2/";
         $canvas->thumbnail = "css-variables2.jpg";
         $canvas->save();
         $canvas->technology()->attach(1);
