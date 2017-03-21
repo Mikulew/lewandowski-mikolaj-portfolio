@@ -3456,7 +3456,6 @@
     position: fixed;
     width: 100%;
     height: auto;
-    margin-top: 5rem;
     left: 0;
     right: 0;
     top: 5rem;
@@ -3960,7 +3959,7 @@ li {
     font-size: 4rem;
     color: #4e4945;
     cursor: pointer;
-    bottom: 0;
+    bottom: 2%;
     left: 50%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -4154,6 +4153,9 @@ li {
     display: block;
     margin: 0 auto;
   }
+  .welcome-newspaper .collumn:last-of-type {
+    margin-bottom: 8rem;
+  }
   .welcome-charts {
     display: -webkit-box;
     display: flex;
@@ -4171,7 +4173,7 @@ li {
     font-size: 4rem;
     color: #e4ddce;
     cursor: pointer;
-    bottom: 1%s;
+    bottom: 2%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -4259,6 +4261,12 @@ li {
     height: auto;
     fill: #e4ddce;
     margin: 3rem 0;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-svg:last-child {
+    width: 40%;
+    height: auto;
+    fill: #e4ddce;
+    margin: 3rem 0 8rem 0;
   }
   .welcome-history {
     display: -webkit-box;
@@ -4404,7 +4412,6 @@ li {
     line-height: 2.6rem;
   }
   .welcome-newspaper .chevron.circle.down.icon {
-    bottom: 1%;
     font-size: 6rem;
     left: 50%;
   }
@@ -4413,7 +4420,6 @@ li {
     left: 50%;
   }
   .welcome-charts .chevron.circle.down.icon {
-    bottom: 1%;
     font-size: 6rem;
     left: 50%;
   }
