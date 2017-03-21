@@ -3977,7 +3977,6 @@ li {
   .welcome-newspaper p {
     margin-top: 0;
     margin-bottom: 2rem;
-    text-align: left;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
@@ -4155,6 +4154,112 @@ li {
     display: block;
     margin: 0 auto;
   }
+  .welcome-charts {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-top: 5rem;
+    min-height: 100vh;
+    background-color: #2c3338;
+    position: relative;
+    color: #dcddde;
+  }
+  .welcome-charts > .chevron.circle.down.icon {
+    position: absolute;
+    font-size: 4rem;
+    color: #e4ddce;
+    cursor: pointer;
+    bottom: 1%s;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .welcome-charts > .chevron.circle.down.icon:hover {
+    color: #e4cd8a;
+    font-size: 4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .welcome-charts > .charts-huge-heading {
+    font-family: "Amatic SC", cursive;
+    font-size: 8rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 5rem auto 1rem auto;
+  }
+  .welcome-charts > .charts-subhuge-heading {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    text-align: justify;
+    -ms-grid-row-align: center;
+    align-self: center;
+    width: 90%;
+  }
+  .welcome-charts > .charts-subhuge-heading > .charts-underline {
+    border-bottom: 1px solid #dcddde;
+  }
+  .welcome-charts > .charts-subhuge-heading > .charts-italic {
+    font-style: italic;
+  }
+  .welcome-charts > .charts-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15rem;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    visibility: hidden;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-title {
+    font-family: "Amatic SC", cursive;
+    font-size: 6rem;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-paragraph {
+    font-size: 2rem;
+    width: 90%;
+    text-align: justify;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-svg {
+    width: 40%;
+    height: auto;
+    fill: #e4ddce;
+    margin: 3rem 0;
+  }
   .welcome-history {
     display: -webkit-box;
     display: flex;
@@ -4196,8 +4301,6 @@ li {
   .welcome-history > .history-wrapper {
     display: -webkit-box;
     display: flex;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
@@ -4309,6 +4412,15 @@ li {
     font-size: 6rem;
     left: 50%;
   }
+  .welcome-charts .chevron.circle.down.icon {
+    bottom: 1%;
+    font-size: 6rem;
+    left: 50%;
+  }
+  .welcome-charts .chevron.circle.down.icon:hover {
+    font-size: 6rem;
+    left: 50%;
+  }
   .welcome-history > .chevron.circle.up.icon {
     bottom: 1%;
     font-size: 6rem;
@@ -4365,7 +4477,6 @@ li {
     text-align: center;
   }
   header .welcome-header-container {
-    width: 100%;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -4416,8 +4527,7 @@ li {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .welcome-newspaper 5
-p {
+  .welcome-newspaper p {
     margin-top: 0;
     margin-bottom: 2rem;
     -webkit-hyphens: auto;
@@ -4609,6 +4719,109 @@ p {
     display: block;
     margin: 0 auto;
   }
+  .welcome-charts {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 10rem;
+    min-height: 100vh;
+    background-color: #2c3338;
+    position: relative;
+    color: #dcddde;
+  }
+  .welcome-charts > .chevron.circle.down.icon {
+    position: absolute;
+    font-size: 5rem;
+    color: #e4ddce;
+    cursor: pointer;
+    bottom: 5vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .welcome-charts > .chevron.circle.down.icon:hover {
+    color: #e4cd8a;
+    font-size: 5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .welcome-charts > .charts-huge-heading {
+    font-family: "Amatic SC", cursive;
+    font-size: 5rem;
+    text-align: center;
+  }
+  .welcome-charts > .charts-subhuge-heading {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    width: 85%;
+  }
+  .welcome-charts > .charts-subhuge-heading > .charts-underline {
+    border-bottom: 1px solid #dcddde;
+  }
+  .welcome-charts > .charts-subhuge-heading > .charts-italic {
+    font-style: italic;
+  }
+  .welcome-charts > .charts-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15rem;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 3rem;
+    visibility: hidden;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-title {
+    font-family: "Amatic SC", cursive;
+    font-size: 3rem;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-paragraph {
+    width: 80%;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-svg {
+    width: 25%;
+    height: auto;
+    fill: #e4ddce;
+    margin: 2rem 0;
+  }
   .welcome-history {
     display: -webkit-box;
     display: flex;
@@ -4727,7 +4940,6 @@ p {
     position: relative;
   }
   header #headerImage {
-    position: relative;
     width: 100%;
     height: auto;
     z-index: -100;
@@ -4819,7 +5031,6 @@ p {
   .welcome-newspaper p {
     margin-top: 0;
     margin-bottom: 2rem;
-    text-align: left;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
@@ -4884,7 +5095,7 @@ p {
   header {
     position: relative;
     min-height: 100vh;
-    width: 100%;
+    text-align: center;
   }
   header > .chevron.circle.down.icon {
     position: absolute;
@@ -4947,7 +5158,7 @@ p {
   .welcome-newspaper {
     font-family: "Times New Roman", serif;
     font-size: 1.6rem;
-    padding-top: 5rem;
+    padding-top: 7rem;
     min-height: 100vh;
     text-align: center;
     background-color: #e4ddce;
@@ -4976,7 +5187,6 @@ p {
   .welcome-newspaper p {
     margin-top: 0;
     margin-bottom: 2rem;
-    text-align: left;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
@@ -5141,8 +5351,17 @@ p {
     margin: 0 auto;
   }
   .welcome-charts {
-    padding-top: 60px;
-    height: 1000px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 7rem;
+    min-height: 100vh;
     background-color: #2c3338;
     position: relative;
     color: #dcddde;
@@ -5150,7 +5369,7 @@ p {
   .welcome-charts > .chevron.circle.down.icon {
     position: absolute;
     font-size: 6rem;
-    color: #e4cd8a;
+    color: #e4ddce;
     cursor: pointer;
     bottom: 5vh;
     left: 50%;
@@ -5160,15 +5379,79 @@ p {
     transition: all 0.3s linear;
   }
   .welcome-charts > .chevron.circle.down.icon:hover {
-    color: #8eadB1;
+    color: #e4cd8a;
     font-size: 6rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .welcome-charts > .charts-huge-heading {
-    font-family: "Times New Roman", serif;
-    font-size: 3.6rem;
+    font-family: "Amatic SC", cursive;
+    font-size: 5rem;
+    text-align: center;
+  }
+  .welcome-charts > .charts-subhuge-heading {
+    font-family: "Sansita", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    width: 85%;
+  }
+  .welcome-charts > .charts-subhuge-heading > .charts-underline {
+    border-bottom: 1px solid #dcddde;
+  }
+  .welcome-charts > .charts-subhuge-heading > .charts-italic {
+    font-style: italic;
+  }
+  .welcome-charts > .charts-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15rem;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 3rem;
+    visibility: hidden;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-title {
+    font-family: "Amatic SC", cursive;
+    font-size: 3rem;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-paragraph {
+    width: 70%;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+  .welcome-charts > .charts-wrapper > .charts-row > .charts-column > .charts-svg {
+    width: 10%;
+    height: auto;
+    fill: #e4ddce;
+    margin: 2rem 0;
   }
   .welcome-history {
     display: -webkit-box;
@@ -5176,7 +5459,7 @@ p {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    padding-top: 6rem;
+    padding-top: 7rem;
     min-height: 100vh;
     background-color: #e4cd8a;
     position: relative;
@@ -5210,8 +5493,6 @@ p {
   .welcome-history > .history-wrapper {
     display: -webkit-box;
     display: flex;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;

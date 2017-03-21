@@ -116,19 +116,17 @@
             left: 50%;
             transition: $animation;
             transform: translateX(-50%);
-        }
-
-        .chevron.circle.down.icon:hover {
-            color: $background;
-            font-size: 4rem;
-            left: 50%;
-            transform: translateX(-50%);
+            &:hover {
+                color: $background;
+                font-size: 4rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         p {
             margin-top: 0;
             margin-bottom: 2rem;
-            text-align: left;
             hyphens: auto;
             text-align: justify;
         }
@@ -326,6 +324,100 @@
             margin: 0 auto;
         }
     }
+    // =CHARTS
+    .welcome-charts {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5rem;
+        min-height: 100vh;
+        background-color: $background;
+        position: relative;
+        color: $fontColor;
+        & > .chevron.circle.down.icon {
+            position: absolute;
+            font-size: 4rem;
+            color: $paper;
+            cursor: pointer;
+            bottom: 1%s;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: $animation;
+            &:hover {
+                color: $yellow;
+                font-size: 4rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        & > .charts-huge-heading {
+            font: {
+                family: $amatic;
+                size: 8rem;
+                weight: 700;
+            }
+            text-align: center;
+            margin: 5rem auto 1rem auto;
+        }
+        & > .charts-subhuge-heading {
+            font: {
+                family: $sansita;
+                size: 2rem;
+            }
+            text-align: justify;
+            align-self: center;
+            width: 90%;
+            & > .charts-underline {
+                border-bottom: 1px solid $fontColor;
+            }
+            & > .charts-italic {
+                font-style: italic;
+            }
+        }
+        & > .charts-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 15rem;
+            & > .charts-row {
+                display: flex;  
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                & > .charts-column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 3rem;
+                    visibility: hidden;
+                    & > .charts-title {
+                        font: {
+                            family: $amatic;
+                            size: 6rem;
+                        }
+                    }
+                    & > .charts-paragraph {
+                        font: {
+                            size: 2rem;
+                        }
+                        width: 90%;
+                        text-align: justify;
+                        hyphens: auto;
+                    }
+                    & > .charts-svg {
+                        width: 40%;
+                        height: auto;
+                        fill: $paper;
+                        margin: 3rem 0;
+                    }
+                }
+            }
+        }
+    }
     // =HISTORY SECTION
     .welcome-history {
         display: flex;
@@ -351,7 +443,6 @@
                     transform: translateX(-50%);
                 }
             }
-
         & > .history-huge-heading {
             text-align: center;
             font: {
@@ -363,7 +454,6 @@
         }
         & > .history-wrapper {
             display: flex;
-            justify-content: flex-start;
             flex-direction: column;
             justify-content: center;
             width: 100%;
@@ -470,6 +560,17 @@
             }
         }
     }
+    .welcome-charts {
+        .chevron.circle.down.icon {
+            bottom: 1%;
+            font-size: 6rem;
+            left: 50%;
+            &:hover {
+                font-size: 6rem;
+                left: 50%;
+            }
+        }
+    }
     .welcome-history {   
         & > .chevron.circle.up.icon {
             bottom: 1%;
@@ -533,7 +634,6 @@
             }
         
             .welcome-header-container {
-                width: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -584,7 +684,6 @@
                 transform: translateX(-50%);
             }
         }
-        5
         p {
             margin-top: 0;
             margin-bottom: 2rem;
@@ -798,6 +897,95 @@
             margin: 0 auto;
         }
     }
+    // =CHARTS
+    .welcome-charts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10rem;
+        min-height: 100vh;
+        background-color: $background;
+        position: relative;
+        color: $fontColor;
+        & > .chevron.circle.down.icon {
+            position: absolute;
+            font-size: 5rem;
+            color: $paper;
+            cursor: pointer;
+            bottom: 5vh;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: $animation;
+            &:hover {
+                color: $yellow;
+                font-size: 5rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        & > .charts-huge-heading {
+            font: {
+                family: $amatic;
+                size: 5rem;
+            }
+            text-align: center;
+        }
+        & > .charts-subhuge-heading {
+            font: {
+                family: $sansita;
+                size: 2rem;
+            }
+            text-align: center;
+            width: 85%;
+            & > .charts-underline {
+                border-bottom: 1px solid $fontColor;
+            }
+            & > .charts-italic {
+                font-style: italic;
+            }
+        }
+        & > .charts-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 15rem;
+            & > .charts-row {
+                display: flex;  
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: nowrap;
+                width: 100%;
+                & > .charts-column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 50%;
+                    margin-top: 3rem;
+                    visibility: hidden;
+                    & > .charts-title {
+                        font: {
+                            family: $amatic;
+                            size: 3rem;
+                        }
+                    }
+                    & > .charts-paragraph {
+                        width: 80%;
+                        hyphens: none;
+                    }
+                    & > .charts-svg {
+                        width: 25%;
+                        height: auto;
+                        fill: $paper;
+                        margin: 2rem 0;
+                    }
+                }
+            }
+        }
+    }
     // =HISTORY SECTION
     .welcome-history {
         display: flex;
@@ -905,7 +1093,6 @@
             position: relative;
     
         #headerImage {
-            position: relative;
             width: 100%;
             height: auto;
             z-index: -100;
@@ -1004,7 +1191,6 @@
         p {
             margin-top: 0;
             margin-bottom: 2rem;
-            text-align: left;
             hyphens: auto;
             text-align: justify;
         }
@@ -1080,7 +1266,7 @@
     header {
         position: relative;
         min-height: 100vh;
-        width: 100%;
+        text-align: center;
         & > .chevron.circle.down.icon {
             position: absolute;
             font-size: 6rem;
@@ -1142,13 +1328,12 @@
     }
 
     // =NEWSPAPER
-
     .welcome-newspaper {
         font: {
             family: $times;
             size: 1.6rem;
         }
-        padding-top: 5rem;
+        padding-top: 7rem;
         min-height: 100vh;
         text-align: center;
         background-color: $paper;
@@ -1175,7 +1360,6 @@
         p {
             margin-top: 0;
             margin-bottom: 2rem;
-            text-align: left;
             hyphens: auto;
             text-align: justify;
         }
@@ -1359,24 +1543,27 @@
     }
 
     // =CHARTS
-
     .welcome-charts {
-        padding-top: 60px;
-        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7rem;
+        min-height: 100vh;
         background-color: $background;
         position: relative;
         color: $fontColor;
             & > .chevron.circle.down.icon {
                 position: absolute;
                 font-size: 6rem;
-                color: $yellow;
+                color: $paper;
                 cursor: pointer;
                 bottom: 5vh;
                 left: 50%;
                 transform: translateX(-50%);
                 transition: $animation;
                 &:hover {
-                    color: $blue;
+                    color: $yellow;
                     font-size: 6rem;
                     left: 50%;
                     transform: translateX(-50%);
@@ -1385,8 +1572,62 @@
 
         & > .charts-huge-heading {
             font: {
-                family: $times;
-                size: 3.6rem;
+                family: $amatic;
+                size: 5rem;
+            }
+            text-align: center;
+        }
+        & > .charts-subhuge-heading {
+            font: {
+                family: $sansita;
+                size: 2rem;
+            }
+            text-align: center;
+            width: 85%;
+            & > .charts-underline {
+                border-bottom: 1px solid $fontColor;
+            }
+            & > .charts-italic {
+                font-style: italic;
+            }
+        }
+        & > .charts-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 15rem;
+            & > .charts-row {
+                display: flex;  
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: nowrap;
+                width: 100%;
+                & > .charts-column {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 50%;
+                    margin-top: 3rem;
+                    visibility: hidden;
+                    & > .charts-title {
+                        font: {
+                            family: $amatic;
+                            size: 3rem;
+                        }
+                    }
+                    & > .charts-paragraph {
+                        width: 70%;
+                        hyphens: none;
+                    }
+                    & > .charts-svg {
+                        width: 10%;
+                        height: auto;
+                        fill: $paper;
+                        margin: 2rem 0;
+                    }
+                }
             }
         }
     }
@@ -1394,7 +1635,7 @@
     .welcome-history {
         display: flex;
         flex-direction: column;
-        padding-top: 6rem;
+        padding-top: 7rem;
         min-height: 100vh;
         background-color: $yellow;
         position: relative;
@@ -1426,7 +1667,6 @@
         }
         & > .history-wrapper {
             display: flex;
-            justify-content: flex-start;
             flex-direction: column;
             justify-content: center;
             width: 100%;
