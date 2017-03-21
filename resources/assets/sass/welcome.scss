@@ -23,9 +23,9 @@
     }
     
     #welcome-panel {
-        margin: 5rem 0;
+        margin: 5rem 0 0 0;
     } 
-    //HEADER
+    // =HEADER
     header {
         width: 100%;
         height: 100vh;
@@ -48,16 +48,15 @@
                 color: $blue;
                 cursor: pointer;
                 bottom: 15vh;
-                left: 47%;
+                left: 50%;
                 transition: $animation;
                 transform: translateX(-50%);
-            }
-
-            .chevron.circle.down.icon:hover {
-                color: $yellow;
-                font-size: 4rem;
-                left: 47%;
-                transform: translateX(-50%);
+                &:hover {
+                    color: $yellow;
+                    font-size: 4rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
 
             .welcome-header-heading {
@@ -67,7 +66,7 @@
                     weight: 700;
                 }
                 background-color: rgba(10, 10, 10, 0.4);
-                box-shadow: 0 0 10px rgba(0,0,0,1);
+                box-shadow: $shadow;
                 margin: 5rem auto 1rem auto;
                 color: $yellow;      
                 text-align: center;
@@ -90,12 +89,12 @@
                 line-height: 3rem;
                 margin-top: 3rem;
                 background-color: rgba(10, 10, 10, 0.4); 
-                border-radius: 4px; 
+                border-radius: $radius; 
                 padding: 1rem;
             }
 
     }
-    // NEWSPAPER
+    // =NEWSPAPER
     .welcome-newspaper {
         font: {
             family: $times;
@@ -114,7 +113,7 @@
             color: $grey;
             cursor: pointer;
             bottom: 0;
-            left: 48%;
+            left: 50%;
             transition: $animation;
             transform: translateX(-50%);
         }
@@ -122,7 +121,7 @@
         .chevron.circle.down.icon:hover {
             color: $background;
             font-size: 4rem;
-            left: 48%;
+            left: 50%;
             transform: translateX(-50%);
         }
 
@@ -327,6 +326,104 @@
             margin: 0 auto;
         }
     }
+    // =HISTORY SECTION
+    .welcome-history {
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 0;
+        min-height: 100vh;
+        background-color: $yellow;
+        position: relative;
+        color: $background;
+            & > .chevron.circle.up.icon {
+                position: absolute;
+                font-size: 4rem;
+                color: $background;
+                cursor: pointer;
+                bottom: 1%;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: $animation;
+                &:hover {
+                    color: $blue;
+                    font-size: 4rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+        & > .history-huge-heading {
+            text-align: center;
+            font: {
+                family: $amatic;
+                size: 6rem;
+                weight: 700;
+            }
+            margin: 5rem auto 1rem auto;
+        }
+        & > .history-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 15rem;
+            & > .history-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100%;
+                & > .history-column {
+                    display: flex;
+                    visibility: hidden;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 5rem;
+                    & > .history-date {
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        & > .history-year {
+                            font: {
+                                family: $sansita;
+                                size: 4rem;
+                            }
+                            margin: 1rem;
+                            padding: 0;
+                        }
+                        & > .history-month {
+                            font: {
+                                family: $amatic;
+                                size: 3.6rem;
+                                weight: 700;
+                            }
+                            color: $background;
+                            margin: 1rem;
+                            padding: 0;
+                        }
+                    }
+                    & > .history-paragraph {
+                        font: {
+                            family: $roboto;
+                            size: 2rem;
+                        }
+                        color: $yellow;
+                        width: 90%;
+                        text-align: center;
+                        
+                        background-color: rgba(10, 10, 10, 0.7); 
+                        box-shadow: $shadow;
+                        border-radius: $radius; 
+                        padding: 4rem 2rem;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
@@ -364,18 +461,30 @@
     }
     .welcome-newspaper {
         .chevron.circle.down.icon {
-            bottom: 0;
+            bottom: 1%;
             font-size: 6rem;
             left: 50%;
+            &:hover {
+                font-size: 6rem;
+                left: 50%;
+            }
         }
-        .chevron.circle.down.icon:hover {
+    }
+    .welcome-history {   
+        & > .chevron.circle.up.icon {
+            bottom: 1%;
             font-size: 6rem;
             left: 50%;
+            &:hover {
+                font-size: 6rem;
+                left: 50%;
+            }
         }
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
+    // =HEADER
     header {
         width: 100vw;
         height: calc(100vh - 12rem);
@@ -398,7 +507,7 @@
                 color: $blue;
                 cursor: pointer;
                 top: 90%;
-                left: 47%;
+                left: 50%;
                 transition: $animation;
                 transform: translateX(-50%);
             }
@@ -406,7 +515,7 @@
            & > .chevron.circle.down.icon:hover {
                 color: $yellow;
                 font-size: 5rem;
-                left: 47%;
+                left: 50%;
                 transform: translateX(-50%);
             }
 
@@ -417,7 +526,7 @@
                     weight: 700;
                 }
                 background-color: rgba(10, 10, 10, 0.4);
-                box-shadow: 0 0 10px rgba(0,0,0,1);
+                box-shadow: $shadow;
                 margin: 10rem auto 1rem auto;
                 color: $yellow;      
                 text-align: center;
@@ -441,11 +550,11 @@
                 line-height: 3.4rem;
                 margin: 3rem 0 0 3rem;
                 background-color: rgba(10, 10, 10, 0.4); 
-                border-radius: 4px; 
+                border-radius: $radius; 
                 padding: 1.5rem;
             }
     }
-        // NEWSPAPER
+    // =NEWSPAPER
     .welcome-newspaper {
         font: {
             family: $times;
@@ -465,22 +574,20 @@
             color: $grey;
             cursor: pointer;
             bottom: 0;
-            left: 48%;
+            left: 50%;
             transition: $animation;
             transform: translateX(-50%);
+            &:hover {
+                color: $background;
+                font-size: 5rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
-
-        .chevron.circle.down.icon:hover {
-            color: $background;
-            font-size: 5rem;
-            left: 48%;
-            transform: translateX(-50%);
-        }
-
+        5
         p {
             margin-top: 0;
             margin-bottom: 2rem;
-            text-align: left;
             hyphens: auto;
             text-align: justify;
         }
@@ -691,9 +798,107 @@
             margin: 0 auto;
         }
     }
+    // =HISTORY SECTION
+    .welcome-history {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin-top: 10rem;
+        padding-top: 10rem;
+        background-color: $yellow;
+        position: relative;
+        color: $background;
+            & > .chevron.circle.up.icon {
+                position: absolute;
+                font-size: 5rem;
+                color: $background;
+                cursor: pointer;
+                bottom: 5vh;
+                left: 50%;
+                transform: translateX(-50%);
+                transition: $animation;
+                &:hover {
+                    color: $blue;
+                    font-size: 5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+        & > .history-huge-heading {
+            text-align: center;
+            font: {
+                family: $amatic;
+                size: 5rem;
+                weight: 700;
+            }
+        }
+            & > .history-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 15rem;
+            & > .history-row {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: nowrap;
+                width: 100%;
+                & > .history-column {
+                    display: flex;
+                    visibility: hidden;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 50%;
+                    margin-top: 5rem;
+                    & > .history-date {
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        & > .history-year {
+                            font: {
+                                family: $sansita;
+                                size: 4rem;
+                            }
+                            margin: 1rem;
+                            padding: 0;
+                        }
+                        & > .history-month {
+                            font: {
+                                family: $amatic;
+                                size: 3.6rem;
+                                weight: 700;
+                            }
+                            color: $background;
+                            margin: 1rem;
+                            padding: 0;
+                        }
+                    }
+                    & > .history-paragraph {
+                        font: {
+                            family: $roboto;
+                            size: 2rem;
+                        }
+                        line-height: 2.4rem;
+                        color: $yellow;
+                        width: 85%;
+                        text-align: center;
+                        padding: 4rem 2rem;
+                        background-color: rgba(10, 10, 10, 0.7); 
+                        box-shadow: $shadow;
+                        border-radius: $radius;  
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
+        // =HEADER
         header {
             width: 100vw;
             height: calc(100vh - 12rem);
@@ -717,7 +922,7 @@
                 color: $blue;
                 cursor: pointer;
                 top: 85%;
-                left: 46%;
+                left: 50%;
                 transition: $animation;
                 transform: translateX(-50%);
             }
@@ -725,7 +930,7 @@
            & > .chevron.circle.down.icon:hover {
                 color: $yellow;
                 font-size: 5rem;
-                left: 46%;
+                left: 50%;
                 transform: translateX(-50%);
             }
 
@@ -736,7 +941,7 @@
                     weight: 700;
                 }
                 background-color: rgba(10, 10, 10, 0.4);
-                box-shadow: 0 0 10px rgba(0,0,0,1);
+                box-shadow: $shadow;
                 margin: 10rem auto 1rem auto;
                 color: $yellow;      
                 text-align: center;
@@ -760,11 +965,11 @@
                 line-height: 3.4rem;
                 margin: 50% 0 0 0;
                 background-color: rgba(10, 10, 10, 0.4); 
-                border-radius: 4px; 
+                border-radius: $radius; 
                 padding: 1.5rem;
             }
     }
-            // NEWSPAPER
+    // =NEWSPAPER
     .welcome-newspaper {
         font: {
             family: $times;
@@ -857,7 +1062,7 @@
     }
 }
 
-@media only screen  and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
 
     //HEADER
     #headerImage {
@@ -875,20 +1080,22 @@
     header {
         position: relative;
         min-height: 100vh;
+        width: 100%;
         & > .chevron.circle.down.icon {
             position: absolute;
             font-size: 6rem;
             color: $blue;
             cursor: pointer;
-            top: 80%;
+            bottom: 15vh;
             left: 50%;
+            transform: translateX(-50%);
             transition: $animation;
-        }
-
-        & > .chevron.circle.down.icon:hover {
-            color: $yellow;
-            font-size: 6rem;
-            left: 50%;
+            &:hover {
+                color: $yellow;
+                font-size: 6rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
 
         & > .welcome-header-heading {
@@ -899,7 +1106,7 @@
             }
             text-align: center;
             background-color: rgba(10, 10, 10, 0.4);
-            box-shadow: 0 0 10px rgba(0,0,0,1);
+            box-shadow: $shadow;
             padding: 2rem;
             position: absolute;
             color: $yellow;
@@ -928,8 +1135,8 @@
                 padding: 2rem;
                 line-height: 3.4rem;
                 background-color: rgba(10, 10, 10, 0.4);
-                box-shadow: 0 0 10px rgba(0,0,0,1);
-                border-radius: 4px; 
+                box-shadow: $shadow;
+                border-radius: $radius; 
             }
         }
     }
@@ -955,13 +1162,14 @@
             cursor: pointer;
             bottom: 5%;
             left: 50%;
+            transform: translateX(-50%);
             transition: $animation;
-        }
-
-        .chevron.circle.down.icon:hover {
-            color: $background;
-            font-size: 6rem;
-            left: 50%;
+            &:hover {
+                color: $background;
+                font-size: 6rem;
+                left: 50%;
+                transform: translateX(-50%);
+            }    
         }
 
         p {
@@ -1165,11 +1373,13 @@
                 cursor: pointer;
                 bottom: 5vh;
                 left: 50%;
+                transform: translateX(-50%);
                 transition: $animation;
                 &:hover {
-                    color: $paper;
+                    color: $blue;
                     font-size: 6rem;
                     left: 50%;
+                    transform: translateX(-50%);
                 }
             }
 
@@ -1184,8 +1394,8 @@
     .welcome-history {
         display: flex;
         flex-direction: column;
-        padding-top: 60px;
-        min-height: 1000px;
+        padding-top: 6rem;
+        min-height: 100vh;
         background-color: $yellow;
         position: relative;
         color: $background;
@@ -1196,11 +1406,13 @@
                 cursor: pointer;
                 bottom: 5vh;
                 left: 50%;
+                transform: translateX(-50%);
                 transition: $animation;
                 &:hover {
                     color: $blue;
                     font-size: 6rem;
                     left: 50%;
+                    transform: translateX(-50%);
                 }
             }
 
@@ -1209,14 +1421,16 @@
             font: {
                 family: $amatic;
                 size: 5rem;
+                weight: 700;
             }
         }
         & > .history-wrapper {
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
             flex-direction: column;
             justify-content: center;
             width: 100%;
+            margin-bottom: 15rem;
             & > .history-row {
                 display: flex;
                 flex-direction: row;
@@ -1225,10 +1439,50 @@
                 width: 100%;
                 & > .history-column {
                     display: flex;
+                    visibility: hidden;
                     flex-direction: column;
-                    justify-content: center;
+                    justify-content: space-between;
                     align-items: center;
                     width: 50%;
+                    margin-top: 3rem;
+                    & > .history-date {
+                        display: flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        & > .history-year {
+                            font: {
+                                family: $sansita;
+                                size: 3.6rem;
+                            }
+                            margin: 1rem;
+                            padding: 0;
+                        }
+                        & > .history-month {
+                            font: {
+                                family: $amatic;
+                                size: 3rem;
+                                weight: 700;
+                            }
+                            color: $background;
+                            margin: 1rem;
+                            padding: 0;
+                        }
+                    }
+                    & > .history-paragraph {
+                        font: {
+                            family: $roboto;
+                            size: 1.6rem;
+                        }
+                        color: $yellow;
+                        width: 80%;
+                        text-align: center;
+                        
+                        background-color: rgba(10, 10, 10, 0.7); 
+                        box-shadow: $shadow;
+                        border-radius: $radius; 
+                        padding: 4rem 2rem;
+                        margin-top: 1rem;
+                    }
                 }
             }
         }

@@ -3881,7 +3881,7 @@ li {
     display: block;
   }
   #welcome-panel {
-    margin: 5rem 0;
+    margin: 5rem 0 0 0;
   }
   header {
     width: 100%;
@@ -3903,7 +3903,7 @@ li {
     color: #8eadB1;
     cursor: pointer;
     bottom: 15vh;
-    left: 47%;
+    left: 50%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     -webkit-transform: translateX(-50%);
@@ -3912,7 +3912,7 @@ li {
   header .chevron.circle.down.icon:hover {
     color: #e4cd8a;
     font-size: 4rem;
-    left: 47%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -3921,7 +3921,7 @@ li {
     font-size: 6rem;
     font-weight: 700;
     background-color: rgba(10, 10, 10, 0.4);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 1rem black;
     margin: 5rem auto 1rem auto;
     color: #e4cd8a;
     text-align: center;
@@ -3942,7 +3942,7 @@ li {
     line-height: 3rem;
     margin-top: 3rem;
     background-color: rgba(10, 10, 10, 0.4);
-    border-radius: 4px;
+    border-radius: 1rem;
     padding: 1rem;
   }
   .welcome-newspaper {
@@ -3961,7 +3961,7 @@ li {
     color: #4e4945;
     cursor: pointer;
     bottom: 0;
-    left: 48%;
+    left: 50%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     -webkit-transform: translateX(-50%);
@@ -3970,7 +3970,7 @@ li {
   .welcome-newspaper .chevron.circle.down.icon:hover {
     color: #2c3338;
     font-size: 4rem;
-    left: 48%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -4155,6 +4155,116 @@ li {
     display: block;
     margin: 0 auto;
   }
+  .welcome-history {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 5rem 0;
+    min-height: 100vh;
+    background-color: #e4cd8a;
+    position: relative;
+    color: #2c3338;
+  }
+  .welcome-history > .chevron.circle.up.icon {
+    position: absolute;
+    font-size: 4rem;
+    color: #2c3338;
+    cursor: pointer;
+    bottom: 1%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .welcome-history > .chevron.circle.up.icon:hover {
+    color: #8eadB1;
+    font-size: 4rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .welcome-history > .history-huge-heading {
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 5rem auto 1rem auto;
+  }
+  .welcome-history > .history-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15rem;
+  }
+  .welcome-history > .history-wrapper > .history-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column {
+    display: -webkit-box;
+    display: flex;
+    visibility: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date > .history-year {
+    font-family: "Sansita", sans-serif;
+    font-size: 4rem;
+    margin: 1rem;
+    padding: 0;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date > .history-month {
+    font-family: "Amatic SC", cursive;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #2c3338;
+    margin: 1rem;
+    padding: 0;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-paragraph {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    color: #e4cd8a;
+    width: 90%;
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.7);
+    box-shadow: 0 0 1rem black;
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
@@ -4191,11 +4301,20 @@ li {
     line-height: 2.6rem;
   }
   .welcome-newspaper .chevron.circle.down.icon {
-    bottom: 0;
+    bottom: 1%;
     font-size: 6rem;
     left: 50%;
   }
   .welcome-newspaper .chevron.circle.down.icon:hover {
+    font-size: 6rem;
+    left: 50%;
+  }
+  .welcome-history > .chevron.circle.up.icon {
+    bottom: 1%;
+    font-size: 6rem;
+    left: 50%;
+  }
+  .welcome-history > .chevron.circle.up.icon:hover {
     font-size: 6rem;
     left: 50%;
   }
@@ -4222,7 +4341,7 @@ li {
     color: #8eadB1;
     cursor: pointer;
     top: 90%;
-    left: 47%;
+    left: 50%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     -webkit-transform: translateX(-50%);
@@ -4231,7 +4350,7 @@ li {
   header > .chevron.circle.down.icon:hover {
     color: #e4cd8a;
     font-size: 5rem;
-    left: 47%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -4240,7 +4359,7 @@ li {
     font-size: 6rem;
     font-weight: 700;
     background-color: rgba(10, 10, 10, 0.4);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 1rem black;
     margin: 10rem auto 1rem auto;
     color: #e4cd8a;
     text-align: center;
@@ -4264,7 +4383,7 @@ li {
     line-height: 3.4rem;
     margin: 3rem 0 0 3rem;
     background-color: rgba(10, 10, 10, 0.4);
-    border-radius: 4px;
+    border-radius: 1rem;
     padding: 1.5rem;
   }
   .welcome-newspaper {
@@ -4284,7 +4403,7 @@ li {
     color: #4e4945;
     cursor: pointer;
     bottom: 0;
-    left: 48%;
+    left: 50%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     -webkit-transform: translateX(-50%);
@@ -4293,14 +4412,14 @@ li {
   .welcome-newspaper .chevron.circle.down.icon:hover {
     color: #2c3338;
     font-size: 5rem;
-    left: 48%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  .welcome-newspaper p {
+  .welcome-newspaper 5
+p {
     margin-top: 0;
     margin-bottom: 2rem;
-    text-align: left;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
@@ -4490,6 +4609,115 @@ li {
     display: block;
     margin: 0 auto;
   }
+  .welcome-history {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 10rem;
+    padding-top: 10rem;
+    background-color: #e4cd8a;
+    position: relative;
+    color: #2c3338;
+  }
+  .welcome-history > .chevron.circle.up.icon {
+    position: absolute;
+    font-size: 5rem;
+    color: #2c3338;
+    cursor: pointer;
+    bottom: 5vh;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .welcome-history > .chevron.circle.up.icon:hover {
+    color: #8eadB1;
+    font-size: 5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .welcome-history > .history-huge-heading {
+    text-align: center;
+    font-family: "Amatic SC", cursive;
+    font-size: 5rem;
+    font-weight: 700;
+  }
+  .welcome-history > .history-wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15rem;
+  }
+  .welcome-history > .history-wrapper > .history-row {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column {
+    display: -webkit-box;
+    display: flex;
+    visibility: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 5rem;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date > .history-year {
+    font-family: "Sansita", sans-serif;
+    font-size: 4rem;
+    margin: 1rem;
+    padding: 0;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date > .history-month {
+    font-family: "Amatic SC", cursive;
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #2c3338;
+    margin: 1rem;
+    padding: 0;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-paragraph {
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #e4cd8a;
+    width: 85%;
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: rgba(10, 10, 10, 0.7);
+    box-shadow: 0 0 1rem black;
+    border-radius: 1rem;
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
@@ -4514,7 +4742,7 @@ li {
     color: #8eadB1;
     cursor: pointer;
     top: 85%;
-    left: 46%;
+    left: 50%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     -webkit-transform: translateX(-50%);
@@ -4523,7 +4751,7 @@ li {
   header > .chevron.circle.down.icon:hover {
     color: #e4cd8a;
     font-size: 5rem;
-    left: 46%;
+    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -4532,7 +4760,7 @@ li {
     font-size: 6rem;
     font-weight: 700;
     background-color: rgba(10, 10, 10, 0.4);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 1rem black;
     margin: 10rem auto 1rem auto;
     color: #e4cd8a;
     text-align: center;
@@ -4555,7 +4783,7 @@ li {
     line-height: 3.4rem;
     margin: 50% 0 0 0;
     background-color: rgba(10, 10, 10, 0.4);
-    border-radius: 4px;
+    border-radius: 1rem;
     padding: 1.5rem;
   }
   .welcome-newspaper {
@@ -4656,14 +4884,17 @@ li {
   header {
     position: relative;
     min-height: 100vh;
+    width: 100%;
   }
   header > .chevron.circle.down.icon {
     position: absolute;
     font-size: 6rem;
     color: #8eadB1;
     cursor: pointer;
-    top: 80%;
+    bottom: 15vh;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
@@ -4671,6 +4902,8 @@ li {
     color: #e4cd8a;
     font-size: 6rem;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   header > .welcome-header-heading {
     font-family: "Amatic SC", cursive;
@@ -4678,7 +4911,7 @@ li {
     font-weight: 700;
     text-align: center;
     background-color: rgba(10, 10, 10, 0.4);
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 1rem black;
     padding: 2rem;
     position: absolute;
     color: #e4cd8a;
@@ -4708,8 +4941,8 @@ li {
     padding: 2rem;
     line-height: 3.4rem;
     background-color: rgba(10, 10, 10, 0.4);
-    box-shadow: 0 0 10px black;
-    border-radius: 4px;
+    box-shadow: 0 0 1rem black;
+    border-radius: 1rem;
   }
   .welcome-newspaper {
     font-family: "Times New Roman", serif;
@@ -4728,6 +4961,8 @@ li {
     cursor: pointer;
     bottom: 5%;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
@@ -4735,6 +4970,8 @@ li {
     color: #2c3338;
     font-size: 6rem;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .welcome-newspaper p {
     margin-top: 0;
@@ -4917,13 +5154,17 @@ li {
     cursor: pointer;
     bottom: 5vh;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
   .welcome-charts > .chevron.circle.down.icon:hover {
-    color: #e4ddce;
+    color: #8eadB1;
     font-size: 6rem;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .welcome-charts > .charts-huge-heading {
     font-family: "Times New Roman", serif;
@@ -4935,8 +5176,8 @@ li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    padding-top: 60px;
-    min-height: 1000px;
+    padding-top: 6rem;
+    min-height: 100vh;
     background-color: #e4cd8a;
     position: relative;
     color: #2c3338;
@@ -4948,6 +5189,8 @@ li {
     cursor: pointer;
     bottom: 5vh;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
@@ -4955,22 +5198,27 @@ li {
     color: #8eadB1;
     font-size: 6rem;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .welcome-history > .history-huge-heading {
     text-align: center;
     font-family: "Amatic SC", cursive;
     font-size: 5rem;
+    font-weight: 700;
   }
   .welcome-history > .history-wrapper {
     display: -webkit-box;
     display: flex;
-    justify-content: space-around;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 15rem;
   }
   .welcome-history > .history-wrapper > .history-row {
     display: -webkit-box;
@@ -4986,14 +5234,50 @@ li {
   .welcome-history > .history-wrapper > .history-row > .history-column {
     display: -webkit-box;
     display: flex;
+    visibility: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
     width: 50%;
+    margin-top: 3rem;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date > .history-year {
+    font-family: "Sansita", sans-serif;
+    font-size: 3.6rem;
+    margin: 1rem;
+    padding: 0;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-date > .history-month {
+    font-family: "Amatic SC", cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c3338;
+    margin: 1rem;
+    padding: 0;
+  }
+  .welcome-history > .history-wrapper > .history-row > .history-column > .history-paragraph {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.6rem;
+    color: #e4cd8a;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(10, 10, 10, 0.7);
+    box-shadow: 0 0 1rem black;
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+    margin-top: 1rem;
   }
 }
 

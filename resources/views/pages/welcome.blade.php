@@ -184,86 +184,112 @@ a nawet kilkaset odsłon.</p>
         <i id="chartsButton" class="chevron circle down icon"></i>
     </section>
     <section id="sectionHistory" class="welcome-history">
-        <h2 class="history-huge-heading">Historia Internetu w Polsce</h2>
+        <h2 class="history-huge-heading">Historia Internetu w&nbsp;Polsce</h2>
         <div class="history-wrapper">
             <div class="history-row">
-                <div class="history-column">
-                    <h3 class="history-year">1990</h3>
-                    <h4 class="history-date">20 listopada</h4>
-                    <p>około południa (pomiędzy 10:57 a 13:25) został wysłany pierwszy email do Polski</p>
+                <div class="history-column history-first">
+                    <div class="history-date">
+                        <h4 class="history-year">1990</h4>
+                        <h3 class="history-month">20 listopada</h3>
+                    </div>
+                    <p class="history-paragraph">Około południa (pomiędzy 10:57 a 13:25) został wysłany <span class="welcome-blue">pierwszy email do Polski</span></p>
                 </div>
-                <div class="history-column">
-                    <h3 class="history-year">1991</h3>
-                    <h4 class="history-date">kwiecień</h4>
-                    <p>powstaje Naukowa i Akademicka Sieć Komputerowa (NASK)</p>
-                    <h4>17 sierpnia</h4>
-                    <p>Rafał Pietrak, pracownik Wydziału Fizyki UW, wysłał pierwszego e-maila po protokole TCP/IP z budynku Wydziału Fizyki UW z ul. Hożej 74 przez Centrum Informatyczne UW (pokój nr 3 CIUW) do Kopenhagi. Ta data uznawana jest za początek Internetu w Polsce</p>
-                </div>
-            </div>
-            <div class="history-row">
-                <div class="history-column">
-                    <h4 class="history-year">1992</h4>
-                    <p>pierwszy komercyjny dostawca Internetu – ATM S.A.</p>
-                </div>
-                <div class="history-column">
-                    <h3 class="history-year">1993</h3>
-                    <h4 class="history-date">sierpień</h4>
-                    <p>pierwszy polski serwer WWW, www.fuw.edu.pl</p>
+                <div class="history-column history-second">
+                    <div class="history-date">
+                        <h4 class="history-year">1991</h4>
+                        <h3 class="history-month">kwiecień</h3>
+                    </div>
+                    <p class="history-paragraph">Powstaje<span class="welcome-blue"> Naukowa i&nbsp;Akademicka Sieć Komputerowa</span> (NASK)</p>
                 </div>
             </div>
             <div class="history-row">
-                <div class="history-column">
-                    <h4 class="history-year">1994</h4>
-                    <h3 class="history-date">czerwiec</h3>
-                    <p>powstaje Maloka BBS, pierwszy BBS oferujący komercyjny dostęp do Internetu</p>
+                <div class="history-column history-first">
+                    <div class="history-date">
+                        <h4 class="history-year">1992</h4>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">Pierwszy komercyjny dostawca Internetu</span> – ATM S.A.</p>
                 </div>
-                <div class="history-column">
-                    <h4 class="history-year">1995</h4>
-                    <h3 class="history-date">18 maja</h3>
-                    <p> Powstaje Polska Społeczność Internetu, organizacja, której celem jest propagowanie rozwoju polskiego Internetu; działała do 1997 roku</p>
+                <div class="history-column history-second">
+                    <div class="history-date">
+                        <h4 class="history-year">1993</h4>
+                        <h3 class="history-month">sierpień</h3>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">Pierwszy polski serwer WWW</span>, www.fuw.edu.pl</p>
+                </div>
+            </div>
+            <div class="history-row">
+                <div class="history-column history-first">
+                    <div class="history-date">
+                        <h4 class="history-year">1994</h4>
+                        <h3 class="history-month">czerwiec</h3>
+                    </div>
+                    <p class="history-paragraph">Powstaje Maloka BBS,<span class="welcome-blue"> pierwszy BBS oferujący komercyjny dostęp do Internetu</span></p>
+                </div>
+                <div class="history-column history-second">
+                    <div class="history-date">
+                        <h4 class="history-year">1995</h4>
+                        <h3 class="history-month">18 maja</h3>
+                    </div>
+                    <p class="history-paragraph">Powstaje<span class="welcome-blue"> Polska Społeczność Internetu</span>, organizacja, której celem jest propagowanie rozwoju polskiego Internetu; działała do 1997 roku</p>
                  </div>
             </div>
             <div class="history-row">
-                <div class="history-column">
-                    <h4 class="history-year">1996</h4>
-                    <h3 class="history-date">grudzień</h3>
-                    <p>pierwsze darmowe konta poczty elektronicznej, oferowane przez Polbox</p>
+                <div class="history-column history-first">
+                    <div class="history-date">
+                        <h4 class="history-year">1996</h4>
+                        <h3 class="history-month">grudzień</h3>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">Pierwsze darmowe konta poczty elektronicznej</span>, oferowane przez Polbox w&nbsp;domenie polbox.com i&nbsp;free.polbox.pl. Adresy miały postać free.polbox.pl/n/nick</p>
                 </div>
-                 <div class="history-column">
-                    <h4 class="history-year">1999</h4>
-                    <h3 class="year-date">29 listopada</h3>
-                    <p>rozpoczyna się pilotażowa sprzedaż SDI (Szybki Dostęp do Internetu, Stały Dostęp do Internetu) oferowana przez TP S.A. zapewniająca stałe łącze z internetem bez blokowania linii telefonicznej. Usługa oferująca dostęp z prędkością 115 kbit/s oferowała również stały adres IP</p>
+                 <div class="history-column history-second">
+                    <div class="history-date">
+                        <h4 class="history-year">1999</h4>
+                        <h3 class="history-month">29 listopada</h3>
+                    </div>
+                     <p class="history-paragraph">Rozpoczyna się pilotażowa <span class="welcome-blue">sprzedaż SDI (Szybki Dostęp do Internetu, Stały Dostęp do Internetu)</span> oferowana przez TP S.A. zapewniająca stałe łącze z&nbsp;internetem bez blokowania linii telefonicznej. Usługa oferująca dostęp z&nbsp;prędkością 115 kbit/s oferowała również stały adres IP</p>
                  </div>
             </div>
             <div class="history-row">
-               <div class="history-column">
-                    <h4 class="history-year">2001</h4>
-                    <h4 class="history-date">15 stycznia</h4>
-                    <p>TPSA uruchamia usługę Neostrada, umożliwiającą stały dostęp do Internetu poprzez linię telefoniczną</p>
+               <div class="history-column history-first">
+                   <div class="history-date">
+                        <h4 class="history-year">2001</h4>
+                        <h3 class="history-month">15 stycznia</h3>
+                   </div>
+                   <p class="history-paragraph"><span class="welcome-blue">TPSA uruchamia usługę Neostrada</span>, umożliwiającą stały dostęp do Internetu poprzez linię telefoniczną</p>
                 </div>
-                <div class="history-column">
-                    <h4 class="history-year">2008</h4>
-                    <p>14 milionów internautów w Polsce</p>
-                </div>
-            </div>
-            <div class="history-row">
-                <div class="history-column">
-                    <h4 class="history-year">2011</h4>
-                    <p>16 milionów internautów w Polsce</p>
-                </div>
-                <div class="history-column">
-                    <h4 class="history-year">2013</h4>
-                    <p>18 milionów internautów w Polsce</p>
+                <div class="history-column history-second">
+                    <div class="history-date">
+                        <h4 class="history-year">2008</h4>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">14 milionów</span> internautów w&nbsp;Polsce</p>
                 </div>
             </div>
             <div class="history-row">
-                <div class="history-column">
-                    <h4 class="history-year">2014</h4>
-                    <p>23 miliony internautów w Polsce</p>
+                <div class="history-column history-first">
+                    <div class="history-date">
+                        <h4 class="history-year">2011</h4>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">16 milionów</span> internautów w&nbsp;Polsce</p>
                 </div>
-                <div class="history-column">
-                    <h4 class="history-year">2015</h4>
-                    <p>25,7 mln internautów w Polsce</p>
+                <div class="history-column history-second">
+                    <div class="history-date">
+                        <h4 class="history-year">2013</h4>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">18 milionów</span> internautów w&nbsp;Polsce</p>
+                </div>
+            </div>
+            <div class="history-row">
+                <div class="history-column history-first">
+                    <div class="history-date">
+                        <h4 class="history-year">2014</h4>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">23 miliony</span> internautów w&nbsp;Polsce</p>
+                </div>
+                <div class="history-column history-second">
+                    <div class="history-date">
+                        <h4 class="history-year">2015</h4>
+                    </div>
+                    <p class="history-paragraph"><span class="welcome-blue">25,7 mln</span> internautów w&nbsp;Polsce</p>
                 </div>
             </div>
         </div>
@@ -297,5 +323,21 @@ a nawet kilkaset odsłon.</p>
             $.scrollTo($('#welcome-panel'), 1000);
         });
     })();
+    $(window).scroll(function(){
+       $('.history-column.history-first').each(function(i){
+           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+           var bottom_of_window = $(window).scrollTop() + $(window).height();
+           if (bottom_of_window > bottom_of_object) {
+               $('.history-column.history-first').css("visibility", "visible").addClass('animated fadeInLeft');
+           }
+       });
+        $('.history-column.history-second').each(function(i){
+           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+           var bottom_of_window = $(window).scrollTop() + $(window).height();
+           if (bottom_of_window > bottom_of_object) {
+               $('.history-column.history-second').css("visibility", "visible").addClass('animated fadeInRight');
+           }
+       });
+    });
 </script>
 @endsection
