@@ -44,13 +44,15 @@
                         <i class="call icon"></i>
                     </div>
                 </div>
-                <div class="contact-label-container" id="textarea-label">
-                    {!! Form::label('description', 'Wiadomość:', ['class' => 'contact-label']) !!}
-                </div>
-                <div class="ui form contact-input">
-                    {!! Form::textarea('description', null, ['size' => '105x10', 'placeholder' => 'Dzień dobry, piszę w sprawie współpracy...', 'data-error' => 'Podaj treść wiadomości. Minimum: 20 znaków.']) !!}  
-                    <i class="icon"></i>
-                </div>
+                <div class="contact-textarea-container">
+                    <div class="contact-label-container" id="textarea-label">
+                        {!! Form::label('description', 'Wiadomość:', ['class' => 'contact-label']) !!}
+                    </div>
+                    <div class="ui form contact-input" id="textarea-input">
+                        {!! Form::textarea('description', null, ['size' => '105x10', 'placeholder' => 'Dzień dobry, piszę w sprawie współpracy...', 'data-error' => 'Podaj treść wiadomości. Minimum: 20 znaków.']) !!}  
+                        <i class="icon"></i>
+                    </div>
+               </div>
                 @if(Session::has('success'))
                     <div class="ui green message">
                         {{Session::get('success')}}

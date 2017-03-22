@@ -473,7 +473,7 @@
             $.scrollTo($('#sectionHistory'), 1000);
         });
         $('#historyButton').click(function(){
-            $.scrollTo($('#sectionHeader'), 1500);
+            $.scrollTo(0, 1500);
         });
     })();
     $(window).scroll(function(){

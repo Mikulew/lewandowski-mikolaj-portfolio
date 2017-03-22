@@ -2362,7 +2362,17 @@
     display: block;
   }
   .contact-wrapper {
-    max-width: 1000px;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    max-width: 80vw;
     min-height: 70vh;
     background-color: rgba(10, 10, 10, 0.7);
     margin: 5% auto 0 auto;
@@ -2377,47 +2387,80 @@
     font-weight: 600;
     color: #8eadB1;
   }
-  .contact-input-container {
+  #contact-form {
     display: -webkit-box;
     display: flex;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    align-items: center;
+    align-content: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+  #contact-form > .contact-input-container {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: nowrap;
     -webkit-box-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
     width: 100%;
   }
-  .contact-input-container > .contact-input {
+  #contact-form > .contact-input-container > .contact-input {
     max-width: 80%;
     margin-right: 20px;
   }
-  .contact-label-container {
+  #contact-form > .contact-input-container > .contact-label-container {
     margin: 20px 20px 0 20px;
     display: -webkit-box;
     display: flex;
     justify-content: space-around;
   }
-  .contact-label {
+  #contact-form > .contact-input-container > .contact-label-container > .contact-label {
     font-family: "Sansita", sans-serif;
     font-weight: 700;
     font-size: 2rem;
     color: #e4cd8a;
     margin: 10px 20px;
   }
-  #textarea-label {
-    margin-top: 30px;
+  #contact-form .contact-textarea-container {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 3rem;
   }
-  .contact-input {
+  #contact-form .contact-textarea-container > .contact-input {
     width: 100%;
+    margin-right: 20px;
+  }
+  #contact-form .contact-textarea-container > .contact-label-container {
+    margin: 20px 20px 0 20px;
     font-size: 1.6rem;
     font-family: "Roboto Slab", serif;
     margin: 20px 0 0 0;
     border: none;
     border-radius: 4px;
   }
+  #contact-form .contact-textarea-container > .contact-label-container > .contact-label {
+    font-family: "Sansita", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #e4cd8a;
+  }
   .ui.form.contact-input > textarea#description {
-    margin: 5px 20px 20px 20px;
-    width: 96%;
+    margin: 5px 20px 0 20px;
+    width: 100%;
     resize: none;
   }
   .ui.input input, .ui.form textarea {
@@ -2436,7 +2479,7 @@
     font-size: 1.6rem;
     background-color: rgba(244, 66, 78, 0.1);
     color: #f4424e;
-    margin: 0 20px;
+    margin: 2rem;
   }
   .contact-list-error > li {
     list-style: none;
@@ -3636,7 +3679,7 @@ li {
     display: flex;
     position: fixed;
     top: 0;
-    left: -800px;
+    left: -1200px;
     -webkit-box-pack: center;
     justify-content: center;
     -webkit-box-align: center;
