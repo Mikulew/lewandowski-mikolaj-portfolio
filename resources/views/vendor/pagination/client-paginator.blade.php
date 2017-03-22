@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-    <div class="blog-pagination">
+    <div class="client-pagination">
         <!-- Previous Page Link -->
 <!--
     {{--        @if ($paginator->onFirstPage())
@@ -16,15 +16,15 @@
     @foreach ($elements as $element)
         <!-- "Three Dots" Separator -->
             @if (is_string($element))
-                <a class="blog-number active">{{ $element }}</a>
+                <a class="client-number active">{{ $element }}</a>
             @endif
         <!-- Array Of Links -->
             @if (is_array($element))
                 @foreach ($element as $page => $url)
                     @if ($page == $paginator->currentPage())
-                        <a class="blog-number active">{{ $page }}</a>
+                        <a class="client-number active">{{ $page }}</a>
                     @else
-                        <a class="blog-number" href="{{ $url }}">{{ $page }}</a>
+                        <a class="client-number" href="{{ $url }}">{{ $page }}</a>
                     @endif
                 @endforeach
             @endif
