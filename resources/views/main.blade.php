@@ -335,7 +335,7 @@
                     </a>
                 @endif
         </div>   
-        <main class="page-container">
+        <main>
             @yield('body')
         </main> 
     @include('partials._javascript')

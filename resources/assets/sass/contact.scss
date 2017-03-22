@@ -25,7 +25,7 @@
 
     #contactImage { 
         position: fixed;
-        width: 100vw;
+        width: 100%;
         height: auto;
         left: 0;
         right: 0;
@@ -192,16 +192,16 @@
     
     #contact-panel {
         width: 100%;
+        height: 100%;
     }
 
     #contactImage { 
         position: fixed;
         width: 100%;
-        height: auto;
-        margin-top: 10rem;
+        height: 100%;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 10rem; 
         bottom: 0;
         z-index: -100;
         display: block;
@@ -332,8 +332,15 @@
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
     #contactImage {
-        margin-top: 10rem;
-        height: 100vh;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 10rem; 
+        bottom: 0;
+        z-index: -100;
+        display: block;
     }
     
     .contact-wrapper {
@@ -341,7 +348,7 @@
     }
 }
 
-@media only screen  and (min-width: 1280px) {
+@media only screen and (min-width: 1280px) {
 
     #contact-panel:before {
         content: '';
@@ -355,7 +362,6 @@
         display: block;
     }
     
-
     #contactImage { 
         position: fixed;
         width: 100%;

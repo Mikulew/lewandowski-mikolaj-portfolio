@@ -20,19 +20,14 @@
         display: none;
     }
     
-    .blog-panel {
-        margin: 5rem 0;
-    }
-    
     #blogImage {
         width: 100vw;
         height: auto;
         background-color: $background;
-        margin: 5rem 0;
         position: fixed;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 5rem; 
         bottom: 0;
         z-index: -100;
         display: block;
@@ -195,19 +190,14 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-
-    .blog-panel {
-        margin: 5rem 0;
-    }
     
     #blogImage {
         position: fixed;
         width: auto;
         height: 100%;
-        margin-top: 10rem;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 10rem; 
         bottom: 0;
         z-index: -100;
         display: block;

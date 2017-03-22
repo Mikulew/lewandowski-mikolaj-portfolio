@@ -13,3 +13,15 @@ Ketih Houston Ciemne typki
 // 14 II 2017
 
 Podczas usuwania książek jak usunę wszystkie z 3 strony, to nie odświeża do strony 2, tylko jest pusta tablica na stronie 3
+
+// 22 III 2017
+
+Błędy 404, 500
+strona startowa 100% width na mobile phone
+global pagination
+button icon center
+image optimalization
+blog
+login error
+paint RWD
+contact image portrait
