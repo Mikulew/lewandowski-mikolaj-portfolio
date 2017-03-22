@@ -7,7 +7,7 @@
 
 .welcome-blue {
     color: $blue;
-} 
+}
 
 @media only screen and (max-width: 767px) {
     #welcome-panel:before {
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         position: relative;
     
         #headerImage {
@@ -44,24 +44,11 @@
               repeat: no-repeat;
             } 
         }
-        .chevron.circle.down.icon {
-                position: absolute;
-                font-size: 4rem;
-                color: $blue;
-                cursor: pointer;
-                bottom: 15vh;
-                left: 50%;
-                transition: $animation;
-                transform: translateX(-50%);
-                &:hover {
-                    color: $yellow;
-                    font-size: 4rem;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
+        & > .chevron.circle.down.icon {
+                display: none;
             }
 
-            .welcome-header-heading {
+        & > .welcome-header-heading {
                 font: {
                     family: $amatic;
                     size: 6rem;
@@ -75,7 +62,7 @@
                 text-align: center;
             }
         
-            .welcome-header-container {
+         & > .welcome-header-container {
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -111,20 +98,7 @@
         position: relative;
 
         .chevron.circle.down.icon {
-            position: absolute;
-            font-size: 4rem;
-            color: $grey;
-            cursor: pointer;
-            bottom: 2%;
-            left: 50%;
-            transition: $animation;
-            transform: translateX(-50%);
-            &:hover {
-                color: $background;
-                font-size: 4rem;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+            display: none;
         }
 
         p {
@@ -340,20 +314,7 @@
         position: relative;
         color: $fontColor;
         & > .chevron.circle.down.icon {
-            position: absolute;
-            font-size: 4rem;
-            color: $paper;
-            cursor: pointer;
-            bottom: 2%;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: $animation;
-            &:hover {
-                color: $yellow;
-                font-size: 4rem;
-                left: 50%;
-                transform: translateX(-50%);
-            }
+            display: none;
         }
 
         & > .charts-huge-heading {
@@ -441,7 +402,7 @@
         color: $background;
             & > .chevron.circle.up.icon {
                 position: absolute;
-                font-size: 4rem;
+                font-size: 7rem;
                 color: $background;
                 cursor: pointer;
                 bottom: 1%;
@@ -450,7 +411,7 @@
                 transition: $animation;
                 &:hover {
                     color: $blue;
-                    font-size: 4rem;
+                    font-size: 7rem;
                     left: 50%;
                     transform: translateX(-50%);
                 }
@@ -538,16 +499,23 @@
         width: 100%;
         height: 100vh;
         position: relative;
-        
         & > .chevron.circle.down.icon {
-            top: 75%;
-            font-size: 6rem;
-            left: 40%;
-        }
-        & > .chevron.circle.down.icon:hover {
-            font-size: 6rem;
-            left: 40%;
-        }
+                position: absolute;
+                font-size: 7rem;
+                color: $blue;
+                cursor: pointer;
+                bottom: 2%;
+                left: 40%;
+                transform: translateX(-50%);
+                transition: $animation;
+                &:hover {
+                    color: $yellow;
+                    font-size: 7rem;
+                    left: 40%;
+                    transform: translateX(-50%);
+                }
+            }
+
         & > .welcome-header-container {
             width: 100%;
             display: flex;
@@ -563,37 +531,6 @@
             }
         }
     }
-    .welcome-newspaper {
-        .chevron.circle.down.icon {
-            font-size: 6rem;
-            left: 50%;
-            &:hover {
-                font-size: 6rem;
-                left: 50%;
-            }
-        }
-    }
-    .welcome-charts {
-        .chevron.circle.down.icon {
-            font-size: 6rem;
-            left: 50%;
-            &:hover {
-                font-size: 6rem;
-                left: 50%;
-            }
-        }
-    }
-    .welcome-history {   
-        & > .chevron.circle.up.icon {
-            bottom: 1%;
-            font-size: 6rem;
-            left: 50%;
-            &:hover {
-                font-size: 6rem;
-                left: 50%;
-            }
-        }
-    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
@@ -603,17 +540,13 @@
         height: calc(100vh - 12rem);
         position: relative;
     
-        #headerImage {
+        & > #headerImage {
             width: 100%;
             height: auto;
             z-index: -100;
             position: absolute;
-            background: {
-              position: top center;
-              size: 100% auto;
-              repeat: no-repeat;
-            } 
         }
+        
         & > .chevron.circle.down.icon {
                 position: absolute;
                 font-size: 5rem;
@@ -621,48 +554,47 @@
                 cursor: pointer;
                 top: 90%;
                 left: 50%;
+                transform: translateX(-50%);
                 transition: $animation;
-                transform: translateX(-50%);
+                &:hover {
+                    color: $yellow;
+                    font-size: 5rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
 
-           & > .chevron.circle.down.icon:hover {
-                color: $yellow;
-                font-size: 5rem;
-                left: 50%;
-                transform: translateX(-50%);
+        & > .welcome-header-heading {
+            font: {
+                family: $amatic;
+                size: 6rem;
+                weight: 700;
             }
+            background-color: rgba(10, 10, 10, 0.4);
+            box-shadow: $shadow;
+            margin: 10rem auto 1rem auto;
+            color: $yellow;      
+            text-align: center;
+        }
 
-            & > .welcome-header-heading {
+        & > .welcome-header-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .welcome-header-paragraph {
                 font: {
                     family: $amatic;
-                    size: 6rem;
-                    weight: 700;
+                    size: 3rem;
                 }
-                background-color: rgba(10, 10, 10, 0.4);
-                box-shadow: $shadow;
-                margin: 10rem auto 1rem auto;
-                color: $yellow;      
-                text-align: center;
+                color: $yellow;
+                width: 40%;
+                height: 30%;
+                line-height: 3.4rem;
+                margin: 3rem 0 0 3rem;
+                background-color: rgba(10, 10, 10, 0.4); 
+                border-radius: $radius; 
+                padding: 1.5rem;
             }
-        
-            .welcome-header-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                .welcome-header-paragraph {
-                    font: {
-                        family: $amatic;
-                        size: 3rem;
-                    }
-                    color: $yellow;
-                    width: 40%;
-                    height: 30%;
-                    line-height: 3.4rem;
-                    margin: 3rem 0 0 3rem;
-                    background-color: rgba(10, 10, 10, 0.4); 
-                    border-radius: $radius; 
-                    padding: 1.5rem;
-                }
             }
     }
     // =NEWSPAPER
@@ -672,7 +604,6 @@
             size: 1.6rem;
         }
         margin-top: 10rem;
-        padding-top: 10rem;
         min-height: 100vh;
         text-align: center;
         background-color: $paper;
@@ -1120,16 +1051,11 @@
                 color: $blue;
                 cursor: pointer;
                 top: 85%;
-                left: 50%;
                 transition: $animation;
-                transform: translateX(-50%);
-            }
-
-           & > .chevron.circle.down.icon:hover {
-                color: $yellow;
-                font-size: 5rem;
-                left: 50%;
-                transform: translateX(-50%);
+                &:hover {
+                    color: $yellow;
+                    font-size: 5rem;
+                }
             }
 
             & > .welcome-header-heading {
@@ -1260,7 +1186,6 @@
 }
 
 @media only screen and (min-width: 1280px) {
-
     //HEADER
     #headerImage {
         width: 100%;
@@ -1275,22 +1200,25 @@
     }
 
     header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: relative;
         min-height: 100vh;
-        text-align: center;
+        width: 100%;
+        
         & > .chevron.circle.down.icon {
             position: absolute;
             font-size: 6rem;
             color: $blue;
             cursor: pointer;
             bottom: 15vh;
-            left: 50%;
             transform: translateX(-50%);
             transition: $animation;
             &:hover {
                 color: $yellow;
                 font-size: 6rem;
-                left: 50%;
                 transform: translateX(-50%);
             }
         }
@@ -1325,7 +1253,8 @@
                 font: {
                     family: $amatic;
                     size: 3rem;
-            }    
+            }            
+                text-align: center;
                 color: $yellow;
                 min-width: 20%;
                 max-width: 30%;    

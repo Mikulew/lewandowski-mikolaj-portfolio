@@ -67,14 +67,12 @@
         fields = form.querySelectorAll('[data-error]'),
         contactBtn = document.querySelector('.login-button'),
         icons = form.querySelectorAll('i.icon');
-    console.log(icons);
 
     function isAtLeast(field, min) {
         return field.value.length >= min;
     }
 
     function isEmail(field) {
-        console.log(field);
         return field.value.match(/[^\s@]+@[^\s@]+\.[^\s@]+/);
     }
 

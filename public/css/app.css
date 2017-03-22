@@ -39,7 +39,6 @@
   .about-heading {
     font-family: "Sansita", sans-serif;
     font-size: 4.2rem;
-    color: #e4cd8a;
     text-align: center;
     width: 90%;
     margin: 2rem auto;
@@ -114,7 +113,6 @@
     background: #e4ddce;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     margin: 2rem auto;
-    width: 100%;
     height: 100%;
     padding: 3rem;
     position: relative;
@@ -154,7 +152,6 @@
     line-height: 2.4rem;
   }
   .photo-portfolio {
-    position: block;
     width: 50%;
   }
   .photo-portfolio .photo {
@@ -180,7 +177,7 @@
     font-family: "Sansita", sans-serif;
     font-size: 2rem;
     text-align: center;
-    margi-top: 10px;
+    margin-top: 10px;
     color: #4e4945;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -248,7 +245,7 @@
   }
   #aboutImage {
     position: fixed;
-    width: auto;
+    width: 100%;
     height: 100%;
     margin-top: 10rem;
     left: 0;
@@ -373,7 +370,7 @@
     line-height: 2.4rem;
   }
   .photo-portfolio {
-    position: block;
+    display: block;
     width: 50%;
   }
   .photo-portfolio .photo {
@@ -398,7 +395,7 @@
     font-family: "Sansita", sans-serif;
     font-size: 2rem;
     text-align: center;
-    margi-top: 10px;
+    margin-top: 10px;
     color: #4e4945;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -415,10 +412,6 @@
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-  #aboutImage {
-    width: auto;
-    height: 100vh;
-  }
   .about-wrapper {
     margin: 12rem auto 32rem auto;
   }
@@ -447,7 +440,7 @@
   #aboutImage {
     position: fixed;
     width: 100%;
-    height: auto;
+    height: 100%;
     left: 0;
     right: 0;
     top: 5rem;
@@ -575,7 +568,7 @@
   .photo-portfolio {
     position: absolute;
     bottom: -7rem;
-    right: 0px;
+    right: 0;
     width: 200px;
   }
   .photo-portfolio .photo {
@@ -600,7 +593,7 @@
   .photo-portfolio .photo figcaption {
     font-family: "Sansita", sans-serif;
     font-size: 2rem;
-    margi-top: 10px;
+    margin-top: 10px;
     color: #4e4945;
     text-align: center;
     -webkit-transition: all 0.3s linear;
@@ -742,7 +735,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   #blogImage {
     position: fixed;
-    width: auto;
+    width: 100%;
     height: 100%;
     left: 0;
     right: 0;
@@ -823,15 +816,6 @@
   .blog-button:hover {
     background-color: #445f62;
     color: #e4cd8a;
-  }
-}
-
-@media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-  #blogImage {
-    background-color: #2c3338;
-    padding: 0;
-    height: 100%;
-    width: auto;
   }
 }
 
@@ -1171,25 +1155,24 @@
   }
   #bookImage {
     position: fixed;
-    margin-top: 10rem;
     width: 100%;
-    height: auto;
+    height: 100%;
     left: 0;
     right: 0;
-    top: 0;
+    top: 10rem;
     bottom: 0;
     z-index: -100;
     display: block;
   }
   #book-panel {
-    margin: 12rem 0;
+    margin: 12rem 0 2rem 0;
   }
   .book-wrapper {
-    width: 75%;
+    width: 80%;
     height: 100%;
     background-color: rgba(10, 10, 10, 0.7);
-    margin: 8rem auto 1rem auto;
-    padding: 2.5rem;
+    margin: 12rem auto 6rem auto;
+    padding: 2rem;
     border-radius: 4px;
     box-shadow: 0 0 10px black;
   }
@@ -1329,10 +1312,6 @@
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-  #bookImage {
-    width: auto;
-    height: 100%;
-  }
   .book-wrapper {
     width: 85%;
   }
@@ -1638,7 +1617,6 @@
     color: #e4cd8a;
     line-height: 2rem;
     padding: 1.5rem 3rem;
-    margin: auto;
     border-radius: 4px;
     margin: 2rem 0;
     background-color: #638a8f;
@@ -1722,9 +1700,12 @@
     z-index: -100;
     display: block;
   }
+  #canvas-panel {
+    margin: 12rem 0 2rem 0;
+  }
   #canvasImage {
     position: fixed;
-    width: auto;
+    width: 100%;
     height: 100%;
     left: 0;
     right: 0;
@@ -1744,7 +1725,7 @@
     align-content: center;
     -webkit-box-align: center;
     align-items: center;
-    width: 75%;
+    width: 80%;
     height: 100%;
     background-color: rgba(10, 10, 10, 0.7);
     margin: 12rem auto 1rem auto;
@@ -1832,7 +1813,6 @@
     color: #e4cd8a;
     line-height: 2rem;
     padding: 1.5rem 5rem;
-    margin: auto;
     border-radius: 4px;
     margin: 4rem 2rem;
     background-color: #638a8f;
@@ -2001,7 +1981,6 @@
     color: #e4cd8a;
     line-height: 2rem;
     padding: 1rem 3rem;
-    margin: auto;
     border-radius: 4px;
     margin: 4rem 2rem;
     background-color: #638a8f;
@@ -2115,7 +2094,7 @@
   }
   .contact-label {
     font-family: "Sansita", sans-serif;
-    font-font-weight: 700;
+    font-weight: 700;
     font-size: 2.4rem;
     color: #e4cd8a;
     margin: 10px 20px;
@@ -2124,7 +2103,7 @@
     width: 100%;
     font-size: 2.4rem;
     font-family: "Roboto Slab", serif;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
     border-radius: 4px;
     position: relative;
   }
@@ -2156,7 +2135,8 @@
     line-height: 2.4rem;
   }
   #form-control > i.icon {
-    tranistion: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   .icon-error {
     color: #dcddde;
@@ -2217,7 +2197,7 @@
   }
   #contact-panel {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
   }
   #contactImage {
     position: fixed;
@@ -2271,7 +2251,7 @@
   }
   .contact-label {
     font-family: "Sansita", sans-serif;
-    font-font-weight: 700;
+    font-weight: 700;
     font-size: 2rem;
     color: #e4cd8a;
     margin: 10px 20px;
@@ -2280,7 +2260,7 @@
     width: 100%;
     font-size: 1.6rem;
     font-family: "Roboto Slab", serif;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
     border: none;
     border-radius: 4px;
   }
@@ -2313,7 +2293,8 @@
     line-height: 1.4rem;
   }
   #form-control > i.icon {
-    tranistion: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   .icon-error {
     color: #dcddde;
@@ -2411,14 +2392,14 @@
     margin-right: 20px;
   }
   .contact-label-container {
-    marign: 20px 20px 0 20px;
+    margin: 20px 20px 0 20px;
     display: -webkit-box;
     display: flex;
     justify-content: space-around;
   }
   .contact-label {
     font-family: "Sansita", sans-serif;
-    font-font-weight: 700;
+    font-weight: 700;
     font-size: 2rem;
     color: #e4cd8a;
     margin: 10px 20px;
@@ -2430,7 +2411,7 @@
     width: 100%;
     font-size: 1.6rem;
     font-family: "Roboto Slab", serif;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0 0 0;
     border: none;
     border-radius: 4px;
   }
@@ -2464,7 +2445,8 @@
     line-height: 1.4rem;
   }
   #form-control > i.icon {
-    tranistion: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   .icon-error {
     color: #dcddde;
@@ -2653,7 +2635,7 @@
   }
   #loginImage {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: auto;
     margin: 5rem 0;
     left: 0;
@@ -2693,7 +2675,7 @@
   }
   .login-label {
     font-family: "Sansita", sans-serif;
-    font-font-weight: 700;
+    font-weight: 700;
     font-size: 2.4rem;
     color: #e4cd8a;
     margin: 10px 20px;
@@ -2702,7 +2684,7 @@
     width: 100%;
     font-size: 2.4rem;
     font-family: "Roboto Slab", serif;
-    margin: 20px 0px;
+    margin: 20px 0;
     border: none;
     border-radius: 4px;
   }
@@ -2718,7 +2700,8 @@
     color: #dcddde;
   }
   #login-control > i.icon {
-    tranistion: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   .login-list-error {
     font-family: "Roboto Slab", serif;
@@ -2739,7 +2722,7 @@
     font-weight: 600;
     width: 100%;
     padding: 1.5rem;
-    margin: 20px 0px;
+    margin: 20px 0;
     background-color: #638a8f;
     color: #e4cd8a;
     border: none;
@@ -2753,10 +2736,6 @@
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
-  #loginImage {
-    width: auto;
-    height: 100%;
-  }
   #login-panel:after {
     content: '';
     background-color: #2c3338;
@@ -2843,7 +2822,7 @@
   }
   .login-label {
     font-family: "Sansita", sans-serif;
-    font-font-weight: 700;
+    font-weight: 700;
     font-size: 2rem;
     color: #e4cd8a;
     margin: 10px 20px;
@@ -2852,7 +2831,7 @@
     width: 100%;
     font-size: 1.6rem;
     font-family: "Roboto Slab", serif;
-    margin: 20px 0px;
+    margin: 20px 0;
     border: none;
     border-radius: 4px;
   }
@@ -2881,7 +2860,8 @@
     line-height: 1.4rem;
   }
   #form-control > i.icon {
-    tranistion: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   .icon-error {
     color: #dcddde;
@@ -2892,7 +2872,7 @@
     font-weight: 600;
     width: 100%;
     padding: 10px;
-    margin: 20px 0px;
+    margin: 20px 0;
     background-color: #638a8f;
     color: #e4cd8a;
     border: none;
@@ -2906,11 +2886,7 @@
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-  #contactImage {
-    width: 100%;
-    height: auto;
-  }
-  .contact-wrapper {
+  .login-wrapper {
     margin: 12rem auto 32rem auto;
   }
 }
@@ -2965,7 +2941,7 @@
   }
   .login-label {
     font-family: "Sansita", sans-serif;
-    font-font-weight: 700;
+    font-weight: 700;
     font-size: 2rem;
     color: #e4cd8a;
     margin: 10px 20px;
@@ -2974,7 +2950,7 @@
     width: 100%;
     font-size: 1.6rem;
     font-family: "Roboto Slab", serif;
-    margin: 20px 0px;
+    margin: 20px 0;
     border: none;
     border-radius: 4px;
   }
@@ -2990,7 +2966,8 @@
     color: #dcddde;
   }
   #login-control > i.icon {
-    tranistion: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   .login-list-error {
     font-family: "Roboto Slab", serif;
@@ -3011,7 +2988,7 @@
     font-weight: 600;
     width: 100%;
     padding: 10px;
-    margin: 20px 0px;
+    margin: 20px 0;
     background-color: #638a8f;
     color: #e4cd8a;
     border: none;
@@ -3108,7 +3085,7 @@
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
-  .project-cointainer-example {
+  .project-container-example {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -3117,7 +3094,7 @@
     width: 100%;
     margin-top: 5rem;
   }
-  .project-cointainer-example .project-paragraph {
+  .project-container-example .project-paragraph {
     min-width: 100%;
     width: 100%;
     font-family: "Roboto Slab", serif;
@@ -3127,12 +3104,12 @@
     color: #e4ddce;
     margin: 1rem 0 0 0;
   }
-  .project-cointainer-example .project-container-image {
+  .project-container-example .project-container-image {
     min-width: 100%;
     width: 100%;
     margin: 5rem 0 0 0;
   }
-  .project-cointainer-example .project-container-image > .project-image {
+  .project-container-example .project-container-image > .project-image {
     width: 100%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -3218,7 +3195,7 @@
     -webkit-box-align: center;
     align-items: center;
   }
-  .project-cointainer-example {
+  .project-container-example {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -3231,7 +3208,7 @@
     width: 100%;
     margin-top: 2rem;
   }
-  .project-cointainer-example .project-paragraph {
+  .project-container-example .project-paragraph {
     width: 100%;
     font-family: "Roboto Slab", serif;
     font-size: 2rem;
@@ -3240,12 +3217,12 @@
     color: #e4ddce;
     margin: 1rem 0 0 0;
   }
-  .project-cointainer-example .project-container-image {
+  .project-container-example .project-container-image {
     min-width: 100%;
     width: 100%;
     margin: 3rem 0 0 0;
   }
-  .project-cointainer-example .project-container-image > .project-image {
+  .project-container-example .project-container-image > .project-image {
     position: relative;
     float: right;
     width: 100%;
@@ -3254,7 +3231,7 @@
     border: 3px #e4cd8a solid;
     border-radius: 4px;
   }
-  .project-cointainer-example .project-container-image > .project-image:before {
+  .project-container-example .project-container-image > .project-image:before {
     content: '';
     clear: both;
   }
@@ -3293,22 +3270,21 @@
     display: block;
   }
   #project-panel {
-    width: 100%;
+    margin: 12rem 0 2rem 0;
   }
   #projectImage {
     position: fixed;
     width: 100%;
-    height: auto;
-    margin-top: 10rem;
+    height: 100%;
     left: 0;
     right: 0;
-    top: 0;
+    top: 10rem;
     bottom: 0;
     z-index: -100;
     display: block;
   }
   .project-wrapper {
-    width: 75vw;
+    width: 80%;
     height: 100%;
     background-color: rgba(10, 10, 10, 0.7);
     margin: 12rem auto 6rem auto;
@@ -3341,7 +3317,7 @@
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
-  .project-cointainer-example {
+  .project-container-example {
     display: -webkit-box;
     display: flex;
     flex-wrap: nowrap;
@@ -3350,7 +3326,7 @@
     width: 90%;
     margin-top: 5rem;
   }
-  .project-cointainer-example .project-paragraph {
+  .project-container-example .project-paragraph {
     min-width: 60%;
     width: 100%;
     font-family: "Roboto Slab", serif;
@@ -3359,12 +3335,12 @@
     color: #e4ddce;
     margin: 0 3rem 0 0;
   }
-  .project-cointainer-example .project-container-image {
+  .project-container-example .project-container-image {
     min-width: 45%;
     width: 100%;
     margin: 0 3rem 0 0;
   }
-  .project-cointainer-example .project-container-image > .project-image {
+  .project-container-example .project-container-image > .project-image {
     position: relative;
     float: right;
     width: 100%;
@@ -3373,7 +3349,7 @@
     border: 3px #e4cd8a solid;
     border-radius: 4px;
   }
-  .project-cointainer-example .project-container-image > .project-image:before {
+  .project-container-example .project-container-image > .project-image:before {
     content: '';
     clear: both;
   }
@@ -3428,14 +3404,10 @@
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-  #projectImage {
-    margin-top: 10rem;
-    height: 100vh;
-  }
   .project-wrapper {
     margin: 12rem auto 12rem auto;
   }
-  .project-cointainer-example {
+  .project-container-example {
     display: -webkit-box;
     display: flex;
     flex-wrap: nowrap;
@@ -3447,7 +3419,7 @@
     width: 100%;
     margin-top: 5rem;
   }
-  .project-cointainer-example .project-paragraph {
+  .project-container-example .project-paragraph {
     min-width: 100%;
     width: 100%;
     font-family: "Roboto Slab", serif;
@@ -3457,12 +3429,12 @@
     color: #e4ddce;
     margin: 0;
   }
-  .project-cointainer-example .project-container-image {
+  .project-container-example .project-container-image {
     min-width: 100%;
     width: 100%;
     margin: 3rem 0 0 0;
   }
-  .project-cointainer-example .project-container-image > .project-image {
+  .project-container-example .project-container-image > .project-image {
     position: relative;
     width: 100%;
     -webkit-transition: all 0.3s linear;
@@ -3537,7 +3509,7 @@
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
-  .project-cointainer-example {
+  .project-container-example {
     display: -webkit-box;
     display: flex;
     flex-wrap: nowrap;
@@ -3547,7 +3519,7 @@
     width: 90%;
     margin-top: 2rem;
   }
-  .project-cointainer-example .project-paragraph {
+  .project-container-example .project-paragraph {
     min-width: 50%;
     width: 100%;
     font-family: "Roboto Slab", serif;
@@ -3556,12 +3528,12 @@
     color: #e4ddce;
     margin: 0 3rem 0 0;
   }
-  .project-cointainer-example .project-container-image {
+  .project-container-example .project-container-image {
     min-width: 50%;
     width: 100%;
     margin: 0 4rem 0 0;
   }
-  .project-cointainer-example .project-container-image > .project-image {
+  .project-container-example .project-container-image > .project-image {
     position: relative;
     float: right;
     width: 60%;
@@ -3571,11 +3543,11 @@
     border-radius: 4px;
     margin-right: 8rem;
   }
-  .project-cointainer-example .project-container-image > .project-image:hover {
+  .project-container-example .project-container-image > .project-image:hover {
     width: 80%;
     border: 2px #e4cd8a solid;
   }
-  .project-cointainer-example .project-container-image > .project-image:before {
+  .project-container-example .project-container-image > .project-image:before {
     content: '';
     clear: both;
   }
@@ -3599,7 +3571,7 @@
   .project-container-technology > .project-image-technology {
     width: auto;
     height: 8rem;
-    margin: 1 rem;
+    margin: 1rem;
   }
   .project-container-technology > .project-name-technology {
     font-family: "Sansita", sans-serif;
@@ -4035,7 +4007,7 @@ li {
     -webkit-box-direction: normal;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
   }
   header #headerImage {
@@ -4047,26 +4019,10 @@ li {
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
-  header .chevron.circle.down.icon {
-    position: absolute;
-    font-size: 4rem;
-    color: #8eadB1;
-    cursor: pointer;
-    bottom: 15vh;
-    left: 50%;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+  header > .chevron.circle.down.icon {
+    display: none;
   }
-  header .chevron.circle.down.icon:hover {
-    color: #e4cd8a;
-    font-size: 4rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  header .welcome-header-heading {
+  header > .welcome-header-heading {
     font-family: "Amatic SC", cursive;
     font-size: 6rem;
     font-weight: 700;
@@ -4077,14 +4033,14 @@ li {
     color: #e4cd8a;
     text-align: center;
   }
-  header .welcome-header-container {
+  header > .welcome-header-container {
     width: 100%;
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  header .welcome-header-container > .welcome-header-paragraph {
+  header > .welcome-header-container > .welcome-header-paragraph {
     font-family: "Amatic SC", cursive;
     font-size: 2.4rem;
     text-align: center;
@@ -4108,23 +4064,7 @@ li {
     position: relative;
   }
   .welcome-newspaper .chevron.circle.down.icon {
-    position: absolute;
-    font-size: 4rem;
-    color: #4e4945;
-    cursor: pointer;
-    bottom: 2%;
-    left: 50%;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-  }
-  .welcome-newspaper .chevron.circle.down.icon:hover {
-    color: #2c3338;
-    font-size: 4rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    display: none;
   }
   .welcome-newspaper p {
     margin-top: 0;
@@ -4322,23 +4262,7 @@ li {
     color: #dcddde;
   }
   .welcome-charts > .chevron.circle.down.icon {
-    position: absolute;
-    font-size: 4rem;
-    color: #e4ddce;
-    cursor: pointer;
-    bottom: 2%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .welcome-charts > .chevron.circle.down.icon:hover {
-    color: #e4cd8a;
-    font-size: 4rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    display: none;
   }
   .welcome-charts > .charts-huge-heading {
     font-family: "Amatic SC", cursive;
@@ -4435,7 +4359,7 @@ li {
   }
   .welcome-history > .chevron.circle.up.icon {
     position: absolute;
-    font-size: 4rem;
+    font-size: 7rem;
     color: #2c3338;
     cursor: pointer;
     bottom: 1%;
@@ -4447,7 +4371,7 @@ li {
   }
   .welcome-history > .chevron.circle.up.icon:hover {
     color: #8eadB1;
-    font-size: 4rem;
+    font-size: 7rem;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -4543,13 +4467,23 @@ li {
     position: relative;
   }
   header > .chevron.circle.down.icon {
-    top: 75%;
-    font-size: 6rem;
+    position: absolute;
+    font-size: 7rem;
+    color: #8eadB1;
+    cursor: pointer;
+    bottom: 2%;
     left: 40%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   header > .chevron.circle.down.icon:hover {
-    font-size: 6rem;
+    color: #e4cd8a;
+    font-size: 7rem;
     left: 40%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   header > .welcome-header-container {
     width: 100%;
@@ -4568,31 +4502,6 @@ li {
     width: 100%;
     line-height: 2.6rem;
   }
-  .welcome-newspaper .chevron.circle.down.icon {
-    font-size: 6rem;
-    left: 50%;
-  }
-  .welcome-newspaper .chevron.circle.down.icon:hover {
-    font-size: 6rem;
-    left: 50%;
-  }
-  .welcome-charts .chevron.circle.down.icon {
-    font-size: 6rem;
-    left: 50%;
-  }
-  .welcome-charts .chevron.circle.down.icon:hover {
-    font-size: 6rem;
-    left: 50%;
-  }
-  .welcome-history > .chevron.circle.up.icon {
-    bottom: 1%;
-    font-size: 6rem;
-    left: 50%;
-  }
-  .welcome-history > .chevron.circle.up.icon:hover {
-    font-size: 6rem;
-    left: 50%;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
@@ -4601,14 +4510,11 @@ li {
     height: calc(100vh - 12rem);
     position: relative;
   }
-  header #headerImage {
+  header > #headerImage {
     width: 100%;
     height: auto;
     z-index: -100;
     position: absolute;
-    background-position: top center;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
   }
   header > .chevron.circle.down.icon {
     position: absolute;
@@ -4617,10 +4523,10 @@ li {
     cursor: pointer;
     top: 90%;
     left: 50%;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
   header > .chevron.circle.down.icon:hover {
     color: #e4cd8a;
@@ -4639,7 +4545,7 @@ li {
     color: #e4cd8a;
     text-align: center;
   }
-  header .welcome-header-container {
+  header > .welcome-header-container {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -4648,7 +4554,7 @@ li {
     -webkit-box-pack: justify;
     justify-content: space-between;
   }
-  header .welcome-header-container .welcome-header-paragraph {
+  header > .welcome-header-container .welcome-header-paragraph {
     font-family: "Amatic SC", cursive;
     font-size: 3rem;
     color: #e4cd8a;
@@ -4664,7 +4570,6 @@ li {
     font-family: "Times New Roman", serif;
     font-size: 1.6rem;
     margin-top: 10rem;
-    padding-top: 10rem;
     min-height: 100vh;
     text-align: center;
     background-color: #e4ddce;
@@ -5117,18 +5022,12 @@ li {
     color: #8eadB1;
     cursor: pointer;
     top: 85%;
-    left: 50%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
   header > .chevron.circle.down.icon:hover {
     color: #e4cd8a;
     font-size: 5rem;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
   header > .welcome-header-heading {
     font-family: "Amatic SC", cursive;
@@ -5256,9 +5155,18 @@ li {
     background-repeat: no-repeat;
   }
   header {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
     position: relative;
     min-height: 100vh;
-    text-align: center;
+    width: 100%;
   }
   header > .chevron.circle.down.icon {
     position: absolute;
@@ -5266,7 +5174,6 @@ li {
     color: #8eadB1;
     cursor: pointer;
     bottom: 15vh;
-    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     -webkit-transition: all 0.3s linear;
@@ -5275,7 +5182,6 @@ li {
   header > .chevron.circle.down.icon:hover {
     color: #e4cd8a;
     font-size: 6rem;
-    left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
@@ -5309,6 +5215,7 @@ li {
   header > .welcome-header-container > .welcome-header-paragraph {
     font-family: "Amatic SC", cursive;
     font-size: 3rem;
+    text-align: center;
     color: #e4cd8a;
     min-width: 20%;
     max-width: 30%;

@@ -14,7 +14,7 @@
         <h2 class="project-subheading">Czytam książki branżowe, żeby bardziej wgłębić się w rozumowaniu programowania</h2>
         @foreach($projects as $project)
             <h3 class="project-title animated fadeInDown">{{ $project->title }}</h3>
-            <div class="project-cointainer-example">
+            <div class="project-container-example">
                 <div class="project-paragraph animated fadeInLeft">{!! $project->description !!}</div>
                 <div class="project-container-image animated fadeInRight">
                     <img class="project-image" src="img/project/{{$project->thumbnail}}" alt="{{$project->title}}">

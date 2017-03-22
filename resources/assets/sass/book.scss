@@ -263,27 +263,26 @@
     
     #bookImage {
         position: fixed;
-        margin-top: 10rem;
         width: 100%;
-        height: auto;
+        height: 100%;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 10rem;
         bottom: 0;
         z-index: -100;
         display: block;
     }
     
     #book-panel {
-        margin: 12rem 0;
+        margin: 12rem 0 2rem 0;
     }
 
     .book-wrapper {
-        width: 75%;
+        width: 80%;
         height: 100%;
         background-color: rgba(10, 10, 10, 0.7);
-        margin: 8rem auto 1rem auto;  
-        padding: 2.5rem;
+        margin: 12rem auto 6rem auto;  
+        padding: 2rem;
         border-radius: 4px; 
         box-shadow: 0 0 10px rgba(0,0,0,1);
 
@@ -428,10 +427,6 @@
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {
-    #bookImage {
-        width: auto;
-        height: 100%;
-    }
     .book-wrapper {
         width: 85%;
     }

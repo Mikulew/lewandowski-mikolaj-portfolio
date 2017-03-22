@@ -5,8 +5,8 @@
     @yield('css')
   </head>
   <body>
-<!--            NAV MENU-->
-            <div id="menu" class="hamburger">
+<!--            NAV MENU-->       
+                <div id="menu" class="hamburger">
                 <div class="hamburger-panel hamburger-1"></div>
                 <div class="hamburger-panel hamburger-2"></div>
                 <div class="hamburger-panel hamburger-3"></div>

@@ -91,7 +91,7 @@
         transition: $animation;
     }
     
-    .project-cointainer-example {
+    .project-container-example {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -174,11 +174,11 @@
 }
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
-    #projectImage { 
+    #projectImage {
         width: auto;
         height: calc(100% - 5rem);
     }
-    
+
     #project-panel:after {
         content: '';
         background-color: $background;
@@ -199,7 +199,7 @@
         align-content: center;
         align-items: center;
     }
-       .project-cointainer-example {
+       .project-container-example {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -276,24 +276,23 @@
     }
     
     #project-panel {
-        width: 100%;
+        margin: 12rem 0 2rem 0;
     }
 
     #projectImage { 
         position: fixed;
         width: 100%;
-        height: auto;
-        margin-top: 10rem;
+        height: 100%;
         left: 0;
         right: 0;
-        top: 0; 
+        top: 10rem;
         bottom: 0;
         z-index: -100;
         display: block;
     }
 
     .project-wrapper {
-        width: 75vw;
+        width: 80%;
         height: 100%;
         background-color: rgba(10, 10, 10, 0.7);
         margin: 12rem auto 6rem auto;  
@@ -333,7 +332,7 @@
         transition: $animation;
     }
     
-    .project-cointainer-example {
+    .project-container-example {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -422,15 +421,10 @@
 }
 
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px){
-    #projectImage {
-        margin-top: 10rem;
-        height: 100vh;
-    }
-    
     .project-wrapper {
         margin: 12rem auto 12rem auto;  
     }
-    .project-cointainer-example {
+    .project-container-example {
         display: flex;
         flex-wrap: nowrap;
         flex-direction: column;
@@ -537,7 +531,7 @@
         transition: $animation;
     }
     
-    .project-cointainer-example {
+    .project-container-example {
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -596,7 +590,7 @@
         & > .project-image-technology {
             width: auto;
             height: 8rem;
-            margin: 1 rem;
+            margin: 1rem;
             }
         & > .project-name-technology {
             font: {

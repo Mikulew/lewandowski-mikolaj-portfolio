@@ -9,7 +9,7 @@
 
 @section('body')
 <div id="welcome-panel">
-    <header>
+    <header id="sectionHeader">
         <img id="headerImage" src="/img/page/welcome-page-low.jpg" alt="welcome page">
         <h1 class="welcome-header-heading animated fadeInLeft"><span class="welcome-bold">Strona internetowa</span></h1>
         <div class="welcome-header-container">
@@ -463,7 +463,6 @@
         imgHeader.onload = function() {
             $('#headerImage').attr({src: imgHeader.src});
         };
-        $.scrollTo(0);
         $('#headerButton').click(function(){
             $.scrollTo($('#sectionNewspaper'), 1000);
         });
@@ -474,7 +473,7 @@
             $.scrollTo($('#sectionHistory'), 1000);
         });
         $('#historyButton').click(function(){
-            $.scrollTo($('#welcome-panel'), 1000);
+            $.scrollTo($('#sectionHeader'), 1500);
         });
     })();
     $(window).scroll(function(){
