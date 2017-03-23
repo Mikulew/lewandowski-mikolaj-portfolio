@@ -133,7 +133,7 @@
             <p>Od ponad roku zajmuje się front-endem. Droga do zdobycia wiedzy i&nbsp;umiejętności, które już posiadam, nie była prosta.
             Z&nbsp;gąszczu informacji musiałem wybrać to, co jest dla front-end developera najistotniejsze.
             Moje poszukiwania zaowocowały ukończeniem kursu full-stack &bdquo;Od zera do WebDeva&rdquo;.
-            Wszytko to, by zgłębić tajniki serwerów dynamicznych stron i&nbsp;by jeszcze lepiej zrozumieć strukturę tych stron.</p>
+            Wszystko to, by zgłębić tajniki serwerów dynamicznych stron i&nbsp;by jeszcze lepiej zrozumieć strukturę tych stron.</p>
 
             <p>Programowanie początkowo traktowałem jako lepszą perspektywę rozwoju mojej kariery, z&nbsp;czasem jednak przerodziło się w moją pasję.
             Pasję, która chcę się dzielić z&nbsp;innymi.
@@ -166,6 +166,12 @@
                     </figcaption>
                 </figure>
             </div>
+           <div class="about-data-container">
+               <div class="about-data">
+                   <p>Mój telefon: </p>
+                   <p>+48 883 458 986</p>
+               </div>
+           </div>
         </div>
 
     </div>

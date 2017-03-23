@@ -383,19 +383,20 @@
         max-width: 80vw;
         min-height: 70vh;
         background-color: rgba(10, 10, 10, 0.7);
-        margin: 5% auto 0 auto;  
+        margin: 8rem auto 0 auto;
         padding: 20px;
         border-radius: 4px; 
         box-shadow: 0 0 10px rgba(0,0,0,1);
+        & > .contact-title {
+                font-family: $sansita;
+                text-align: center;
+                font-size: 4.2rem;
+                font-weight: 600;
+                color: $blue;
+        }
     }
     
-    .contact-title {
-        font-family: $sansita;
-        text-align: center;
-        font-size: 4.2rem;
-        font-weight: 600; 
-        color: $blue;
-    }
+
     
     #contact-form {
         display: flex;
@@ -407,25 +408,24 @@
         & > .contact-input-container {
             display: flex;
             flex-wrap: nowrap;
-            justify-content: space-between;
+            justify-content: center;
+            align-content: center;
             align-items: center;
             width: 100%;
             & > .contact-input {
-                max-width: 80%;
-                margin-right: 20px;
+                max-width: 20%;
             }
             & > .contact-label-container {
-            margin: 20px 20px 0 20px;
             display: flex;
             justify-content: space-around;
             & > .contact-label {
                 font: {
                     family: $sansita;
                     weight: 700;
-                    size: 2rem;
+                    size: 1.6rem;
                 }
                 color: $yellow;
-                margin: 10px 20px;
+                margin: 1rem;
                 }
             }
         }
@@ -435,13 +435,12 @@
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
-            margin-top: 3rem;
+            margin-top: 2rem;
             & > .contact-input {
+                margin-top: 1rem;
                 width: 100%;
-                margin-right: 20px;
             }
             & > .contact-label-container {
-            margin: 20px 20px 0 20px;
             font-size: 1.6rem;
             font-family: $roboto;
             margin: 20px 0 0 0;
@@ -451,20 +450,13 @@
                     font: {
                         family: $sansita;
                         weight: 700;
-                        size: 2rem;
+                        size: 1.6rem;
                     }
                     color: $yellow;
                 }
             }
         }
     }
-
-    .ui.form.contact-input > textarea#description {
-        margin: 5px 20px 0 20px; 
-        width: 100%;
-        resize: none;
-    }
-
     .ui.input input, .ui.form textarea {
         transition: $animation;
         font-family: $sansita;

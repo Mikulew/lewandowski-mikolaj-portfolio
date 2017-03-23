@@ -577,6 +577,8 @@
     min-height: 170px;
     background: #bfb6ad;
     padding: 10px;
+    border-radius: 5px;
+    border: 1px #4e4945 solid;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
     -webkit-transform: rotate(4deg);
@@ -584,6 +586,7 @@
   }
   .photo-portfolio .photo:after {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    border: 1px #000000 solid;
   }
   .photo-portfolio .photo > img {
     width: auto;
@@ -604,6 +607,7 @@
     transition: all 0.3s linear;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    background: #e4ddce;
   }
   .photo-portfolio .photo:hover > figcaption {
     color: #000000;
@@ -2375,12 +2379,12 @@
     max-width: 80vw;
     min-height: 70vh;
     background-color: rgba(10, 10, 10, 0.7);
-    margin: 5% auto 0 auto;
+    margin: 8rem auto 0 auto;
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 0 10px black;
   }
-  .contact-title {
+  .contact-wrapper > .contact-title {
     font-family: "Sansita", sans-serif;
     text-align: center;
     font-size: 4.2rem;
@@ -2404,18 +2408,17 @@
     display: -webkit-box;
     display: flex;
     flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: center;
     -webkit-box-align: center;
     align-items: center;
     width: 100%;
   }
   #contact-form > .contact-input-container > .contact-input {
-    max-width: 80%;
-    margin-right: 20px;
+    max-width: 20%;
   }
   #contact-form > .contact-input-container > .contact-label-container {
-    margin: 20px 20px 0 20px;
     display: -webkit-box;
     display: flex;
     justify-content: space-around;
@@ -2423,9 +2426,9 @@
   #contact-form > .contact-input-container > .contact-label-container > .contact-label {
     font-family: "Sansita", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #e4cd8a;
-    margin: 10px 20px;
+    margin: 1rem;
   }
   #contact-form .contact-textarea-container {
     display: -webkit-box;
@@ -2438,14 +2441,13 @@
     justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   #contact-form .contact-textarea-container > .contact-input {
+    margin-top: 1rem;
     width: 100%;
-    margin-right: 20px;
   }
   #contact-form .contact-textarea-container > .contact-label-container {
-    margin: 20px 20px 0 20px;
     font-size: 1.6rem;
     font-family: "Roboto Slab", serif;
     margin: 20px 0 0 0;
@@ -2455,13 +2457,8 @@
   #contact-form .contact-textarea-container > .contact-label-container > .contact-label {
     font-family: "Sansita", sans-serif;
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #e4cd8a;
-  }
-  .ui.form.contact-input > textarea#description {
-    margin: 5px 20px 0 20px;
-    width: 100%;
-    resize: none;
   }
   .ui.input input, .ui.form textarea {
     -webkit-transition: all 0.3s linear;
