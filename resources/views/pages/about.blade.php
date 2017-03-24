@@ -47,12 +47,6 @@
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/EcmaScript6.svg" alt="EcmaScript 6 logo">
-            <figcaption>
-                EcmaScript 6
-            </figcaption>
-        </figure>
-        <figure class="photo">
             <img src="/img/technology/SASS.svg" alt="SASS logo">
             <figcaption>
                 SASS
@@ -77,12 +71,6 @@
             </figcaption>
         </figure>
         <figure class="photo">
-            <img src="/img/technology/react.svg" alt="react.js logo">
-            <figcaption>
-                React.js
-            </figcaption>
-        </figure>
-        <figure class="photo">
             <img src="/img/technology/PS.svg" alt="Photoshop logo">
             <figcaption>
                 Photoshop
@@ -92,12 +80,6 @@
             <img src="/img/technology/AI.svg" alt="Illustrator logo">
             <figcaption>
                 Illustrator
-            </figcaption>
-       </figure>
-       <figure class="photo">
-            <img src="/img/technology/ID.svg" alt="InDesign logo">
-            <figcaption>
-                InDesign
             </figcaption>
        </figure>
         <figure class="photo">

@@ -11,7 +11,7 @@
     <img id="bookImage" src="/img/page/book-page-low.jpg" alt="Books photo">
        <div class="book-wrapper">
             <h1 class="book-heading">Moja biblioteczka</h1>
-            <h2 class="book-subheading">Czytam książki branżowe, żeby bardziej wgłębić się w rozumowaniu programowania</h2>
+            <h2 class="book-subheading">Czytam książki branżowe, żeby bardziej wgłębić się w programowanie</h2>
             <div class="book-all-wrapper">
             @foreach($books as $book)
                 <div class="book-one-wrapper animated fadeInLeft">

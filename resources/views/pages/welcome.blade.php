@@ -60,7 +60,7 @@
             </div>
             </div>
             <div class="collumn">
-                    <div class="head"><span class="headline column2">Przede wszystkim funkcjo&shy;nalność strony</span><p><span class="headline subcolumn2">Fukcjo&shy;nalność dla użytkow&shy;nika</span></p></div>
+                    <div class="head"><span class="headline column2">Przede wszystkim funkcjo&shy;nalność strony</span><p><span class="headline subcolumn2">Funkcjo&shy;nalność dla użytkow&shy;nika</span></p></div>
                     <p>Bardzo łatwo stra&shy;cić klienta, jeśli strona nie uła&shy;twia mu np. za&shy;kup da&shy;ne&shy;go pro&shy;duktu.
                     Co gor&shy;sza, znie&shy;chę&shy;cony klient rzad&shy;ko wra&shy;ca już na taką stro&shy;nę.
                     Dlatego zwra&shy;cam ogrom&shy;ną uwagę na to by każdy pro&shy;jekt, który wyko&shy;nuję, był pod tym wzglę&shy;dem do&shy;kład&shy;nie prze&shy;anali&shy;zowany.
@@ -114,7 +114,7 @@
 
 
                     </div>
-                    <p>To naj&shy;cen&shy;niej&shy;sze co w&nbsp;ży&shy;ciu się mamy więc warto do do&shy;brze wy&shy;ko&shy;rzy&shy;sty&shy;wać. Stro&shy;na spra&shy;wia, że nie tra&shy;cisz cza&shy;su na spo&shy;tka&shy;nia i&nbsp;te&shy;le&shy;fo&shy;ny do klien&shy;tów.
+                    <p>To naj&shy;cen&shy;niej&shy;sze co w&nbsp;ży&shy;ciu mamy, więc warto do do&shy;brze wy&shy;ko&shy;rzy&shy;sty&shy;wać. Stro&shy;na spra&shy;wia, że nie tra&shy;cisz cza&shy;su na spo&shy;tka&shy;nia i&nbsp;te&shy;le&shy;fo&shy;ny do klien&shy;tów.
                     Wy&shy;star&shy;czy, że w&nbsp;jasny spo&shy;sób za&shy;ko&shy;mu&shy;ni&shy;ku&shy;jesz swoją ofer&shy;tę na stro&shy;nie, a&nbsp;klient sam zde&shy;cy&shy;du&shy;je czy chce sko&shy;rzy&shy;stać z&nbsp;Two&shy;ich usług.</p>
             </div>
             <div class="collumn">

@@ -193,58 +193,53 @@ li {
 
     .navbar {
         display: flex;
-        position: fixed;
-        top: 0;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
         background: $background;
         border: 0 solid transparent;
         letter-spacing: 1px;
         z-index: 101;
         margin: 0;
-        min-height: 50px;
-        width: 100vw;
+        min-height: 10rem;
+        width: 100%;
         border-bottom: 1px solid $yellow;
         transition: $animation;
-    }
-
-    .navlabel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 15px;
-        margin: auto;
-        transition: $animation;
-        min-height: 50px;
-    }
-
-    .navlabel:first-child {
-        margin-left: 8%;
-    }
-
-    .navlabel:last-child {
-        margin-right: 8%;
-    }
-
-    .navlabel:hover {
-        background: lighten($background, 10%);
-    }
-
-    .navtext {
-        font: {
-            family: $sansita;
-            size: 1.6rem;
+        & > .navbar-menu {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            & > .navlabel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 30px;
+                margin: auto;
+                transition: $animation;
+                height: 50px;
+                &:hover {
+                    background: lighten($background, 10%);
+                }
+                & > .navtext {
+                    font: {
+                        family: $sansita;
+                        size: 1.6rem;
+                    }
+                    letter-spacing: 1px;
+                    color: $yellow;
+                    user-select: none;
+                    transition: $animation;
+                    line-height: 100%;
+                    margin: 0 0 0 .7rem;
+                }
+                & > .navicon {
+                    fill: $blue;
+                }
+            }
         }
-        letter-spacing: 1px;
-        color: $yellow;
-        user-select: none;
-        transition: $animation;
-        line-height: 100%;
-    }
-
-    .navicon {
-        fill: $blue;
     }
     
     // =pagination
@@ -283,13 +278,12 @@ li {
     .client-number.active {
         color: $yellow;
         background: darken($blue, 20%);
+        &:hover {
+            color: $yellow;
+            background: darken($blue, 20%);
+            }
+        }
     }
-
-    .client-number.active:hover {
-        color: $yellow;
-        background: darken($blue, 20%);
-    }
-}
 
 @media only screen  and (min-width: 1280px) {
     .hamburger {
@@ -312,44 +306,38 @@ li {
         width: 100%;
         border-bottom: 1px solid $yellow;
         transition: $animation;
-    }
-
-    .navlabel {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 30px;
-        margin: auto;
-        transition: $animation;
-        height: 50px;
-    }
-
-    .navlabel:first-child {
-        margin-left: 8%;
-    }
-
-    .navlabel:last-child {
-        margin-right: 8%;
-    }
-
-    .navlabel:hover {
-        background: lighten($background, 10%);
-    }
-
-    .navtext {
-        font: {
-            family: $sansita;
-            size: 1.6rem;
+        & > .navbar-menu {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            & > .navlabel {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0 30px;
+                margin: auto;
+                transition: $animation;
+                height: 50px;
+                &:hover {
+                    background: lighten($background, 10%);
+                }
+                & > .navtext {
+                    font: {
+                        family: $sansita;
+                        size: 1.6rem;
+                    }
+                    letter-spacing: 1px;
+                    color: $yellow;
+                    user-select: none;
+                    transition: $animation;
+                    line-height: 100%;
+                    margin: 0 0 0 .7rem;
+                }
+                & > .navicon {
+                    fill: $blue;
+                }
+             }
         }
-        letter-spacing: 1px;
-        color: $yellow;
-        user-select: none;
-        transition: $animation;
-        line-height: 100%;
-    }
-
-    .navicon {
-        fill: $blue;
     }
     
     // =pagination
