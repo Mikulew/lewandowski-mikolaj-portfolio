@@ -3,8 +3,7 @@
 @section('title', '| Contact')
 
 @section('body')
-
-<div id="contact-panel">
+<main id="contact-panel">
               @if (count($errors) > 0)
                 <div class="ui error message">
                      <div class="header">
@@ -18,10 +17,10 @@
                 </div>
             @endif
    <img id="contactImage" src="/img/page/contact-page-low.jpg">
-   <div class="contact-wrapper">
-       <p class="contact-title">Formularz kontaktowy</p>
+   <article class="contact-wrapper">
+       <h1 class="contact-title">Formularz kontaktowy</h1>
         {!! Form::open(['route' => 'pages.contact.store', 'id' => 'contact-form']) !!}
-              <div class="contact-input-container">
+              <section class="contact-input-container">
                   <div class="contact-label-container">
                        {!! Form::label('name', 'Imię i nazwisko:', ['class' => 'contact-label']) !!}
                    </div>
@@ -43,8 +42,8 @@
                         {!! Form::tel('phone', null, ['placeholder' => '888 444 777', 'data-error' => 'Podaj poprawny numer telefonu. Same cyfry, minumum: 9.']) !!}
                         <i class="call icon"></i>
                     </div>
-                </div>
-                <div class="contact-textarea-container">
+                </section>
+                <section class="contact-textarea-container">
                     <div class="contact-label-container" id="textarea-label">
                         {!! Form::label('description', 'Wiadomość:', ['class' => 'contact-label']) !!}
                     </div>
@@ -52,7 +51,7 @@
                         {!! Form::textarea('description', null, ['size' => '105x10', 'placeholder' => 'Dzień dobry, piszę w sprawie współpracy...', 'data-error' => 'Podaj treść wiadomości. Minimum: 20 znaków.']) !!}  
                         <i class="icon"></i>
                     </div>
-               </div>
+               </section>
                 @if(Session::has('success'))
                     <div class="ui green message">
                         {{Session::get('success')}}
@@ -60,8 +59,8 @@
                 @endif
             {!! Form::submit('Wyślij', ['class'=>'contact-button']) !!}           
         {!! Form::close() !!}
-    </div>
-</div>
+    </article>
+</main>
 @endsection
 
 

@@ -3,10 +3,10 @@
 @section('title', '| Login')
 
 @section('body')
-<div id="login-panel">
-    <div class="login-wrapper">
-        <img id="loginImage" src="/img/page/login-page-low.jpg">
-        <p class="login-title">Logowanie</p>
+<main id="login-panel">
+    <img id="loginImage" src="/img/page/login-page-low.jpg">
+    <article class="login-wrapper">
+        <h1 class="login-title">Logowanie</h1>
         {!! Form::open(['route' => 'login', 'id' => 'login-form']) !!}
             <div class="login-label-container">
                {!! Form::label('email', 'Login:', ['class' => 'login-label']) !!}
@@ -46,8 +46,8 @@
         </div>
     @endif
 -->
-    </div>
-</div>  
+    </article>
+</main>
 @endsection
 
 

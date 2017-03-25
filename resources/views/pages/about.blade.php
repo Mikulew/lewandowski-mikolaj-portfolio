@@ -7,9 +7,9 @@
 @endsection
 
 @section('body')
-<div id="about-panel">
+<main id="about-panel">
     <img id="aboutImage" src="/img/page/about-page-low.jpg" alt="pavement photo">
-    <div class="about-gallery">
+    <section class="about-gallery">
         <figure class="photo">
             <img src="/img/technology/HTML5.svg" alt="HTML5 logo">
             <figcaption>
@@ -106,10 +106,10 @@
                 GIT
             </figcaption>
         </figure>
-    </div>
+    </section>
     <h2 class="about-heading">Co potrafię</h2>
-    <div class="about-letter">
-        <div class="letter">
+    <section class="about-letter">
+        <article class="letter">
             <p>Drogi użytkowniku,</p>
 
             <p>Od ponad roku zajmuje się front-endem. Droga do zdobycia wiedzy i&nbsp;umiejętności, które już posiadam, nie była prosta.
@@ -154,10 +154,9 @@
                    <p>+48 883 458 986</p>
                </div>
            </div>
-        </div>
-
-    </div>
-</div>
+        </article>
+    </section>
+</main>
 @endsection
 
 

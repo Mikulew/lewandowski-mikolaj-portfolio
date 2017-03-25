@@ -836,6 +836,9 @@
     z-index: -100;
     display: block;
   }
+  .blog-panel-show {
+    margin-top: 12rem;
+  }
   .blog-wrapper {
     width: 70%;
     height: 100%;
@@ -2366,16 +2369,6 @@
     display: block;
   }
   .contact-wrapper {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    align-content: center;
     max-width: 80vw;
     min-height: 70vh;
     background-color: rgba(10, 10, 10, 0.7);
@@ -2403,6 +2396,7 @@
     align-content: center;
     -webkit-box-pack: center;
     justify-content: center;
+    margin-top: 5rem;
   }
   #contact-form > .contact-input-container {
     display: -webkit-box;
@@ -2413,7 +2407,7 @@
     align-content: center;
     -webkit-box-align: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
   }
   #contact-form > .contact-input-container > .contact-input {
     max-width: 20%;

@@ -7,33 +7,33 @@
 @endsection
 
 @section('body')
-<div id="project-panel">
+<main id="project-panel">
     <img id="projectImage" src="/img/page/project-page-low.jpg" alt="pavement photo">
-    <div class="project-wrapper">
+    <article class="project-wrapper">
         <h1 class="project-heading">Moje projekty</h1>
-        <h2 class="project-subheading">Czytam książki branżowe, żeby bardziej wgłębić się w rozumowaniu programowania</h2>
+        <h2 class="project-subheading">Zrealizowane projekty dla klientów</h2>
         @foreach($projects as $project)
             <h3 class="project-title animated fadeInDown">{{ $project->title }}</h3>
-            <div class="project-container-example">
-                <div class="project-paragraph animated fadeInLeft">{!! $project->description !!}</div>
+            <section class="project-container-example">
+                <article class="project-paragraph animated fadeInLeft">{!! $project->description !!}</article>
                 <div class="project-container-image animated fadeInRight">
                     <img class="project-image" src="img/project/{{$project->thumbnail}}" alt="{{$project->title}}">
                 </div>
-            </div>
+            </section>
             <a class="project-button animated fadeIn" href="{{$project->link}}" target="_blank">Link&nbsp;do&nbsp;projektu</a>
-            <h3 class="project-title animated fadeIn">Użyte technologie</h3>
-            <div class="project-wrapper-technology">
+            <h4 class="project-title animated fadeIn">Użyte technologie</h4>
+            <section class="project-wrapper-technology">
             @foreach($project->technology as $technology)
                <div class="project-container-technology animated fadeInUp">
                     <img class="project-image-technology" src="/img/technology/{{$technology->thumbnail}}" alt="{{$technology->name}}">
-                    <div class="project-name-technology">{{ $technology->name }}</div>
+                    <p class="project-name-technology">{{ $technology->name }}</p>
                 </div>
             @endforeach
-            </div>    
+            </section>
         @endforeach
-    </div>
+    </article>
     {{ $projects->links('vendor.pagination.client-paginator') }}
-</div>
+</main>
 @endsection
 
 

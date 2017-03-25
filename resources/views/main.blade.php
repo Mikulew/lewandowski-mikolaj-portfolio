@@ -315,10 +315,8 @@
                             </a>
                     @endif
             </nav>
-        </div>   
-        <main>
-            @yield('body')
-        </main> 
+        </div>
+        @yield('body')
     @include('partials._javascript')
     @yield('scripts')
   </body>

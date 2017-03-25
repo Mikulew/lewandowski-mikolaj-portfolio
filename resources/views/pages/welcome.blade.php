@@ -8,7 +8,7 @@
 @endsection
 
 @section('body')
-<div id="welcome-panel">
+<main id="welcome-panel">
     <header id="sectionHeader">
         <img id="headerImage" src="/img/page/welcome-page-low.jpg" alt="welcome page">
         <h1 class="welcome-header-heading animated fadeInLeft"><span class="welcome-bold">Strona internetowa</span></h1>
@@ -449,7 +449,7 @@
         </div>
         <i id="historyButton" class="chevron circle up icon"></i>
     </section>    
-</div>
+</main>
 @endsection
 
 

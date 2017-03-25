@@ -3,14 +3,16 @@
 @section('title', '| Read Post')
 
 @section('body')
-<div class="blog-wrapper">
+<main class="blog-panel blog-panel-show">
     <img id="blogImage" src="/img/page/blog-page-low.jpg" alt="Blog photo">
-    <h3 class="blog-title" style="margin-top: 50px;">{{ $post->title }}</h3>
-    <div class="blog-segment">
-        <p class="blog-paragraph">{{ $post->content }}</p>
-        <a href="{{route('pages.post.index')}}" class='blog-button'>Powrót</a>
-    </div> 
-</div>
+    <article class="blog-wrapper">
+        <h2 class="blog-title">{{ $post->title }}</h2>
+        <article class="blog-segment">
+            <p class="blog-paragraph">{{ $post->content }}</p>
+            <a href="{{route('pages.post.index')}}" class='blog-button'>Powrót</a>
+        </article>
+    </article>
+</main>
 @endsection
 
 @section("scripts")
