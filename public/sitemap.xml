@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://mikolaj-lewandowski.pl</loc>
+        <lastmod>2017-03-26</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://mikolaj-lewandowski.pl/about</loc>
+        <lastmod>2017-03-26</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://mikolaj-lewandowski.pl/contact</loc>
+        <lastmod>2017-03-26</lastmod>
+        <changefreq>yearly</changefreq>
+    </url>
+    <url>
+        <loc>http://mikolaj-lewandowski.pl/project</loc>
+        <lastmod>2017-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://mikolaj-lewandowski.pl/canvas</loc>
+        <lastmod>2017-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://mikolaj-lewandowski.pl/book</loc>
+        <lastmod>2017-03-26</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>http://mikolaj-lewandowski.pl/blog</loc>
+        <lastmod>2017-03-26</lastmod>
+        <changefreq>weekly</changefreq>
+    </url>
+</urlset>

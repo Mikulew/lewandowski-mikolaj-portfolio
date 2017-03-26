@@ -1188,6 +1188,8 @@
 @media only screen and (min-width: 1280px) {
     //HEADER
     #headerImage {
+        position: absolute;
+        top: 5rem;
         width: 100%;
         height: auto;
         z-index: -100;

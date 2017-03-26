@@ -13,13 +13,13 @@
             </div>
             <nav class="navbar">
                 <div class="navbar-menu">
-                    <a href="/" class="{{ Request::is('/') ? 'active' : '' }} navlabel">
+                    <a href="/" class="{{ Request::is('/') ? 'active' : '' }} navlabel" tabindex="1">
                         <div class="navicon">
                             <svg baseProfile="tiny" height="24px" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,3c0,0-6.186,5.34-9.643,8.232C2.154,11.416,2,11.684,2,12c0,0.553,0.447,1,1,1h2v7c0,0.553,0.447,1,1,1h3  c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.447,1-1v-7h2c0.553,0,1-0.447,1-1c0-0.316-0.154-0.584-0.383-0.768  C18.184,8.34,12,3,12,3z"/></svg>
                         </div>
                             <span class="navtext">Strona główna</span>
                     </a>
-                    <a href="/about" class="{{ Request::is('about') ? 'active' : '' }} navlabel">
+                    <a href="/about" class="{{ Request::is('about') ? 'active' : '' }} navlabel" tabindex="2">
                         <div class="navicon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="16.403px" height="19.625px" viewBox="3.848 4.375 16.403 19.625" enable-background="new 3.848 4.375 16.403 19.625"
@@ -38,7 +38,7 @@
                         </div>
                             <span class="navtext">O mnie</span>
                     </a>
-                    <a href="{{route('pages.contact')}}" class="{{ Request::is('contact') ? 'active' : '' }} navlabel">
+                    <a href="{{route('pages.contact')}}" class="{{ Request::is('contact') ? 'active' : '' }} navlabel" tabindex="3">
                         <div class="navicon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="20px" height="15.967px" viewBox="0 0 20 15.967" enable-background="new 0 0 20 15.967" xml:space="preserve">
@@ -68,7 +68,7 @@
                         </div>
                             <span class="navtext">Kontakt</span>
                     </a>
-                    <a href="{{route('pages.project.index')}}" class="{{ Request::is('project') ? 'active' : '' }} navlabel">
+                    <a href="{{route('pages.project.index')}}" class="{{ Request::is('project') ? 'active' : '' }} navlabel" tabindex="4">
                         <div class="navicon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="20.896px" height="15.967px" viewBox="0 0 20.896 15.967" enable-background="new 0 0 20.896 15.967" xml:space="preserve">
@@ -103,7 +103,7 @@
                     </a>
                 </div>
                 <div class="navbar-menu">
-                    <a href="{{route('pages.canvas.index')}}" class="{{ Request::is('canvas') ? 'active' : '' }} navlabel">
+                    <a href="{{route('pages.canvas.index')}}" class="{{ Request::is('canvas') ? 'active' : '' }} navlabel" tabindex="5">
                         <div class="navicon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="24.288px" height="16.021px" viewBox="0 0 24.288 16.021" enable-background="new 0 0 24.288 16.021" xml:space="preserve">
@@ -151,7 +151,7 @@
                         </div>
                             <span class="navtext">Gry i animacje</span>
                         </a>
-                        <a href="{{route('pages.book.index')}}" class="{{ Request::is('book') ? 'active' : '' }} navlabel">
+                        <a href="{{route('pages.book.index')}}" class="{{ Request::is('book') ? 'active' : '' }} navlabel" tabindex="6">
                             <div class="navicon">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="20.714px" height="19.367px" viewBox="0 0 20.714 19.367" enable-background="new 0 0 20.714 19.367" xml:space="preserve">
@@ -193,7 +193,7 @@
                             </div>
                                 <span class="navtext">Biblioteczka</span>
                         </a>
-                        <a href="{{route('pages.post.index')}}" class="{{ Request::is('blog') ? 'active' : '' }} navlabel">
+                        <a href="{{route('pages.post.index')}}" class="{{ Request::is('blog') ? 'active' : '' }} navlabel" tabindex="7">
                             <div class="navicon">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                      width="17.27px" height="19.414px" viewBox="0 0 17.27 19.414" enable-background="new 0 0 17.27 19.414" xml:space="preserve">
@@ -236,7 +236,7 @@
                                 <span class="navtext">Blog</span>
                         </a>
                         @if (Auth::user())
-                            <a href="{{route('admin')}}" class="navlabel">
+                            <a href="{{route('admin')}}" class="navlabel" tabindex="8">
                                 <div class="navicon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="17.27px" height="17.304px" viewBox="0 0 17.27 17.304" enable-background="new 0 0 17.27 17.304" xml:space="preserve">
@@ -291,7 +291,7 @@
                                 </div>
                                 <span class="navtext">Panel administracyjny</span>
                             </a>
-                            <a href="{{route('logout')}}" class="navlabel">
+                            <a href="{{route('logout')}}" class="navlabel" tabindex="9">
                                 <div class="navicon">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                          width="17.27px" height="19.414px" viewBox="0 0 17.27 19.414" enable-background="new 0 0 17.27 19.414" xml:space="preserve">
@@ -314,8 +314,8 @@
                                 <span class="navtext">Logout</span>
                             </a>
                     @endif
+                </div>
             </nav>
-        </div>
         @yield('body')
     @include('partials._javascript')
     @yield('scripts')

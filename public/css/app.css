@@ -5207,6 +5207,8 @@ li {
 
 @media only screen and (min-width: 1280px) {
   #headerImage {
+    position: absolute;
+    top: 5rem;
     width: 100%;
     height: auto;
     z-index: -100;
