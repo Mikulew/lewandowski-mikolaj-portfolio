@@ -50,12 +50,13 @@
 
         & > .welcome-header-heading {
                 font: {
-                    family: $amatic;
-                    size: 6rem;
+                    family: $fontNav;
+                    size: 4rem;
                     weight: 700;
                 }
                 width: 100%;
-                background-color: rgba(10, 10, 10, 0.4);
+                background-color: $wrapper;
+                padding: 1rem 0;
                 box-shadow: $shadow;
                 margin: 0 auto 1rem auto;
                 color: $yellow;      
@@ -68,16 +69,16 @@
                 justify-content: space-between;
                 & > .welcome-header-paragraph {
                     font: {
-                        family: $amatic;
-                        size: 2.4rem;
+                        family: $fontNav;
+                        size: 1.6rem;
                     }
                     text-align: center;
                     color: $yellow;
                     width: 49%;
                     height: 30%;
-                    line-height: 3rem;
+                    line-height: 2rem;
                     margin-top: 3rem;
-                    background-color: rgba(10, 10, 10, 0.4); 
+                    background-color: $wrapper;
                     border-radius: $radius; 
                     padding: 1rem;
                 }
@@ -87,7 +88,7 @@
     // =NEWSPAPER
     .welcome-newspaper {
         font: {
-            family: $times;
+            family: $fontText;
             size: 1.4rem;
         }
         padding-top: 5rem;
@@ -110,8 +111,8 @@
 
         .newspaper-huge-heading {
             font: {
-                family: $playfair;
-                size: 7rem;
+                family: $fontText;
+                size: 6rem;
                 weight: 700;        
             }
             text-transform: uppercase;
@@ -130,7 +131,7 @@
 
         .newspaper-main {
             font: {
-                family: $playfair;
+                family: $fontText;
                 size: 2rem;
                 weight: 700;
             }
@@ -192,7 +193,7 @@
         .collumn .headline {
             text-align: center;
             line-height: normal;
-            font-family: $playfair;
+            font-family: $fontText;
             display: block;
             margin: 0 auto;
         }
@@ -200,19 +201,19 @@
         .collumn .headline.column1, .collumn .headline.column4 {
             font-weight: 400;
             font-style: italic;
-            font-size: 4rem;
+            font-size: 3rem;
             padding: 2rem 0;
         }
 
         .collumn .headline.subcolumn1 {
-            font-weight: bold;
-            font-size: 3rem;
+            font-weight: 700;
+            font-size: 2rem;
             padding: 2rem 0;
         }
 
         .collumn .headline.subcolumn5 {
-            font-weight: bold;
-            font-size: 3rem;
+            font-weight: 700;
+            font-size: 2rem;
             padding: 2rem 0;
         }
 
@@ -243,7 +244,7 @@
    
         .collumn .headline.column2 {
             font-weight: 400;
-            font-size: 4rem;
+            font-size: 3rem;
             text-transform: uppercase;
             font-style: italic;
             padding: 2rem 0;
@@ -252,7 +253,7 @@
 
         .collumn .headline.subcolumn2, .collumn .headline.subcolumn4 {
             font-weight: 400;
-            font-size: 3rem;
+            font-size: 2rem;
             padding: 2rem 0;
         }
         .collumn .headline.subcolumn2:before, .collumn .headline.subcolumn4:before {
@@ -274,14 +275,14 @@
 
         .collumn .headline.column3, .collumn .headline.column5 {
             font-weight: 700;
-            font-size: 5rem;
+            font-size: 3rem;
             text-transform: uppercase;
             padding: 2rem 0;
         }
         .collumn .headline.subcolumn3 {
             font-weight: 400;
             font-style: italic;
-            font-size: 3rem;
+            font-size: 2rem;
             padding: 2rem 0;
         }    
         .collumn .headline.subcolumn3:before {
@@ -319,8 +320,8 @@
 
         & > .charts-huge-heading {
             font: {
-                family: $amatic;
-                size: 8rem;
+                family: $fontNav;
+                size: 4rem;
                 weight: 700;
             }
             text-align: center;
@@ -328,7 +329,7 @@
         }
         & > .charts-subhuge-heading {
             font: {
-                family: $sansita;
+                family: $fontText;
                 size: 2rem;
             }
             text-align: justify;
@@ -363,12 +364,16 @@
                     visibility: hidden;
                     & > .charts-title {
                         font: {
-                            family: $amatic;
-                            size: 6rem;
+                            family: $fontNav;
+                            size: 3rem;
                         }
+                        padding-bottom: 1rem;
+                        width: 90%;
+                        text-align: center;
                     }
                     & > .charts-paragraph {
                         font: {
+                            family: $fontText;
                             size: 2rem;
                         }
                         width: 90%;
@@ -419,8 +424,8 @@
         & > .history-huge-heading {
             text-align: center;
             font: {
-                family: $amatic;
-                size: 6rem;
+                family: $fontNav;
+                size: 4rem;
                 weight: 700;
             }
             margin: 5rem auto 1rem auto;
@@ -451,17 +456,17 @@
                         align-items: baseline;
                         & > .history-year {
                             font: {
-                                family: $sansita;
-                                size: 4rem;
+                                family: $fontNav;
+                                size: 3rem;
                             }
                             margin: 1rem;
                             padding: 0;
                         }
                         & > .history-month {
                             font: {
-                                family: $amatic;
-                                size: 3.6rem;
-                                weight: 700;
+                                family: $fontNav;
+                                size: 2.6rem;
+                                style: italic;
                             }
                             color: $background;
                             margin: 1rem;
@@ -470,7 +475,7 @@
                     }
                     & > .history-paragraph {
                         font: {
-                            family: $roboto;
+                            family: $fontText;
                             size: 2rem;
                         }
                         color: $yellow;
@@ -491,29 +496,15 @@
 
 @media only screen and (orientation: portrait) and (max-width: 767px) {
     #headerImage {
-        position: relative;
-        width: auto;
-        height: 50vh;
+        display: block;
+        width: 100%;
     }   
     header {
         width: 100%;
         height: 100vh;
         position: relative;
         & > .chevron.circle.down.icon {
-                position: absolute;
-                font-size: 7rem;
-                color: $blue;
-                cursor: pointer;
-                bottom: 2%;
-                left: 40%;
-                transform: translateX(-50%);
-                transition: $animation;
-                &:hover {
-                    color: $yellow;
-                    font-size: 7rem;
-                    left: 40%;
-                    transform: translateX(-50%);
-                }
+                display: none;
             }
 
         & > .welcome-header-container {
@@ -525,7 +516,7 @@
             margin: 1rem 0 0 0;
             
             & > .welcome-header-paragraph {
-                margin: 1rem 0 0 0;
+                margin: 3rem 0 0 0;
                 width: 100%;
                 line-height: 2.6rem;
             }
@@ -536,7 +527,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
     // =HEADER
     header {
-        width: 100vw;
+        width: 100%;
         height: calc(100vh - 12rem);
         position: relative;
     
@@ -552,7 +543,7 @@
                 font-size: 5rem;
                 color: $blue;
                 cursor: pointer;
-                top: 90%;
+                bottom: 5%;
                 left: 50%;
                 transform: translateX(-50%);
                 transition: $animation;
@@ -566,11 +557,12 @@
 
         & > .welcome-header-heading {
             font: {
-                family: $amatic;
-                size: 6rem;
+                family: $fontNav;
+                size: 5rem;
                 weight: 700;
             }
-            background-color: rgba(10, 10, 10, 0.4);
+            padding-top: .5rem;
+            background-color: $wrapper;
             box-shadow: $shadow;
             margin: 10rem auto 1rem auto;
             color: $yellow;      
@@ -583,27 +575,30 @@
             justify-content: space-between;
             .welcome-header-paragraph {
                 font: {
-                    family: $amatic;
-                    size: 3rem;
+                    family: $fontNav;
+                    size: 2rem;
                 }
                 color: $yellow;
                 width: 40%;
                 height: 30%;
-                line-height: 3.4rem;
+                line-height: 2.8rem;
                 margin: 3rem 0 0 3rem;
-                background-color: rgba(10, 10, 10, 0.4); 
-                border-radius: $radius; 
+                background-color: $wrapper;
+                border-radius: $radius;
+                box-shadow: $shadow;
+                text-align: center;
                 padding: 1.5rem;
-            }
+                }
             }
     }
     // =NEWSPAPER
     .welcome-newspaper {
         font: {
-            family: $times;
+            family: $fontText;
             size: 1.6rem;
         }
-        margin-top: 10rem;
+        margin-top: 2rem;
+        padding: 12rem 0;
         min-height: 100vh;
         text-align: center;
         background-color: $paper;
@@ -615,7 +610,7 @@
             font-size: 5rem;
             color: $grey;
             cursor: pointer;
-            bottom: 0;
+            bottom: 5%;
             left: 50%;
             transition: $animation;
             transform: translateX(-50%);
@@ -635,7 +630,7 @@
 
         .newspaper-huge-heading {
             font: {
-                family: $playfair;
+                family: $fontText;
                 size: 7rem;
                 weight: 700;        
             }
@@ -655,7 +650,7 @@
 
         .newspaper-main {
             font: {
-                family: $playfair;
+                family: $fontText;
                 size: 2rem;
                 weight: 700;
             }
@@ -719,7 +714,7 @@
         .collumn .headline {
             text-align: center;
             line-height: normal;
-            font-family: $playfair;
+            font-family: $fontText;
             display: block;
             margin: 0 auto;
         }
@@ -855,7 +850,7 @@
             font-size: 5rem;
             color: $paper;
             cursor: pointer;
-            bottom: 5vh;
+            bottom: 5%;
             left: 50%;
             transform: translateX(-50%);
             transition: $animation;
@@ -869,14 +864,14 @@
 
         & > .charts-huge-heading {
             font: {
-                family: $amatic;
+                family: $fontNav;
                 size: 5rem;
             }
             text-align: center;
         }
         & > .charts-subhuge-heading {
             font: {
-                family: $sansita;
+                family: $fontText;
                 size: 2rem;
             }
             text-align: center;
@@ -910,11 +905,15 @@
                     visibility: hidden;
                     & > .charts-title {
                         font: {
-                            family: $amatic;
+                            family: $fontNav;
                             size: 3rem;
                         }
                     }
                     & > .charts-paragraph {
+                        font: {
+                            family: $fontText;
+                        }
+                        text-align: center;
                         width: 80%;
                         hyphens: none;
                     }
@@ -943,7 +942,7 @@
                 font-size: 5rem;
                 color: $background;
                 cursor: pointer;
-                bottom: 5vh;
+                bottom: 2%;
                 left: 50%;
                 transform: translateX(-50%);
                 transition: $animation;
@@ -958,7 +957,7 @@
         & > .history-huge-heading {
             text-align: center;
             font: {
-                family: $amatic;
+                family: $fontNav;
                 size: 5rem;
                 weight: 700;
             }
@@ -989,7 +988,7 @@
                         align-items: baseline;
                         & > .history-year {
                             font: {
-                                family: $sansita;
+                                family: $fontNav;
                                 size: 4rem;
                             }
                             margin: 1rem;
@@ -997,9 +996,9 @@
                         }
                         & > .history-month {
                             font: {
-                                family: $amatic;
+                                family: $fontNav;
                                 size: 3.6rem;
-                                weight: 700;
+                                style: italic;
                             }
                             color: $background;
                             margin: 1rem;
@@ -1008,7 +1007,7 @@
                     }
                     & > .history-paragraph {
                         font: {
-                            family: $roboto;
+                            family: $fontText;
                             size: 2rem;
                         }
                         line-height: 2.4rem;
@@ -1016,7 +1015,7 @@
                         width: 85%;
                         text-align: center;
                         padding: 4rem 2rem;
-                        background-color: rgba(10, 10, 10, 0.7); 
+                        background-color: $wrapper;
                         box-shadow: $shadow;
                         border-radius: $radius;  
                         margin-top: 1rem;
@@ -1031,14 +1030,15 @@
         // =HEADER
         header {
             width: 100vw;
-            height: calc(100vh - 12rem);
+            height: calc(100vh - 10rem);
             position: relative;
     
         #headerImage {
             width: 100%;
             height: auto;
             z-index: -100;
-            position: absolute;
+            display: block;
+            position: relative;
             background: {
               position: top center;
               size: 100% auto;
@@ -1050,7 +1050,9 @@
                 font-size: 5rem;
                 color: $blue;
                 cursor: pointer;
-                top: 85%;
+                bottom: 2%;
+                left: 50%;
+                transform: translateX(-50%);
                 transition: $animation;
                 &:hover {
                     color: $yellow;
@@ -1060,13 +1062,14 @@
 
             & > .welcome-header-heading {
                 font: {
-                    family: $amatic;
+                    family: $fontNav;
                     size: 6rem;
                     weight: 700;
                 }
-                background-color: rgba(10, 10, 10, 0.4);
+                width: 100%;
+                background-color: $wrapper;
                 box-shadow: $shadow;
-                margin: 10rem auto 1rem auto;
+                margin: 2rem auto 1rem auto;
                 color: $yellow;      
                 text-align: center;
             }
@@ -1080,7 +1083,7 @@
 
             .welcome-header-paragraph {
                 font: {
-                    family: $amatic;
+                    family: $fontNav;
                     size: 3rem;
                 }
                 color: $yellow;
@@ -1088,7 +1091,7 @@
                 min-height: 20rem;
                 line-height: 3.4rem;
                 margin: 50% 0 0 0;
-                background-color: rgba(10, 10, 10, 0.4); 
+                background-color: $wrapper;
                 border-radius: $radius; 
                 padding: 1.5rem;
             }
@@ -1096,7 +1099,7 @@
     // =NEWSPAPER
     .welcome-newspaper {
         font: {
-            family: $times;
+            family: $fontText;
             size: 1.6rem;
         }
         margin-top: 10rem;
@@ -1215,7 +1218,7 @@
             font-size: 6rem;
             color: $blue;
             cursor: pointer;
-            bottom: 15vh;
+            bottom: 5%;
             transform: translateX(-50%);
             transition: $animation;
             &:hover {
@@ -1227,23 +1230,24 @@
 
         & > .welcome-header-heading {
             font: {
-                family: $amatic;
-                size: 8rem;
+                family: $fontNav;
+                size: 5rem;
                 weight: 700;
             }
             text-align: center;
-            background-color: rgba(10, 10, 10, 0.4);
+            background-color: $wrapper;
             box-shadow: $shadow;
+            border-radius: $radius;
             padding: 2rem;
             position: absolute;
             color: $yellow;
             min-width: 30%;
-            top: 19%;
+            top: 25%;
             left: 10%;
         }
         & > .welcome-header-container {
                 position: absolute;
-                top: 42%;
+                top: 50%;
                 left: 10%;
                 width: 100%;
                 display: flex;
@@ -1253,16 +1257,17 @@
                 & > .welcome-header-paragraph {
                     
                 font: {
-                    family: $amatic;
-                    size: 3rem;
+                    family: $fontNav;
+                    size: 2rem;
+                    style: italic;
             }            
                 text-align: center;
                 color: $yellow;
                 min-width: 20%;
                 max-width: 30%;    
                 padding: 2rem;
-                line-height: 3.4rem;
-                background-color: rgba(10, 10, 10, 0.4);
+                line-height: 2.4rem;
+                background-color: $wrapper;
                 box-shadow: $shadow;
                 border-radius: $radius; 
             }
@@ -1272,10 +1277,10 @@
     // =NEWSPAPER
     .welcome-newspaper {
         font: {
-            family: $times;
+            family: $fontText;
             size: 1.6rem;
         }
-        padding-top: 7rem;
+        padding: 7rem 0;
         min-height: 100vh;
         text-align: center;
         background-color: $paper;
@@ -1308,7 +1313,7 @@
 
         .newspaper-huge-heading {
             font: {
-                family: $playfair;
+                family: $fontNav;
                 size: 8rem;
                 weight: 700;        
             }
@@ -1327,7 +1332,7 @@
 
         .newspaper-main {
             font: {
-                family: $playfair;
+                family: $fontNav;
                 size: 1.6rem;
                 weight: 700;
             }
@@ -1353,7 +1358,7 @@
             line-height: 2rem;
             width: 17.5%;
             display: inline-block;
-            padding: 0 1% 0 1%;
+            padding: 0 1%;
             vertical-align: top;
             margin-bottom: 3rem;
             transition: $animation;
@@ -1365,7 +1370,7 @@
 
         .newspaper-svg {
             fill: $grey;
-            width: 50%;
+            width: 40%;
             height: auto;
         }
         
@@ -1384,7 +1389,7 @@
         .collumn .headline {
             text-align: center;
             line-height: normal;
-            font-family: $playfair;
+            font-family: $fontNav;
             display: block;
             margin: 0 auto;
         }
@@ -1500,7 +1505,7 @@
                 font-size: 6rem;
                 color: $paper;
                 cursor: pointer;
-                bottom: 5vh;
+                bottom: 5%;
                 left: 50%;
                 transform: translateX(-50%);
                 transition: $animation;
@@ -1514,14 +1519,14 @@
 
         & > .charts-huge-heading {
             font: {
-                family: $amatic;
+                family: $fontNav;
                 size: 5rem;
             }
             text-align: center;
         }
         & > .charts-subhuge-heading {
             font: {
-                family: $sansita;
+                family: $fontText;
                 size: 2rem;
             }
             text-align: center;
@@ -1555,19 +1560,22 @@
                     visibility: hidden;
                     & > .charts-title {
                         font: {
-                            family: $amatic;
+                            family: $fontNav;
                             size: 3rem;
                         }
                     }
                     & > .charts-paragraph {
+                        font: {
+                            family: $fontText;
+                        }
+                        text-align: center;
                         width: 70%;
                         hyphens: none;
                     }
                     & > .charts-svg {
-                        width: 10%;
+                        width: 14%;
                         height: auto;
                         fill: $paper;
-                        margin: 2rem 0;
                     }
                 }
             }
@@ -1587,7 +1595,7 @@
                 font-size: 6rem;
                 color: $background;
                 cursor: pointer;
-                bottom: 5vh;
+                bottom: 2%;
                 left: 50%;
                 transform: translateX(-50%);
                 transition: $animation;
@@ -1602,7 +1610,7 @@
         & > .history-huge-heading {
             text-align: center;
             font: {
-                family: $amatic;
+                family: $fontNav;
                 size: 5rem;
                 weight: 700;
             }
@@ -1633,17 +1641,17 @@
                         align-items: baseline;
                         & > .history-year {
                             font: {
-                                family: $sansita;
-                                size: 3.6rem;
+                                family: $fontNav;
+                                size: 3rem;
                             }
                             margin: 1rem;
                             padding: 0;
                         }
                         & > .history-month {
                             font: {
-                                family: $amatic;
-                                size: 3rem;
-                                weight: 700;
+                                family: $fontNav;
+                                size: 2.8rem;
+                                style: italic;
                             }
                             color: $background;
                             margin: 1rem;
@@ -1652,8 +1660,8 @@
                     }
                     & > .history-paragraph {
                         font: {
-                            family: $roboto;
-                            size: 1.6rem;
+                            family: $fontText;
+                            size: 2rem;
                         }
                         color: $yellow;
                         width: 80%;

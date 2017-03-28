@@ -32,7 +32,7 @@
                         {!! Form::label('email', 'Email:', ['class' => 'contact-label']) !!}
                     </div>
                    <div class="ui left icon input contact-input">
-                        {!! Form::email('email', null, ['placeholder' => 'kowalski@gmail.com', 'data-error' => 'Podaj poprawny adres e-mail. Musi posiadać znak @']) !!}
+                        {!! Form::email('email', null, ['placeholder' => 'kowalski@op.pl', 'data-error' => 'Podaj poprawny adres e-mail. Musi posiadać znak @']) !!}
                         <i class="at icon"></i>
                     </div>
                     <div class="contact-label-container">

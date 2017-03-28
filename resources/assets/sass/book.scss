@@ -42,25 +42,26 @@
     .book-wrapper {
         width: 90%;
         height: auto;
-        background-color: rgba(10, 10, 10, 0.7);
-        margin: 8rem auto 1rem auto;  
-        padding: 2.5rem;
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        background-color: $wrapper;
+        margin: 8rem auto 1rem auto;
+        padding: 2rem;
+        border-radius: $radius;
+        box-shadow: $shadow;
 
         & > .book-heading {
         font: {
-            family: $sansita;
-            size: 4.2rem;
+            family: $fontNav;
+            size: 3rem;
+            weight: 700;
         }
         color: $blue;
         text-align: center;
         padding-top: 1rem;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
         }
         & > .book-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
             }
             width: 90%;
@@ -90,7 +91,7 @@
         margin: 1rem 1.5rem;
         background: $background;
         padding: 1rem;
-        border-radius: 5px;
+        border-radius: $radius;
         border: 2px solid $yellow;
         transition: $animation;
     }
@@ -107,7 +108,7 @@
 
     .book-image:hover {
         transition: $animation;
-        transform: scale(1.6);
+        transform: scale(1.2);
         border: 3px solid $background;
         background: $yellow;
         z-index: 1;
@@ -115,10 +116,10 @@
 
     a.book-title, p.book-title {
         font: {
-            family: $playfair;
+            family: $fontNav;
             size: 2.4rem;
         }
-        padding-top: 3.5rem;
+        padding-top: 3rem;
         width: 95%;
         color: $yellow;
         text-align: center;
@@ -142,10 +143,11 @@
         width: 100%;
         padding-top: 4rem;
         font: {
-             family: $roboto;
+             family: $fontText;
              size: 2rem;
              weight: 600;
          }
+        text-align: center;
         color: $paper;
     }
     
@@ -161,7 +163,7 @@
     .book-button {
         display: block;
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2.6rem;
              weight: 600;
          }
@@ -172,7 +174,7 @@
         text-align: center;
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -210,12 +212,12 @@
     }
     a.book-title {
         font: {
-            family: $playfair;
-            size: 3rem;
+            family: $fontNav;
+            size: 2.4rem;
         }
-        padding-top: 4rem;
+        padding-top: 3rem;
         width: 95%;
-        line-height: 3.4rem;
+        line-height: 2.8rem;
         margin: auto;
         transition: $animation;
     }
@@ -223,7 +225,7 @@
         margin: 1rem 1.5rem;
         background: $background;
         padding: 1rem;
-        border-radius: 5px;
+        border-radius: $radius;
         border: 2px solid $yellow;
         transition: $animation;
     }
@@ -280,24 +282,24 @@
     .book-wrapper {
         width: 80%;
         height: 100%;
-        background-color: rgba(10, 10, 10, 0.7);
-        margin: 12rem auto 6rem auto;  
+        background-color: $wrapper;
+        margin: 12rem auto 1rem auto;
         padding: 2rem;
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        border-radius: $radius;
+        box-shadow: $shadow;
 
         & > .book-heading {
         font: {
-            family: $sansita;
+            family: $fontNav;
             size: 4.2rem;
+            weight: 700;
         }
         color: $blue;
         text-align: center;
-        padding-top: 1rem;
         }
         & > .book-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
             }
             color: $yellow;
@@ -327,7 +329,7 @@
         margin: 1rem 1.5rem;
         background: $background;
         padding: 1rem;
-        border-radius: 5px;
+        border-radius: $radius;
         border: 2px solid $yellow;
         transition: $animation;
     }
@@ -352,8 +354,8 @@
 
     a.book-title, p.book-title {
         font: {
-            family: $playfair;
-            size: 2.4rem;
+            family: $fontNav;
+            size: 2rem;
         }
         padding-top: 5rem;
         width: 95%;
@@ -384,9 +386,8 @@
         width: 100%;
         padding-top: 4rem;
         font: {
-             family: $roboto;
+             family: $fontText;
              size: 2rem;
-             weight: 600;
          }
         color: $paper;
     }
@@ -401,11 +402,11 @@
     }
     
     .book-button {
-        display: block;
+        display: inline-block;
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2.6rem;
-             weight: 600;
+             weight: 700;
          }
                 cursor: pointer;
         margin-left: 25%;
@@ -416,7 +417,7 @@
         text-align: center;
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -474,15 +475,16 @@
         align-items: center;
         width: 80%;
         height: 100%;
-        background-color: rgba(10, 10, 10, 0.7);
+        background-color: $wrapper;
         margin: 8rem auto 1rem auto;  
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        border-radius: $radius;
+        box-shadow: $shadow;
 
         & > .book-heading {
             font: {
-                family: $sansita;
+                family: $fontNav;
                 size: 4.2rem;
+                weight: 700;
             }
             color: $blue;
             text-align: center;
@@ -490,9 +492,10 @@
         }
         & > .book-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
             }
+            width: 80%;
             color: $yellow;
             text-align: center;
         }
@@ -511,7 +514,7 @@
         max-width: 33%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
     }
 
@@ -519,7 +522,7 @@
         margin: 1rem 1.5rem;
         background: $background;
         padding: 1.5rem;
-        border-radius: 5px;
+        border-radius: $radius;
         border: 2px solid $yellow;
         transition: $animation;
     }
@@ -545,7 +548,7 @@
 
     a.book-title, p.book-title {
         font: {
-            family: $playfair;
+            family: $fontNav;
             size: 2rem;
         }
         margin-top: 2rem;
@@ -563,14 +566,13 @@
     .book-show-wrapper {
         display: flex;
         justify-content: space-around;
-        margin: 7rem 0;
+        margin: 2rem;
     }
     .book-description {
         width: 50%;
         font: {
-             family: $roboto;
+             family: $fontText;
              size: 2rem;
-             weight: 600;
          }
         color: $paper;
     }
@@ -586,9 +588,9 @@
     
     .book-button {
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2rem;
-             weight: 600;
+             weight: 700;
          }
         text-align: center;
         width: 30%;
@@ -597,7 +599,7 @@
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {

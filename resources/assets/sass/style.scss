@@ -1,4 +1,3 @@
-// Variables
 @import "variables";
 @import "mixins";
 
@@ -84,7 +83,8 @@ li {
                 }
                 & > .navtext {
                     font: {
-                        family: $sansita;
+                        family: $fontNav;
+                        weight: 700;
                         size: 2rem;
                     }
                     letter-spacing: 1px;
@@ -152,7 +152,7 @@ li {
 
     .client-number {
         font: {
-            family: $playfair;
+            family: $fontNav;
             size: 3rem;
             weight: 600;
         }
@@ -226,7 +226,8 @@ li {
                 }
                 & > .navtext {
                     font: {
-                        family: $sansita;
+                        family: $fontNav;
+                        weight: 700;
                         size: 1.6rem;
                     }
                     letter-spacing: 1px;
@@ -256,7 +257,7 @@ li {
 
     .client-number {
         font: {
-            family: $playfair;
+            family: $fontNav;
             size: 3rem;
             weight: 600;
         }
@@ -324,7 +325,8 @@ li {
                 }
                 & > .navtext {
                     font: {
-                        family: $sansita;
+                        family: $fontNav;
+                        weight: 700;
                         size: 1.6rem;
                     }
                     letter-spacing: 1px;
@@ -350,7 +352,7 @@ li {
 
     .client-number {
         font: {
-            family: $playfair;
+            family: $fontNav;
             size: 2.4rem;
             weight: 600;
         }

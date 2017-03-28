@@ -9,40 +9,9 @@ $navbar-default-border: $laravel-border-color;
 $panel-default-border: $laravel-border-color;
 $panel-inner-border: $laravel-border-color;
 
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
-
-// Typography
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
-// personal
-$sansita: 'Sansita', sans-serif;
-$roboto: 'Roboto Slab', serif;
-$courgette: 'Courgette', cursive;
-$playfair: 'Playfair Display', serif;
-$amatic: 'Amatic SC', cursive;
-$times: 'Times New Roman', serif;
-
-
-// Navbar
-$navbar-default-bg: #eee;
-
-// Buttons
-$btn-default-color: $text-color;
-
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
-
-// Panels
-$panel-default-heading-bg: #fff;
+// fonts
+$fontNav: 'Open Sans', sans-serif;
+$fontText: 'Roboto Slab', serif;
 
 // Colors
 $yellow: #e4cd8a;
@@ -62,4 +31,5 @@ $animation: all .3s linear;
 
 // Others
 $radius: 1rem;
+$wrapper: rgba(10, 10, 10, 0.7);
 $shadow: 0 0 1rem rgba(0,0,0,1);

@@ -27,7 +27,7 @@
         margin-bottom: 2rem;
         & > .error-heading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 5rem;
             }
             color: $yellow;
@@ -35,7 +35,7 @@
         }
         & > .error-subheading {
             font: {
-                family: $roboto;
+                family: $fontText;
                 size: 2rem;
             }
             & > .error-paragraph {
@@ -75,7 +75,7 @@
         box-shadow: $shadow;
         & > .error-heading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 5rem;
             }
             color: $yellow;
@@ -83,7 +83,7 @@
         }
         & > .error-subheading {
             font: {
-                family: $roboto;
+                family: $fontText;
                 size: 2rem;
             }
             & > .error-paragraph > .error-color {
@@ -120,7 +120,7 @@
         box-shadow: $shadow;
         & > .error-heading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 5rem;
             }
             color: $yellow;
@@ -128,7 +128,7 @@
         }
         & > .error-subheading {
             font: {
-                family: $roboto;
+                family: $fontText;
                 size: 2rem;
             }
             & > .error-paragraph > .error-color {

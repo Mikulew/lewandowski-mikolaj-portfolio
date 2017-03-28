@@ -38,51 +38,53 @@
         width: 100%;
         height: 100%;
         padding: 2rem;
-        border-radius: 4px; 
+        border-radius: $radius;
     }
 
     .blog-heading {
         font: {
-            family: $sansita;
-            size: 3.6rem;
+            family: $fontNav;
+            size: 3rem;
+            weight: 700;
         }
         text-align: center;
         width: calc(100% - 4rem);
         padding: 1rem 0;
         color: $blue;
-        background-color: rgba(10, 10, 10, 0.5);
-        box-shadow: 0 0 10px rgba(0,0,0,1);   
-        border-radius: 2rem;
+        background-color: $wrapper;
+        box-shadow: $shadow;
+        border-radius: $radius;
         margin: 10rem auto 0 auto;
     }
     // =BLOG
 
     .blog-title {
         font: {
-            family: $playfair;
-            size: 2.6rem;
+            family: $fontNav;
+            size: 2.4rem;
             weight: 700;
         }
-        line-height: 3rem;
+        text-align: center;
+        line-height: 2.8rem;
         min-height: 4rem;
         color: $background;
         margin: 60px 0 0 0;
         padding: 1rem 3rem;
         background: $yellow;
-        border-radius: 2rem 2rem 0 0;
+        border-radius: $radius $radius 0 0;
     }
 
     .blog-segment {
         font: {
-            family: $roboto;
-            size: 2.4rem;
+            family: $fontText;
+            size: 2rem;
         }
-        line-height: 2.6rem;
+        line-height: 2.4rem;
         color: $background;
         top: 0;
         bottom: 0;
         background: $paper;
-        border-radius: 0 0 2rem 2rem;
+        border-radius: 0 0 $radius $radius;
         position: relative;
         margin: 0 -1px;
         padding: 3rem 3rem 5rem 3rem;
@@ -98,8 +100,8 @@
 
     .blog-button {
         font: {
-            family: $sansita;
-            size: 3rem; 
+            family: $fontNav;
+            size: 2.4rem;
             weight: 600;
          }
         display: inline-block;
@@ -110,7 +112,7 @@
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -162,51 +164,53 @@
         height: 90%;
         margin: 4rem auto 7rem auto;  
         padding: 2rem;
-        border-radius: 4px; 
+        border-radius: $radius;
     }
 
     .blog-heading {
         font: {
-            family: $sansita;
-            size: 4rem;
+            family: $fontNav;
+            size: 4.2rem;
+            weight: 700;
         }
         width: calc(90% - 4rem);
         padding: 1rem 0;
         text-align: center;
         margin: 16rem auto 0 auto;
-        background-color: rgba(10, 10, 10, 0.5);
-        box-shadow: 0 0 10px rgba(0,0,0,1);   
-        border-radius: 2rem;
+        background-color: $wrapper;
+        box-shadow: $shadow;
+        border-radius: $radius;
         color: $blue;
     }
     // =BLOG
 
     .blog-title {
         font: {
-            family: $playfair;
-            size: 2.6rem;
+            family: $fontNav;
+            size: 2.4rem;
             weight: 700;
         }
-        line-height: 3rem;
+        text-align: center;
+        line-height: 2.8rem;
         min-height: 4rem;
         color: $background;
         margin: 60px 0 0 0;
         padding: 1rem 3rem;
         background: $yellow;
-        border-radius: 2rem 2rem 0 0;
+        border-radius: $radius $radius 0 0;
     }
 
     .blog-segment {
         font: {
-            family: $roboto;
-            size: 2.4rem;
+            family: $fontText;
+            size: 2rem;
         }
-        line-height: 2.6rem;
+        line-height: 2.4rem;
         color: $background;
         top: 0;
         bottom: 0;
         background: $paper;
-        border-radius: 0 0 2rem 2rem;
+        border-radius: 0 0 $radius $radius;
         position: relative;
         margin: 0 -1px;
         padding: 3rem 3rem 5rem 3rem;
@@ -222,8 +226,8 @@
 
     .blog-button {
         font: {
-            family: $sansita;
-            size: 3rem; 
+            family: $fontNav;
+            size: 2.4rem;
             weight: 600;
          }
         display: inline-block;
@@ -236,7 +240,7 @@
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -274,18 +278,19 @@
         height: 100%;
         margin: auto;  
         padding: 20px;
-        border-radius: 4px; 
+        border-radius: $radius;
     }
 
     .blog-heading {
         font: {
-            family: $sansita;
+            family: $fontNav;
             size: 4rem;
+            weight: 700;
         }
         width: 68%;
-        background-color: rgba(10, 10, 10, 0.5);
-        box-shadow: 0 0 10px rgba(0,0,0,1);   
-        border-radius: 2rem;
+        background-color: $wrapper;
+        box-shadow: $shadow;
+        border-radius: $radius;
         padding: 1rem 0;
         margin: 12rem auto 4rem auto;
         text-align: center;
@@ -295,22 +300,23 @@
 
     .blog-title {
         font: {
-            family: $playfair;
+            family: $fontNav;
             size: 2.6rem;
             weight: 700;
         }
+        text-align: center;
         line-height: 6rem;
         height: 6rem;
         color: $background;
         margin: 60px 0 0 0;
         padding: 0 0 0 3rem;
         background: $yellow;
-        border-radius: 2rem 2rem 0 0;
+        border-radius: $radius $radius 0 0;
     }
 
     .blog-segment {
         font: {
-            family: $roboto;
+            family: $fontText;
             size: 1.8rem;
         }
         line-height: 2.2rem;
@@ -318,7 +324,7 @@
         top: 0;
         bottom: 0;
         background: $paper;
-        border-radius: 0 0 2rem 2rem;
+        border-radius: 0 0 $radius $radius;
         position: relative;
         margin: 0 -1px;
         padding: 3rem 3rem 5rem 3rem;
@@ -329,24 +335,25 @@
     }
 
     .blog-paragraph {
-        margin-bottom: 50px;
+        margin-bottom: 5rem;
     }
 
     .blog-button {
+        display: inline-block;
         font: {
-            family: $sansita;
+            family: $fontNav;
             size: 2rem; 
             weight: 600;
          }
         width: 30%;
-        margin-top: 50px;
-        margin-right: 70%;
-        padding: 10px 30px;
+        margin-right: 35%;
+        margin-left: 35%;
+        padding: 1rem 3rem;
         text-align: center;
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {

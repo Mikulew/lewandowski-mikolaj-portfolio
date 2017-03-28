@@ -148,12 +148,6 @@
                     </figcaption>
                 </figure>
             </div>
-           <div class="about-data-container">
-               <div class="about-data">
-                   <p>Mój telefon: </p>
-                   <p>+48 883 458 986</p>
-               </div>
-           </div>
         </article>
     </section>
 </main>

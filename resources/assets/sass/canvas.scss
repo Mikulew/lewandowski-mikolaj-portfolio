@@ -43,23 +43,26 @@
         align-items: center;
         width: 90%;
         height: 100%;
-        background-color: rgba(10, 10, 10, 0.7);
-        margin: 8rem auto 1rem auto;  
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        background-color: $wrapper;
+        margin: 8rem auto 1rem auto;
+        padding: 2rem;
+        border-radius: $radius;
+        box-shadow: $shadow;
         
         & > .canvas-heading {
             font: {
-                family: $sansita;
-                size: 4.2rem;
+                family: $fontNav;
+                size: 3rem;
+                weight: 700;
             }
             color: $blue;
             text-align: center;
-            padding-top: 2rem;
+            padding-top: 1rem;
+            margin-bottom: 4rem;
         }
         & > .canvas-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
                 }
             width: 90%;
@@ -101,14 +104,14 @@
     
     .canvas-title {
         font: {
-            family: $playfair;
-            size: 4rem;
+            family: $fontText;
+            size: 3rem;
         }
         padding: 2rem 0;
         width: 90%;
         color: $yellow;
         text-align: center;
-        line-height: 4.6rem;
+        line-height: 3.2rem;
         margin: auto;
         transition: $animation;
     }
@@ -117,9 +120,8 @@
         width: 90%;
         padding-top: 3rem;
         font: {
-             family: $roboto;
+             family: $fontText;
              size: 2rem;
-             weight: 600;
          }
         color: $paper;
         text-align: center;
@@ -127,7 +129,7 @@
     
     .canvas-link {
         font: {
-             family: $sansita;
+             family: $fontText;
              size: 2rem;
              weight: 600;
          }
@@ -135,7 +137,7 @@
         color: $yellow;
         line-height: 2rem;
         padding: 1.5rem 3rem;
-        border-radius: 4px;
+        border-radius: $radius;
         margin: 2rem 0;
         background-color: darken($blue, 15%);
         transition: $animation;
@@ -175,9 +177,10 @@
             }
         & > .canvas-name-technology {
             font: {
-                family: $sansita;
+                family: $fontText;
                 size: 2.4rem;
             }
+            text-transform: uppercase;
             color: $yellow;
             }   
     }
@@ -237,14 +240,14 @@
         align-items: center;
         width: 80%;
         height: 100%;
-        background-color: rgba(10, 10, 10, 0.7);
+        background-color: $wrapper;
         margin: 12rem auto 1rem auto;  
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        border-radius: $radius;
+        box-shadow: $shadow;
         
         & > .canvas-heading {
             font: {
-                family: $sansita;
+                family: $fontNav;
                 size: 4.2rem;
             }
             color: $blue;
@@ -253,7 +256,7 @@
         }
         & > .canvas-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
                 }
             width: 90%;
@@ -294,7 +297,7 @@
     
     .canvas-title {
         font: {
-            family: $playfair;
+            family: $fontText;
             size: 4rem;
         }
         padding: 2rem 0;
@@ -310,9 +313,8 @@
         width: 100%;
         padding-top: 3rem;
         font: {
-             family: $roboto;
+             family: $fontText;
              size: 2rem;
-             weight: 600;
          }
         color: $paper;
         text-align: center;
@@ -320,7 +322,7 @@
     
     .canvas-link {
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2rem;
              weight: 600;
          }
@@ -346,7 +348,7 @@
     }
     
     .canvas-wrapper-technology {
-        width: 100%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         margin: 3rem auto;
@@ -364,9 +366,10 @@
             }
         & > .canvas-name-technology {
             font: {
-                family: $sansita;
-                size: 2.4rem;
+                family: $fontNav;
+                size: 2rem;
             }
+            text-transform: uppercase;
             color: $yellow;
             }   
     }
@@ -409,15 +412,16 @@
         align-items: center;
         width: 80%;
         height: 100%;
-        background-color: rgba(10, 10, 10, 0.7);
+        background-color: $wrapper;
         margin: 8rem auto 1rem auto;  
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        border-radius: $radius;
+        box-shadow: $shadow;
         
         & > .canvas-heading {
             font: {
-                family: $sansita;
+                family: $fontNav;
                 size: 4.2rem;
+                weight: 700;
             }
             color: $blue;
             text-align: center;
@@ -425,9 +429,10 @@
         }
         & > .canvas-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
             }
+            width: 80%;
             color: $yellow;
             text-align: center;
             margin-bottom: 3rem;
@@ -466,7 +471,7 @@
     
     .canvas-title {
         font: {
-            family: $playfair;
+            family: $fontText;
             size: 3.2rem;
         }
         padding: 2rem 0;
@@ -482,19 +487,18 @@
         width: 100%;
         padding-top: 3rem;
         font: {
-             family: $roboto;
+             family: $fontText;
              size: 2rem;
-             weight: 600;
-         }
+        }
         color: $paper;
         text-align: center;
     }
     
     .canvas-link {
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2rem;
-             weight: 600;
+             weight: 700;
          }
         color: $yellow;
         line-height: 2rem;
@@ -536,9 +540,10 @@
             }
         & > .canvas-name-technology {
             font: {
-                family: $sansita;
-                size: 2.4rem;
+                family: $fontNav;
+                size: 2rem;
             }
+            text-transform: uppercase;
             color: $yellow;
             }   
     }

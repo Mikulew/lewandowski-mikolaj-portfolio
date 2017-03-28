@@ -38,30 +38,32 @@
         align-content: center;
         align-items: center;
         width: 90%;
-        min-height: 100vh;
-        background-color: rgba(10, 10, 10, 0.7);
+        height: 100%;
+        background-color: $wrapper;
         margin: 8rem auto 1rem auto; 
         padding: 2rem;
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        border-radius: $radius;
+        box-shadow: $shadow;
         & > .project-heading {
             font: {
-                family: $sansita;
-                size: 4.2rem;
+                family: $fontNav;
+                size: 3rem;
+                weight: 700;
             }
             color: $blue;
             text-align: center;
             padding-top: 1rem;
+            margin-bottom: 4rem;
         }
         & > .project-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
             }
             width: 90%;
             color: $yellow;
             text-align: center;
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
         }
     }
 
@@ -79,11 +81,11 @@
     
     .project-title {
         font: {
-            family: $playfair;
+            family: $fontText;
             size: 3rem;
         }
-        padding-top: 1rem;
-        width: 100%;
+        padding: 2rem 0;
+        width: 90%;
         color: $yellow;
         text-align: center;
         line-height: 3.2rem;
@@ -94,20 +96,20 @@
     .project-container-example {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 100%;
         margin-top: 5rem;
         
         .project-paragraph {
-            min-width: 100%;
             width: 100%;
             font: {
-                 family: $roboto;
+                 family: $fontText;
                  size: 2rem;
              }
             text-align: center;
             line-height: 2.4rem;
             color: $paper;
-            margin: 1rem 0 0 0;
+            margin: 1rem 0;
         }
         
         .project-container-image {
@@ -142,22 +144,22 @@
             }
         & > .project-name-technology {
             font: {
-                family: $sansita;
-                size: 2.4rem;
+                family: $fontText;
+                size: 2rem;
             }
+            text-transform: uppercase;
             color: $yellow;
-            margin: 1rem;
             }   
     }
      .project-button {
-         display: inline-block;
+        display: inline-block;
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2rem;
-             weight: 600;
+             weight: 700;
          }
         width: 90%;
-        margin: 5rem 5% 3rem;
+        margin: 5rem 5%;
         padding: 1.5rem;
         text-align: center;
         background-color: darken($blue, 15%);
@@ -210,8 +212,9 @@
         
         .project-paragraph {
             width: 100%;
+            justify-content: center;
             font: {
-                 family: $roboto;
+                 family: $fontText;
                  size: 2rem;
              }
             text-align: center;
@@ -221,12 +224,10 @@
         }
         
         .project-container-image {
-            min-width: 100%;
             width: 100%;
             margin: 3rem 0 0 0;
             & > .project-image {
                 position: relative;
-                float: right;
                 width: 100%;
                 transition: $animation;
                 border: 3px $yellow solid;
@@ -241,12 +242,12 @@
      .project-button {
          display: inline-block;
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2rem;
-             weight: 600;
+             weight: 700;
          }
         width: 100%;
-        margin: 5rem 0 3rem;
+        margin: 5rem 0;
         padding: 1.5rem;
         text-align: center;
         background-color: darken($blue, 15%);
@@ -292,42 +293,47 @@
     }
 
     .project-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
         width: 80%;
         height: 100%;
         background-color: rgba(10, 10, 10, 0.7);
-        margin: 12rem auto 6rem auto;  
-        padding: 20px;
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        margin: 12rem auto 1rem auto;
+        border-radius: $radius;
+        box-shadow: $shadow;
         & > .project-heading {
             font: {
-                family: $sansita;
+                family: $fontNav;
                 size: 4.2rem;
             }
             color: $blue;
             text-align: center;
-            padding-top: 1rem;
+            padding-top: 2rem;
         }
         & > .project-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
             }
+            width: 90%;
             color: $yellow;
             text-align: center;
-            margin-bottom: 6rem;
+            margin-bottom: 3rem;
         }
     }
     
     .project-title {
         font: {
-            family: $playfair;
-            size: 2.6rem;
+            family: $fontText;
+            size: 3rem;
         }
         width: 100%;
         color: $yellow;
         text-align: center;
-        line-height: 2.8rem;
+        line-height: 3.2rem;
         margin: auto;
         transition: $animation;
     }
@@ -335,33 +341,29 @@
     .project-container-example {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: space-between;
-        width: 90%;
+        justify-content: space-around;
+        width: 100%;
         margin-top: 5rem;
         
         .project-paragraph {
-            min-width: 60%;
-            width: 100%;
+            width: 50%;
             font: {
-                 family: $roboto;
-                 size: 1.8rem;
+                 family: $fontText;
+                 size: 2rem;
              }
             line-height: 2.4rem;
             color: $paper;
-            margin: 0 3rem 0 0;
         }
         
         .project-container-image {
-            min-width: 45%;
-            width: 100%;
-            margin: 0 3rem 0 0;
+            width: 40%;
             & > .project-image {
                 position: relative;
                 float: right;
                 width: 100%;
                 transition: $animation;
                 border: 3px $yellow solid;
-                border-radius: 4px;
+                border-radius: $radius;
             }
             & > .project-image:before {
                 content: '';
@@ -389,17 +391,17 @@
             }
         & > .project-name-technology {
             font: {
-                family: $sansita;
-                size: 2.4rem;
+                family: $fontNav;
+                size: 2rem;
             }
+            text-transform: uppercase;
             color: $yellow;
-            margin: 1rem;
             }   
     }
      .project-button {
-         display: inline-block;
+        display: inline-block;
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2rem;
              weight: 600;
          }
@@ -410,7 +412,7 @@
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -433,10 +435,9 @@
         margin-top: 5rem;
         
         .project-paragraph {
-            min-width: 100%;
             width: 100%;
             font: {
-                 family: $roboto;
+                 family: $fontText;
                  size: 2rem;
              }
             text-align: center;
@@ -446,15 +447,17 @@
         }
         
         .project-container-image {
-            min-width: 100%;
+            display: flex;
+            justify-content: center;
             width: 100%;
             margin: 3rem 0 0 0;
             & > .project-image {
                 position: relative;
-                width: 100%;
+                width: 90%;
+                height: 90%;
                 transition: $animation;
                 border: 3px $yellow solid;
-                border-radius: 4px;
+                border-radius: $radius;
             }
         }
     }
@@ -491,18 +494,18 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        width: 80vw;
+        width: 80%;
         height: 100%;
-        background-color: rgba(10, 10, 10, 0.7);
-        margin: 8rem auto 1rem auto;  
-
-        border-radius: 4px; 
-        box-shadow: 0 0 10px rgba(0,0,0,1);
+        background-color: $wrapper;
+        margin: 8rem auto 1rem auto;
+        border-radius: $radius;
+        box-shadow: $shadow;
         
         & > .project-heading {
             font: {
-                family: $sansita;
+                family: $fontNav;
                 size: 4.2rem;
+                weight: 700;
             }
             color: $blue;
             text-align: center;
@@ -510,24 +513,26 @@
         }
         & > .project-subheading {
             font: {
-                family: $roboto;
+                family: $fontNav;
                 size: 2rem;
             }
+            width: 80%;
             color: $yellow;
             text-align: center;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
         }
     }
     
     .project-title {
         font: {
-            family: $playfair;
-            size: 2.6rem;
+            family: $fontText;
+            size: 3.2rem;
         }
         width: 100%;
+        padding: 2rem 0;
         color: $yellow;
         text-align: center;
-        line-height: 2.4rem;
+        line-height: 3.6rem;
         transition: $animation;
     }
     
@@ -543,8 +548,8 @@
             min-width: 50%;
             width: 100%;
             font: {
-                 family: $roboto;
-                 size: 1.8rem;
+                 family: $fontText;
+                 size: 2rem;
              }
             line-height: 2.4rem;
             color: $paper;
@@ -561,7 +566,7 @@
                 width: 60%;
                 transition: $animation;
                 border: 3px $yellow solid;
-                border-radius: 4px;
+                border-radius: $radius;
                 margin-right: 8rem;
             }
             & > .project-image:hover {
@@ -594,9 +599,10 @@
             }
         & > .project-name-technology {
             font: {
-                family: $sansita;
-                size: 2.4rem;
+                family: $fontNav;
+                size: 2rem;
             }
+            text-transform: uppercase;
             color: $yellow;
             margin: 1rem;
             }   
@@ -604,12 +610,12 @@
      .project-button {
          display: inline-block;
         font: {
-             family: $sansita;
+             family: $fontNav;
              size: 2rem;
-             weight: 600;
+             weight: 700;
          }
-        width: 20%;
-        margin: 5rem 40% 3rem;
+        width: 30%;
+        margin: 5rem 35% 3rem;
         padding: 1rem;
         text-align: center;
         background-color: darken($blue, 15%);

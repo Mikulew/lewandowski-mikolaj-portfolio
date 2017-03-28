@@ -26,7 +26,7 @@
                             <a class="canvas-link" href="{{$canvas->io}}" target="_blank">Zobacz</a>
                             <a class="canvas-link" href="{{$canvas->link}}" target="_blank">GitHub</a>
                     </section>
-                    <h4 class="project-title">Użyte technologie</h4>
+                    <h4 class="canvas-title">Użyte technologie</h4>
                     <section class="canvas-wrapper-technology">
                         @foreach($canvas->technology as $technology)
                             <div class="canvas-container-technology">
