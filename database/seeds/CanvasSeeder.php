@@ -39,41 +39,41 @@ class CanvasSeeder extends Seeder
         $canvas->technology()->attach(7);
         $canvas->technology()->attach(8);
         
-        $canvas = new Canvas();
-        $canvas->category_id = 1;
-        $canvas->title = "CSS Variables";
-        $canvas->description = "Pobaw się suwakami, żeby zmienić właściwości obrazka!";
-        $canvas->io = "https://mikulew.github.io/CSS-Variables/";
-        $canvas->link = "https://github.com/Mikulew/CSS-Variables";
-        $canvas->thumbnail = "css-variables.png";
-        $canvas->save(); 
-        $canvas->technology()->attach(1);
-        $canvas->technology()->attach(2);
-        $canvas->technology()->attach(7);
+//        $canvas = new Canvas();
+//        $canvas->category_id = 1;
+//        $canvas->title = "CSS Variables";
+//        $canvas->description = "Pobaw się suwakami, żeby zmienić właściwości obrazka!";
+//        $canvas->io = "https://mikulew.github.io/CSS-Variables/";
+//        $canvas->link = "https://github.com/Mikulew/CSS-Variables";
+//        $canvas->thumbnail = "css-variables.png";
+//        $canvas->save(); 
+//        $canvas->technology()->attach(1);
+//        $canvas->technology()->attach(2);
+//        $canvas->technology()->attach(7);
+//        
+//        $canvas = new Canvas();
+//        $canvas->category_id = 1;
+//        $canvas->title = "JavaScript Drum Kit";
+//        $canvas->description = "Zagraj sobie na perkusji za pomocą klawiatury!";
+//        $canvas->link = "https://github.com/Mikulew/JavaScript-Drum-Kit";
+//        $canvas->io = "https://mikulew.github.io/JavaScript-Drum-Kit/";
+//        $canvas->thumbnail = "javascript-drum-kit.jpg";
+//        $canvas->save();
+//        $canvas->technology()->attach(1);
+//        $canvas->technology()->attach(2);
+//        $canvas->technology()->attach(7);
         
-        $canvas = new Canvas();
-        $canvas->category_id = 1;
-        $canvas->title = "JavaScript Drum Kit";
-        $canvas->description = "Zagraj sobie na perkusji za pomocą klawiatury!";
-        $canvas->link = "https://github.com/Mikulew/JavaScript-Drum-Kit";
-        $canvas->io = "https://mikulew.github.io/JavaScript-Drum-Kit/";
-        $canvas->thumbnail = "javascript-drum-kit.jpg";
-        $canvas->save();
-        $canvas->technology()->attach(1);
-        $canvas->technology()->attach(2);
-        $canvas->technology()->attach(7);
-        
-        $canvas = new Canvas();
-        $canvas->category_id = 1;
-        $canvas->title = "CSS Text Shadow Mouse Move Effect";
-        $canvas->description = "Zmień tekst i zobacz, że cienie tekstu!";
-        $canvas->link = "https://github.com/Mikulew/css-text-shadow-mouse-move-effect";
-        $canvas->io = "https://mikulew.github.io/css-text-shadow-mouse-move-effect/";
-        $canvas->thumbnail = "css-text-shadow-mouse-move-effect.jpg";
-        $canvas->save();
-        $canvas->technology()->attach(1);
-        $canvas->technology()->attach(2);
-        $canvas->technology()->attach(7);
+//        $canvas = new Canvas();
+//        $canvas->category_id = 1;
+//        $canvas->title = "CSS Text Shadow Mouse Move Effect";
+//        $canvas->description = "Zmień tekst i zobacz, że cienie tekstu!";
+//        $canvas->link = "https://github.com/Mikulew/css-text-shadow-mouse-move-effect";
+//        $canvas->io = "https://mikulew.github.io/css-text-shadow-mouse-move-effect/";
+//        $canvas->thumbnail = "css-text-shadow-mouse-move-effect.jpg";
+//        $canvas->save();
+//        $canvas->technology()->attach(1);
+//        $canvas->technology()->attach(2);
+//        $canvas->technology()->attach(7);
         
         $canvas = new Canvas();
         $canvas->category_id = 1;
@@ -98,19 +98,19 @@ class CanvasSeeder extends Seeder
         $canvas->technology()->attach(1);
         $canvas->technology()->attach(2);
         $canvas->technology()->attach(7);
-        
-        $canvas = new Canvas();
-        $canvas->category_id = 1;
-        $canvas->title = "Fun with HTML5 Canvas";
-        $canvas->description = "Przyciśnij przycisk myszy i zobacz co się stanie!";
-        $canvas->link = "https://github.com/Mikulew/Fun-with-HTML5-Canvas";
-        $canvas->io = "https://mikulew.github.io/Fun-with-HTML5-Canvas/";
-        $canvas->thumbnail = "fun-with-html5-canvas.jpg";
-        $canvas->save();
-        $canvas->technology()->attach(1);
-        $canvas->technology()->attach(2);
-        $canvas->technology()->attach(7);
-        $canvas->technology()->attach(8);
+//        
+//        $canvas = new Canvas();
+//        $canvas->category_id = 1;
+//        $canvas->title = "Fun with HTML5 Canvas";
+//        $canvas->description = "Przyciśnij przycisk myszy i zobacz co się stanie!";
+//        $canvas->link = "https://github.com/Mikulew/Fun-with-HTML5-Canvas";
+//        $canvas->io = "https://mikulew.github.io/Fun-with-HTML5-Canvas/";
+//        $canvas->thumbnail = "fun-with-html5-canvas.jpg";
+//        $canvas->save();
+//        $canvas->technology()->attach(1);
+//        $canvas->technology()->attach(2);
+//        $canvas->technology()->attach(7);
+//        $canvas->technology()->attach(8);
         
         $canvas = new Canvas();
         $canvas->category_id = 1;
@@ -137,16 +137,16 @@ class CanvasSeeder extends Seeder
         $canvas->technology()->attach(2);
         $canvas->technology()->attach(7);
         
-        $canvas = new Canvas();
-        $canvas->category_id = 1;
-        $canvas->title = "Sortowanie tabeli według kolumn";
-        $canvas->description = "Co chcesz, to się posortuje!";
-        $canvas->link = "https://github.com/Mikulew/table-sorting-by-columns";
-        $canvas->io = "https://mikulew.github.io/table-sorting-by-columns/";
-        $canvas->thumbnail = "table-sorting-by-columns.jpg";
-        $canvas->save();
-        $canvas->technology()->attach(1);
-        $canvas->technology()->attach(2);
-        $canvas->technology()->attach(7);
+//        $canvas = new Canvas();
+//        $canvas->category_id = 1;
+//        $canvas->title = "Sortowanie tabeli według kolumn";
+//        $canvas->description = "Co chcesz, to się posortuje!";
+//        $canvas->link = "https://github.com/Mikulew/table-sorting-by-columns";
+//        $canvas->io = "https://mikulew.github.io/table-sorting-by-columns/";
+//        $canvas->thumbnail = "table-sorting-by-columns.jpg";
+//        $canvas->save();
+//        $canvas->technology()->attach(1);
+//        $canvas->technology()->attach(2);
+//        $canvas->technology()->attach(7);
     }
 }

@@ -52,20 +52,11 @@
 
 
 @section('scripts')
-<script>
-
-        
+<script>       
 (function(){
-    var imgLogin = new Image();
-    imgLogin.src = '/img/page/login-page.jpg';
-
-    imgLogin.onload = function() {
-        $('#loginImage').attr({src: imgLogin.src});
-    };
-
     var form = document.getElementById("login-form"),
         fields = form.querySelectorAll('[data-error]'),
-        contactBtn = document.querySelector('.login-button'),
+        loginBtn = document.querySelector('.login-button'),
         icons = form.querySelectorAll('i.icon');
 
     function isAtLeast(field, min) {
@@ -91,7 +82,7 @@
             li.textContent = error;
             ul.appendChild(li);
         });
-        form.insertBefore(ul, contactBtn);
+        form.insertBefore(ul, logintBtn);
     }
 
     form.addEventListener('submit', function(e) {

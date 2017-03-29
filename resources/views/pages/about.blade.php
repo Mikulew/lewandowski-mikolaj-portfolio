@@ -142,7 +142,7 @@
             <p>Mikołaj Lewandowski<br>Front-end developer</p>
             <div class="photo-portfolio">
                  <figure class="photo">
-                    <img id="autorImage" src="/img/page/mikulew-hawk-low.jpg" alt="Mikołaj Lewandowski photo">
+                    <img id="authorImage" src="/img/page/mikulew-hawk-low.jpg" alt="Mikołaj Lewandowski photo">
                     <figcaption>
                         Autor&nbsp;strony
                     </figcaption>
@@ -151,25 +151,4 @@
         </article>
     </section>
 </main>
-@endsection
-
-
-@section('scripts')
-<script>       
-    (function(){
-        var imgAutor = new Image();
-        imgAutor.src = '/img/page/mikulew-hawk.jpg';
-
-        imgAutor.onload = function() {
-            $('#autorImage').attr({src: imgAutor.src});
-        };
-        
-        var imgAbout = new Image();
-        imgAbout.src = '/img/page/about-page.jpg';
-        
-        imgAbout.onload = function() {
-            $('#aboutImage').attr({src: imgAbout.src});
-        };
-    })();
-</script>
 @endsection

@@ -63,17 +63,9 @@
 </main>
 @endsection
 
-
 @section('scripts')
 <script>
     (function(){
-        var imgContact = new Image();
-        imgContact.src = '/img/page/contact-page.jpg';               
-
-        imgContact.onload = function() {
-            $('#contactImage').attr({src: imgContact.src});
-        };
-
         var form = document.getElementById("contact-form"),
             fields = form.querySelectorAll('[data-error]'),
             contactBtn = document.querySelector('.contact-button'),
@@ -94,7 +86,7 @@
 
         function displayErrors(errors) {
             var ul = document.querySelector('ul.contact-list-error');
-            
+
             if(successMessage) {
                 successMessage.parentNode.removeChild(successMessage);
             }
@@ -122,18 +114,18 @@
                     icon = icons[i],
                     isValid = false;
                 if (field.type === "text") {
-                    isValid = isAtLeast(field, 5); 
+                    isValid = isAtLeast(field, 5);
                 } else if (field.type === "email") {
                     isValid = isEmail(field);
                 } else if (field.type === "tel") {
                     isValid = isNumber(field);
                 } else if (field.type === "textarea") {
                     isValid = isAtLeast(field, 20);
-                } 
+                }
 
                 if(!isValid) {
                     errors.push(field.dataset.error);
-                    field.classList.add("contact-input-error");                 
+                    field.classList.add("contact-input-error");
                     icon.classList.add("icon-error");
                 } else {
                     field.classList.remove("contact-input-error");

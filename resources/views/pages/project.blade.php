@@ -35,16 +35,3 @@
     {{ $projects->links('vendor.pagination.client-paginator') }}
 </main>
 @endsection
-
-
-@section('scripts')
-<script>        
-(function(){
-    var imgProject = new Image();
-    imgProject.src = '/img/page/project-page.jpg';
-
-    imgProject.onload = function() {
-        $('#projectImage').attr({src: imgProject.src});
-    };})();
-</script>
-@endsection

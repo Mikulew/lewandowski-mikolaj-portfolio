@@ -20,16 +20,3 @@
     </div>
 </main>
 @endsection
-
-@section("scripts")
-<script>
-    (function(){
-        var imgBlog = new Image();
-        imgBlog.src = '/img/page/blog-page.jpg';               
-
-        imgBlog.onload = function() {
-            $('#blogImage').attr({src: imgBlog.src});
-        };
-    })();
-</script>
-@endsection

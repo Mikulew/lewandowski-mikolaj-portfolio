@@ -26,15 +26,3 @@
     {{ $books->links('vendor.pagination.client-paginator') }}
 </main>
 @endsection
-
-@section('scripts')
-<script>        
-(function(){
-    var imgBook = new Image();
-    imgBook.src = '/img/page/book-page.jpg';
-
-    imgBook.onload = function() {
-        $('#bookImage').attr({src: imgBook.src});
-    };})();
-</script>
-@endsection

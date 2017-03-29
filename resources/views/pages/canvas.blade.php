@@ -42,16 +42,3 @@
     {{ $canvases->links('vendor.pagination.client-paginator') }}
 </main>
 @endsection
-
-
-@section('scripts')
-<script>        
-(function(){
-    var imgCanvas = new Image();
-    imgCanvas.src = '/img/page/canvas-page.jpg';
-
-    imgCanvas.onload = function() {
-        $('#canvasImage').attr({src: imgCanvas.src});
-    };})();
-</script>
-@endsection

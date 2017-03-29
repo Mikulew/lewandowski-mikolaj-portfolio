@@ -508,6 +508,8 @@
             }
 
         & > .welcome-header-container {
+            position: relative;
+            top: 10%;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -516,7 +518,6 @@
             margin: 1rem 0 0 0;
             
             & > .welcome-header-paragraph {
-                margin: 3rem 0 0 0;
                 width: 100%;
                 line-height: 2.6rem;
             }
