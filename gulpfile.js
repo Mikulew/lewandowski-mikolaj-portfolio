@@ -25,8 +25,9 @@ let config = {
     scssin: 'resources/assets/sass/**/*.scss',
     cssout: 'public/css/',
     jsin: [
-        'resources/assets/js/bootstrap.js',
-        'resources/assets/js/app.js'
+        'resources/assets/js/jquery-3.2.0.js',
+        'resources/assets/js/jquery.scrollTo.js',
+        'resources/assets/js/main.js'
     ],
     jsout: 'public/js/',
     htmlin: 'src/*.html',
@@ -45,6 +46,7 @@ gulp.task('css', function() {
             browsers: ['last 3 versions']
         }))
         //.pipe(hash({build_dir: config.scssin, src_path: config.cssout}))
+        .pipe(concat('app.css'))
         .pipe(sourceMaps.write())
         .pipe(cleanCSS())
         .pipe(gulp.dest(config.cssout));
@@ -56,8 +58,8 @@ gulp.task('js', function() {
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(concat('app.js'))
-        .pipe(rename('app.min.js'))
+        .pipe(concat('main.js'))
+        .pipe(rename('main.min.js'))
         .pipe(sourceMaps.write())
         .pipe(uglify().on('error', function(e){
             console.log(e);
