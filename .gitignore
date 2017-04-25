@@ -8,3 +8,4 @@ Homestead.yaml
 .env
 /nbproject
 /database/seeds/UsersTableSeeder.php
+/database/seeds/ContactsSeeder.php

@@ -16,7 +16,7 @@
             <p class="welcome-header-paragraph animated fadeInLeft"><span class="welcome-bold welcome-blue">Dla programisty:</span><br> Dokument HTML udostępniony<br>w internecie przez serwer WWW</p>
             <p class="welcome-header-paragraph animated fadeInLeft"><span class="welcome-bold welcome-blue">Dla właściciela firmy:</span><br> jest ona przede wszystkim<br>wizytówką jego działalności</p>
         </div>
-        <i id="headerButton" class="chevron circle down icon animated fadeInUp"></i>
+        <i id="headerButton" class="chevron circle down icon animated fadeInUp page-button"></i>
     </header>
     <section id="sectionNewspaper" class="welcome-newspaper">
         <div class="newspaper-huge-heading">Strona WWW</div>
@@ -184,7 +184,7 @@
                     To za co są w&nbsp;stanie za&shy;pła&shy;cić wię&shy;cej to za mar&shy;kę, po&shy;zy&shy;tyw&shy;ne emo&shy;cje i&nbsp;pew&shy;ność, że ku&shy;pu&shy;jąc coś, zy&shy;sku&shy;ją np. lep&shy;sze życie.</p>
                     <p>Budo&shy;wanie do&shy;brej atmos&shy;fery wokół włas&shy;nej mar&shy;ki i&nbsp;sta&shy;ran&shy;ne przy&shy;go&shy;to&shy;wy&shy;wa&shy;nie swo&shy;jej ofer&shy;ty wzmac&shy;nia po&shy;zy&shy;cję Two&shy;jej fir&shy;my, świa&shy;do&shy;mość Two&shy;ich klien&shy;tów, a&nbsp;także umac&shy;nia ich w&nbsp;wie&shy;rze, że warto za&shy;pła&shy;cić Ci więcej.</p>
             </div>
-            <i id="newspaperButton" class="chevron circle down icon"></i>
+            <i id="newspaperButton" class="chevron circle down icon page-button"></i>
         </div>
     </section>
     <section id="sectionCharts" class="welcome-charts">
@@ -335,7 +335,7 @@
                 </div>
             </div>
         </div>
-        <i id="chartsButton" class="chevron circle down icon"></i>
+        <i id="chartsButton" class="chevron circle down icon page-button"></i>
     </section>
     <section id="sectionHistory" class="welcome-history">
         <h2 class="history-huge-heading">Historia Internetu w&nbsp;Polsce</h2>
@@ -447,7 +447,7 @@
                 </div>
             </div>
         </div>
-        <i id="historyButton" class="chevron circle up icon"></i>
+        <i id="historyButton" class="chevron circle up icon page-button"></i>
     </section>    
 </main>
 @endsection

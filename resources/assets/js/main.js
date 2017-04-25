@@ -48,18 +48,9 @@
       $('#loginImage').attr({src: imgLogin.src});
    };
 
-   $('#headerButton').click(function(){
-      $.scrollTo($('#sectionNewspaper'), 1000);
-   });
-   $('#newspaperButton').click(function(){
-      $.scrollTo($('#sectionCharts'), 1000);
-   });
-   $('#chartsButton').click(function(){
-      $.scrollTo($('#sectionHistory'), 1000);
-   });
-   $('#historyButton').click(function(){
-      $.scrollTo(0, 1500);
-   });
+    $('.page-button').click(function(e) {
+       $.scrollTo($(e.target.getAttribute('href')), 1000);
+    });
 
    var $menu = $(".hamburger");
    var $navbar = $('.navbar');
