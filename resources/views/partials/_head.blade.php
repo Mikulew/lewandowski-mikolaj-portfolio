@@ -24,14 +24,14 @@
       "@context": "http://schema.org",
       "author": {
         "@type": "Person",
-        "name": "Miko�aj Lewandowski",
+        "name": "Mikołaj Lewandowski",
         "jobTitle": "Front-end developer",
         "affiliation": "Od Zera do WebDeva",
         "url": "http://mikolaj-lewandowski.pl/"
       },
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Krak�w",
+        "addressLocality": "Kraków",
         "addressRegion": "Poland"
         }
     }

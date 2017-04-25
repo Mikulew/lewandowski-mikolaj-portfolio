@@ -1,52 +1,85 @@
-(function(){
-   let imgHeader = new Image(),
-       imgAbout = new Image(),
-       imgAuthor = new Image(),
-       imgContact = new Image(),
-       imgProject = new Image(),
-       imgCanvas = new Image(),
-       imgBook = new Image(),
-       imgBlog = new Image(),
-       imgLogin = new Image();
+// (function(){
+   let $headerImage = $('#headerImage'),
+       $aboutImage = $('#aboutImage'),
+       $authorImage = $('#authorImage'),
+       $contactImage = $('#contactImage'),
+       $projectImage = $('#projectImage'),
+       $canvasImage = $('#canvasImage'),
+       $bookImage = $('#bookImage'),
+       $blogImage = $('#blogImage'),
+       $loginImage = $('#loginImage');
 
+   if ($headerImage.is("img")) {
+      let imgHeader = new Image();
+      imgHeader.src = '/img/page/welcome-page.jpg';
+      imgHeader.onload = function() {
+          $headerImage.attr({src: imgHeader.src});
+      };
+   }
 
-   imgHeader.src = '/img/page/welcome-page.jpg',
-   imgAbout.src = '/img/page/about-page.jpg',
-   imgAuthor.src = '/img/page/mikulew-hawk.jpg',
-   imgContact.src = '/img/page/contact-page.jpg',
-   imgProject.src = '/img/page/project-page.jpg',
-   imgCanvas.src = '/img/page/canvas-page.jpg',
-   imgBook.src = '/img/page/book-page.jpg',
-   imgBlog.src = '/img/page/blog-page.jpg',
-   imgLogin.src = '/img/page/login-page.jpg';
+   if ($aboutImage.is("img")) {
+      let imgAbout = new Image();
+      imgAbout.src = '/img/page/about-page.jpg';
+      imgAbout.onload = function() {
+          $aboutImage.attr({src: imgAbout.src});
+      };
+   }
 
-   imgHeader.onload = function() {
-      $('#headerImage').attr({src: imgHeader.src});
-   };
-   imgAbout.onload = function() {
-      $('#aboutImage').attr({src: imgAbout.src});
-   };
-   imgAuthor.onload = function() {
-      $('#authorImage').attr({src: imgAuthor.src});
-   };
-   imgContact.onload = function() {
-      $('#contactImage').attr({src: imgContact.src});
-   };
-   imgProject.onload = function() {
-      $('#projectImage').attr({src: imgProject.src});
-   };
-   imgCanvas.onload = function() {
-      $('#canvasImage').attr({src: imgCanvas.src});
-   };
-   imgBook.onload = function() {
-      $('#bookImage').attr({src: imgBook.src});
-   };
-   imgBlog.onload = function() {
-      $('#blogImage').attr({src: imgBlog.src});
-   };
-   imgLogin.onload = function() {
-      $('#loginImage').attr({src: imgLogin.src});
-   };
+   if ($authorImage.is("img")) {
+       let imgAuthor = new Image();
+       imgAuthor.src = '/img/page/mikulew-hawk.jpg';
+       imgAuthor.onload = function() {
+       $authorImage.attr({src: imgAuthor.src});
+      };
+   }
+
+   if ($contactImage.is("img")) {
+      let imgContact = new Image();
+      imgContact.src = '/img/page/contact-page.jpg';
+      imgContact.onload = function() {
+          $contactImage.attr({src: imgContact.src});
+      };
+   }
+
+   if ($projectImage.is("img")) {
+      let imgProject = new Image();
+      imgProject.src = '/img/page/project-page.jpg';
+      imgProject.onload = function() {
+          $projectImage.attr({src: imgProject.src});
+      };
+   }
+
+   if ($canvasImage.is("img")) {
+      let imgCanvas = new Image();
+      imgCanvas.src = '/img/page/canvas-page.jpg';
+      imgCanvas.onload = function() {
+          $canvasImage.attr({src: imgCanvas.src});
+      };
+   }
+
+   if ($bookImage.is("img")) {
+      let imgBook = new Image();
+      imgBook.src = '/img/page/book-page.jpg';
+      imgBook.onload = function() {
+          $bookImage.attr({src: imgBook.src});
+      };
+   }
+
+   if ($blogImage.is("img")) {
+      let imgBlog = new Image();
+      imgBlog.src = '/img/page/blog-page.jpg';
+      imgBlog.onload = function() {
+          $blogImage.attr({src: imgBlog.src});
+      };
+   }
+
+   if ($loginImage.is("img")) {
+      let imgLogin = new Image();
+      imgLogin.src = '/img/page/login-page.jpg';
+      imgLogin.onload = function() {
+          $loginImage.attr({src: imgLogin.src});
+      };
+   }
 
     $('.page-button').click(function(e) {
        $.scrollTo($(e.target.getAttribute('href')), 1000);
@@ -85,7 +118,7 @@
          }
       });
    });
-})();
+// })();
 
 
 
