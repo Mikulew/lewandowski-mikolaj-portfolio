@@ -16,7 +16,12 @@
             <p class="welcome-header-paragraph animated fadeInLeft"><span class="welcome-bold welcome-blue">Dla programisty:</span><br> Dokument HTML udostępniony<br>w internecie przez serwer WWW</p>
             <p class="welcome-header-paragraph animated fadeInLeft"><span class="welcome-bold welcome-blue">Dla właściciela firmy:</span><br> jest ona przede wszystkim<br>wizytówką jego działalności</p>
         </div>
-        <i id="headerButton" class="chevron circle down icon animated fadeInUp page-button"></i>
+        <svg version="1.1" id="headerButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+            <g>
+            <path d="M25.083,50.149c13.845,0,25.068-11.223,25.068-25.066c0-13.844-11.223-25.067-25.068-25.067 c-13.844,0-25.067,11.223-25.067,25.067C0.015,38.926,11.239,50.149,25.083,50.149z M10.664,14.238l14.419,14.417l14.419-14.417 l5.71,5.71L25.083,40.077L4.954,19.948L10.664,14.238z"/>
+            </g>
+        </svg>
     </header>
     <section id="sectionNewspaper" class="welcome-newspaper">
         <div class="newspaper-huge-heading">Strona WWW</div>
@@ -184,8 +189,12 @@
                     To za co są w&nbsp;stanie za&shy;pła&shy;cić wię&shy;cej to za mar&shy;kę, po&shy;zy&shy;tyw&shy;ne emo&shy;cje i&nbsp;pew&shy;ność, że ku&shy;pu&shy;jąc coś, zy&shy;sku&shy;ją np. lep&shy;sze życie.</p>
                     <p>Budo&shy;wanie do&shy;brej atmos&shy;fery wokół włas&shy;nej mar&shy;ki i&nbsp;sta&shy;ran&shy;ne przy&shy;go&shy;to&shy;wy&shy;wa&shy;nie swo&shy;jej ofer&shy;ty wzmac&shy;nia po&shy;zy&shy;cję Two&shy;jej fir&shy;my, świa&shy;do&shy;mość Two&shy;ich klien&shy;tów, a&nbsp;także umac&shy;nia ich w&nbsp;wie&shy;rze, że warto za&shy;pła&shy;cić Ci więcej.</p>
             </div>
-            <i id="newspaperButton" class="chevron circle down icon page-button"></i>
         </div>
+        <svg version="1.1" id="newspaperButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                <g>
+                    <path d="M25.083,50.149c13.845,0,25.068-11.223,25.068-25.066c0-13.844-11.223-25.067-25.068-25.067 c-13.844,0-25.067,11.223-25.067,25.067C0.015,38.926,11.239,50.149,25.083,50.149z M10.664,14.238l14.419,14.417l14.419-14.417 l5.71,5.71L25.083,40.077L4.954,19.948L10.664,14.238z"/>
+                </g>
+        </svg>
     </section>
     <section id="sectionCharts" class="welcome-charts">
         <h2 class="charts-huge-heading">Marketing cyfrowy</h2>
@@ -335,7 +344,11 @@
                 </div>
             </div>
         </div>
-        <i id="chartsButton" class="chevron circle down icon page-button"></i>
+        <svg version="1.1" id="chartsButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+                <g>
+                    <path d="M25.083,50.149c13.845,0,25.068-11.223,25.068-25.066c0-13.844-11.223-25.067-25.068-25.067 c-13.844,0-25.067,11.223-25.067,25.067C0.015,38.926,11.239,50.149,25.083,50.149z M10.664,14.238l14.419,14.417l14.419-14.417 l5.71,5.71L25.083,40.077L4.954,19.948L10.664,14.238z"/>
+                </g>
+        </svg>
     </section>
     <section id="sectionHistory" class="welcome-history">
         <h2 class="history-huge-heading">Historia Internetu w&nbsp;Polsce</h2>
@@ -447,7 +460,13 @@
                 </div>
             </div>
         </div>
-        <i id="historyButton" class="chevron circle up icon page-button"></i>
+        <svg version="1.1" id="historyButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+            <g>
+                <path d="M25.083,0.015c-13.845,0-25.068,11.223-25.068,25.066c0,13.844,11.223,25.067,25.068,25.067
+                    c13.844,0,25.067-11.223,25.067-25.067C50.151,11.239,38.927,0.015,25.083,0.015z M39.502,35.927L25.083,21.51L10.664,35.927
+                    l-5.71-5.71l20.129-20.129l20.129,20.129L39.502,35.927z"/>
+            </g>
+        </svg>
     </section>    
 </main>
 @endsection
