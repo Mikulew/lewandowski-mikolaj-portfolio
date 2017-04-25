@@ -842,14 +842,14 @@
         color: $fontColor;
         & > #chartsButton {
             position: absolute;
-            color: $paper;
+            fill: $paper;
             cursor: pointer;
             bottom: 5%;
             left: 50%;
             transform: translateX(-50%);
             transition: $animation;
             &:hover {
-                color: $yellow;
+                fill: $yellow;
                 left: 50%;
                 transform: translateX(-50%);
             }

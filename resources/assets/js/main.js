@@ -1,5 +1,5 @@
 (function(){
-   var imgHeader = new Image(),
+   let imgHeader = new Image(),
        imgAbout = new Image(),
        imgAuthor = new Image(),
        imgContact = new Image(),
@@ -52,8 +52,8 @@
        $.scrollTo($(e.target.getAttribute('href')), 1000);
     });
 
-   var $menu = $(".hamburger");
-   var $navbar = $('.navbar');
+   let $menu = $(".hamburger");
+   let $navbar = $('.navbar');
 
    $menu.click('click', toggleMenu);
 
@@ -64,22 +64,22 @@
 
    $(window).scroll(function(){
       $('.history-column.history-first').each(function(){
-         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-         var bottom_of_window = $(window).scrollTop() + $(window).height();
+         let bottom_of_object = $(this).offset().top + $(this).outerHeight();
+         let bottom_of_window = $(window).scrollTop() + $(window).height();
          if (bottom_of_window > bottom_of_object) {
             $('.history-column.history-first').css("visibility", "visible").addClass('animated fadeInLeft');
          }
       });
       $('.history-column.history-second').each(function(){
-         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-         var bottom_of_window = $(window).scrollTop() + $(window).height();
+         let bottom_of_object = $(this).offset().top + $(this).outerHeight();
+         let bottom_of_window = $(window).scrollTop() + $(window).height();
          if (bottom_of_window > bottom_of_object) {
             $('.history-column.history-second').css("visibility", "visible").addClass('animated fadeInRight');
          }
       });
       $('.charts-column').each(function(){
-         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-         var bottom_of_window = $(window).scrollTop() + $(window).height();
+         let bottom_of_object = $(this).offset().top + $(this).outerHeight();
+         let bottom_of_window = $(window).scrollTop() + $(window).height();
          if (bottom_of_window > bottom_of_object) {
             $('.charts-column').css("visibility", "visible").addClass('animated flipInX');
          }

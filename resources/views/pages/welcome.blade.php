@@ -2,11 +2,6 @@
 
 @section('title', '| Portfolio')
 
-@section('css')
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Playfair+Display:400,700" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
-@endsection
-
 @section('body')
 <main id="welcome-panel">
     <header id="sectionHeader">
