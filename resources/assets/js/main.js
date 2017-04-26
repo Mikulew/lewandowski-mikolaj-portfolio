@@ -82,7 +82,9 @@
    }
 
     $('.page-button').click(function(e) {
-       $.scrollTo($(e.target.getAttribute('href')), 1000);
+       e.preventDefault();
+       console.log($(this).data("href"));
+       $.scrollTo($(this).data("href"), 1000);
     });
 
    let $menu = $(".hamburger");

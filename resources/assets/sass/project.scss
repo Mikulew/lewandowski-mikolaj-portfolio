@@ -120,7 +120,7 @@
                 width: 100%;
                 transition: $animation;
                 border: 3px $yellow solid;
-                border-radius: 4px;
+                border-radius: $radius;
             }
         }
     }
@@ -165,7 +165,7 @@
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -231,7 +231,7 @@
                 width: 100%;
                 transition: $animation;
                 border: 3px $yellow solid;
-                border-radius: 4px;
+                border-radius: $radius;
             }
             & > .project-image:before {
                 content: '';
@@ -253,7 +253,7 @@
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -621,7 +621,7 @@
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {

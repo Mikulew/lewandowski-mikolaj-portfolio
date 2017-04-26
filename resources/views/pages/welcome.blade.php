@@ -11,8 +11,7 @@
             <p class="welcome-header-paragraph animated fadeInLeft"><span class="welcome-bold welcome-blue">Dla programisty:</span><br> Dokument HTML udostępniony<br>w internecie przez serwer WWW</p>
             <p class="welcome-header-paragraph animated fadeInLeft"><span class="welcome-bold welcome-blue">Dla właściciela firmy:</span><br> jest ona przede wszystkim<br>wizytówką jego działalności</p>
         </div>
-        <svg version="1.1" id="headerButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+        <svg id="headerButton" class="page-button" data-href="#sectionNewspaper" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
             <g>
             <path d="M25.083,50.149c13.845,0,25.068-11.223,25.068-25.066c0-13.844-11.223-25.067-25.068-25.067 c-13.844,0-25.067,11.223-25.067,25.067C0.015,38.926,11.239,50.149,25.083,50.149z M10.664,14.238l14.419,14.417l14.419-14.417 l5.71,5.71L25.083,40.077L4.954,19.948L10.664,14.238z"/>
             </g>
@@ -185,7 +184,7 @@
                     <p>Budo&shy;wanie do&shy;brej atmos&shy;fery wokół włas&shy;nej mar&shy;ki i&nbsp;sta&shy;ran&shy;ne przy&shy;go&shy;to&shy;wy&shy;wa&shy;nie swo&shy;jej ofer&shy;ty wzmac&shy;nia po&shy;zy&shy;cję Two&shy;jej fir&shy;my, świa&shy;do&shy;mość Two&shy;ich klien&shy;tów, a&nbsp;także umac&shy;nia ich w&nbsp;wie&shy;rze, że warto za&shy;pła&shy;cić Ci więcej.</p>
             </div>
         </div>
-        <svg version="1.1" id="newspaperButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+        <svg version="1.1" id="newspaperButton" class="page-button" data-href="#sectionCharts" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
                 <g>
                     <path d="M25.083,50.149c13.845,0,25.068-11.223,25.068-25.066c0-13.844-11.223-25.067-25.068-25.067 c-13.844,0-25.067,11.223-25.067,25.067C0.015,38.926,11.239,50.149,25.083,50.149z M10.664,14.238l14.419,14.417l14.419-14.417 l5.71,5.71L25.083,40.077L4.954,19.948L10.664,14.238z"/>
                 </g>
@@ -339,7 +338,7 @@
                 </div>
             </div>
         </div>
-        <svg version="1.1" id="chartsButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+        <svg version="1.1" id="chartsButton" class="page-button" data-href="#sectionHistory" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
                 <g>
                     <path d="M25.083,50.149c13.845,0,25.068-11.223,25.068-25.066c0-13.844-11.223-25.067-25.068-25.067 c-13.844,0-25.067,11.223-25.067,25.067C0.015,38.926,11.239,50.149,25.083,50.149z M10.664,14.238l14.419,14.417l14.419-14.417 l5.71,5.71L25.083,40.077L4.954,19.948L10.664,14.238z"/>
                 </g>
@@ -455,7 +454,7 @@
                 </div>
             </div>
         </div>
-        <svg version="1.1" id="historyButton" class="page-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+        <svg version="1.1" id="historyButton" class="page-button" data-href="#sectionHeader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
             <g>
                 <path d="M25.083,0.015c-13.845,0-25.068,11.223-25.068,25.066c0,13.844,11.223,25.067,25.068,25.067
                     c13.844,0,25.067-11.223,25.067-25.067C50.151,11.239,38.927,0.015,25.083,0.015z M39.502,35.927L25.083,21.51L10.664,35.927

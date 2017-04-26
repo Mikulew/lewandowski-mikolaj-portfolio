@@ -1207,6 +1207,7 @@
             left: 50%;
             transform: translateX(-50%);
             transition: $animation;
+            z-index: 1;
             &:hover {
                 fill: $yellow;
                 transform: translateX(-50%);

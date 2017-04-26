@@ -17,7 +17,7 @@
                         <div class="navicon">
                             <svg baseProfile="tiny" height="24px" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,3c0,0-6.186,5.34-9.643,8.232C2.154,11.416,2,11.684,2,12c0,0.553,0.447,1,1,1h2v7c0,0.553,0.447,1,1,1h3  c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.447,1-1v-7h2c0.553,0,1-0.447,1-1c0-0.316-0.154-0.584-0.383-0.768  C18.184,8.34,12,3,12,3z"/></svg>
                         </div>
-                            <span class="navtext">Strona główna</span>
+                        <span class="navtext">Strona główna</span>
                     </a>
                     <a href="/about" class="{{ Request::is('about') ? 'active' : '' }} navlabel" tabindex="2">
                         <div class="navicon">
@@ -36,7 +36,7 @@
                             </g>
                             </svg>
                         </div>
-                            <span class="navtext">O mnie</span>
+                        <span class="navtext">O mnie</span>
                     </a>
                     <a href="{{route('pages.contact')}}" class="{{ Request::is('contact') ? 'active' : '' }} navlabel" tabindex="3">
                         <div class="navicon">
@@ -66,7 +66,7 @@
                             </g>
                             </svg>
                         </div>
-                            <span class="navtext">Kontakt</span>
+                        <span class="navtext">Kontakt</span>
                     </a>
                     <a href="{{route('pages.project.index')}}" class="{{ Request::is('project') ? 'active' : '' }} navlabel" tabindex="4">
                         <div class="navicon">
@@ -99,7 +99,7 @@
                             </g>
                             </svg>
                         </div>
-                            <span class="navtext">Moje projekty</span>
+                        <span class="navtext">Moje projekty</span>
                     </a>
                 </div>
                 <div class="navbar-menu">
@@ -149,7 +149,7 @@
                             </g>
                             </svg>
                         </div>
-                            <span class="navtext">Gry i animacje</span>
+                        <span class="navtext">Gry i animacje</span>
                         </a>
                         <a href="{{route('pages.book.index')}}" class="{{ Request::is('book') ? 'active' : '' }} navlabel" tabindex="6">
                             <div class="navicon">
@@ -191,7 +191,7 @@
                                 </g>
                                 </svg>
                             </div>
-                                <span class="navtext">Biblioteczka</span>
+                            <span class="navtext">Biblioteczka</span>
                         </a>
                         <a href="{{route('pages.post.index')}}" class="{{ Request::is('blog') ? 'active' : '' }} navlabel" tabindex="7">
                             <div class="navicon">
@@ -233,7 +233,7 @@
                                 </g>
                                 </svg>
                             </div>
-                                <span class="navtext">Blog</span>
+                            <span class="navtext">Blog</span>
                         </a>
                         @if (Auth::user())
                             <a href="{{route('admin')}}" class="navlabel" tabindex="8">
