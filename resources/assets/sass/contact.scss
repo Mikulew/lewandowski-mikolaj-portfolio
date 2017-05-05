@@ -161,7 +161,7 @@
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
-            margin-top: 2rem;
+            margin: 2rem 0;
             & > .contact-input-wrapper {
                 width: 100%;
                 & > .contact-input {
@@ -220,13 +220,17 @@
             size: 2rem;
         }
         background-color: rgba(244, 66, 78, .1);
+        border-radius: $radius;
         color: $red;
-
+        height: 0;
+        opacity: 0;
+        margin: 3rem 2rem;
+        transition: 1s;
+        width: 100%;
         & > li {
             list-style: none;
-            padding: 5px 0;
-            margin: 10px 20px;
-            line-height: 2.4rem;
+            line-height: 24px;
+            text-align: center;
         }
     }
 
@@ -420,7 +424,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        margin-top: 1rem;
+        margin: 1rem 0;
         width: 100%;
         & > .contact-input-wrapper {
             width: 75%;
@@ -490,14 +494,18 @@
             size: 1.6rem;
         }
         background-color: rgba(244, 66, 78, .1);
+        border-radius: $radius;
         color: $red;
         margin: 0 20px;
+        height: 0;
+        opacity: 0;
+        transition: 1s;
+        width: 75%;
 
         & > li {
             list-style: none;
-            padding: 5px 0;
-            margin: 10px 20px;
-            line-height: 1.4rem;
+            line-height: 14px;
+            text-align: center;
         }
     }
 
@@ -687,7 +695,7 @@
             flex-wrap: nowrap;
             justify-content: space-between;
             align-items: center;
-            margin-top: 2rem;
+            margin: 1rem 0;
             & > .contact-input-wrapper {
                 width: 100%;
                 & > .contact-input {
@@ -748,15 +756,17 @@
             size: 1.6rem;
         }
         background-color: rgba(244, 66, 78, .1);
+        border-radius: $radius;
         color: $red;
+        height: 0;
+        opacity: 0;
         margin: 2rem;
-        transition: $animation;
-
+        transition: 1s;
+        min-width: 40%;
         & > li {
             list-style: none;
-            padding: 5px 0;
-            margin: 1rem 2rem;
-            line-height: 1.4rem;
+            line-height: 14px;
+            text-align: center;
         }
     }
 
@@ -791,5 +801,15 @@
         border-radius: $radius;
         padding: 1rem 2rem;
         margin: 2rem 0;
+    }
+}
+
+.errors-animation {
+    animation: showErrors 1s forwards;
+}
+
+@keyframes showErrors {
+    to {
+        opacity: 1;
     }
 }

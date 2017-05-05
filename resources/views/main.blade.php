@@ -13,13 +13,13 @@
             </div>
             <nav class="navbar">
                 <div class="navbar-menu">
-                    <a href="/" class="{{ Request::is('/') ? 'active' : '' }} navlabel" tabindex="1">
+                    <a href="{{url('/')}}" class="{{ Request::is('/') ? 'active' : '' }} navlabel" tabindex="1">
                         <div class="navicon">
                             <svg baseProfile="tiny" height="24px" version="1.2" viewBox="0 0 24 24" width="24px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12,3c0,0-6.186,5.34-9.643,8.232C2.154,11.416,2,11.684,2,12c0,0.553,0.447,1,1,1h2v7c0,0.553,0.447,1,1,1h3  c0.553,0,1-0.448,1-1v-4h4v4c0,0.552,0.447,1,1,1h3c0.553,0,1-0.447,1-1v-7h2c0.553,0,1-0.447,1-1c0-0.316-0.154-0.584-0.383-0.768  C18.184,8.34,12,3,12,3z"/></svg>
                         </div>
                         <span class="navtext">Strona główna</span>
                     </a>
-                    <a href="/about" class="{{ Request::is('about') ? 'active' : '' }} navlabel" tabindex="2">
+                    <a href="{{url('about')}}" class="{{ Request::is('about') ? 'active' : '' }} navlabel" tabindex="2">
                         <div class="navicon">
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  width="16.403px" height="19.625px" viewBox="3.848 4.375 16.403 19.625" enable-background="new 3.848 4.375 16.403 19.625"

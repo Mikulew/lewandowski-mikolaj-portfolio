@@ -38,7 +38,7 @@
       background-color: rgba(5, 5, 5, 0.7);
       margin: 8rem auto 1rem auto;
       padding: 2rem;
-      border-radius: 4px; 
+      border-radius: $radius;
       box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     }
 
@@ -70,29 +70,57 @@
         margin: 10px 20px;
     }
 
-    .login-input {
+    .login-input-wrapper {
+        position: relative;
         width: 100%;
-        font-size: 2.4rem;
-        font-family: $fontNav;
-        margin: 20px 0;
-        border: none;
-        border-radius: 4px;
-    }
-
-    #login-control > .ui.input input {
-        font-family: $fontNav;
-        transition: $animation;
-        font-size: 2.4rem;
-    }
-
-    .ui.input input.login-input-error {
-        border: 1px $red solid;
-        background-color: rgba(244, 66, 78, .1);
-        color: $fontColor;
-    }
-
-    #login-control > i.icon {
-        transition: $animation;
+        .login-input {
+            color: $grey;
+            display: inline-block;
+            border-radius: $radius;
+            border: none;
+            font: {
+                family: $fontText;
+                size: 1.6rem;
+            }
+            height: 40px;
+            text-indent: 15%;
+            transition: $animation;
+            width: 100%;
+            &::placeholder {
+                color: $fontColor;
+                transition: $animation;
+            }
+            &:focus::placeholder {
+                color: $grey;
+            }
+            &:focus + .login-icon {
+                fill: $grey;
+            }
+            &.login-input-error {
+                border: 1px $red solid;
+                background-color: rgba(244, 66, 78, .1);
+                color: $fontColor;
+            }
+            &:focus.login-input-error {
+                border: 1px lighten($red, 10%) solid;
+                background-color: rgba(244, 66, 78, .1);
+                & + .login-icon {
+                    fill: lighten($fontColor, 10%);
+                }
+                &::placeholder {
+                    color: lighten($fontColor, 10%);
+                }
+            }
+        }
+        & > .login-icon {
+            display: inline-block;
+            fill: $fontColor;
+            position: absolute;
+            left: 7%;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: $animation;
+        }
     }
 
     .login-list-error {
@@ -109,6 +137,7 @@
             padding: 5px 0;
             margin: 10px 20px;
             line-height: 2.4rem;
+            text-align: center;
         }    
     }
 
@@ -120,11 +149,11 @@
          }
         width: 100%;
         padding: 1.5rem;
-        margin: 20px 0;
+        margin: 10px 0;
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
 
          &:hover {
@@ -170,15 +199,14 @@
 
     #loginImage { 
         position: fixed;
-        width: auto;
-        height: 100vh;
+        width: 100%;
+        height: auto;
         margin-top: 10rem;
         left: 0;
         right: 0;
         top: 0; 
         bottom: 0;
         z-index: -100;
-        display: block;
     }
 
     .login-wrapper {
@@ -187,7 +215,7 @@
         background-color: rgba(10, 10, 10, 0.7);
         margin: 16rem auto 6rem auto;  
         padding: 5rem;
-        border-radius: 4px; 
+        border-radius: $radius;
         box-shadow: 0 0 10px rgba(0,0,0,1);
     }
 
@@ -229,26 +257,59 @@
         margin: 10px 20px;
     }
 
-    .login-input {
+    .login-input-wrapper {
+        position: relative;
         width: 100%;
-        font-size: 1.6rem;
-        font-family: $fontNav;
-        margin: 20px 0;
-        border: none;
-        border-radius: 4px;
-    }
-    
-    .ui.input input {
-        transition: $animation;
-        font-family: $fontNav;
-        font-size: 1.6rem;
+        .login-input {
+            color: $grey;
+            display: inline-block;
+            border-radius: $radius;
+            border: none;
+            font: {
+                family: $fontText;
+                size: 1.6rem;
+            }
+            height: 40px;
+            text-indent: 15%;
+            transition: $animation;
+            width: 100%;
+            &::placeholder {
+                color: $fontColor;
+                transition: $animation;
+            }
+            &:focus::placeholder {
+                color: $grey;
+            }
+            &:focus + .login-icon {
+                fill: $grey;
+            }
+            &.login-input-error {
+                border: 1px $red solid;
+                background-color: rgba(244, 66, 78, .1);
+                color: $fontColor;
+            }
+            &:focus.login-input-error {
+                border: 1px lighten($red, 10%) solid;
+                background-color: rgba(244, 66, 78, .1);
+                & + .login-icon {
+                    fill: lighten($fontColor, 10%);
+                }
+                &::placeholder {
+                    color: lighten($fontColor, 10%);
+                }
+            }
+        }
+        & > .login-icon {
+            display: inline-block;
+            fill: $fontColor;
+            position: absolute;
+            left: 7%;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: $animation;
+        }
     }
 
-    .ui.input input.login-input-error {
-        border: 1px $red solid;
-        background-color: rgba(244, 66, 78, .1);
-        color: $fontColor;
-    }
 
     .login-list-error {
         font: {
@@ -267,14 +328,6 @@
         }
     }
 
-    #form-control > i.icon {
-        transition: $animation;
-    }
-
-    .icon-error {
-        color: $fontColor;
-    }
-
      .login-button {
         font: {
              family: $fontNav;
@@ -283,13 +336,12 @@
          }
         width: 100%;
         padding: 10px;
-        margin: 20px 0;
+        margin: 10px 0;
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
-
          &:hover {
              background-color: darken($blue, 30%);
          }
@@ -299,6 +351,11 @@
 @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1279px) {  
     .login-wrapper {
         margin: 12rem auto 32rem auto;  
+    }
+
+    #loginImage {
+        width: auto;
+        height: 100%;
     }
 }
 
@@ -333,7 +390,7 @@
       background-color: rgba(5, 5, 5, 0.7);
       margin: 12rem auto 2rem auto;  
       padding: 4rem;
-      border-radius: 4px; 
+      border-radius: $radius;
       box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     }
 
@@ -363,29 +420,57 @@
         margin: 10px 20px;
     }
 
-    .login-input {
+    .login-input-wrapper {
+        position: relative;
         width: 100%;
-        font-size: 1.6rem;
-        font-family: $fontNav;
-        margin: 20px 0;
-        border: none;
-        border-radius: 4px;
-    }
-
-    #login-control > .ui.input input {
-        font-family: $fontNav;
-        transition: $animation;
-        font-size: 1.6rem;
-    }
-
-    .ui.input input.login-input-error {
-        border: 1px $red solid;
-        background-color: rgba(244, 66, 78, .1);
-        color: $fontColor;
-    }
-
-    #login-control > i.icon {
-        transition: $animation;
+        .login-input {
+            color: $grey;
+            display: inline-block;
+            border-radius: $radius;
+            border: none;
+            font: {
+                family: $fontText;
+                size: 1.6rem;
+            }
+            height: 40px;
+            text-indent: 15%;
+            transition: $animation;
+            width: 100%;
+            &::placeholder {
+                color: $fontColor;
+                transition: $animation;
+            }
+            &:focus::placeholder {
+                color: $grey;
+            }
+            &:focus + .login-icon {
+                fill: $grey;
+            }
+            &.login-input-error {
+                border: 1px $red solid;
+                background-color: rgba(244, 66, 78, .1);
+                color: $fontColor;
+            }
+            &:focus.login-input-error {
+                border: 1px lighten($red, 10%) solid;
+                background-color: rgba(244, 66, 78, .1);
+                & + .login-icon {
+                    fill: lighten($fontColor, 10%);
+                }
+                &::placeholder {
+                    color: lighten($fontColor, 10%);
+                }
+            }
+        }
+        & > .login-icon {
+            display: inline-block;
+            fill: $fontColor;
+            position: absolute;
+            left: 7%;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: $animation;
+        }
     }
 
     .login-list-error {
@@ -394,14 +479,15 @@
             size: 1.4rem;
         }
         background-color: rgba(244, 66, 78, .1);
+        border-radius: $radius;
         color: $red;
-        margin: 20px;
-
+        margin: 20px 0;
         & > li {
             list-style: none;
             padding: 5px 0;
             margin: 10px 20px;
             line-height: 1.4rem;
+            text-align: center;
         }    
     }
 
@@ -413,13 +499,12 @@
          }
         width: 100%;
         padding: 10px;
-        margin: 20px 0;
+        margin: 10px 0;
         background-color: darken($blue, 15%);
         color: $yellow;
         border: none; 
-        border-radius: 4px;
+        border-radius: $radius;
         transition: $animation;
-
          &:hover {
              background-color: darken($blue, 30%);
          }

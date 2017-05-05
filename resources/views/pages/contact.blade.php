@@ -17,7 +17,7 @@
                 </div>
             @endif
             {{ Html::image('/img/page/contact-page-low.jpg', 'Contact Image Background', array('id' => 'contactImage')) }}
-            <article class="contact-wrapper">
+            <article class="contact-wrapper" id="wrapper">
                 <h1 class="contact-title">Formularz kontaktowy</h1>
                  {!! Form::open(['route' => 'pages.contact.store', 'id' => 'contact-form']) !!}
                        <section class="contact-input-container">
@@ -25,7 +25,7 @@
                                 {!! Form::label('name', 'Imię i nazwisko:', ['class' => 'contact-label']) !!}
                            </div>
                            <div class="contact-input-wrapper">
-                                 {!! Form::text('name', null, ['placeholder' => 'Jan Kowalski', 'class' => 'contact-input', 'data-error' => 'Podaj imię i nazwisko. Minimum: 3 znaki, maximum: 255.']) !!}
+                                 {!! Form::text('name', null, ['placeholder' => 'Jan Kowalski', 'class' => 'contact-input', 'data-error' => 'Podaj imię i nazwisko. Minimum: 3 znaki, maximum: 255']) !!}
                                  <svg class="contact-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                       width="16.403px" height="19.625px" viewBox="3.848 4.375 16.403 19.625" enable-background="new 3.848 4.375 16.403 19.625"
                                       xml:space="preserve">
@@ -77,7 +77,7 @@
                                  {!! Form::label('phone', 'Numer telefonu:', ['class' => 'contact-label']) !!}
                            </div>
                            <div class="contact-input-wrapper">
-                                 {!! Form::tel('phone', null, ['placeholder' => '888 444 777', 'class' => 'contact-input', 'data-error' => 'Podaj poprawny numer telefonu. Same cyfry, minumum: 9.']) !!}
+                                 {!! Form::tel('phone', null, ['placeholder' => '888 444 777', 'class' => 'contact-input', 'data-error' => 'Podaj poprawny numer telefonu. Same cyfry, minimum: 9']) !!}
                                <svg class="contact-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.552px" height="18px" viewBox="0 0 16.552 18" enable-background="new 0 0 16.552 18" xml:space="preserve">
                                     <g>
                                         <path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M-0.789,18.002c0-6,0-12,0-18.004c5.997,0,11.995,0,18,0
@@ -108,21 +108,24 @@
                                     </g>
                                </svg>
                              </div>
-                         </section>
-                         <section class="contact-textarea-container">
+                       </section>
+                       <section class="contact-textarea-container">
                              <div class="contact-label-container" id="textarea-label">
                                  {!! Form::label('description', 'Wiadomość:', ['class' => 'contact-label']) !!}
                              </div>
                              <div class="contact-input-wrapper" id="textarea-input">
-                                 {!! Form::textarea('description', null, ['size' => '105x10', 'class' => 'contact-input', 'placeholder' => 'Dzień dobry, piszę w sprawie współpracy...', 'data-error' => 'Podaj treść wiadomości. Minimum: 20 znaków.']) !!}
+                                 {!! Form::textarea('description', null, ['size' => '105x10', 'class' => 'contact-input', 'placeholder' => 'Dzień dobry, piszę w sprawie współpracy...', 'data-error' => 'Podaj treść wiadomości. Minimum: 20 znaków']) !!}
                                  {{--<i class="icon"></i>--}}
                              </div>
-                        </section>
-                         @if(Session::has('success'))
+                       </section>
+                       @if(Session::has('success'))
                              <div class="contact-success">
                                  {{Session::get('success')}}
-                    </div>
-                @endif
+                             </div>
+                       @endif
+                        <ul class="contact-list-error">
+
+                        </ul>
             {!! Form::submit('Wyślij', ['class'=>'contact-button']) !!}           
         {!! Form::close() !!}
     </article>
@@ -131,7 +134,8 @@
 
 @section('scripts')
 <script>
-    (function(){
+
+//    (function(){
         let form = document.getElementById("contact-form"),
             fields = form.querySelectorAll('[data-error]'),
             contactBtn = document.querySelector('.contact-button'),
@@ -147,11 +151,13 @@
         }
 
         function isNumber(field) {
-            return field.value.match(/[0-9]{9}/);
+            return field.value.match(/^(?:\(?\+?[0-9]{2})?(?:[-\.\(\)\s]*(\d)){9}\)?$/);
         }
 
         function displayErrors(errors) {
-            let ul = document.querySelector('ul.contact-list-error');
+            let ul = document.querySelector("ul.contact-list-error");
+            let heightOfErrors;
+            heightOfErrors = 0;
 
             if(successMessage) {
                 successMessage.parentNode.removeChild(successMessage);
@@ -160,6 +166,7 @@
             if(!ul) {
                 ul = document.createElement("ul");
                 ul.classList.add("contact-list-error");
+                form.insertBefore(ul, contactBtn);
             }
 
             ul.innerHTML = "";
@@ -167,9 +174,16 @@
             errors.forEach(function(error) {
                 let li = document.createElement("li");
                 li.textContent = error;
+                li.style.padding = "1.5rem";
                 ul.appendChild(li);
+                heightOfErrors += li.offsetHeight;
             });
-            form.insertBefore(ul, contactBtn);
+
+            ul.style.height = heightOfErrors + "px";
+
+            setTimeout( function(){
+                ul.classList.add( 'errors-animation' );
+            }, 500 );
         }
 
         form.addEventListener('submit', function(e) {
@@ -206,6 +220,6 @@
             }
 
           }, false);
-    })();
+//    })();
 </script>
 @endsection
