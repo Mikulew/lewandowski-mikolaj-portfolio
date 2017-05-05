@@ -18,7 +18,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link href="https://cdn.jsdelivr.net/semantic-ui/2.2.7/semantic.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Sansita:400,700" rel="stylesheet">
-    <link href="/css/app.css?260428" rel="stylesheet">
+    <link href="/css/app.css?050517" rel="stylesheet">
     <script async type="application/ld+json">
     {
       "@context": "http://schema.org",

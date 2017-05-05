@@ -1,4 +1,4 @@
-<script src="{!! URL::asset('/js/main.min.js?260428') !!}"></script>
+<script src="{!! URL::asset('/js/main.min.js?050517') !!}"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.7/semantic.min.js"></script>
 <script>
     var $leftSidebar = $('.ui.sidebar.vertical.left.menu');

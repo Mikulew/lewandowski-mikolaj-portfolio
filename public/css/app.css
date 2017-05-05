@@ -2341,7 +2341,6 @@
     color: #f4424e;
     height: 0;
     opacity: 0;
-    margin: 3rem 2rem;
     -webkit-transition: 1s;
     transition: 1s;
     width: 100%;
@@ -2590,7 +2589,7 @@
     border: none;
     font-family: "Roboto Slab", serif;
     font-size: 1.6rem;
-    padding-top: 1rem;
+    padding: 1rem;
     margin-top: 2rem;
     text-indent: 2%;
     -webkit-transition: all 0.3s linear;
@@ -2678,7 +2677,6 @@
     background-color: rgba(244, 66, 78, 0.1);
     border-radius: 1rem;
     color: #f4424e;
-    margin: 0 20px;
     height: 0;
     opacity: 0;
     -webkit-transition: 1s;
@@ -2925,8 +2923,8 @@
     border: none;
     font-family: "Roboto Slab", serif;
     font-size: 1.6rem;
-    padding-top: 1rem;
     margin-top: 2rem;
+    padding: 1.5rem;
     text-indent: 2%;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -3007,7 +3005,6 @@
     color: #f4424e;
     height: 0;
     opacity: 0;
-    margin: 2rem;
     -webkit-transition: 1s;
     transition: 1s;
     min-width: 40%;

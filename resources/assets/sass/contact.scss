@@ -224,7 +224,6 @@
         color: $red;
         height: 0;
         opacity: 0;
-        margin: 3rem 2rem;
         transition: 1s;
         width: 100%;
         & > li {
@@ -436,7 +435,7 @@
                     family: $fontText;
                     size: 1.6rem;
                 }
-                padding-top: 1rem;
+                padding: 1rem;
                 margin-top: 2rem;
                 text-indent: 2%;
                 transition: $animation;
@@ -496,7 +495,6 @@
         background-color: rgba(244, 66, 78, .1);
         border-radius: $radius;
         color: $red;
-        margin: 0 20px;
         height: 0;
         opacity: 0;
         transition: 1s;
@@ -706,8 +704,8 @@
                         family: $fontText;
                         size: 1.6rem;
                     }
-                    padding-top: 1rem;
                     margin-top: 2rem;
+                    padding: 1.5rem;
                     text-indent: 2%;
                     transition: $animation;
                     resize: none;
@@ -760,7 +758,6 @@
         color: $red;
         height: 0;
         opacity: 0;
-        margin: 2rem;
         transition: 1s;
         min-width: 40%;
         & > li {

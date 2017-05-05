@@ -178,7 +178,7 @@
                 ul.appendChild(li);
                 heightOfErrors += li.offsetHeight;
             });
-
+            ul.style.margin = "20px";
             ul.style.height = heightOfErrors + "px";
 
             setTimeout( function(){
