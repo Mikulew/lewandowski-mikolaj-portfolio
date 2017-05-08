@@ -14,6 +14,20 @@ class CanvasSeeder extends Seeder
     {
         $canvas = new Canvas();
         $canvas->category_id = 0;
+        $canvas->title = "Asteroids Game";
+        $canvas->description = "Zagraj w słynną grę z 1979 roku!";
+        $canvas->link = "https://github.com/Mikulew/asteroids-game";
+        $canvas->io = "https://mikulew.github.io/asteroids-game/";
+        $canvas->thumbnail = "asteroids.jpg";
+        $canvas->save();
+        $canvas->technology()->attach(1);
+        $canvas->technology()->attach(2);
+        $canvas->technology()->attach(6);
+        $canvas->technology()->attach(7);
+        $canvas->technology()->attach(8);
+
+        $canvas = new Canvas();
+        $canvas->category_id = 0;
         $canvas->title = "Paint";
         $canvas->description = "Narysuj mi obrazek i zapisz sobie na komputerze!";
         $canvas->link = "https://github.com/Mikulew/paint";
@@ -23,6 +37,19 @@ class CanvasSeeder extends Seeder
         $canvas->technology()->attach(1);
         $canvas->technology()->attach(2);
         $canvas->technology()->attach(6);
+        $canvas->technology()->attach(7);
+        $canvas->technology()->attach(8);
+
+        $canvas = new Canvas();
+        $canvas->category_id = 1;
+        $canvas->title = "HTML5 Canvas Clock";
+        $canvas->description = "Nowoczesny zegar napisany w Canvas";
+        $canvas->link = "https://github.com/Mikulew/HTML5-Canvas-Clock";
+        $canvas->io = "https://mikulew.github.io/HTML5-Canvas-Clock/";
+        $canvas->thumbnail = "html5-canvas-clock.jpg";
+        $canvas->save();
+        $canvas->technology()->attach(1);
+        $canvas->technology()->attach(2);
         $canvas->technology()->attach(7);
         $canvas->technology()->attach(8);
         

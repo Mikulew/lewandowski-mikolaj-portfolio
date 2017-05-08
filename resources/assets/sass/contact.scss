@@ -224,7 +224,7 @@
         color: $red;
         height: 0;
         opacity: 0;
-        transition: 1s;
+        transition: 0.75s;
         width: 100%;
         & > li {
             list-style: none;
@@ -802,7 +802,7 @@
 }
 
 .errors-animation {
-    animation: showErrors 1s forwards;
+    animation: showErrors 0.9s forwards;
 }
 
 @keyframes showErrors {

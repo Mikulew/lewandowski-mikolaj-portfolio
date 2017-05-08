@@ -2341,8 +2341,8 @@
     color: #f4424e;
     height: 0;
     opacity: 0;
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.75s;
+    transition: 0.75s;
     width: 100%;
   }
   .contact-list-error > li {
@@ -3045,8 +3045,8 @@
 }
 
 .errors-animation {
-  -webkit-animation: showErrors 1s forwards;
-  animation: showErrors 1s forwards;
+  -webkit-animation: showErrors 0.9s forwards;
+  animation: showErrors 0.9s forwards;
 }
 
 @-webkit-keyframes showErrors {

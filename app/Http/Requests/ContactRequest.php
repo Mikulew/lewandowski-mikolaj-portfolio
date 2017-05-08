@@ -26,7 +26,7 @@ class ContactRequest extends FormRequest
         return [
             'name' => 'required|min:3|max:255',
             'email' => 'required|email',
-            'phone' => 'required|min:9',
+            'phone' => 'required|min:9|regex:/^(?:\(?\+?[0-9]{2})?(?:[-\.\(\)\s]*(\d)){9}\)?$/',
             'description' => 'required|min:20',
 
         ];
