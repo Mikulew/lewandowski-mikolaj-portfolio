@@ -240,8 +240,8 @@
                         c-17.688,0-32,14.313-32,32v288c0,17.688,14.313,32,32,32h32c17.688,0,32-14.313,32-32V192C512,174.313,497.688,160,480,160z
                          M224,288h-32c-17.656,0-32,14.313-32,32v160c0,17.688,14.344,32,32,32h32c17.688,0,32-14.313,32-32V320
                         C256,302.313,241.688,288,224,288z"/>
-                    </svg> 
-                </div>              
+                    </svg>
+                </div>
             </div>
             <div class="charts-row">
                 <div class="charts-column">
@@ -338,13 +338,20 @@
                 </div>
             </div>
         </div>
-        <svg version="1.1" id="chartsButton" class="page-button" data-href="#sectionHistory" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+        <!-- <svg version="1.1" id="chartsButton" class="page-button" data-href="#sectionHistory" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
                 <g>
                     <path d="M25.083,50.149c13.845,0,25.068-11.223,25.068-25.066c0-13.844-11.223-25.067-25.068-25.067 c-13.844,0-25.067,11.223-25.067,25.067C0.015,38.926,11.239,50.149,25.083,50.149z M10.664,14.238l14.419,14.417l14.419-14.417 l5.71,5.71L25.083,40.077L4.954,19.948L10.664,14.238z"/>
                 </g>
+        </svg> -->
+        <svg version="1.1" id="chartsButton" class="page-button" data-href="#sectionHeader" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
+            <g>
+                <path d="M25.083,0.015c-13.845,0-25.068,11.223-25.068,25.066c0,13.844,11.223,25.067,25.068,25.067
+                    c13.844,0,25.067-11.223,25.067-25.067C50.151,11.239,38.927,0.015,25.083,0.015z M39.502,35.927L25.083,21.51L10.664,35.927
+                    l-5.71-5.71l20.129-20.129l20.129,20.129L39.502,35.927z"/>
+            </g>
         </svg>
     </section>
-    <section id="sectionHistory" class="welcome-history">
+    <!-- <section id="sectionHistory" class="welcome-history">
         <h2 class="history-huge-heading">Historia Internetu w&nbsp;Polsce</h2>
         <div class="history-wrapper">
             <div class="history-row">
@@ -461,6 +468,6 @@
                     l-5.71-5.71l20.129-20.129l20.129,20.129L39.502,35.927z"/>
             </g>
         </svg>
-    </section>    
+    </section>     -->
 </main>
 @endsection
